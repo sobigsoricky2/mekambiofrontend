@@ -1,22 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const sendMailRelayEmail = async (email) => {
+    const config = {
+      headers: {
+        "x-auth-token": "ukRNKGy1FZxNajq6NKAVMqsh1URk5xg85LDsfHac",
+      },
+    };
+    const mailRelayData = JSON.stringify({
+      status: "active",
+      email: email,
+    });
+
+    try {
+      const res = await axios.post(
+        "https://mekambio.ipzmarketing.com/api/v1/subscribers",
+        mailRelayData,
+        config
+      );
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(email);
+
+    try {
+      const data = JSON.stringify({ email: email });
+      const token = process.env.EMAIL_TOKEN;
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+
+      const res = await axios.post(
+        "https://sheet.best/api/sheets/ad772aad-1264-4d7c-9b49-b6153a956a33",
+        data,
+        config
+      );
+      console.log(res);
+      sendMailRelayEmail(email);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
       {/* ===== */}
-      <section class="testimonials-section-two my-80 rel z-1 wow fadeInUp delay-0-2s">
-        <div class="container">
-          <div class="testimonial-two-wrap">
-            <div class="testimonial-item-two">
-              <div class="testimonial-author-two">
+      {/* <section className="testimonials-section-two my-80 rel z-1 wow fadeInUp delay-0-2s">
+        <div className="container">
+          <div className="testimonial-two-wrap">
+            <div className="testimonial-item-two">
+              <div className="testimonial-author-two">
                 <img
-                  class="w-100"
+                  className="w-100"
                   src="/assets/images/testimonials/testimonial-two2.jfif"
                   alt="Author"
                 />
               </div>
-              <div class="testimonial-content-two">
-                <div class="designation">
+              <div className="testimonial-content-two">
+                <div className="designation">
                   <h3>Marta Bordera</h3>
                   <span>Directora de Comunicación y Brand Strategist</span>
                 </div>
@@ -32,24 +84,24 @@ const Footer = () => {
                   solamente eso ya que he triplicado mis ingresos y me siento
                   valorada por el equipo y mis coordinadores
                 </p>
-                <div class="ratting">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                <div className="ratting">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
                 </div>
               </div>
             </div>
-            <div class="testimonial-item-two">
-              <div class="testimonial-author-two">
+            <div className="testimonial-item-two">
+              <div className="testimonial-author-two">
                 <img
                   src="/assets/images/testimonials/Meritxell Boluda.jfif"
                   alt="Author"
                 />
               </div>
-              <div class="testimonial-content-two">
-                <div class="designation">
+              <div className="testimonial-content-two">
+                <div className="designation">
                   <h3>Meritxell Boluda</h3>
                   <span>HR Business Partner</span>
                 </div>
@@ -58,24 +110,24 @@ const Footer = () => {
                   laboral a establecer las bases para encontrar un proyecto
                   motivador, acorde con mis intereses. Lo recomiendo sin dudar.
                 </p>
-                <div class="ratting">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                <div className="ratting">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
                 </div>
               </div>
             </div>
-            <div class="testimonial-item-two">
-              <div class="testimonial-author-two">
+            <div className="testimonial-item-two">
+              <div className="testimonial-author-two">
                 <img
                   src="/assets/images/testimonials/JorgeDolz.Testimonial.png"
                   alt="Author"
                 />
               </div>
-              <div class="testimonial-content-two">
-                <div class="designation">
+              <div className="testimonial-content-two">
+                <div className="designation">
                   <h3>Jorge Dolz</h3>
                   <span>Owner and Business Manager en JDZ</span>
                 </div>
@@ -86,24 +138,24 @@ const Footer = () => {
                   otras personas y de su trayectoria, desarrollo mi networking
                   profesional.
                 </p>
-                <div class="ratting">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                <div className="ratting">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
                 </div>
               </div>
             </div>
-            <div class="testimonial-item-two">
-              <div class="testimonial-author-two">
+            <div className="testimonial-item-two">
+              <div className="testimonial-author-two">
                 <img
                   src="/assets/images/testimonials/Alejandro Garrido.png"
                   alt="Author"
                 />
               </div>
-              <div class="testimonial-content-two">
-                <div class="designation">
+              <div className="testimonial-content-two">
+                <div className="designation">
                   <h3>Alejandro Garrido</h3>
                   <span>Retail Multichannel Industry Manager at Google</span>
                 </div>
@@ -113,31 +165,31 @@ const Footer = () => {
                   para contar con su experiencia e incluso tener la posibilidad
                   de desarrollar tus capacidades a través del coaching es clave.
                 </p>
-                <div class="ratting">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                <div className="ratting">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== */}
 
-      <footer class="main-footer bg-blue">
-        <div class="container">
+      <footer className="main-footer bg-blue">
+        <div className="container">
           <div
             style={{ marginTop: "450px" }}
-            class="footer-newsletter br-10 bg-lighter"
+            className="footer-newsletter br-10 bg-lighter"
           >
-            <div class="row">
-              <div class="col-lg-6">
+            <div className="row">
+              <div className="col-lg-6">
                 <div
-                  class="newsletter-video bgs-cover overlay wow fadeInLeft delay-0-2s animated animated animated"
+                  className="newsletter-video bgs-cover overlay wow fadeInLeft delay-0-2s animated animated animated"
                   style={{
                     backgroundImage:
                       "url(/assets/images/video/footer-video-bg.jpg)",
@@ -147,51 +199,59 @@ const Footer = () => {
                 >
                   <a
                     href="https://www.youtube.com/watch?v=smbwVTieDJk"
-                    class="mfp-iframe video-play"
+                    className="mfp-iframe video-play"
                   >
-                    <i class="fas fa-play"></i>
+                    <i className="fas fa-play"></i>
                   </a>
                 </div>
               </div>
-              <div class="col-lg-6 align-self-center">
+              <div className="col-lg-6 align-self-center">
                 <div
-                  class="newsletter-content wow fadeInRight delay-0-2s animated animated animated"
+                  className="newsletter-content wow fadeInRight delay-0-2s animated animated animated"
                   style={{
                     visibility: "visible",
                     animationName: "fadeInRight",
                   }}
                 >
-                  <div class="section-title mb-20">
-                    <span class="sub-title-two">Newsletters</span>
+                  <div className="section-title mb-20">
+                    <span className="sub-title-two">Newsletters</span>
                     <h2>Suscríbete para estar al día de nuestros servicios</h2>
                   </div>
-                  <form class="newsletter-form mt-25" action="#">
-                    <div class="newsletter-radios mb-25">
-                      <div class="custom-control custom-radio">
+                  <form className="newsletter-form mt-25">
+                    <div className="newsletter-radios mb-25">
+                      <div className="custom-control custom-radio">
                         <input
                           type="radio"
-                          class="custom-control-input"
+                          className="custom-control-input"
                           id="hero-wekly"
-                          name="example1"
                           checked=""
                         />
-                        <label class="custom-control-label" for="hero-wekly">
+                        <label
+                          className="custom-control-label"
+                          for="hero-wekly"
+                        >
                           Publicaciones Mensuales
                         </label>
                       </div>
                     </div>
-                    <div class="newsletter-email">
+                    <div className="newsletter-email">
                       <label for="email">
-                        <i class="far fa-envelope"></i>
+                        <i className="far fa-envelope"></i>
                       </label>
                       <input
                         id="email"
                         type="email"
                         placeholder="email"
                         required=""
+                        name="email"
+                        value={email}
+                        onChange={(e) => handleChange(e)}
                       />
-                      <button type="submit" class="theme-btn style-two">
-                        Enviar<i class="fas fa-arrow-right"></i>
+                      <button
+                        onClick={(e) => handleSubmit(e)}
+                        className="theme-btn style-two"
+                      >
+                        Enviar<i className="fas fa-arrow-right"></i>
                       </button>
                     </div>
                   </form>
@@ -199,12 +259,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="row justify-content-between text-white pt-75">
-            <div class="col-lg-3 col-sm-4">
-              <div class="footer-widget about-widget">
-                <h5 class="footer-title">Solicita Información </h5>
+          <div className="row justify-content-between text-white pt-75">
+            <div className="col-lg-3 col-sm-4">
+              <div className="footer-widget about-widget">
+                <h5 className="footer-title">Solicita Información </h5>
                 <form method="post" action="#">
-                  <div class="form-group">
+                  <div className="form-group">
                     <input
                       type="text"
                       name="text"
@@ -213,7 +273,7 @@ const Footer = () => {
                       required=""
                     />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <input
                       type="text"
                       name="text"
@@ -222,7 +282,7 @@ const Footer = () => {
                       required=""
                     />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <input
                       type="email"
                       name="email"
@@ -231,7 +291,7 @@ const Footer = () => {
                       required=""
                     />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <input
                       type="number"
                       name="number"
@@ -241,37 +301,40 @@ const Footer = () => {
                     />
                   </div>
 
-                  <div class="form-group text-center">
-                    <button type="submit" class="theme-btn border pt-2 pb-2">
+                  <div className="form-group text-center">
+                    <button
+                      type="submit"
+                      className="theme-btn border pt-2 pb-2"
+                    >
                       Enviar
                     </button>
                   </div>
                 </form>
-                <h5 class="pt-5">Síguenos</h5>
-                <div class="social-style-one">
+                <h5 className="pt-5">Síguenos</h5>
+                <div className="social-style-one">
                   <a href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i className="fab fa-linkedin-in"></i>
                   </a>
                   <a href="https://www.instagram.com/meKambio_/">
-                    <i class="fab fa-instagram"></i>
+                    <i className="fab fa-instagram"></i>
                   </a>
                   <a href="https://www.facebook.com/meKambio">
-                    <i class="fab fa-facebook-f"></i>
+                    <i className="fab fa-facebook-f"></i>
                   </a>
                   <a href="https://www.youtube.com/channel/UCIBlyqcrLRLlkb0_JpDqNaQ?app=desktop&amp;cbrd=1">
-                    <i class="fab fa-youtube"></i>
+                    <i className="fab fa-youtube"></i>
                   </a>
                 </div>
-                <div class="mt-4">
+                <div className="mt-4">
                   <a href="download.html">Descarga las Apps de meKambio </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4">
-              <div class="footer-widget menu-widget">
+            <div className="col-lg-3 col-md-3 col-sm-4">
+              <div className="footer-widget menu-widget">
                 <a href="categories.html">
                   {" "}
-                  <h5 class="footer-title">Áreas</h5>
+                  <h5 className="footer-title">Áreas</h5>
                 </a>
                 <ul>
                   <li>
@@ -302,9 +365,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-4">
-              <div class="footer-widget menu-widget">
-                <h5 class="footer-title">
+            <div className="col-lg-3 col-md-3 col-sm-4">
+              <div className="footer-widget menu-widget">
+                <h5 className="footer-title">
                   <a href="./services.html">Servicios</a>
                 </h5>
                 <ul>
@@ -330,9 +393,9 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4">
-              <div class="footer-widget menu-widget">
-                <h5 class="footer-title">Recursos</h5>
+            <div className="col-lg-3 col-md-3 col-sm-4">
+              <div className="footer-widget menu-widget">
+                <h5 className="footer-title">Recursos</h5>
                 <ul>
                   <li>
                     <a href="faq.html">FAQ's</a>
@@ -359,14 +422,14 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="copyright-area bg-dark-blue text-white rel">
-          <div class="container">
-            <div class="copyright-inner">
+        <div className="copyright-area bg-dark-blue text-white rel">
+          <div className="container">
+            <div className="copyright-inner">
               <p>
                 © 2021-2022 <a href="index.html">meKambio</a> All rights
                 reserved.
               </p>
-              <ul class="footer-menu">
+              <ul className="footer-menu">
                 <li>
                   <a href="about-us.html">Quiénes somos </a>
                 </li>
@@ -378,11 +441,11 @@ const Footer = () => {
           </div>
 
           <button
-            class="scroll-top scroll-to-target"
+            className="scroll-top scroll-to-target"
             data-target="html"
             style={{ display: "inline-block" }}
           >
-            <span class="fas fa-angle-double-up"></span>
+            <span className="fas fa-angle-double-up"></span>
           </button>
         </div>
       </footer>

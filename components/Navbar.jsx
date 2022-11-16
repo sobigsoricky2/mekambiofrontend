@@ -4,15 +4,15 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <header class="main-header">
-        <div class="header-upper">
-          <div class="container-fluid clearfix">
-            <div class="header-inner d-flex align-items-center justify-content-between">
-              <div class="logo-outer d-lg-flex align-items-center">
-                <div class="logo">
+      <header className="main-header">
+        <div className="header-upper">
+          <div className="container-fluid clearfix">
+            <div className="header-inner d-flex align-items-center justify-content-between">
+              <div className="logo-outer d-lg-flex align-items-center">
+                <div className="logo">
                   <a href="index.html">
                     <img
-                      class="w-50"
+                      className="w-50"
                       src="/assets/images/K%20Full%20logo.svg"
                       alt="Logo"
                       title="Logo"
@@ -27,13 +27,13 @@ const Navbar = () => {
                                         </select> --> */}
               </div>
 
-              <div class="nav-outer clearfix">
-                <nav class="main-menu navbar-expand-lg">
-                  <div class="navbar-header">
-                    <div class="mobile-logo br-10 p-15">
+              <div className="nav-outer clearfix">
+                <nav className="main-menu navbar-expand-lg">
+                  <div className="navbar-header">
+                    <div className="mobile-logo br-10 p-15">
                       <a href="index.html">
                         <img
-                          class="w-100"
+                          className="w-100"
                           src="./assets/images/K Full logo.svg"
                           alt="Logo"
                           title="Logo"
@@ -43,53 +43,59 @@ const Navbar = () => {
 
                     <button
                       type="button"
-                      class="navbar-toggle"
+                      className="navbar-toggle"
                       data-toggle="collapse"
                       data-target=".navbar-collapse"
                     >
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
+                      <span className="icon-bar"></span>
+                      <span className="icon-bar"></span>
+                      <span className="icon-bar"></span>
                     </button>
                   </div>
 
-                  <div class="navbar-collapse collapse clearfix">
-                    <ul class="navigation clearfix ">
+                  <div className="navbar-collapse collapse clearfix">
+                    <ul className="navigation clearfix ">
                       <li>
                         <a
-                          class="text-decoration-none"
+                          className="text-decoration-none"
                           href="https://experts.mekambio.com/s?q="
                         >
                           Acceso a la Plataforma
                         </a>
                       </li>
                       <li>
-                        <a class=" text-decoration-none" href="how-to.use.html">
+                        <a
+                          className=" text-decoration-none"
+                          href="how-to.use.html"
+                        >
                           Cómo funciona
                         </a>
                       </li>
                       <li>
-                        <a class=" text-decoration-none" href="services.html">
-                          Servicios
-                        </a>
-                      </li>
-
-                      <li>
-                        <Link class=" text-decoration-none" href="blog">
+                        <Link className=" text-decoration-none" href="se">
                           Blog
                         </Link>
                       </li>
+
                       <li>
-                        <a class=" text-decoration-none" href="/about-us.html">
+                        <Link className=" text-decoration-none" href="services">
+                          Servicios
+                        </Link>
+                      </li>
+                      <li>
+                        <a
+                          className=" text-decoration-none"
+                          href="/about-us.html"
+                        >
                           Quiénes somos
                         </a>
                       </li>
                     </ul>
-                    <div class="menu-sidebar">
+                    <div className="menu-sidebar">
                       <button>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
                       </button>
                     </div>
                   </div>
@@ -100,18 +106,18 @@ const Navbar = () => {
         </div>
       </header>
 
-      <section class="hidden-bar">
-        <div class="inner-box text-center">
-          <div class="cross-icon">
-            <span class="fa fa-times"></span>
+      <section className="hidden-bar">
+        <div className="inner-box text-center">
+          <div className="cross-icon">
+            <span className="fa fa-times"></span>
           </div>
-          <div class="title">
+          <div className="title">
             <h4>Solicita Información </h4>
           </div>
 
-          <div class="appointment-form">
+          <div className="appointment-form">
             <form method="post" action="#">
-              <div class="form-group">
+              <div className="form-group">
                 <input
                   type="text"
                   name="text"
@@ -120,7 +126,7 @@ const Navbar = () => {
                   required=""
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <input
                   type="text"
                   name="text"
@@ -129,7 +135,7 @@ const Navbar = () => {
                   required=""
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <input
                   type="email"
                   name="email"
@@ -138,7 +144,7 @@ const Navbar = () => {
                   required=""
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <input
                   type="number"
                   name="number"
@@ -148,26 +154,26 @@ const Navbar = () => {
                 />
               </div>
 
-              <div class="form-group">
-                <button type="submit" class="theme-btn">
+              <div className="form-group">
+                <button type="submit" className="theme-btn">
                   Enviar
                 </button>
               </div>
             </form>
           </div>
 
-          <div class="social-style-one">
+          <div className="social-style-one">
             <a href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
-              <i class="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkedin-in"></i>
             </a>
             <a href="https://www.instagram.com/meKambio_/">
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </a>
             <a href="https://www.facebook.com/meKambio">
-              <i class="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f"></i>
             </a>
             <a href="https://www.youtube.com/channel/UCIBlyqcrLRLlkb0_JpDqNaQ?app=desktop&amp;cbrd=1">
-              <i class="fab fa-youtube"></i>
+              <i className="fab fa-youtube"></i>
             </a>
           </div>
         </div>

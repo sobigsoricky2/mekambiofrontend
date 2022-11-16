@@ -303,22 +303,22 @@ const Experts = () => {
             </div>
           </div>
         </section>
-        {/* <section class="pricing-section bg-lighter rel z-2 pt-120 rpt-90 pb-100 rpb-70">
-      <div class="container">
-          <div class="section-title text-center mb-50">
-              <span class="sub-title-two">Plan de Precios </span>
+        {/* <section className="pricing-section bg-lighter rel z-2 pt-120 rpt-90 pb-100 rpb-70">
+      <div className="container">
+          <div className="section-title text-center mb-50">
+              <span className="sub-title-two">Plan de Precios </span>
               <h2>Planes de Suscripción </h2>
           </div>
-          <div class="row justify-content-center">
+          <div className="row justify-content-center">
 
-              <div class="col-xl-4 col-md-6">
-                  <div class="pricin-item wow fadeInUp delay-0-4s animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                      <span class="popularity">popular</span>
-                      <div class="icon">
-                          <img style="border-radius:50% ;" class="w-75" src="./assets/images/pricing/Basic Suscription.png" alt="Icon">
+              <div className="col-xl-4 col-md-6">
+                  <div className="pricin-item wow fadeInUp delay-0-4s animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                      <span className="popularity">popular</span>
+                      <div className="icon">
+                          <img style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/Basic Suscription.png" alt="Icon">
                       </div>
                       <h4>Basic </h4>
-                      <ul class="list-style-two">
+                      <ul className="list-style-two">
                           <li>Precio Subscripción : 0€</li>
                           <li>Duración : 1 año </li>
                           <li>Anuncios Destacados : -</li>
@@ -326,18 +326,18 @@ const Experts = () => {
                           <li>Evento "Sesiones": 2</li>
                           <li>Comisión : 20%</li>
                       </ul>
-                      <span class="price">0</span>
-                      <a href="pricing.html" class="theme-btn style-two">Elige el plan <i class="fas fa-arrow-right"></i></a>
+                      <span className="price">0</span>
+                      <a href="pricing.html" className="theme-btn style-two">Elige el plan <i className="fas fa-arrow-right"></i></a>
                   </div>
               </div>
-              <div class="col-xl-4 col-md-6 pr-0">
-                  <div class="pricin-item wow fadeInUp delay-0-6s animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                      <span class="popularity">popular</span>
-                      <div class="icon">
-                          <img style="border-radius:50% ;" class="w-75" src="./assets/images/pricing/K_Advanced Subscription.png" alt="Icon">
+              <div className="col-xl-4 col-md-6 pr-0">
+                  <div className="pricin-item wow fadeInUp delay-0-6s animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                      <span className="popularity">popular</span>
+                      <div className="icon">
+                          <img style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/K_Advanced Subscription.png" alt="Icon">
                       </div>
                       <h4>Advance </h4>
-                      <ul class="list-style-two">
+                      <ul className="list-style-two">
                           <li>Precio Subscripción : 99.90€</li>
                           <li>Duración: - 1 año </li>
                           <li>Anuncios Destacados : -</li>
@@ -345,18 +345,18 @@ const Experts = () => {
                           <li>Evento "Sesiones": 4</li>
                           <li>Comisión : 15%</li>
                       </ul>
-                      <span class="price">8.21</span>
-                      <a href="pricing.html" class="theme-btn style-two">Elige el plan  <i class="fas fa-arrow-right"></i></a>
+                      <span className="price">8.21</span>
+                      <a href="pricing.html" className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></a>
                   </div>
               </div>
-              <div class="col-xl-4 col-md-6 pr-0">
-                  <div class="pricin-item wow fadeInUp delay-0-2s animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                      <span class="popularity">popular</span>
-                      <div class="icon">
-                          <img style="border-radius:50% ;" class="w-75" src="./assets/images/pricing/K_Premium Suscription.png" alt="Icon">
+              <div className="col-xl-4 col-md-6 pr-0">
+                  <div className="pricin-item wow fadeInUp delay-0-2s animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                      <span className="popularity">popular</span>
+                      <div className="icon">
+                          <img style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/K_Premium Suscription.png" alt="Icon">
                       </div>
                       <h4>Premium </h4>
-                      <ul class="list-style-two">
+                      <ul className="list-style-two">
                           <li>Precio Subscripción : 149.90€</li>
                           <li>Duración: 1 año </li>
                           <li>Anuncios Destacados : 2</li>
@@ -364,8 +364,8 @@ const Experts = () => {
                           <li>Evento "Sesiones": 16</li>
                           <li>Comisión : 15%</li>
                       </ul>
-                      <span class="price">12.32</span>
-                      <a href="pricing.html" class="theme-btn style-two">Elige el plan  <i class="fas fa-arrow-right"></i></a>
+                      <span className="price">12.32</span>
+                      <a href="pricing.html" className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></a>
                   </div>
               </div>
               

@@ -4,20 +4,17 @@ const VideoSection = () => {
   return (
     <div>
       <div
-        class="video-section wow fadeInUp delay-0-2s animated mt-100 mb-100"
+        className="video-section wow fadeInUp delay-0-2s animated mt-100 mb-100"
         style={{ visibility: "visible", animationName: "fadeInUp" }}
       >
-        <div class="container">
-          <div class="video-inner overlay">
-            <img
-              src="/assets/images/video/video-section-bg.jpg"
-              alt="Video"
-            />
+        <div className="container">
+          <div className="video-inner overlay">
+            <img src="/assets/images/video/video-section-bg.jpg" alt="Video" />
             <a
               href="https://www.youtube.com/watch?v=smbwVTieDJk"
-              class="mfp-iframe video-play"
+              className="mfp-iframe video-play"
             >
-              <i class="fas fa-play"></i>
+              <i className="fas fa-play"></i>
             </a>
           </div>
         </div>
