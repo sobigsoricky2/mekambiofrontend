@@ -4,6 +4,7 @@ import Banner from "../../components/Banner";
 import { useParams } from "react-router-dom";
 import { getImage, ContentfulClient } from "./utils";
 import { useRouter } from "next/router";
+
 const singleBlog = (props) => {
   const router = useRouter();
   const { pid } = router.query;
@@ -70,7 +71,12 @@ const singleBlog = (props) => {
                   </div>
                   <div className="social-style-two">
                     <h6>Share :</h6>
-                    <a href="contact.html">
+                    <a
+                      href="https://www.facebook.com/"
+                      onClick={(e) => {
+                        navigator.clipboard.writeText("helloAgain");
+                      }}
+                    >
                       <i className="fab fa-facebook-f"></i>
                     </a>
                     <a href="contact.html">

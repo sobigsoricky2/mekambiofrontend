@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
-import { ContentfulClient } from "../blog/utils";
+import { ContentfulClient } from "../blogs/utils";
 import AreasSectionEven from "./AreasSectionEven";
 const Areas = () => {
   const [areas, setAreas] = useState([]);

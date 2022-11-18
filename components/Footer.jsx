@@ -3,51 +3,35 @@ import axios from "axios";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
-  const sendMailRelayEmail = async (email) => {
-    const config = {
-      headers: {
-        "x-auth-token": "ukRNKGy1FZxNajq6NKAVMqsh1URk5xg85LDsfHac",
-      },
-    };
-    const mailRelayData = JSON.stringify({
-      status: "active",
-      email: email,
-    });
 
-    try {
-      const res = await axios.post(
-        "https://mekambio.ipzmarketing.com/api/v1/subscribers",
-        mailRelayData,
-        config
-      );
-      console.log(res);
-    } catch (error) {
-      console.log(error);
-    }
-  };
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email);
 
+    const res = await fetch("/api/googlesheets", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: email }),
+    });
+    const res2 = await fetch("/api/mailRelay", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Auth-Token": "ukRNKGy1FZxNajq6NKAVMqsh1URk5xg85LDsfHac",
+      },
+      body: JSON.stringify({ email: email }),
+    });
+    if (res.status == 200) {
+      alert("Subscriber Added");
+    }
+    console.log(res2);
     try {
-      const data = JSON.stringify({ email: email });
-      const token = process.env.EMAIL_TOKEN;
-      const config = {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      };
-
-      const res = await axios.post(
-        "https://sheet.best/api/sheets/ad772aad-1264-4d7c-9b49-b6153a956a33",
-        data,
-        config
-      );
-      console.log(res);
-      sendMailRelayEmail(email);
+      // sendSheetsData({ email: email });
     } catch (error) {
       console.log(error);
     }
@@ -217,7 +201,10 @@ const Footer = () => {
                     <span className="sub-title-two">Newsletters</span>
                     <h2>Suscríbete para estar al día de nuestros servicios</h2>
                   </div>
-                  <form className="newsletter-form mt-25">
+                  <form
+                    className="newsletter-form mt-25"
+                    onSubmit={(e) => handleSubmit(e)}
+                  >
                     <div className="newsletter-radios mb-25">
                       <div className="custom-control custom-radio">
                         <input
@@ -247,10 +234,7 @@ const Footer = () => {
                         value={email}
                         onChange={(e) => handleChange(e)}
                       />
-                      <button
-                        onClick={(e) => handleSubmit(e)}
-                        className="theme-btn style-two"
-                      >
+                      <button type="submit" className="theme-btn style-two">
                         Enviar<i className="fas fa-arrow-right"></i>
                       </button>
                     </div>

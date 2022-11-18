@@ -23,7 +23,7 @@ const index = ({ posts }) => {
       .catch(console.error);
   }, []);
 
-  // console.log(blogs);
+  console.log(blogs);
   return (
     <Layout>
       <Banner />
@@ -36,6 +36,7 @@ const index = ({ posts }) => {
                   <div
                     className="blog-standard-item wow fadeInUp delay-0-2s animated"
                     style={{ visibility: "visible", animationName: "fadeInUp" }}
+                    key={sys.id}
                   >
                     <div className="image">
                       <img
@@ -73,7 +74,7 @@ const index = ({ posts }) => {
                         </h3>
                         <p>{fields?.shortDescription}</p>
                         <Link
-                          href={`blog/${fields?.title}`}
+                          href={`blogs/${fields?.title}`}
                           className="theme-btn style-two"
                         >
                           Leer más <i className="fas fa-arrow-right"></i>
