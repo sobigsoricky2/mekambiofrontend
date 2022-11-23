@@ -4,6 +4,40 @@ import axios from "axios";
 const Footer = () => {
   const [email, setEmail] = useState("");
 
+  const [formData, setFormData] = useState({
+    name: "",
+    surname: "",
+    formEmail: "",
+    phone: "",
+  });
+  const handleFormdataChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFormDataSubmit = async (e) => {
+    e.preventDefault();
+    const res2 = await fetch("/api/email", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    console.log(res2);
+    const res = await fetch("/api/googlesheetsFormData", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    if (res2.status == 200 && res.status == 200) {
+      alert("Subscriber Added and Email Sent");
+    }
+  };
+
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
@@ -36,6 +70,8 @@ const Footer = () => {
       console.log(error);
     }
   };
+
+  const { name, formEmail, surname, phone } = formData;
 
   return (
     <div>
@@ -247,41 +283,45 @@ const Footer = () => {
             <div className="col-lg-3 col-sm-4">
               <div className="footer-widget about-widget">
                 <h5 className="footer-title">Solicita Información </h5>
-                <form method="post" action="#">
+                <form method="post" onSubmit={(e) => handleFormDataSubmit(e)}>
                   <div className="form-group">
                     <input
                       type="text"
-                      name="text"
-                      value=""
+                      name="name"
+                      value={name}
                       placeholder="Nombre"
                       required=""
+                      onChange={(e) => handleFormdataChange(e)}
                     />
                   </div>
                   <div className="form-group">
                     <input
                       type="text"
-                      name="text"
-                      value=""
+                      name="surname"
+                      value={surname}
                       placeholder="Apellidos"
                       required=""
+                      onChange={(e) => handleFormdataChange(e)}
                     />
                   </div>
                   <div className="form-group">
                     <input
                       type="email"
-                      name="email"
-                      value=""
+                      name="formEmail"
+                      value={formEmail}
                       placeholder="Email"
                       required=""
+                      onChange={(e) => handleFormdataChange(e)}
                     />
                   </div>
                   <div className="form-group">
                     <input
                       type="number"
-                      name="number"
-                      value=""
+                      name="phone"
+                      value={phone}
                       placeholder="teléfono"
                       required=""
+                      onChange={(e) => handleFormdataChange(e)}
                     />
                   </div>
 

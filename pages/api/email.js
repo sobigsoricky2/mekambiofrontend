@@ -1,33 +1,25 @@
-var http = require("https");
+import sendgrid from "@sendgrid/mail";
 
-var options = {
-  method: "POST",
-  hostname: "mekambio.ipzmarketing.com",
-  port: null,
-  path: "/api/v1/subscribers",
-  headers: {
-    "content-type": "application/json",
-    "x-auth-token": "ukRNKGy1FZxNajq6NKAVMqsh1URk5xg85LDsfHac",
-  },
-};
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
-var req = http.request(options, function (res) {
-  var chunks = [];
+async function sendEmail(req, res) {
+  try {
+    await sendgrid.send({
+      to: "info@mekambio.com",
+      from: "ajitesh314mishra@gmail.com",
+      subject: `${req.body.subject}`,
+      html: `<h2>name - ${req.body.name || `none`}</h2> <h2>surname - ${
+        req.body.surname
+      }</h2> <h2>email - ${req.body.formEmail}</h2>   <h2>phone - ${
+        req.body.phone
+      }</h2>   
+      `,
+    });
+  } catch (error) {
+    return res.status(error.statusCode || 500).json({ error: error.message });
+  }
 
-  res.on("data", function (chunk) {
-    chunks.push(chunk);
-  });
+  return res.status(200).json({ error: "" });
+}
 
-  res.on("end", function () {
-    var body = Buffer.concat(chunks);
-    console.log(body.toString());
-  });
-});
-
-req.write(
-  JSON.stringify({
-    status: "inactive",
-    email: "testingAgain@gmail.com",
-  })
-);
-req.end();
+export default sendEmail;
