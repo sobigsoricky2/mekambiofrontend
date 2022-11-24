@@ -26,7 +26,7 @@ const index = ({ posts }) => {
   console.log(blogs);
   return (
     <Layout>
-      <Banner />
+      <Banner title="Blogs" />
       <section className="blog-standard-area py-130 rpt-95 rpb-100">
         <div className="container">
           <div className="row">

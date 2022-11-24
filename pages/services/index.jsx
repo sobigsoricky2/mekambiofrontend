@@ -45,8 +45,8 @@ const Services = () => {
 
   console.log(areas);
   return (
-    <Layout title="Servicios">
-      <Banner />
+    <Layout>
+      <Banner title="Servicios" />
 
       <>
         <section className="why-learn-area pb-75 pt-110 rpb-100">
