@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
-import { ContentfulClient } from "../blogs/utils";
+import { ContentfulClient} from '../../helpers/utils'
 import AreasSectionEven from "./AreasSectionEven";
 import Link from "next/link";
 const Areas = () => {
