@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Advertise = () => {
   return (
     <div>
@@ -17,12 +17,12 @@ const Advertise = () => {
                     Accede a la base de profesionales que pueden ayudarte a
                     impulsar tu carrera
                   </p>
-                  <a
+                  <Link
                     href="https://experts.mekambio.com/s?q="
                     className="theme-btn"
                   >
                     Acceso a la Plataforma<i className="fas fa-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -37,12 +37,12 @@ const Advertise = () => {
                     Regístrate como Expert y ayuda a profesionales a progresar
                     en sus carreras{" "}
                   </p>
-                  <a
+                  <Link
                     href="https://experts.mekambio.com/es-ES/expert_signup"
                     className="theme-btn"
                   >
                     Únete al equipo<i className="fas fa-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

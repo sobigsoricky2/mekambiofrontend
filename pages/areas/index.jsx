@@ -3,6 +3,7 @@ import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
 import { ContentfulClient } from "../blogs/utils";
 import AreasSectionEven from "./AreasSectionEven";
+import Link from "next/link";
 const Areas = () => {
   const [areas, setAreas] = useState([]);
 
@@ -74,12 +75,12 @@ const Areas = () => {
                     </div>
                     <h4>{area?.fields?.title}</h4>
                     <p>{area?.fields?.content}</p>
-                    <a href="#sec-1" className="details-btn">
+                    <Link href="#sec-1" className="details-btn">
                       <i
                         className="fas fa-long-arrow-alt-right"
                         target="_blank"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -164,13 +165,13 @@ const Areas = () => {
                       </div>
                     </li>
                   </ul>
-                  <a
+                  <Link
                     href="https://experts.mekambio.com/s?category=regreso-al-mercado-laboral&sort_by=3&view=grid"
                     className="theme-btn"
                   >
                     Encuentra a tu Expert
                     <i className="fas fa-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

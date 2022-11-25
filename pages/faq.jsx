@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 const Faq = () => {
   return (
@@ -21,7 +22,7 @@ const Faq = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="card">
-                    <a
+                    <Link
                       className="card-header"
                       href="#"
                       data-toggle="collapse"
@@ -31,7 +32,7 @@ const Faq = () => {
                     >
                       ¿Cuánto cuesta ser Expert en meKambio?
                       <span className="toggle-btn"></span>
-                    </a>
+                    </Link>
                     <div
                       id="collapse2"
                       className="collapse show"
@@ -52,7 +53,7 @@ const Faq = () => {
                     </div>
                   </div>
                   <div className="card">
-                    <a
+                    <Link
                       className="collapsed card-header"
                       href="#"
                       data-toggle="collapse"
@@ -62,7 +63,7 @@ const Faq = () => {
                     >
                       ¿Qué coste tiene un plan de suscripción?
                       <span className="toggle-btn"></span>
-                    </a>
+                    </Link>
                     <div
                       id="collapse0"
                       className="collapse"
@@ -81,7 +82,7 @@ const Faq = () => {
                   </div>
 
                   <div className="card">
-                    <a
+                    <Link
                       className="collapsed card-header"
                       href="#"
                       data-toggle="collapse"
@@ -91,7 +92,7 @@ const Faq = () => {
                     >
                       ¿Cuánto es la comisión?
                       <span className="toggle-btn"></span>
-                    </a>
+                    </Link>
                     <div
                       id="collapse4"
                       className="collapse"
@@ -111,7 +112,7 @@ const Faq = () => {
                     </div>
                   </div>
                   <div className="card">
-                    <a
+                    <Link
                       className="collapsed card-header"
                       href="#"
                       data-toggle="collapse"
@@ -121,7 +122,7 @@ const Faq = () => {
                     >
                       ¿Cómo se paga al Expert?
                       <span className="toggle-btn"></span>
-                    </a>
+                    </Link>
                     <div
                       id="collapse6"
                       className="collapse"
@@ -139,7 +140,7 @@ const Faq = () => {
                     </div>
                   </div>
                   <div className="card">
-                    <a
+                    <Link
                       className="collapsed card-header"
                       href="#"
                       data-toggle="collapse"
@@ -149,7 +150,7 @@ const Faq = () => {
                     >
                       ¿Cuánto debe durar una sesión?
                       <span className="toggle-btn"></span>
-                    </a>
+                    </Link>
                     <div
                       id="collapse8"
                       className="collapse"
@@ -168,7 +169,7 @@ const Faq = () => {
                 </div>
                 <div className="col-lg-12">
                   <div className="card">
-                    <a
+                    <Link
                       className="collapsed card-header"
                       href="#"
                       data-toggle="collapse"
@@ -178,7 +179,7 @@ const Faq = () => {
                     >
                       ¿Qué precio he de asignar a cada sesión?
                       <span className="toggle-btn"></span>
-                    </a>
+                    </Link>
                     <div
                       id="collapse1"
                       className="collapse"
@@ -201,7 +202,7 @@ const Faq = () => {
                     </div>
                   </div>
                   <div className="card">
-                    <a
+                    <Link
                       className="collapsed card-header"
                       href="#"
                       data-toggle="collapse"
@@ -211,7 +212,7 @@ const Faq = () => {
                     >
                       ¿Si alguien no se presenta, se me pagará la sesión?
                       <span className="toggle-btn"></span>
-                    </a>
+                    </Link>
                     <div
                       id="collapse3"
                       className="collapse"
@@ -223,7 +224,8 @@ const Faq = () => {
                           gusta. Sin embargo, puede haber situaciones en las que
                           no haya otra alternativa, y distintas situaciones
                           requieren distintas soluciones. Echa un vistazo a
-                          nuestros <a href="/terms.html">Términos de Uso</a> y
+                          nuestros{" "}
+                          <Link href="/terms.html">Términos de Uso</Link> y
                           accede a qué sucede en cada caso.
                         </p>
                       </div>

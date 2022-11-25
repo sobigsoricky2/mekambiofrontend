@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const TeamLanding = () => {
   return (
     <div>
@@ -35,9 +35,9 @@ const TeamLanding = () => {
                     personales
                   </li>
                 </ul>
-                <a href="about-us.html" className="theme-btn">
+                <Link href="about-us.html" className="theme-btn">
                   Saber más <i className="fas fa-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">
@@ -56,10 +56,10 @@ const TeamLanding = () => {
                         <h4>Alejandro Garrido</h4>
                         <span>Retail Multichannel Manager at Google</span>
                         {/* <!-- <div className="social-style-two">
-                                                    <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                                                    <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                                                    <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                                                    <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                                                    <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                                                    <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                                                    <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                                                    <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                                                 </div> --> */}
                       </div>
                     </div>
@@ -75,10 +75,10 @@ const TeamLanding = () => {
                           Comms. at SEAT
                         </span>
                         {/* <!-- <div className="social-style-two">
-                                                <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                                                <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                                                <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                                                <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                                                <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                                             </div> --> */}
                       </div>
                     </div>
@@ -96,10 +96,10 @@ const TeamLanding = () => {
                         <h4>Jorge Dolz</h4>
                         <span>General Manager at JDZ</span>
                         {/* <!-- <div className="social-style-two">
-                                                <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                                                <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                                                <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                                                <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                                                <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                                             </div> --> */}
                       </div>
                     </div>
@@ -112,10 +112,10 @@ const TeamLanding = () => {
                         <h4>José Barroso</h4>
                         <span>Career & Executive Coach</span>
                         {/* <!-- <div className="social-style-two">
-                                                <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                                                <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                                                <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                                                <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                                                <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                                             </div> --> */}
                       </div>
                     </div>
@@ -130,10 +130,10 @@ const TeamLanding = () => {
                           Business Leader at Zendesk, Ex-Google and Ex-LinkedIn
                         </span>
                         {/* <!-- <div className="social-style-two">
-                                                <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                                                <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                                                <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                                                <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                                                <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                                                <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                                             </div> --> */}
                       </div>
                     </div>

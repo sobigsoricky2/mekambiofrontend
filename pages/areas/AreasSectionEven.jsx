@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const AreasSectionEven = ({ areaSection, swap }) => {
   return (
     <div className="row align-items-center large-gap">
@@ -27,13 +27,13 @@ const AreasSectionEven = ({ areaSection, swap }) => {
             ))}
           </ul>
         </div>
-        <a
+        <Link
           href="https://experts.mekambio.com/s?category=progresion-de-carrera&sort_by=3&view=grid"
           className="theme-btn border"
         >
           Encuentra a tu Expert
           <i className="fas fa-arrow-right" />
-        </a>
+        </Link>
       </div>
       <div className="col-lg-7">
         <div

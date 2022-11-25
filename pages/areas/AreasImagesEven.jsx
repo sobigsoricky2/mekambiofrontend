@@ -1,7 +1,6 @@
 import React from "react";
 
 const AreasImagesEven = ({ imgUrl1, imgUrl2, logo }) => {
-  console.log(imgUrl1, imgUrl2, logo);
   return (
     <div
       className="rules-condition-image-part wow fadeInRight delay-0-2s animated animated"

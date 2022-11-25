@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 const Experts = () => {
   return (
@@ -62,12 +63,12 @@ const Experts = () => {
                       </div>
                     </li>
                   </ul>
-                  <a
+                  <Link
                     href="https://experts.mekambio.com/es-ES/expert_signup"
                     className="theme-btn"
                   >
                     Únete al Equipo <i className="fas fa-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -216,13 +217,13 @@ const Experts = () => {
               </div>
             </div>
             <div className="mt-2 mb-5 text-center">
-              <a
+              <Link
                 href="https://experts.mekambio.com/es-ES/expert_signup"
                 className="theme-btn mt-3"
               >
                 Únete al Equipo
                 <i className="fas fa-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -249,54 +250,54 @@ const Experts = () => {
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="logo-item w-25">
-                    <a href="https://www.upc.edu/ca">
+                    <Link href="https://www.upc.edu/ca">
                       <img
                         src="./assets/images/client-logos/UPC.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://epseb.upc.edu/ca">
+                    <Link href="https://epseb.upc.edu/ca">
                       <img
                         src="./assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.eae.es/">
+                    <Link href="https://www.eae.es/">
                       <img
                         src="./assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.threepoints.com/">
+                    <Link href="https://www.threepoints.com/">
                       <img
                         className="w-50"
                         src="./assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.inesdi.com/">
+                    <Link href="https://www.inesdi.com/">
                       <img
                         className="w-75"
                         src="./assets/images/client-logos/Inesdi Digital Business School.jfif"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.deustoformacion.com/">
+                    <Link href="https://www.deustoformacion.com/">
                       <img
                         src="./assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -327,7 +328,7 @@ const Experts = () => {
                           <li>Comisión : 20%</li>
                       </ul>
                       <span className="price">0</span>
-                      <a href="pricing.html" className="theme-btn style-two">Elige el plan <i className="fas fa-arrow-right"></i></a>
+                      <Link href="pricing.html" className="theme-btn style-two">Elige el plan <i className="fas fa-arrow-right"></i></Link>
                   </div>
               </div>
               <div className="col-xl-4 col-md-6 pr-0">
@@ -346,7 +347,7 @@ const Experts = () => {
                           <li>Comisión : 15%</li>
                       </ul>
                       <span className="price">8.21</span>
-                      <a href="pricing.html" className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></a>
+                      <Link href="pricing.html" className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></Link>
                   </div>
               </div>
               <div className="col-xl-4 col-md-6 pr-0">
@@ -365,7 +366,7 @@ const Experts = () => {
                           <li>Comisión : 15%</li>
                       </ul>
                       <span className="price">12.32</span>
-                      <a href="pricing.html" className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></a>
+                      <Link href="pricing.html" className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></Link>
                   </div>
               </div>
               
@@ -373,13 +374,13 @@ const Experts = () => {
       </div>
   </section> */}
         <div className="mt-2 mb-5 text-center" style={{ marginBottom: 30 }}>
-          <a
+          <Link
             href="https://www.mekambio.com/pricing.html"
             className="theme-btn mt-3 mb-50"
           >
             Ver Planes de Suscripción
             <i className="fas fa-arrow-right" />
-          </a>
+          </Link>
         </div>
       </>
     </Layout>

@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "../components/Banner";
-import Layout from "../components/Layout";
-
+import Banner from "../../components/Banner";
+import Layout from "../../components/Layout";
+import Link from "next/link";
 const AboutUs = () => {
   return (
     <Layout>
@@ -139,10 +139,10 @@ const AboutUs = () => {
                     />
                     {"{"}/*{" "}
                     {/* <div className="social-style-two">
-                              <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                              <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                              <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                              <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                           </div> */}{" "}
                     */{"}"}
                   </div>
@@ -161,10 +161,10 @@ const AboutUs = () => {
                     />
                     {"{"}/*{" "}
                     {/* <div className="social-style-two">
-                              <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                              <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                              <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                              <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                           </div> */}{" "}
                     */{"}"}
                   </div>
@@ -183,10 +183,10 @@ const AboutUs = () => {
                     />
                     {"{"}/*{" "}
                     {/* <div className="social-style-two">
-                              <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                              <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                              <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                              <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                           </div> */}{" "}
                     */{"}"}
                   </div>
@@ -205,10 +205,10 @@ const AboutUs = () => {
                     />
                     {"{"}/*{" "}
                     {/* <div className="social-style-two">
-                              <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                              <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                              <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                              <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                           </div> */}{" "}
                     */{"}"}
                   </div>
@@ -227,10 +227,10 @@ const AboutUs = () => {
                     />
                     {"{"}/*{" "}
                     {/* <div className="social-style-two">
-                              <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                              <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                              <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                              <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                           </div> */}{" "}
                     */{"}"}
                   </div>
@@ -249,10 +249,10 @@ const AboutUs = () => {
                     />
                     {"{"}/*{" "}
                     {/* <div className="social-style-two">
-                              <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                              <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                              <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                              <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                           </div> */}{" "}
                     */{"}"}
                   </div>
@@ -271,10 +271,10 @@ const AboutUs = () => {
                     />
                     {"{"}/*{" "}
                     {/* <div className="social-style-two">
-                              <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                              <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                              <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                              <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                           </div> */}{" "}
                     */{"}"}
                   </div>
@@ -293,10 +293,10 @@ const AboutUs = () => {
                     />
                     {"{"}/*{" "}
                     {/*  <div className="social-style-two">
-                              <a href="contact.html"><i className="fab fa-twitter"></i></a>
-                              <a href="contact.html"><i className="fab fa-facebook-f"></i></a>
-                              <a href="contact.html"><i className="fab fa-instagram"></i></a>
-                              <a href="contact.html"><i className="fab fa-pinterest-p"></i></a>
+                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
+                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
                           </div> */}{" "}
                     */{"}"}
                   </div>
@@ -307,12 +307,12 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <a
+            <Link
               href="https://www.meKambio.com/s?q="
               className="theme-btn float-right"
             >
               Ver más <i className="fas fa-arrow-right" />
-            </a>
+            </Link>
           </div>
         </section>
         <section className="partner-section rel z-1  pt-50 rpt-90  rpb-55">
@@ -340,55 +340,55 @@ const AboutUs = () => {
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="logo-item w-25">
-                    <a href="https://experts.mekambio.com/s?q=">
+                    <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://experts.mekambio.com/s?q=">
+                    <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         src="https://www.wemeanbusinesscoalition.org/wp-content/uploads/2019/09/Salesforce-LOGO.jpg"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://experts.mekambio.com/s?q=">
+                    <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://experts.mekambio.com/s?q=">
+                    <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         className="w-100"
                         src="https://oroinc.com/orocrm/wp-content/uploads/sites/8/2017/06/Zendesk_logo_wordmark.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://experts.mekambio.com/s?q=">
+                    <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         className="w-100"
                         src="https://static.borngroup.com/uploads/2020/09/Logo-Mirakl.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25 text-center">
-                    <a href="https://experts.mekambio.com/s?q=">
+                    <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         className="w-50"
                         src="https://th.bing.com/th/id/R.8126361d4fe00f6b67cacd6b751998d4?rik=eWb%2fNt6IvMli4g&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2016%2f05%2frainbow-apple-logo.png&ehk=Dk5yXp4Wc0DC4oScBdA9VamWYAANMF5ozQGYD8uAkuI%3d&risl=&pid=ImgRaw&r=0"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -404,54 +404,54 @@ const AboutUs = () => {
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="logo-item w-25">
-                    <a href="https://www.upc.edu/ca">
+                    <Link href="https://www.upc.edu/ca">
                       <img
                         src="/assets/images/client-logos/UPC.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://epseb.upc.edu/ca">
+                    <Link href="https://epseb.upc.edu/ca">
                       <img
                         src="/assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.eae.es/">
+                    <Link href="https://www.eae.es/">
                       <img
                         src="/assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.threepoints.com/">
+                    <Link href="https://www.threepoints.com/">
                       <img
                         className="w-50"
                         src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.inesdi.com/">
+                    <Link href="https://www.inesdi.com/">
                       <img
                         className="w-75"
                         src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.deustoformacion.com/">
+                    <Link href="https://www.deustoformacion.com/">
                       <img
                         src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -486,13 +486,13 @@ const AboutUs = () => {
                       Accede a la base de profesionales que pueden ayudarte a
                       impulsar tu carrera
                     </p>
-                    <a
+                    <Link
                       href="https://experts.mekambio.com/s?q="
                       className="theme-btn"
                     >
                       Acceso a la Plataforma
                       <i className="fas fa-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -507,12 +507,12 @@ const AboutUs = () => {
                       Regístrate como Expert y ayuda a profesionales a progresar
                       en sus carreras
                     </p>
-                    <a
+                    <Link
                       href="https://experts.mekambio.com/es-ES/expert_signup"
                       className="theme-btn "
                     >
                       Únete al Equipo <i className="fas fa-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

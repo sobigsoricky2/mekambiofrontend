@@ -78,13 +78,13 @@ const Services = () => {
                             </div>
                             <h4>{item?.fields?.title}</h4>
                             <p>{item?.fields?.content}</p>
-                            <a
+                            <Link
                               href={item?.fields?.link}
                               className="read-more color-two"
                             >
                               {item?.fields?.linkTitle}
                               <i className="fas fa-arrow-right" />
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       ))}
@@ -149,12 +149,12 @@ const Services = () => {
                               alt="Icon"
                             />
                           </div>
-                          <a href="./categories.html#sec-1">
+                          <Link href="./categories.html#sec-1">
                             {" "}
                             <h4 className="text-black-50">
                               {area.fields.title}
                             </h4>
-                          </a>
+                          </Link>
                         </div>
                       ))}
                     </div>
@@ -187,54 +187,54 @@ const Services = () => {
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="logo-item w-25">
-                    <a href="https://www.upc.edu/ca">
+                    <Link href="https://www.upc.edu/ca">
                       <img
                         src="./assets/images/client-logos/UPC.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://epseb.upc.edu/ca">
+                    <Link href="https://epseb.upc.edu/ca">
                       <img
                         src="./assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.eae.es/">
+                    <Link href="https://www.eae.es/">
                       <img
                         src="./assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.threepoints.com/">
+                    <Link href="https://www.threepoints.com/">
                       <img
                         className="w-50"
                         src="./assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.inesdi.com/">
+                    <Link href="https://www.inesdi.com/">
                       <img
                         className="w-75"
                         src="./assets/images/client-logos/Inesdi Digital Business School.jfif"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <a href="https://www.deustoformacion.com/">
+                    <Link href="https://www.deustoformacion.com/">
                       <img
                         src="./assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

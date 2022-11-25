@@ -10,14 +10,14 @@ const Navbar = () => {
             <div className="header-inner d-flex align-items-center justify-content-between">
               <div className="logo-outer d-lg-flex align-items-center">
                 <div className="logo">
-                  <a href="index.html">
+                  <Link href="index.html">
                     <img
                       className="w-50"
                       src="/assets/images/K%20Full%20logo.svg"
                       alt="Logo"
                       title="Logo"
                     />{" "}
-                  </a>
+                  </Link>
                 </div>
 
                 {/* <!-- <select name="select-languages" id="select-languages">
@@ -31,14 +31,14 @@ const Navbar = () => {
                 <nav className="main-menu navbar-expand-lg">
                   <div className="navbar-header">
                     <div className="mobile-logo br-10 p-15">
-                      <a href="index.html">
+                      <Link href="index.html">
                         <img
                           className="w-100"
                           src="./assets/images/K Full logo.svg"
                           alt="Logo"
                           title="Logo"
                         />
-                      </a>
+                      </Link>
                     </div>
 
                     <button
@@ -56,20 +56,20 @@ const Navbar = () => {
                   <div className="navbar-collapse collapse clearfix">
                     <ul className="navigation clearfix ">
                       <li>
-                        <a
+                        <Link
                           className="text-decoration-none"
                           href="https://experts.mekambio.com/s?q="
                         >
                           Acceso a la Plataforma
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className=" text-decoration-none"
-                          href="how-to.use.html"
+                          href="how-to-use"
                         >
                           Cómo funciona
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <Link className=" text-decoration-none" href="/blogs">
@@ -83,12 +83,9 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li>
-                        <a
-                          className=" text-decoration-none"
-                          href="/about-us.html"
-                        >
+                        <Link className=" text-decoration-none" href="/aboutus">
                           Quiénes somos
-                        </a>
+                        </Link>
                       </li>
                       <li></li>
                     </ul>
@@ -165,18 +162,18 @@ const Navbar = () => {
           </div>
 
           <div className="social-style-one">
-            <a href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
+            <Link href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
               <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.instagram.com/meKambio_/">
+            </Link>
+            <Link href="https://www.instagram.com/meKambio_/">
               <i className="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/meKambio">
+            </Link>
+            <Link href="https://www.facebook.com/meKambio">
               <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCIBlyqcrLRLlkb0_JpDqNaQ?app=desktop&amp;cbrd=1">
+            </Link>
+            <Link href="https://www.youtube.com/channel/UCIBlyqcrLRLlkb0_JpDqNaQ?app=desktop&amp;cbrd=1">
               <i className="fab fa-youtube"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

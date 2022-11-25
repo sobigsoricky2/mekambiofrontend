@@ -44,9 +44,9 @@ const index = ({ posts }) => {
                         // src=""
                         alt="Blog"
                       />
-                      <a href="#">
+                      <Link href="#">
                         <i className="fas fa-share-alt"></i>
-                      </a>
+                      </Link>
                     </div>
                     <div className="blog-standard-content">
                       <div className="author">
@@ -62,15 +62,17 @@ const index = ({ posts }) => {
                           </li>
                           <li>
                             <i className="far fa-calendar-alt"></i>{" "}
-                            <a href="blog-details.html">February 20, 2022</a>
+                            <Link href="blog-details.html">
+                              February 20, 2022
+                            </Link>
                           </li>
                           <li>
                             <i className="far fa-comments"></i>{" "}
-                            <a href="blog-details.html">Comments (05)</a>
+                            <Link href="blog-details.html">Comments (05)</Link>
                           </li>
                         </ul>
                         <h3>
-                          <a href="blog-details.html">{fields?.title}</a>
+                          <Link href="blog-details.html">{fields?.title}</Link>
                         </h3>
                         <p>{fields?.shortDescription}</p>
                         <Link
@@ -94,10 +96,10 @@ const index = ({ posts }) => {
                                         <span className="sr-only">(current)</span>
                                     </span>
                                 </li>
-                                <li className="page-item"><a className="page-link" href="#">02</a></li>
-                                <li className="page-item"><a className="page-link" href="#">03</a></li>
+                                <li className="page-item"><Link className="page-link" href="#">02</Link></li>
+                                <li className="page-item"><Link className="page-link" href="#">03</Link></li>
                                 <li className="page-item">
-                                    <a className="page-link" href="#"><i className="fas fa-angle-double-right"></i></a>
+                                    <Link className="page-link" href="#"><i className="fas fa-angle-double-right"></i></Link>
                                 </li>
                             </ul> */}
               </div>
@@ -129,18 +131,18 @@ const index = ({ posts }) => {
                     incididunt ut labore etdol magna aliquas uspensis.{" "}
                   </p>
                   <div className="social-style-two">
-                    <a href="contact.html">
+                    <Link href="contact.html">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="contact.html">
+                    </Link>
+                    <Link href="contact.html">
                       <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="contact.html">
+                    </Link>
+                    <Link href="contact.html">
                       <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="contact.html">
+                    </Link>
+                    <Link href="contact.html">
                       <i className="fab fa-youtube"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div> */}
                 <div
@@ -150,44 +152,46 @@ const index = ({ posts }) => {
                   <h4 className="widget-title">Category</h4>
                   <ul>
                     <li>
-                      <a href="blog.html">meKambio mONday </a> <span>(25)</span>
+                      <Link href="blog.html">meKambio mONday </Link>{" "}
+                      <span>(25)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Coaching </a> <span>(07)</span>
+                      <Link href="blog.html">Coaching </Link> <span>(07)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Mentoring</a> <span>(12)</span>
+                      <Link href="blog.html">Mentoring</Link> <span>(12)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Liderazgo </a> <span>(55)</span>
+                      <Link href="blog.html">Liderazgo </Link> <span>(55)</span>
                     </li>
                     <li>
-                      <a href="blog.html">
+                      <Link href="blog.html">
                         Habilidades y Competencias Profesionales{" "}
-                      </a>
+                      </Link>
                       <span>(14)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Impulso Internacional</a>{" "}
+                      <Link href="blog.html">Impulso Internacional</Link>{" "}
                       <span>(30)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Progresión de Carrera</a>{" "}
+                      <Link href="blog.html">Progresión de Carrera</Link>{" "}
                       <span>(18)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Acceso al Mercado Laboral </a>{" "}
+                      <Link href="blog.html">Acceso al Mercado Laboral </Link>{" "}
                       <span>(07)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Cambio de Carrera</a>{" "}
+                      <Link href="blog.html">Cambio de Carrera</Link>{" "}
                       <span>(12)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Emprendimiento </a> <span>(55)</span>
+                      <Link href="blog.html">Emprendimiento </Link>{" "}
+                      <span>(55)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Regreso al Mercado Laboral</a>{" "}
+                      <Link href="blog.html">Regreso al Mercado Laboral</Link>{" "}
                       <span>(18)</span>
                     </li>
                   </ul>
@@ -198,14 +202,14 @@ const index = ({ posts }) => {
                 >
                   <h4 className="widget-title">Popular Tags</h4>
                   <div className="tag-coulds">
-                    <a href="blog.html">Course</a>
-                    <a href="blog.html">Design</a>
-                    <a href="blog.html">Marketing</a>
-                    <a href="blog.html">Life Course</a>
-                    <a href="blog.html">Health Course</a>
-                    <a href="blog.html">SEO</a>
-                    <a href="blog.html">Business</a>
-                    <a href="blog.html">Graphics</a>
+                    <Link href="blog.html">Course</Link>
+                    <Link href="blog.html">Design</Link>
+                    <Link href="blog.html">Marketing</Link>
+                    <Link href="blog.html">Life Course</Link>
+                    <Link href="blog.html">Health Course</Link>
+                    <Link href="blog.html">SEO</Link>
+                    <Link href="blog.html">Business</Link>
+                    <Link href="blog.html">Graphics</Link>
                   </div>
                 </div> */}
               </div>

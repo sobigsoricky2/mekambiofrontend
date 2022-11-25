@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Hero = () => {
   return (
     <div>
@@ -26,14 +26,14 @@ const Hero = () => {
                   alcanzan sus objetivos.
                 </p>
                 <div className="hero-btn mt-30 wow fadeInUp delay-0-8s">
-                  <a
+                  <Link
                     style={{ textTransform: "none", fontSize: "15px" }}
                     href="/how-to.use.html"
                     className="theme-btn"
                   >
                     Empieza a dar Forma a tu Futuro
                     <i className="fas fa-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

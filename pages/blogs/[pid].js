@@ -4,7 +4,7 @@ import Banner from "../../components/Banner";
 import { useParams } from "react-router-dom";
 import { getImage, ContentfulClient } from "./utils";
 import { useRouter } from "next/router";
-
+import Link from "next/link";
 const singleBlog = (props) => {
   const router = useRouter();
   const { pid } = router.query;
@@ -41,9 +41,9 @@ const singleBlog = (props) => {
                   /> */}
                   <img src={blog?.coverImage?.fields?.file?.url}></img>
 
-                  <a href="#">
+                  <Link href="#">
                     <i className="fas fa-share-alt"></i>
-                  </a>
+                  </Link>
                 </div>
                 <ul className="blog-standard-header wow fadeInUp delay-0-2s">
                   <li>
@@ -51,11 +51,11 @@ const singleBlog = (props) => {
                   </li>
                   <li>
                     <i className="far fa-calendar-alt"></i>{" "}
-                    <a href="blog-details.html">February 20, 2022</a>
+                    <Link href="blog-details.html">February 20, 2022</Link>
                   </li>
                   <li>
                     <i className="far fa-comments"></i>{" "}
-                    <a href="blog-details.html">Comments (05)</a>
+                    <Link href="blog-details.html">Comments (05)</Link>
                   </li>
                 </ul>
                 <h3 className="title">{blog?.title}</h3>
@@ -66,25 +66,25 @@ const singleBlog = (props) => {
                   <div className="tag-coulds pb-25">
                     <h6>Tags</h6>
                     {blog.tags?.map((t) => (
-                      <a href="blog.html">{t}</a>
+                      <Link href="blog.html">{t}</Link>
                     ))}
                   </div>
                   <div className="social-style-two">
                     <h6>Share :</h6>
-                    <a
+                    <Link
                       href="https://www.facebook.com/"
                       onClick={(e) => {
                         navigator.clipboard.writeText("helloAgain");
                       }}
                     >
                       <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="contact.html">
+                    </Link>
+                    <Link href="contact.html">
                       <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="contact.html">
+                    </Link>
+                    <Link href="contact.html">
                       <i className="fab fa-linkedin-in"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="admin-comment text-white bg-light-blue p-40 br-10 mt-50 wow fadeInUp delay-0-2s">
@@ -104,21 +104,21 @@ const singleBlog = (props) => {
                         sint
                       </p>
                       <div className="social-style-two">
-                        <a href="contact.html">
+                        <Link href="contact.html">
                           <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="contact.html">
+                        </Link>
+                        <Link href="contact.html">
                           <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="contact.html">
+                        </Link>
+                        <Link href="contact.html">
                           <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="contact.html">
+                        </Link>
+                        <Link href="contact.html">
                           <i className="fab fa-behance"></i>
-                        </a>
-                        <a href="contact.html">
+                        </Link>
+                        <Link href="contact.html">
                           <i className="fab fa-dribbble"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -126,18 +126,18 @@ const singleBlog = (props) => {
                 <div className="blog-nav pt-60 pb-25">
                   <div className="prev-blog wow fadeInLeft delay-0-2s">
                     <div className="blog-thumb">
-                      <a href="blog-details.html">
+                      <Link href="blog-details.html">
                         <img
                           src="./assets/images/blog/blog-nav-prev.jpg"
                           alt="Image"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <h6>
-                        <a href="blog-details.html">
+                        <Link href="blog-details.html">
                           How Deal With Back During Pregn
-                        </a>
+                        </Link>
                       </h6>
                       <span>
                         <i className="far fa-calendar-alt"></i> 25 May 2022
@@ -146,18 +146,18 @@ const singleBlog = (props) => {
                   </div>
                   <div className="next-blog wow fadeInRight delay-0-2s">
                     <div className="blog-thumb">
-                      <a href="blog-details.html">
+                      <Link href="blog-details.html">
                         <img
                           src="./assets/images/blog/blog-nav-next.jpg"
                           alt="Image"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <h6>
-                        <a href="blog-details.html">
+                        <Link href="blog-details.html">
                           Online Environme Work Older See
-                        </a>
+                        </Link>
                       </h6>
                       <span>
                         <i className="far fa-calendar-alt"></i> 25 May 2022
@@ -187,10 +187,10 @@ const singleBlog = (props) => {
                             velit esseeso quam nihile molestiae consequatur
                             veillum quolore
                           </p>
-                          <a href="#" className="reply-link">
+                          <Link href="#" className="reply-link">
                             Reply{" "}
                             <i className="fas fa-long-arrow-alt-right"></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <ul className="children">
@@ -214,10 +214,10 @@ const singleBlog = (props) => {
                                 voluptate velit esseeso quam nihile molestiae
                                 consequatur veillum quolore
                               </p>
-                              <a href="#" className="reply-link">
+                              <Link href="#" className="reply-link">
                                 Reply{" "}
                                 <i className="fas fa-long-arrow-alt-right"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </li>
@@ -241,10 +241,10 @@ const singleBlog = (props) => {
                             velit esseeso quam nihile molestiae consequatur
                             veillum quolore
                           </p>
-                          <a href="#" className="reply-link">
+                          <Link href="#" className="reply-link">
                             Reply{" "}
                             <i className="fas fa-long-arrow-alt-right"></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </li>
@@ -273,44 +273,49 @@ const singleBlog = (props) => {
                     incididunt ut labore etdol magna aliquas uspensis.{" "}
                   </p>
                   <div className="social-style-two">
-                    <a href="contact.html">
+                    <Link href="contact.html">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="contact.html">
+                    </Link>
+                    <Link href="contact.html">
                       <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="contact.html">
+                    </Link>
+                    <Link href="contact.html">
                       <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="contact.html">
+                    </Link>
+                    <Link href="contact.html">
                       <i className="fab fa-youtube"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="widget widget-menu wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Category</h4>
                   <ul>
                     <li>
-                      <a href="blog.html">Business Coach </a> <span>(25)</span>
+                      <Link href="blog.html">Business Coach </Link>{" "}
+                      <span>(25)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Life Coach </a> <span>(07)</span>
+                      <Link href="blog.html">Life Coach </Link>{" "}
+                      <span>(07)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Health Coach </a> <span>(12)</span>
+                      <Link href="blog.html">Health Coach </Link>{" "}
+                      <span>(12)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Web Design </a> <span>(55)</span>
+                      <Link href="blog.html">Web Design </Link>{" "}
+                      <span>(55)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Web Development </a> <span>(14)</span>
+                      <Link href="blog.html">Web Development </Link>{" "}
+                      <span>(14)</span>
                     </li>
                     <li>
-                      <a href="blog.html">SEO Optimizations </a>{" "}
+                      <Link href="blog.html">SEO Optimizations </Link>{" "}
                       <span>(30)</span>
                     </li>
                     <li>
-                      <a href="blog.html">Digital Analysis </a>{" "}
+                      <Link href="blog.html">Digital Analysis </Link>{" "}
                       <span>(18)</span>
                     </li>
                   </ul>
@@ -327,12 +332,12 @@ const singleBlog = (props) => {
                       </div>
                       <div className="content">
                         <h6>
-                          <a href="./categories.html">
+                          <Link href="./categories.html">
                             How to Learn Basic Web (UI) Design
-                          </a>
+                          </Link>
                         </h6>
                         <span>
-                          By <a href="#">Williams</a>
+                          By <Link href="#">Williams</Link>
                         </span>
                       </div>
                     </li>
@@ -345,12 +350,12 @@ const singleBlog = (props) => {
                       </div>
                       <div className="content">
                         <h6>
-                          <a href="./categories.html">
+                          <Link href="./categories.html">
                             How to Learn Basic Web Development
-                          </a>
+                          </Link>
                         </h6>
                         <span>
-                          By <a href="#">Somalia</a>
+                          By <Link href="#">Somalia</Link>
                         </span>
                       </div>
                     </li>
@@ -363,12 +368,12 @@ const singleBlog = (props) => {
                       </div>
                       <div className="content">
                         <h6>
-                          <a href="./categories.html">
+                          <Link href="./categories.html">
                             How to Learn Basic (SEO) Marketing{" "}
-                          </a>
+                          </Link>
                         </h6>
                         <span>
-                          By <a href="#">Blanchard</a>
+                          By <Link href="#">Blanchard</Link>
                         </span>
                       </div>
                     </li>
@@ -381,12 +386,12 @@ const singleBlog = (props) => {
                       </div>
                       <div className="content">
                         <h6>
-                          <a href="./categories.html">
+                          <Link href="./categories.html">
                             Business Strategy Managements
-                          </a>
+                          </Link>
                         </h6>
                         <span>
-                          By <a href="#">Johnson</a>
+                          By <Link href="#">Johnson</Link>
                         </span>
                       </div>
                     </li>
@@ -395,14 +400,14 @@ const singleBlog = (props) => {
                 <div className="widget widget-tag-cloud wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Popular Tags</h4>
                   <div className="tag-coulds">
-                    <a href="blog.html">Course</a>
-                    <a href="blog.html">Design</a>
-                    <a href="blog.html">Marketing</a>
-                    <a href="blog.html">Life Course</a>
-                    <a href="blog.html">Health Course</a>
-                    <a href="blog.html">SEO</a>
-                    <a href="blog.html">Business</a>
-                    <a href="blog.html">Graphics</a>
+                    <Link href="blog.html">Course</Link>
+                    <Link href="blog.html">Design</Link>
+                    <Link href="blog.html">Marketing</Link>
+                    <Link href="blog.html">Life Course</Link>
+                    <Link href="blog.html">Health Course</Link>
+                    <Link href="blog.html">SEO</Link>
+                    <Link href="blog.html">Business</Link>
+                    <Link href="blog.html">Graphics</Link>
                   </div>
                 </div>
               </div>

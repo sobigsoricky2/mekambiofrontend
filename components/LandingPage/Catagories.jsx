@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Catagories = () => {
   return (
     <div>
@@ -19,12 +19,12 @@ const Catagories = () => {
                   Elige tu área foco y selecciona al Expert que te ayudará a
                   conseguir tus objetivos.
                 </p>
-                <a
+                <Link
                   href="categories.html"
                   className="read-more color-two mt-5 text-white"
                 >
                   Ver más<i className="fas fa-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-7">

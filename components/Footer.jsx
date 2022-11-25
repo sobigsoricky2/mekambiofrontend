@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -217,12 +218,12 @@ const Footer = () => {
                     animationName: "fadeInLeft",
                   }}
                 >
-                  <a
+                  <Link
                     href="https://www.youtube.com/watch?v=smbwVTieDJk"
                     className="mfp-iframe video-play"
                   >
                     <i className="fas fa-play"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-6 align-self-center">
@@ -336,54 +337,60 @@ const Footer = () => {
                 </form>
                 <h5 className="pt-5">Síguenos</h5>
                 <div className="social-style-one">
-                  <a href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
+                  <Link href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
                     <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="https://www.instagram.com/meKambio_/">
+                  </Link>
+                  <Link href="https://www.instagram.com/meKambio_/">
                     <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="https://www.facebook.com/meKambio">
+                  </Link>
+                  <Link href="https://www.facebook.com/meKambio">
                     <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://www.youtube.com/channel/UCIBlyqcrLRLlkb0_JpDqNaQ?app=desktop&amp;cbrd=1">
+                  </Link>
+                  <Link href="https://www.youtube.com/channel/UCIBlyqcrLRLlkb0_JpDqNaQ?app=desktop&amp;cbrd=1">
                     <i className="fab fa-youtube"></i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-4">
-                  <a href="download.html">Descarga las Apps de meKambio </a>
+                  <Link href="download.html">
+                    Descarga las Apps de meKambio
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-4">
               <div className="footer-widget menu-widget">
-                <a href="categories.html">
+                <Link href="categories.html">
                   {" "}
                   <h5 className="footer-title">Áreas</h5>
-                </a>
+                </Link>
                 <ul>
                   <li>
-                    <a href="./categories.html#sec-1">Progresión de Carrera</a>
+                    <Link href="./categories.html#sec-1">
+                      Progresión de Carrera
+                    </Link>
                   </li>
                   <li>
-                    <a href="./categories.html#sec-2">Cambio de Carrera</a>
+                    <Link href="./categories.html#sec-2">
+                      Cambio de Carrera
+                    </Link>
                   </li>
                   <li>
-                    <a href="./categories.html#sec-3">
+                    <Link href="./categories.html#sec-3">
                       Acceso al Mercado Laboral
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="./categories.html#sec-4">
+                    <Link href="./categories.html#sec-4">
                       Impulso Internacional de tu Carrera
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="./categories.html#sec-5">Emprendimiento</a>
+                    <Link href="./categories.html#sec-5">Emprendimiento</Link>
                   </li>
                   <li>
-                    <a href="./categories.html#sec-5">
+                    <Link href="./categories.html#sec-5">
                       Regresa al Mercado Laboral
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -392,27 +399,29 @@ const Footer = () => {
             <div className="col-lg-3 col-md-3 col-sm-4">
               <div className="footer-widget menu-widget">
                 <h5 className="footer-title">
-                  <a href="./services.html">Servicios</a>
+                  <Link href="./services.html">Servicios</Link>
                 </h5>
                 <ul>
                   <li>
-                    <a href="services.html#sec-1">Para Profesionales</a>
+                    <Link href="services.html#sec-1">Para Profesionales</Link>
                   </li>
                   <li>
-                    <a href="services.html#sec-2">Para Coaches y Mentores</a>
+                    <Link href="services.html#sec-2">
+                      Para Coaches y Mentores
+                    </Link>
                   </li>
                   <li>
-                    <a href="services.html#sec-3">
+                    <Link href="services.html#sec-3">
                       Para Empresas y sus Equipos
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="services.html#sec-4">
+                    <Link href="services.html#sec-4">
                       Para Empresas y sus Clientes
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="experts.html">Únete al equipo</a>
+                    <Link href="experts.html">Únete al equipo</Link>
                   </li>
                 </ul>
               </div>
@@ -422,24 +431,26 @@ const Footer = () => {
                 <h5 className="footer-title">Recursos</h5>
                 <ul>
                   <li>
-                    <a href="faq.html">FAQ's</a>
+                    <Link href="faq.html">FAQ's</Link>
                   </li>
                   <li>
-                    <a href="how-to.use.html">Cómo Funciona</a>
+                    <Link href="how-to.use.html">Cómo Funciona</Link>
                   </li>
                   <li>
-                    <a href="support.html">Centro de Soporte</a>
+                    <Link href="support.html">Centro de Soporte</Link>
                   </li>
                   <li>
-                    <a href="refund-policy.html">Política de Privacidad</a>
+                    <Link href="refund-policy.html">
+                      Política de Privacidad
+                    </Link>
                   </li>
                   <li>
-                    <a href="terms.html">Términos de Uso</a>
+                    <Link href="terms.html">Términos de Uso</Link>
                   </li>
                   <li>
-                    <a href="refund-policy.html">
+                    <Link href="refund-policy.html">
                       Reembolsos y Política de Pago
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -450,15 +461,15 @@ const Footer = () => {
           <div className="container">
             <div className="copyright-inner">
               <p>
-                © 2021-2022 <a href="index.html">meKambio</a> All rights
+                © 2021-2022 <Link href="index.html">meKambio</Link> All rights
                 reserved.
               </p>
               <ul className="footer-menu">
                 <li>
-                  <a href="about-us.html">Quiénes somos </a>
+                  <Link href="about-us.html">Quiénes somos</Link>
                 </li>
                 <li>
-                  <a href="services.html">meKambio Corporate </a>
+                  <Link href="services.html">meKambio Corporate</Link>
                 </li>
               </ul>
             </div>

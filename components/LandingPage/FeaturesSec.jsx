@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const FeaturesSec = () => {
   return (
     <div>
@@ -48,10 +48,13 @@ const FeaturesSec = () => {
                   <h5>Trabaja en lo que te apasiona</h5>
                   <p>¿Siempre la misma rutina, o problemas en el trabajo?</p>
                 </div>
-                <a href="categories.html#pro" className="read-more color-two">
+                <Link
+                  href="categories.html#pro"
+                  className="read-more color-two"
+                >
                   Ver más
                   <i className="fas fa-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
@@ -70,10 +73,13 @@ const FeaturesSec = () => {
                   <h5>Provoca el cambio</h5>
                   <p>¿Sientes que necesitas un cambio de carrera? </p>
                 </div>
-                <a href="categories.html#cam" className="read-more color-two">
+                <Link
+                  href="categories.html#cam"
+                  className="read-more color-two"
+                >
                   Ver más
                   <i className="fas fa-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
@@ -92,10 +98,13 @@ const FeaturesSec = () => {
                   <h5>Mejora en lo que haces</h5>
                   <p>¿Tienes ganas de prosperar profesionalmente?</p>
                 </div>
-                <a href="categories.html#pro" className="read-more color-two">
+                <Link
+                  href="categories.html#pro"
+                  className="read-more color-two"
+                >
                   Ver más
                   <i className="fas fa-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
@@ -114,10 +123,13 @@ const FeaturesSec = () => {
                   <h5>Inicia o vuelve a tu carrera</h5>
                   <p>¿Quieres acceder al mercado laboral?</p>
                 </div>
-                <a href="categories.html#reg" className="read-more color-two">
+                <Link
+                  href="categories.html#reg"
+                  className="read-more color-two"
+                >
                   Ver más
                   <i className="fas fa-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
