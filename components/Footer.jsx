@@ -431,7 +431,7 @@ const Footer = () => {
                 <h5 className="footer-title">Recursos</h5>
                 <ul>
                   <li>
-                    <Link href="faq.html">FAQ&quot;s</Link>
+                    <Link href="faq.html">FAQs</Link>
                   </li>
                   <li>
                     <Link href="how-to.use.html">Cómo Funciona</Link>
