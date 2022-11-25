@@ -13,6 +13,7 @@ import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  console.log(process.env.GOOGLE_PRIVATE_KEY);
   return (
     <div className={styles.container}>
       <Head>
