@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
-import { ContentfulClient } from "../blogs/utils";
+import { ContentfulClient } from "../../components/utils";
 
 const Services = () => {
   const [services, setServices] = useState([]);

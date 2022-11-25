@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Banner from "../../components/Banner";
 import { useParams } from "react-router-dom";
-import { getImage, ContentfulClient } from "./utils";
+import { getImage, ContentfulClient } from "../../helpers/utils";
 import { useRouter } from "next/router";
 import Link from "next/link";
 const SingleBlog = (props) => {

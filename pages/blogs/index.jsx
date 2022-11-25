@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
 import axios from "axios";
-import { getImage, ContentfulClient } from "./utils";
+import { getImage, ContentfulClient } from "../../helpers/utils";
+
 var contentful = require("contentful");
 const Index = ({ posts }) => {
   const [blogs, setblogs] = useState([]);
