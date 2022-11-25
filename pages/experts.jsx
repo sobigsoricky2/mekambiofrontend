@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
 import Link from "next/link";
@@ -85,7 +86,7 @@ const Experts = () => {
                       alt="Join Our Team"
                     />
                   </div>
-                  <div className="image-two">
+                  <div className="image-two"> 
                     <img
                       src="./assets/images/instructor/join-team2.jpg"
                       alt="Join Our Team"
@@ -316,7 +317,7 @@ const Experts = () => {
                   <div className="pricin-item wow fadeInUp delay-0-4s animated animated" style="visibility: visible; animation-name: fadeInUp;">
                       <span className="popularity">popular</span>
                       <div className="icon">
-                          <img style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/Basic Suscription.png" alt="Icon">
+                          <img width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/Basic Suscription.png" alt="Icon">
                       </div>
                       <h4>Basic </h4>
                       <ul className="list-style-two">
@@ -335,7 +336,7 @@ const Experts = () => {
                   <div className="pricin-item wow fadeInUp delay-0-6s animated animated" style="visibility: visible; animation-name: fadeInUp;">
                       <span className="popularity">popular</span>
                       <div className="icon">
-                          <img style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/K_Advanced Subscription.png" alt="Icon">
+                          <img width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/K_Advanced Subscription.png" alt="Icon">
                       </div>
                       <h4>Advance </h4>
                       <ul className="list-style-two">
@@ -354,7 +355,7 @@ const Experts = () => {
                   <div className="pricin-item wow fadeInUp delay-0-2s animated animated" style="visibility: visible; animation-name: fadeInUp;">
                       <span className="popularity">popular</span>
                       <div className="icon">
-                          <img style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/K_Premium Suscription.png" alt="Icon">
+                          <img width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/K_Premium Suscription.png" alt="Icon">
                       </div>
                       <h4>Premium </h4>
                       <ul className="list-style-two">

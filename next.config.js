@@ -14,7 +14,10 @@ const nextConfig = {
   },
   images: {
     domains: ["test.skg-walldorf.de"],
+     unoptimized: true,
   },
+
+
 };
 
 module.exports = nextConfig;

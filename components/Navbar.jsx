@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -55,6 +56,7 @@ const Navbar = () => {
 
                   <div className="navbar-collapse collapse clearfix">
                     <ul className="navigation clearfix ">
+                      
                       <li>
                         <Link
                           className="text-decoration-none"

@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { getImage, ContentfulClient } from "./utils";
 import { useRouter } from "next/router";
 import Link from "next/link";
-const singleBlog = (props) => {
+const SingleBlog = (props) => {
   const router = useRouter();
   const { pid } = router.query;
 
@@ -33,13 +33,13 @@ const singleBlog = (props) => {
             <div className="col-lg-8">
               <div className="blog-details-wrap">
                 <div className="image mb-25 wow fadeInUp delay-0-2s">
-                  {/* <Image
+                  {/* <img
                     width="525"
                     height={"394"}
                     src={blog?.coverImage?.fields?.file?.url}
                     alt="Blog"
                   /> */}
-                  <img src={blog?.coverImage?.fields?.file?.url}></img>
+                  <img width="auto" height="auto"src={blog?.coverImage?.fields?.file?.url}></img>
 
                   <Link href="#">
                     <i className="fas fa-share-alt"></i>
@@ -265,7 +265,7 @@ const singleBlog = (props) => {
                 </div>
                 <div className="widget widget-about wow fadeInUp delay-0-4s">
                   <div className="image">
-                    <img src="./assets/images/widgets/about.jpg" alt="Author" />
+                    <img width="auto" height="auto"src="./assets/images/widgets/about.jpg" alt="Author" />
                   </div>
                   <h4>James D. Thomas</h4>
                   <p>
@@ -488,4 +488,4 @@ const singleBlog = (props) => {
 //   return { paths, fallback: false };
 // }
 
-export default singleBlog;
+export default SingleBlog;

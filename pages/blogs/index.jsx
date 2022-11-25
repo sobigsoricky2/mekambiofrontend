@@ -5,7 +5,7 @@ import Layout from "../../components/Layout";
 import axios from "axios";
 import { getImage, ContentfulClient } from "./utils";
 var contentful = require("contentful");
-const index = ({ posts }) => {
+const Index = ({ posts }) => {
   const [blogs, setblogs] = useState([]);
 
   useEffect(() => {
@@ -123,7 +123,7 @@ const index = ({ posts }) => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="image">
-                    <img src="" alt="Author" />
+                    <img width="auto" height="auto"src="" alt="Author" />
                   </div>
                   <h4>James D. Thomas</h4>
                   <p>
@@ -314,4 +314,4 @@ const index = ({ posts }) => {
 //     },
 //   };
 // }
-export default index;
+export default Index;

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AreasImagesEven = ({ imgUrl1, imgUrl2, logo }) => {
   return (
@@ -8,14 +9,14 @@ const AreasImagesEven = ({ imgUrl1, imgUrl2, logo }) => {
     >
       <div className="row align-items-center">
         <div className="col-7">
-          <img src={imgUrl1} alt="Rules" />
+          <img width="auto" height="auto"src={imgUrl1} alt="Rules" />
         </div>
         <div className="col-5">
-          <img src={imgUrl2} alt="Rules" />
+          <img width="auto" height="auto"src={imgUrl2} alt="Rules" />
         </div>
       </div>
       <div className="logo bg-transparent">
-        <img style={{ borderRadius: "50%" }} src={logo} alt="Logo" />
+        <img width="auto" height="auto"style={{ borderRadius: "50%" }} src={logo} alt="Logo" />
       </div>
     </div>
   );

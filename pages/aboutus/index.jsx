@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
 import Link from "next/link";
@@ -22,8 +23,8 @@ const AboutUs = () => {
                   </div>
                   <p>
                     En 2020 se sembró la semilla de una idea; un proyecto de
-                    apoyo a profesionales con apuros en sus carreras.{"{"}" "
-                    {"}"}
+                    apoyo a profesionales con apuros en sus carreras.
+                    
                   </p>
                 </div>
               </div>
@@ -69,7 +70,7 @@ const AboutUs = () => {
             <div className="row align-items-center large-gap">
               <div className="col-lg-5">
                 <div className="about-page-middle rpt-55 rpb-30 wow fadeInRight delay-0-2s">
-                  <img src="/assets/images/about/1.png" alt="About" />
+                  <img width="auto" height="auto"src="/assets/images/about/1.png" alt="About" />
                 </div>
               </div>
               <div className="col-lg-5">
@@ -137,14 +138,7 @@ const AboutUs = () => {
                       src="/assets/images/teams/EdurdMoreno_PERFIL.webp"
                       alt="Team Member"
                     />
-                    {"{"}/*{" "}
-                    {/* <div className="social-style-two">
-                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
-                          </div> */}{" "}
-                    */{"}"}
+                  
                   </div>
                   <div className="member-description">
                     <h4>Eduard Moreno</h4>
@@ -159,14 +153,7 @@ const AboutUs = () => {
                       src="/assets/images/teams/Stephen.png"
                       alt="Team Member"
                     />
-                    {"{"}/*{" "}
-                    {/* <div className="social-style-two">
-                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
-                          </div> */}{" "}
-                    */{"}"}
+                    
                   </div>
                   <div className="member-description">
                     <h4>Stephen Logan</h4>
@@ -182,13 +169,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                     {"{"}/*{" "}
-                    {/* <div className="social-style-two">
-                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
-                          </div> */}{" "}
-                    */{"}"}
+                  
                   </div>
                   <div className="member-description">
                     <h4>Anabel Reillo</h4>
@@ -203,14 +184,8 @@ const AboutUs = () => {
                       src="/assets/images/teams/Ana Gallego.png"
                       alt="Team Member"
                     />
-                    {"{"}/*{" "}
-                    {/* <div className="social-style-two">
-                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
-                          </div> */}{" "}
-                    */{"}"}
+                  
+                  
                   </div>
                   <div className="member-description">
                     <h4>Ana Gallego</h4>
@@ -225,14 +200,7 @@ const AboutUs = () => {
                       src="/assets/images/teams/JorgeDolz_PERIL.webp"
                       alt="Team Member"
                     />
-                    {"{"}/*{" "}
-                    {/* <div className="social-style-two">
-                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
-                          </div> */}{" "}
-                    */{"}"}
+                  
                   </div>
                   <div className="member-description">
                     <h4>Jorge Dolz</h4>
@@ -247,14 +215,7 @@ const AboutUs = () => {
                       src="/assets/images/teams/TiffanyBarnard_PROFILE.png"
                       alt="Team Member"
                     />
-                    {"{"}/*{" "}
-                    {/* <div className="social-style-two">
-                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
-                          </div> */}{" "}
-                    */{"}"}
+               
                   </div>
                   <div className="member-description">
                     <h4>Tiffany Barnard</h4>
@@ -269,14 +230,7 @@ const AboutUs = () => {
                       src="/assets/images/teams/AntonioValdivieso_PERFIL.webp"
                       alt="Team Member"
                     />
-                    {"{"}/*{" "}
-                    {/* <div className="social-style-two">
-                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
-                          </div> */}{" "}
-                    */{"}"}
+                   
                   </div>
                   <div className="member-description">
                     <h4>Antonio Valdivieso</h4>
@@ -291,14 +245,7 @@ const AboutUs = () => {
                       src="/assets/images/teams/JoseBarroso_PERFIL.webp"
                       alt="Team Member"
                     />
-                    {"{"}/*{" "}
-                    {/*  <div className="social-style-two">
-                              <Link href="contact.html"><i className="fab fa-twitter"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-facebook-f"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-instagram"></i></Link>
-                              <Link href="contact.html"><i className="fab fa-pinterest-p"></i></Link>
-                          </div> */}{" "}
-                    */{"}"}
+                
                   </div>
                   <div className="member-description">
                     <h4>José Barroso</h4>

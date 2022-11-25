@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 const VideoSection = () => {
   return (
@@ -9,7 +10,7 @@ const VideoSection = () => {
       >
         <div className="container">
           <div className="video-inner overlay">
-            <img src="/assets/images/video/video-section-bg.jpg" alt="Video" />
+            <img width="auto" height="auto"src="/assets/images/video/video-section-bg.jpg" alt="Video" />
             <Link
               href="https://www.youtube.com/watch?v=smbwVTieDJk"
               className="mfp-iframe video-play"

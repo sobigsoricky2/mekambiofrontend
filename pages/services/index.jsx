@@ -66,8 +66,8 @@ const Services = () => {
                   <p>{services?.fields?.content}</p>
                   <div className="why-learn-feature pt-30">
                     <div className="row">
-                      {service?.map((item) => (
-                        <div className="col-sm-6" id="sec-1">
+                      {service?.map((item, index) => (
+                        <div key={index} className="col-sm-6" id={`sec-${index+1}`}>
                           <div className="feature-three-item">
                             <div className="icon">
                               <img
@@ -140,8 +140,8 @@ const Services = () => {
                 >
                   <div className="row">
                     <div className="col-md-4 col-sm-6">
-                      {areas?.map((area) => (
-                        <div className="category-item mt-35">
+                      {areas?.map((area, index) => (
+                        <div key={index} className="category-item mt-35">
                           <div className="icon">
                             <img
                               className="w-50"
