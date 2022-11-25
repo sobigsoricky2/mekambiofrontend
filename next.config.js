@@ -16,7 +16,7 @@ const nextConfig = {
     domains: ["test.skg-walldorf.de"],
      unoptimized: true,
   },
-
+  eslint: { ignoreDuringBuilds: true },
 
 };
 
