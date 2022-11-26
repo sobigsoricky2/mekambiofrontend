@@ -1,21 +1,12 @@
-import { NextApiRequest, NextApiResponse } from "next";
 import { google } from "googleapis";
-type SheetForm = {
-  name: string;
-  surname: string;
-  formEmail: string;
-  phone: string;
-};
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+
+export default async function handler(req, res) {
   try {
     if (req.method != "POST") {
       res.status(405).send({ message: "Only Post requests are allowed" });
     }
     console.log("run");
-    const body = req.body as SheetForm;
+    const body = JSON.stringify(req.body);
 
     const auth = new google.auth.GoogleAuth({
       credentials: {
