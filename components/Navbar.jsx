@@ -52,14 +52,14 @@ const Navbar = ({color}) => {
                       data-toggle="collapse"
                       data-target=".navbar-collapse"
                     >
-                      <span className="icon-bar"></span>
+                      <span className="icon-bar" style={{background:{color}}}></span>
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
                     </button>
                   </div>
 
                   <div className="navbar-collapse collapse clearfix">
-                    <ul className={`navigation clearfix `}>
+                    <ul className={`navigation clearfix `} style={{color:{color}}}>
                       
                       <li>
                         <Link

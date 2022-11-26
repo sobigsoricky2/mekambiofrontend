@@ -4,7 +4,7 @@ import Footer from "./Footer";
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
+      <Navbar color={"#fff"}/>
       <main>{children}</main>
       <Footer /> 
     </>

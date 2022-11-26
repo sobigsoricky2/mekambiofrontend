@@ -83,6 +83,7 @@ body {
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
   overflow-x:hidden;
+  scroll-behavior:smooth;
 }
 
 a {
@@ -4043,7 +4044,7 @@ h6,
   font-size: 18px;
   opacity: 1;
   font-weight: 700;
-  color: #262d3d;
+  /* color: #262d3d; */
   /* text-transform: capitalize; */
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -4182,7 +4183,7 @@ h6,
   background: transparent;
 }
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-  background: #262d3d;
+  /* background: #262d3d; */
   height: 3px;
   width: 30px;
   display: block;

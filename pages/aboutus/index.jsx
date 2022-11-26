@@ -6,7 +6,7 @@ import Link from "next/link";
 const AboutUs = () => {
   return (
     <Layout>
-      <Banner />
+      <Banner title={"Quiénes Somos"}/>
 
       <>
         <section className="about-page-section pt-120 pb-100 rpt-90">

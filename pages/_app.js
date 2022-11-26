@@ -3,23 +3,18 @@ import Script from "next/script";
 import "../styles/globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Router from 'next/router';
-import NProgress from 'nprogress'; //nprogress module
-import 'nprogress/nprogress.css'; //styles of nprogress
+import Router from "next/router";
+import NProgress from "nprogress"; //nprogress module
+import "nprogress/nprogress.css"; //styles of nprogress
 
+//Route Events.
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
-
-//Route Events. 
-Router.events.on('routeChangeStart', () => NProgress.start()); 
-Router.events.on('routeChangeComplete', () => NProgress.done()); 
-Router.events.on('routeChangeError', () => NProgress.done());
-
-
-NProgress.configure({ showSpinner: false })
+NProgress.configure({ showSpinner: false });
 
 function MyApp({ Component, pageProps }) {
-
-  
   function googleTranslateElementInit() {
     new google.translate.TranslateElement(
       { pageLanguage: "es" },
@@ -28,14 +23,22 @@ function MyApp({ Component, pageProps }) {
   }
   console.log(Router);
   return (
-    
     <>
       <Head>
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" async></script>
-              <script async>
-              new WOW().init();
-              </script>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link
+          rel="shortcut icon"
+          href="https://yelodotred.s3-us-west-2.amazonaws.com/images/communities/favicons/7252/favicon/logo-icono-170x170px.png?1649233490"
+          type="image/x-icon"
+        />
+        <title>meKambio</title>
+
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+          async
+        ></script>
+        <script async>new WOW().init();</script>
 
         <script
           type="text/javascript"
@@ -43,13 +46,6 @@ function MyApp({ Component, pageProps }) {
           defer
           async
         />
-
-       
-
-    
-
-  
-   
       </Head>
       <div
         style={{
