@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Layout from "../../components/Layout";
 import Banner from "../../components/Banner";
+import Link from "next/link";
 
 const HowToUse = () => {
   return <>
@@ -60,14 +61,14 @@ const HowToUse = () => {
                 </div>
               </li>
             </ul>
-            <a
+            <Link
               href="https://experts.mekambio.com/es-ES/customer_signup"
               className="theme-btn"
             >
               {" "}
               Regístrate
               <i className="fas fa-arrow-right" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-lg-6">
@@ -167,9 +168,9 @@ const HowToUse = () => {
         </div>
       </div>
       <div className="col-md-12 text-center">
-        <a href="/categories" className="theme-btn mt-4">
+        <Link href="/categories" className="theme-btn mt-4">
           Selecciona el Área
-        </a>
+        </Link>
       </div>
     </div>
   </section>
@@ -195,55 +196,55 @@ const HowToUse = () => {
             style={{ visibility: "visible", animationName: "fadeInLeft" }}
           >
             <div className="logo-item w-25">
-              <a href="https://experts.mekambio.com/s?q=">
+              <Link href="https://experts.mekambio.com/s?q=">
                 <img
                   src="./assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                   alt="Client Logo"
                 />
-              </a>
+              </Link>
             </div>
             <div className="logo-item w-25">
-              <a href="https://experts.mekambio.com/s?q=">
+              <Link href="https://experts.mekambio.com/s?q=">
                 <img
                   src="./assets/images/client-logos/EAE Business School.PNG"
                   alt="Client Logo"
                 />
-              </a>
+              </Link>
             </div>
             <div className="logo-item w-25">
-              <a href="https://experts.mekambio.com/s?q=">
+              <Link href="https://experts.mekambio.com/s?q=">
                 <img
                   src="./assets/images/client-logos/EPSEB.jpg"
                   alt="Client Logo"
                 />
-              </a>
+              </Link>
             </div>
             <div className="logo-item w-25">
-              <a href="https://experts.mekambio.com/s?q=">
+              <Link href="https://experts.mekambio.com/s?q=">
                 <img
                   className="w-100"
                   src="./assets/images/client-logos/Inesdi Digital Business School.jfif"
                   alt="Client Logo"
                 />
-              </a>
+              </Link>
             </div>
             <div className="logo-item w-25">
-              <a href="https://experts.mekambio.com/s?q=">
+              <Link href="https://experts.mekambio.com/s?q=">
                 <img
                   className="w-100"
                   src="./assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                   alt="Client Logo"
                 />
-              </a>
+              </Link>
             </div>
             <div className="logo-item w-25 text-center">
-              <a href="https://experts.mekambio.com/s?q=">
+              <Link href="https://experts.mekambio.com/s?q=">
                 <img
                   className="w-50"
                   src="./assets/images/client-logos/UPC.png"
                   alt="Client Logo"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
