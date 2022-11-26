@@ -9,7 +9,7 @@ const Footer = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   const [email, setEmail] = useState("");
@@ -43,6 +43,8 @@ const Footer = () => {
       },
       body: JSON.stringify(formData),
     });
+    const res3 = await fetch("/api/test");
+    console.log(res3);
     console.log(res);
     if (res2.status == 200 && res.status == 200) {
       alert("Subscriber Added and Email Sent");
