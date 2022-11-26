@@ -39,7 +39,7 @@ const SingleBlog = (props) => {
                     src={blog?.coverImage?.fields?.file?.url}
                     alt="Blog"
                   /> */}
-                  <img width="auto" height="auto"src={blog?.coverImage?.fields?.file?.url}></img>
+                  <img width="auto" height="auto"src={blog?.coverImage?.fields?.file?.url} alt=""/>
 
                   <Link href="#">
                     <i className="fas fa-share-alt"></i>
@@ -65,8 +65,8 @@ const SingleBlog = (props) => {
                 <div className="tag-share pt-10">
                   <div className="tag-coulds pb-25">
                     <h6>Tags</h6>
-                    {blog.tags?.map((t) => (
-                      <Link href="blog.html">{t}</Link>
+                    {blog.tags?.map((t, index) => (
+                      <Link key={index} href="blog.html">{t}</Link>
                     ))}
                   </div>
                   <div className="social-style-two">

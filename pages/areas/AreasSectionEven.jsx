@@ -52,7 +52,7 @@ const AreasSectionEven = ({ areaSection, swap }) => {
             }}
           >
             {areaSection?.fields?.images.map((image, index) => (
-              <div id="index" style={{ alignItems: "center" }}>
+              <div key="index" style={{ alignItems: "center" }}>
                 <img
                   style={{ margin: "0.5em auto" }}
                   src={image?.fields?.file?.url}

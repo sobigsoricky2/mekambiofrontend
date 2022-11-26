@@ -168,7 +168,7 @@ const AboutUs = () => {
                       src="/assets/images/teams/AnabelReillo_PROFILE.webp"
                       alt="Team Member"
                     />
-                    {"{"}/*{" "}
+                 
                   
                   </div>
                   <div className="member-description">
