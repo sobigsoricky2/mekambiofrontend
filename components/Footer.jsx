@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 import Slider from "react-slick";
+import dynamic from "next/dynamic";
+const ReactPlayer = dynamic(() => import("react-player/youtube"), {
+  ssr: false,
+});
 
 const Footer = () => {
   const settings = {
@@ -10,10 +14,11 @@ const Footer = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-
+    autoplay: true,
   };
 
   const [email, setEmail] = useState("");
+  const [popUpVideo, setPopUpVideo] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -237,12 +242,13 @@ const Footer = () => {
                     animationName: "fadeInLeft",
                   }}
                 >
-                  <a
+                  <div
                     href="https://www.youtube.com/watch?v=smbwVTieDJk"
                     className="mfp-iframe video-play"
+                    onClick={(e) => setPopUpVideo(true)}
                   >
                     <i className="fas fa-play"></i>
-                  </a>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-6 align-self-center">
@@ -493,6 +499,50 @@ const Footer = () => {
           </button>
         </div>
       </footer>
+
+      {popUpVideo ? (
+        <div
+          style={{
+            width: "100vw",
+            height: "100vh",
+            position: "fixed",
+            zIndex: "999",
+            display: "flex",
+            justifyContent: "center",
+            top: "0",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              width: "100vw",
+              height: "100vh",
+              background: "#222",
+              opacity: "0.6",
+            }}
+            onClick={(e) => setPopUpVideo(false)}
+          ></div>
+
+          <div
+            
+            style={{
+              position: "absolute",
+              zIndex: "99",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            {typeof window !== "undefined" ? (
+              <ReactPlayer url="https://www.youtube.com/watch?v=smbwVTieDJk" />
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
