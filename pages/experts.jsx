@@ -329,7 +329,7 @@ const Experts = () => {
                           <li>Comisión : 20%</li>
                       </ul>
                       <span className="price">0</span>
-                      <Link href="pricing.html" className="theme-btn style-two">Elige el plan <i className="fas fa-arrow-right"></i></Link>
+                      <Link href="pricing " className="theme-btn style-two">Elige el plan <i className="fas fa-arrow-right"></i></Link>
                   </div>
               </div>
               <div className="col-xl-4 col-md-6 pr-0">
@@ -348,7 +348,7 @@ const Experts = () => {
                           <li>Comisión : 15%</li>
                       </ul>
                       <span className="price">8.21</span>
-                      <Link href="pricing.html" className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></Link>
+                      <Link href="pricing " className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></Link>
                   </div>
               </div>
               <div className="col-xl-4 col-md-6 pr-0">
@@ -367,7 +367,7 @@ const Experts = () => {
                           <li>Comisión : 15%</li>
                       </ul>
                       <span className="price">12.32</span>
-                      <Link href="pricing.html" className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></Link>
+                      <Link href="pricing " className="theme-btn style-two">Elige el plan  <i className="fas fa-arrow-right"></i></Link>
                   </div>
               </div>
               
@@ -376,7 +376,7 @@ const Experts = () => {
   </section> */}
         <div className="mt-2 mb-5 text-center" style={{ marginBottom: 30 }}>
           <Link
-            href="https://www.mekambio.com/pricing.html"
+            href="pricing "
             className="theme-btn mt-3 mb-50"
           >
             Ver Planes de Suscripción

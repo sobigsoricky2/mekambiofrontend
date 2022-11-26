@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className="hero-btn mt-30 wow fadeInUp delay-0-8s">
                   <Link
                     style={{ textTransform: "none", fontSize: "15px" }}
-                    href="/how-to.use.html"
+                    href="/how-to-use "
                     className="theme-btn"
                   >
                     Empieza a dar Forma a tu Futuro

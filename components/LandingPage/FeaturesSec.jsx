@@ -50,7 +50,7 @@ const FeaturesSec = () => {
                   <p>¿Siempre la misma rutina, o problemas en el trabajo?</p>
                 </div>
                 <Link
-                  href="categories.html#pro"
+                  href="categories#pro"
                   className="read-more color-two"
                 >
                   Ver más
@@ -75,7 +75,7 @@ const FeaturesSec = () => {
                   <p>¿Sientes que necesitas un cambio de carrera? </p>
                 </div>
                 <Link
-                  href="categories.html#cam"
+                  href="categories#cam"
                   className="read-more color-two"
                 >
                   Ver más
@@ -100,7 +100,7 @@ const FeaturesSec = () => {
                   <p>¿Tienes ganas de prosperar profesionalmente?</p>
                 </div>
                 <Link
-                  href="categories.html#pro"
+                  href="categories#pro"
                   className="read-more color-two"
                 >
                   Ver más
@@ -125,7 +125,7 @@ const FeaturesSec = () => {
                   <p>¿Quieres acceder al mercado laboral?</p>
                 </div>
                 <Link
-                  href="categories.html#reg"
+                  href="categories#reg"
                   className="read-more color-two"
                 >
                   Ver más

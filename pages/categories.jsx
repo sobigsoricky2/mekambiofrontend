@@ -4,7 +4,7 @@ import Image from "next/image";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
 import Link from "next/link";
-const Catagories = () => {
+const Categories= () => {
   return (
     <Layout>
       <Banner />
@@ -654,4 +654,4 @@ const Catagories = () => {
   );
 };
 
-export default Catagories;
+export default Categories;

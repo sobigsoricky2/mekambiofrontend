@@ -149,7 +149,7 @@ const Services = () => {
                               alt="Icon"
                             />
                           </div>
-                          <Link href="./categories.html#sec-1">
+                          <Link href="./categories#sec-1">
                             {" "}
                             <h4 className="text-black-50">
                               {area.fields.title}

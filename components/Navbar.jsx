@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="header-inner d-flex align-items-center justify-content-between">
               <div className="logo-outer d-lg-flex align-items-center">
                 <div className="logo">
-                  <Link href="index.html">
+                  <Link href="/">
                     <img
                       className="w-50"
                       src="/assets/images/K%20Full%20logo.svg"
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <nav className="main-menu navbar-expand-lg">
                   <div className="navbar-header">
                     <div className="mobile-logo br-10 p-15">
-                      <Link href="index.html">
+                      <Link href="index ">
                         <img
                           className="w-100"
                           src="./assets/images/K Full logo.svg"

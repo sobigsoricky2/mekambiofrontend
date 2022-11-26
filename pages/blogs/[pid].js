@@ -51,11 +51,11 @@ const SingleBlog = (props) => {
                   </li>
                   <li>
                     <i className="far fa-calendar-alt"></i>{" "}
-                    <Link href="blog-details.html">February 20, 2022</Link>
+                    <Link href="blog-details ">February 20, 2022</Link>
                   </li>
                   <li>
                     <i className="far fa-comments"></i>{" "}
-                    <Link href="blog-details.html">Comments (05)</Link>
+                    <Link href="blog-details ">Comments (05)</Link>
                   </li>
                 </ul>
                 <h3 className="title">{blog?.title}</h3>
@@ -66,7 +66,7 @@ const SingleBlog = (props) => {
                   <div className="tag-coulds pb-25">
                     <h6>Tags</h6>
                     {blog.tags?.map((t, index) => (
-                      <Link key={index} href="blog.html">{t}</Link>
+                      <Link key={index} href="blog ">{t}</Link>
                     ))}
                   </div>
                   <div className="social-style-two">
@@ -79,10 +79,10 @@ const SingleBlog = (props) => {
                     >
                       <i className="fab fa-facebook-f"></i>
                     </Link>
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-twitter"></i>
                     </Link>
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-linkedin-in"></i>
                     </Link>
                   </div>
@@ -104,19 +104,19 @@ const SingleBlog = (props) => {
                         sint
                       </p>
                       <div className="social-style-two">
-                        <Link href="contact.html">
+                        <Link href="contact ">
                           <i className="fab fa-facebook-f"></i>
                         </Link>
-                        <Link href="contact.html">
+                        <Link href="contact ">
                           <i className="fab fa-twitter"></i>
                         </Link>
-                        <Link href="contact.html">
+                        <Link href="contact ">
                           <i className="fab fa-instagram"></i>
                         </Link>
-                        <Link href="contact.html">
+                        <Link href="contact ">
                           <i className="fab fa-behance"></i>
                         </Link>
-                        <Link href="contact.html">
+                        <Link href="contact ">
                           <i className="fab fa-dribbble"></i>
                         </Link>
                       </div>
@@ -126,7 +126,7 @@ const SingleBlog = (props) => {
                 <div className="blog-nav pt-60 pb-25">
                   <div className="prev-blog wow fadeInLeft delay-0-2s">
                     <div className="blog-thumb">
-                      <Link href="blog-details.html">
+                      <Link href="blog-details ">
                         <img
                           src="./assets/images/blog/blog-nav-prev.jpg"
                           alt="Image"
@@ -135,7 +135,7 @@ const SingleBlog = (props) => {
                     </div>
                     <div className="content">
                       <h6>
-                        <Link href="blog-details.html">
+                        <Link href="blog-details ">
                           How Deal With Back During Pregn
                         </Link>
                       </h6>
@@ -146,7 +146,7 @@ const SingleBlog = (props) => {
                   </div>
                   <div className="next-blog wow fadeInRight delay-0-2s">
                     <div className="blog-thumb">
-                      <Link href="blog-details.html">
+                      <Link href="blog-details ">
                         <img
                           src="./assets/images/blog/blog-nav-next.jpg"
                           alt="Image"
@@ -155,7 +155,7 @@ const SingleBlog = (props) => {
                     </div>
                     <div className="content">
                       <h6>
-                        <Link href="blog-details.html">
+                        <Link href="blog-details ">
                           Online Environme Work Older See
                         </Link>
                       </h6>
@@ -273,16 +273,16 @@ const SingleBlog = (props) => {
                     incididunt ut labore etdol magna aliquas uspensis.{" "}
                   </p>
                   <div className="social-style-two">
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-facebook-f"></i>
                     </Link>
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-twitter"></i>
                     </Link>
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-linkedin-in"></i>
                     </Link>
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-youtube"></i>
                     </Link>
                   </div>
@@ -291,31 +291,31 @@ const SingleBlog = (props) => {
                   <h4 className="widget-title">Category</h4>
                   <ul>
                     <li>
-                      <Link href="blog.html">Business Coach </Link>{" "}
+                      <Link href="blog ">Business Coach </Link>{" "}
                       <span>(25)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Life Coach </Link>{" "}
+                      <Link href="blog ">Life Coach </Link>{" "}
                       <span>(07)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Health Coach </Link>{" "}
+                      <Link href="blog ">Health Coach </Link>{" "}
                       <span>(12)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Web Design </Link>{" "}
+                      <Link href="blog ">Web Design </Link>{" "}
                       <span>(55)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Web Development </Link>{" "}
+                      <Link href="blog ">Web Development </Link>{" "}
                       <span>(14)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">SEO Optimizations </Link>{" "}
+                      <Link href="blog ">SEO Optimizations </Link>{" "}
                       <span>(30)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Digital Analysis </Link>{" "}
+                      <Link href="blog ">Digital Analysis </Link>{" "}
                       <span>(18)</span>
                     </li>
                   </ul>
@@ -332,7 +332,7 @@ const SingleBlog = (props) => {
                       </div>
                       <div className="content">
                         <h6>
-                          <Link href="./categories.html">
+                          <Link href="./categories">
                             How to Learn Basic Web (UI) Design
                           </Link>
                         </h6>
@@ -350,7 +350,7 @@ const SingleBlog = (props) => {
                       </div>
                       <div className="content">
                         <h6>
-                          <Link href="./categories.html">
+                          <Link href="./categories">
                             How to Learn Basic Web Development
                           </Link>
                         </h6>
@@ -368,7 +368,7 @@ const SingleBlog = (props) => {
                       </div>
                       <div className="content">
                         <h6>
-                          <Link href="./categories.html">
+                          <Link href="./categories">
                             How to Learn Basic (SEO) Marketing{" "}
                           </Link>
                         </h6>
@@ -386,7 +386,7 @@ const SingleBlog = (props) => {
                       </div>
                       <div className="content">
                         <h6>
-                          <Link href="./categories.html">
+                          <Link href="./categories">
                             Business Strategy Managements
                           </Link>
                         </h6>
@@ -400,14 +400,14 @@ const SingleBlog = (props) => {
                 <div className="widget widget-tag-cloud wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Popular Tags</h4>
                   <div className="tag-coulds">
-                    <Link href="blog.html">Course</Link>
-                    <Link href="blog.html">Design</Link>
-                    <Link href="blog.html">Marketing</Link>
-                    <Link href="blog.html">Life Course</Link>
-                    <Link href="blog.html">Health Course</Link>
-                    <Link href="blog.html">SEO</Link>
-                    <Link href="blog.html">Business</Link>
-                    <Link href="blog.html">Graphics</Link>
+                    <Link href="blog ">Course</Link>
+                    <Link href="blog ">Design</Link>
+                    <Link href="blog ">Marketing</Link>
+                    <Link href="blog ">Life Course</Link>
+                    <Link href="blog ">Health Course</Link>
+                    <Link href="blog ">SEO</Link>
+                    <Link href="blog ">Business</Link>
+                    <Link href="blog ">Graphics</Link>
                   </div>
                 </div>
               </div>

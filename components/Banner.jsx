@@ -4,7 +4,7 @@ import Image from "next/image";
 const Banner = ({ title }) => {
   return (
     <div>
-      <section
+      <section 
         className="page-banner-area rel z-1 text-white text-center"
         style={{ backgroundImage: "url(/assets/images/banner.jpg)" }}
       >

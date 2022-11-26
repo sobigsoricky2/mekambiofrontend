@@ -21,7 +21,7 @@ const Catagories = () => {
                   conseguir tus objetivos.
                 </p>
                 <Link
-                  href="categories.html"
+                  href="categories"
                   className="read-more color-two mt-5 text-white"
                 >
                   Ver más<i className="fas fa-arrow-right"></i>
