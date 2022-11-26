@@ -252,14 +252,14 @@ const Footer = () => {
                         />
                         <label
                           className="custom-control-label"
-                          for="hero-wekly"
+                          htmlFor="hero-wekly"
                         >
                           Publicaciones Mensuales
                         </label>
                       </div>
                     </div>
                     <div className="newsletter-email">
-                      <label for="email">
+                      <label htmlFor="email">
                         <i className="far fa-envelope"></i>
                       </label>
                       <input

@@ -1,8 +1,9 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const Navbar = () => {
+  const [showSidebar, setShowSidebar] = useState(false)
   return (
     <div>
       <header className="main-header">
@@ -93,7 +94,7 @@ const Navbar = () => {
                     </ul>
 
                     <div className="menu-sidebar">
-                      <button>
+                      <button onClick={e => setShowSidebar(true)}>
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
@@ -107,9 +108,12 @@ const Navbar = () => {
         </div>
       </header>
 
-      <section className="hidden-bar">
+{
+ 
+    <div className={showSidebar?`side-content-visible`:''}>
+     <section className="hidden-bar">
         <div className="inner-box text-center">
-          <div className="cross-icon">
+          <div onClick={e => setShowSidebar(false)} className="cross-icon">
             <span className="fa fa-times"></span>
           </div>
           <div className="title">
@@ -179,6 +183,10 @@ const Navbar = () => {
           </div>
         </div>
       </section>
+    </div>
+ 
+}
+     
     </div>
   );
 };
