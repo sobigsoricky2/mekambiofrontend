@@ -33,6 +33,10 @@ function MyApp({ Component, pageProps }) {
           type="image/x-icon"
         />
         <title>meKambio</title>
+        <meta name="theme-color" content="#000" />
+        <link rel="manifest" href="/manifest.json" />
+      
+        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
 
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
