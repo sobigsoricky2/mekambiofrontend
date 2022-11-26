@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 const AreasSectionEven = ({ areaSection, swap }) => {
   return (
@@ -17,8 +18,8 @@ const AreasSectionEven = ({ areaSection, swap }) => {
             <h2>{areaSection?.fields?.subtitle}</h2>
           </div>
           <ul className="list-style-three pt-10">
-            {areaSection?.fields?.folowingAreasSectionItems?.map((item) => (
-              <li>
+            {areaSection?.fields?.folowingAreasSectionItems?.map((item, index) => (
+              <li key={index}>
                 <div className="content">
                   <h5>{item?.fields?.title}</h5>
                   <p>{item?.fields?.content}</p>
@@ -50,8 +51,8 @@ const AreasSectionEven = ({ areaSection, swap }) => {
               gridTemplateColumns: swap ? "1fr 1fr 1fr" : "1fr 1fr ",
             }}
           >
-            {areaSection?.fields?.images.map((image) => (
-              <div style={{ alignItems: "center" }}>
+            {areaSection?.fields?.images.map((image, index) => (
+              <div key="index" style={{ alignItems: "center" }}>
                 <img
                   style={{ margin: "0.5em auto" }}
                   src={image?.fields?.file?.url}

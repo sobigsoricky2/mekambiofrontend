@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 const Hero = () => {
   return (
@@ -28,7 +29,7 @@ const Hero = () => {
                 <div className="hero-btn mt-30 wow fadeInUp delay-0-8s">
                   <Link
                     style={{ textTransform: "none", fontSize: "15px" }}
-                    href="/how-to.use.html"
+                    href="/how-to-use "
                     className="theme-btn"
                   >
                     Empieza a dar Forma a tu Futuro
@@ -39,7 +40,7 @@ const Hero = () => {
             </div>
             <div className="col-lg-5">
               <div className="hero-right-images text-lg-right wow fadeInUp delay-0-2s">
-                <img src="/assets/images/hero/Component-1.webp" alt="Hero" />
+                <img width="auto" height="auto"src="/assets/images/hero/Component-1.webp" alt="Hero" />
               </div>
             </div>
           </div>

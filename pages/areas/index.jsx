@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
-import { ContentfulClient } from "../blogs/utils";
+import { ContentfulClient} from '../../helpers/utils'
 import AreasSectionEven from "./AreasSectionEven";
 import Link from "next/link";
 const Areas = () => {
@@ -60,8 +60,8 @@ const Areas = () => {
               <p>{areasSection?.fields?.content}</p>
             </div>
             <div className="row justify-content-center">
-              {areas?.map((area) => (
-                <div className="col-lg-4 col-sm-6">
+              {areas?.map((area, index) => (
+                <div key={index} className="col-lg-4 col-sm-6">
                   <div
                     className="feature-three-item wow fadeInUp delay-0-2s animated"
                     style={{ visibility: "visible", animationName: "fadeInUp" }}
@@ -91,6 +91,7 @@ const Areas = () => {
         {folowingAreasSection?.map((areaSection, index) => (
           <section
             id="sec-1"
+            key={index}
             className="rules-condition-area pt-100 pb-50 bg-blue text-white rpt-90"
           >
             <div className="container ">

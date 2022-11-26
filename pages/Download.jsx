@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
 import Link from "next/link";

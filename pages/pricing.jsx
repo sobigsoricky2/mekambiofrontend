@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
 import Link from "next/link";
@@ -34,8 +35,8 @@ const Pricing = () => {
                   <li>Precio Subscripción : 0€</li>
                   <li>Duración : 1 año </li>
                   <li>Anuncios Destacados : -</li>
-                  <li>Sesiones 1on1 "Citas" : 12</li>
-                  <li>Eventos "Sesiones": 2</li>
+                  <li>Sesiones 1on1 &quot;Citas&quot; : 12</li>
+                  <li>Eventos &quot;Sesiones&quot;: 2</li>
                   <li>Comisión : 20%</li>
                 </ul>
                 <span className="price">0</span>
@@ -66,8 +67,8 @@ const Pricing = () => {
                   <li>Precio Subscripción : 99.90€</li>
                   <li>Duración: - 1 año </li>
                   <li>Anuncios Destacados : -</li>
-                  <li>Sesiones 1on1 "Citas" : 60</li>
-                  <li>Eventos "Sesiones": 4</li>
+                  <li>Sesiones 1on1 &quot;Citas&quot; : 60</li>
+                  <li>Eventos &quot;Sesiones&quot;: 4</li>
                   <li>Comisión : 15%</li>
                 </ul>
                 <span className="price">8.21</span>
@@ -98,8 +99,8 @@ const Pricing = () => {
                   <li>Precio Subscripción : 149.90€</li>
                   <li>Duración: 1 año </li>
                   <li>Anuncios Destacados : 2</li>
-                  <li>Sesiones 1on1 "Citas" : 175</li>
-                  <li>Eventos "Sesiones": 16</li>
+                  <li>Sesiones 1on1 &quot;Citas&quot;: 175</li>
+                  <li>Eventos &quot;Sesiones&quot;: 16</li>
                   <li>Comisión : 15%</li>
                 </ul>
                 <span className="price">12.32</span>

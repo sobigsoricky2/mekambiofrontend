@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
 import Link from "next/link";
@@ -14,7 +15,7 @@ const Support = () => {
           <Link href="#">
             <h5 className="font-weight-normal mb-1">• Cómo funciona</h5>
           </Link>
-          <Link href="faq.html">
+          <Link href="faq ">
             <h5 className="mt-0 font-weight-normal">
               • Experts Preguntas Frecuentes
             </h5>
@@ -25,10 +26,10 @@ const Support = () => {
               • Política de Privacidad
             </h5>
           </Link>
-          <Link href="terms.html">
+          <Link href="terms ">
             <h5 className="mt-0 font-weight-normal mb-1">• Términos de uso</h5>
           </Link>
-          <Link href="refund-policy.html">
+          <Link href="refund-policy ">
             <h5 className="mt-0 font-weight-normal">
               • Reembolsos y Política de Privacidad
             </h5>

@@ -252,14 +252,14 @@ const Footer = () => {
                         />
                         <label
                           className="custom-control-label"
-                          for="hero-wekly"
+                          htmlFor="hero-wekly"
                         >
                           Publicaciones Mensuales
                         </label>
                       </div>
                     </div>
                     <div className="newsletter-email">
-                      <label for="email">
+                      <label htmlFor="email">
                         <i className="far fa-envelope"></i>
                       </label>
                       <input
@@ -351,7 +351,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mt-4">
-                  <Link href="download.html">
+                  <Link href="download ">
                     Descarga las Apps de meKambio
                   </Link>
                 </div>
@@ -359,36 +359,36 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-3 col-sm-4">
               <div className="footer-widget menu-widget">
-                <Link href="categories.html">
+                <Link href="categories">
                   {" "}
                   <h5 className="footer-title">Áreas</h5>
                 </Link>
                 <ul>
                   <li>
-                    <Link href="./categories.html#sec-1">
+                    <Link href="./categories#sec-1">
                       Progresión de Carrera
                     </Link>
                   </li>
                   <li>
-                    <Link href="./categories.html#sec-2">
+                    <Link href="./categories#sec-2">
                       Cambio de Carrera
                     </Link>
                   </li>
                   <li>
-                    <Link href="./categories.html#sec-3">
+                    <Link href="./categories#sec-3">
                       Acceso al Mercado Laboral
                     </Link>
                   </li>
                   <li>
-                    <Link href="./categories.html#sec-4">
+                    <Link href="./categories#sec-4">
                       Impulso Internacional de tu Carrera
                     </Link>
                   </li>
                   <li>
-                    <Link href="./categories.html#sec-5">Emprendimiento</Link>
+                    <Link href="./categories#sec-5">Emprendimiento</Link>
                   </li>
                   <li>
-                    <Link href="./categories.html#sec-5">
+                    <Link href="./categories#sec-5">
                       Regresa al Mercado Laboral
                     </Link>
                   </li>
@@ -399,29 +399,29 @@ const Footer = () => {
             <div className="col-lg-3 col-md-3 col-sm-4">
               <div className="footer-widget menu-widget">
                 <h5 className="footer-title">
-                  <Link href="./services.html">Servicios</Link>
+                  <Link href="./services ">Servicios</Link>
                 </h5>
                 <ul>
                   <li>
-                    <Link href="services.html#sec-1">Para Profesionales</Link>
+                    <Link href="services#sec-1">Para Profesionales</Link>
                   </li>
                   <li>
-                    <Link href="services.html#sec-2">
+                    <Link href="services#sec-2">
                       Para Coaches y Mentores
                     </Link>
                   </li>
                   <li>
-                    <Link href="services.html#sec-3">
+                    <Link href="services#sec-3">
                       Para Empresas y sus Equipos
                     </Link>
                   </li>
                   <li>
-                    <Link href="services.html#sec-4">
+                    <Link href="services#sec-4">
                       Para Empresas y sus Clientes
                     </Link>
                   </li>
                   <li>
-                    <Link href="experts.html">Únete al equipo</Link>
+                    <Link href="experts ">Únete al equipo</Link>
                   </li>
                 </ul>
               </div>
@@ -431,24 +431,24 @@ const Footer = () => {
                 <h5 className="footer-title">Recursos</h5>
                 <ul>
                   <li>
-                    <Link href="faq.html">FAQ's</Link>
+                    <Link href="faq ">FAQs</Link>
                   </li>
                   <li>
-                    <Link href="how-to.use.html">Cómo Funciona</Link>
+                    <Link href="how-to-use ">Cómo Funciona</Link>
                   </li>
                   <li>
-                    <Link href="support.html">Centro de Soporte</Link>
+                    <Link href="support ">Centro de Soporte</Link>
                   </li>
                   <li>
-                    <Link href="refund-policy.html">
+                    <Link href="refund-policy ">
                       Política de Privacidad
                     </Link>
                   </li>
                   <li>
-                    <Link href="terms.html">Términos de Uso</Link>
+                    <Link href="terms ">Términos de Uso</Link>
                   </li>
                   <li>
-                    <Link href="refund-policy.html">
+                    <Link href="refund-policy ">
                       Reembolsos y Política de Pago
                     </Link>
                   </li>
@@ -461,15 +461,15 @@ const Footer = () => {
           <div className="container">
             <div className="copyright-inner">
               <p>
-                © 2021-2022 <Link href="index.html">meKambio</Link> All rights
+                © 2021-2022 <Link href="index ">meKambio</Link> All rights
                 reserved.
               </p>
               <ul className="footer-menu">
                 <li>
-                  <Link href="about-us.html">Quiénes somos</Link>
+                  <Link href="about-us ">Quiénes somos</Link>
                 </li>
                 <li>
-                  <Link href="services.html">meKambio Corporate</Link>
+                  <Link href="services ">meKambio Corporate</Link>
                 </li>
               </ul>
             </div>

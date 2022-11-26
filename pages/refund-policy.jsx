@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
 
@@ -144,7 +145,7 @@ const Refund = () => {
           <p>
             No refund will be issued in case the user has lost and/or forgot
             his/her login credentials (username and passwords), which has
-            resulted in loss of data, temporary loss of access to the user's
+            resulted in loss of data, temporary loss of access to the user&quot;s
             account or any other inconveniences for the user.
           </p>
           <p>

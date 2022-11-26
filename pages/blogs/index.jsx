@@ -3,9 +3,10 @@ import React, { useEffect, useState } from "react";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
 import axios from "axios";
-import { getImage, ContentfulClient } from "./utils";
+import { getImage, ContentfulClient } from "../../helpers/utils";
+
 var contentful = require("contentful");
-const index = ({ posts }) => {
+const Index = ({ posts }) => {
   const [blogs, setblogs] = useState([]);
 
   useEffect(() => {
@@ -62,17 +63,17 @@ const index = ({ posts }) => {
                           </li>
                           <li>
                             <i className="far fa-calendar-alt"></i>{" "}
-                            <Link href="blog-details.html">
+                            <Link href="blog-details ">
                               February 20, 2022
                             </Link>
                           </li>
                           <li>
                             <i className="far fa-comments"></i>{" "}
-                            <Link href="blog-details.html">Comments (05)</Link>
+                            <Link href="blog-details ">Comments (05)</Link>
                           </li>
                         </ul>
                         <h3>
-                          <Link href="blog-details.html">{fields?.title}</Link>
+                          <Link href="blog-details ">{fields?.title}</Link>
                         </h3>
                         <p>{fields?.shortDescription}</p>
                         <Link
@@ -123,7 +124,7 @@ const index = ({ posts }) => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="image">
-                    <img src="" alt="Author" />
+                    <img width="auto" height="auto"src="" alt="Author" />
                   </div>
                   <h4>James D. Thomas</h4>
                   <p>
@@ -131,16 +132,16 @@ const index = ({ posts }) => {
                     incididunt ut labore etdol magna aliquas uspensis.{" "}
                   </p>
                   <div className="social-style-two">
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-facebook-f"></i>
                     </Link>
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-twitter"></i>
                     </Link>
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-linkedin-in"></i>
                     </Link>
-                    <Link href="contact.html">
+                    <Link href="contact ">
                       <i className="fab fa-youtube"></i>
                     </Link>
                   </div>
@@ -152,46 +153,46 @@ const index = ({ posts }) => {
                   <h4 className="widget-title">Category</h4>
                   <ul>
                     <li>
-                      <Link href="blog.html">meKambio mONday </Link>{" "}
+                      <Link href="blog ">meKambio mONday </Link>{" "}
                       <span>(25)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Coaching </Link> <span>(07)</span>
+                      <Link href="blog ">Coaching </Link> <span>(07)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Mentoring</Link> <span>(12)</span>
+                      <Link href="blog ">Mentoring</Link> <span>(12)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Liderazgo </Link> <span>(55)</span>
+                      <Link href="blog ">Liderazgo </Link> <span>(55)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">
+                      <Link href="blog ">
                         Habilidades y Competencias Profesionales{" "}
                       </Link>
                       <span>(14)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Impulso Internacional</Link>{" "}
+                      <Link href="blog ">Impulso Internacional</Link>{" "}
                       <span>(30)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Progresión de Carrera</Link>{" "}
+                      <Link href="blog ">Progresión de Carrera</Link>{" "}
                       <span>(18)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Acceso al Mercado Laboral </Link>{" "}
+                      <Link href="blog ">Acceso al Mercado Laboral </Link>{" "}
                       <span>(07)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Cambio de Carrera</Link>{" "}
+                      <Link href="blog ">Cambio de Carrera</Link>{" "}
                       <span>(12)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Emprendimiento </Link>{" "}
+                      <Link href="blog ">Emprendimiento </Link>{" "}
                       <span>(55)</span>
                     </li>
                     <li>
-                      <Link href="blog.html">Regreso al Mercado Laboral</Link>{" "}
+                      <Link href="blog ">Regreso al Mercado Laboral</Link>{" "}
                       <span>(18)</span>
                     </li>
                   </ul>
@@ -202,14 +203,14 @@ const index = ({ posts }) => {
                 >
                   <h4 className="widget-title">Popular Tags</h4>
                   <div className="tag-coulds">
-                    <Link href="blog.html">Course</Link>
-                    <Link href="blog.html">Design</Link>
-                    <Link href="blog.html">Marketing</Link>
-                    <Link href="blog.html">Life Course</Link>
-                    <Link href="blog.html">Health Course</Link>
-                    <Link href="blog.html">SEO</Link>
-                    <Link href="blog.html">Business</Link>
-                    <Link href="blog.html">Graphics</Link>
+                    <Link href="blog ">Course</Link>
+                    <Link href="blog ">Design</Link>
+                    <Link href="blog ">Marketing</Link>
+                    <Link href="blog ">Life Course</Link>
+                    <Link href="blog ">Health Course</Link>
+                    <Link href="blog ">SEO</Link>
+                    <Link href="blog ">Business</Link>
+                    <Link href="blog ">Graphics</Link>
                   </div>
                 </div> */}
               </div>
@@ -314,4 +315,4 @@ const index = ({ posts }) => {
 //     },
 //   };
 // }
-export default index;
+export default Index;
