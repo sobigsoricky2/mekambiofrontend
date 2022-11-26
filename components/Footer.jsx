@@ -9,7 +9,9 @@ const Footer = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+
   };
 
   const [email, setEmail] = useState("");
@@ -90,7 +92,7 @@ const Footer = () => {
       <section className="testimonials-section-two my-80 rel z-1 wow fadeInUp delay-0-2s">
         <div className="container">
           <div className="testimonial-two-wrap">
-            <Slider>
+            <Slider {...settings}>
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img

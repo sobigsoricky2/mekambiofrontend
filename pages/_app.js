@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
         />
 
         <script src=" /assets/js/bootstrap.min.js" defer async />
-       
+   
       </Head>
       <div
         style={{

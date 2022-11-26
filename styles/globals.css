@@ -82,6 +82,7 @@ body {
   line-height: 1.82;
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
+  overflow-x:hidden;
 }
 
 a {
@@ -8184,6 +8185,10 @@ h6,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.testimonials-section-two .testimonial-item-two img{
+  border-radius: 100%;
 }
 @media only screen and (max-width: 991px) {
   .testimonials-section-two .testimonial-item-two {
