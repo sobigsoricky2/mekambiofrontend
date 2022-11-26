@@ -32,8 +32,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
       
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
-              <script defer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" async></script>
+              <script async>
               new WOW().init();
               </script>
 
