@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
+import Slider from "react-slick";
 
 const Footer = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   const [email, setEmail] = useState("");
 
   const [formData, setFormData] = useState({
@@ -78,127 +87,133 @@ const Footer = () => {
   return (
     <div>
       {/* ===== */}
-      {/* <section className="testimonials-section-two my-80 rel z-1 wow fadeInUp delay-0-2s">
+
+      <section className="testimonials-section-two my-80 rel z-1 wow fadeInUp delay-0-2s">
         <div className="container">
           <div className="testimonial-two-wrap">
-            <div className="testimonial-item-two">
-              <div className="testimonial-author-two">
-                <img
-                  className="w-100"
-                  src="/assets/images/testimonials/testimonial-two2.jfif"
-                  alt="Author"
-                />
-              </div>
-              <div className="testimonial-content-two">
-                <div className="designation">
-                  <h3>Marta Bordera</h3>
-                  <span>Directora de Comunicación y Brand Strategist</span>
+            <Slider>
+              <div className="testimonial-item-two">
+                <div className="testimonial-author-two">
+                  <img
+                    className="w-100"
+                    src="/assets/images/testimonials/testimonial-two2.jfif"
+                    alt="Author"
+                  />
                 </div>
-                <p>
-                  Después de diez años en el mismo sector profesional, el
-                  conformismo y la falta de proyección profesional me hicieron
-                  replantear mi futuro laboral seriamente, para recalcular mi
-                  nueva ruta conté con los profesionales de meKambio, con los
-                  cuales gané la confianza en mí misma que necesitaba para
-                  proyectarme de nuevo, valorar nuevas oportunidades, poner en
-                  valor mis puntos fuertes, salir de mi zona de confort y pasar
-                  a la acción...En una par de meses conseguí nuevo trabajo, y no
-                  solamente eso ya que he triplicado mis ingresos y me siento
-                  valorada por el equipo y mis coordinadores
-                </p>
-                <div className="ratting">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-item-two">
-              <div className="testimonial-author-two">
-                <img
-                  src="/assets/images/testimonials/Meritxell Boluda.jfif"
-                  alt="Author"
-                />
-              </div>
-              <div className="testimonial-content-two">
-                <div className="designation">
-                  <h3>Meritxell Boluda</h3>
-                  <span>HR Business Partner</span>
-                </div>
-                <p>
-                  Eduard y su equipo me ayudaron en un momento de desorientación
-                  laboral a establecer las bases para encontrar un proyecto
-                  motivador, acorde con mis intereses. Lo recomiendo sin dudar.
-                </p>
-                <div className="ratting">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
+                <div className="testimonial-content-two">
+                  <div className="designation">
+                    <h3>Marta Bordera</h3>
+                    <span>Directora de Comunicación y Brand Strategist</span>
+                  </div>
+                  <p>
+                    Después de diez años en el mismo sector profesional, el
+                    conformismo y la falta de proyección profesional me hicieron
+                    replantear mi futuro laboral seriamente, para recalcular mi
+                    nueva ruta conté con los profesionales de meKambio, con los
+                    cuales gané la confianza en mí misma que necesitaba para
+                    proyectarme de nuevo, valorar nuevas oportunidades, poner en
+                    valor mis puntos fuertes, salir de mi zona de confort y
+                    pasar a la acción...En una par de meses conseguí nuevo
+                    trabajo, y no solamente eso ya que he triplicado mis
+                    ingresos y me siento valorada por el equipo y mis
+                    coordinadores
+                  </p>
+                  <div className="ratting">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="testimonial-item-two">
-              <div className="testimonial-author-two">
-                <img
-                  src="/assets/images/testimonials/JorgeDolz.Testimonial.png"
-                  alt="Author"
-                />
-              </div>
-              <div className="testimonial-content-two">
-                <div className="designation">
-                  <h3>Jorge Dolz</h3>
-                  <span>Owner and Business Manager en JDZ</span>
+              <div className="testimonial-item-two">
+                <div className="testimonial-author-two">
+                  <img
+                    src="/assets/images/testimonials/Meritxell Boluda.jfif"
+                    alt="Author"
+                  />
                 </div>
-                <p>
-                  meKambio fomenta el aprendizaje en base a compartir
-                  conocimiento. Utilizo la plataforma como usuario y como expert
-                  y estoy encantado con la experiencia. Además de aprender de
-                  otras personas y de su trayectoria, desarrollo mi networking
-                  profesional.
-                </p>
-                <div className="ratting">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-item-two">
-              <div className="testimonial-author-two">
-                <img
-                  src="/assets/images/testimonials/Alejandro Garrido.png"
-                  alt="Author"
-                />
-              </div>
-              <div className="testimonial-content-two">
-                <div className="designation">
-                  <h3>Alejandro Garrido</h3>
-                  <span>Retail Multichannel Industry Manager at Google</span>
-                </div>
-                <p>
-                  Gran plataforma de ayuda a profesionales. En un mundo laboral
-                  cada vez más complejo, poder contar con grandes profesionales
-                  para contar con su experiencia e incluso tener la posibilidad
-                  de desarrollar tus capacidades a través del coaching es clave.
-                </p>
-                <div className="ratting">
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
+                <div className="testimonial-content-two">
+                  <div className="designation">
+                    <h3>Meritxell Boluda</h3>
+                    <span>HR Business Partner</span>
+                  </div>
+                  <p>
+                    Eduard y su equipo me ayudaron en un momento de
+                    desorientación laboral a establecer las bases para encontrar
+                    un proyecto motivador, acorde con mis intereses. Lo
+                    recomiendo sin dudar.
+                  </p>
+                  <div className="ratting">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div className="testimonial-item-two">
+                <div className="testimonial-author-two">
+                  <img
+                    src="/assets/images/testimonials/JorgeDolz.Testimonial.png"
+                    alt="Author"
+                  />
+                </div>
+                <div className="testimonial-content-two">
+                  <div className="designation">
+                    <h3>Jorge Dolz</h3>
+                    <span>Owner and Business Manager en JDZ</span>
+                  </div>
+                  <p>
+                    meKambio fomenta el aprendizaje en base a compartir
+                    conocimiento. Utilizo la plataforma como usuario y como
+                    expert y estoy encantado con la experiencia. Además de
+                    aprender de otras personas y de su trayectoria, desarrollo
+                    mi networking profesional.
+                  </p>
+                  <div className="ratting">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="testimonial-item-two">
+                <div className="testimonial-author-two">
+                  <img
+                    src="/assets/images/testimonials/Alejandro Garrido.png"
+                    alt="Author"
+                  />
+                </div>
+                <div className="testimonial-content-two">
+                  <div className="designation">
+                    <h3>Alejandro Garrido</h3>
+                    <span>Retail Multichannel Industry Manager at Google</span>
+                  </div>
+                  <p>
+                    Gran plataforma de ayuda a profesionales. En un mundo
+                    laboral cada vez más complejo, poder contar con grandes
+                    profesionales para contar con su experiencia e incluso tener
+                    la posibilidad de desarrollar tus capacidades a través del
+                    coaching es clave.
+                  </p>
+                  <div className="ratting">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </Slider>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* ===== */}
 
@@ -219,12 +234,12 @@ const Footer = () => {
                     animationName: "fadeInLeft",
                   }}
                 >
-                  <Link
+                  <a
                     href="https://www.youtube.com/watch?v=smbwVTieDJk"
                     className="mfp-iframe video-play"
                   >
                     <i className="fas fa-play"></i>
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="col-lg-6 align-self-center">

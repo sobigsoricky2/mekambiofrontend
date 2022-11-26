@@ -7,7 +7,9 @@
 @import url('/assets/css/nice-select.min.css');
 @import url('/assets/css/jquery-ui.min.css');
 @import url('/assets/css/animate.min.css');
-@import url('/assets/css/slick.min.css');
+/* @import url('/assets/css/slick.min.css'); */
+
+
 
 
 
@@ -8178,7 +8180,7 @@ h6,
 .testimonials-section-two .testimonial-item-two {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex !important;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -8243,7 +8245,7 @@ h6,
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
-  opacity: 0;
+  /* opacity: 0; */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;

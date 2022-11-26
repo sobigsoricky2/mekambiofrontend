@@ -290,81 +290,81 @@
       });
     }
 
-    /* 13. Testimonial Slider */
-    if ($(".testimonial-wrap").length) {
-      $(".testimonial-wrap").slick({
-        infinite: true,
-        arrows: false,
-        dots: true,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        slidesToScroll: 1,
-        slidesToShow: 1,
-      });
-    }
+    // /* 13. Testimonial Slider */
+    // if ($(".testimonial-wrap").length) {
+    //   $(".testimonial-wrap").slick({
+    //     infinite: true,
+    //     arrows: false,
+    //     dots: true,
+    //     fade: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 5000,
+    //     pauseOnHover: false,
+    //     slidesToScroll: 1,
+    //     slidesToShow: 1,
+    //   });
+    // }
 
-    /* 14. Testimonial Two Slider */
-    if ($(".testimonial-two-wrap").length) {
-      $(".testimonial-two-wrap").slick({
-        infinite: true,
-        arrows: false,
-        dots: true,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        slidesToScroll: 1,
-        slidesToShow: 1,
-      });
-    }
+    // /* 14. Testimonial Two Slider */
+    // if ($(".testimonial-two-wrap").length) {
+    //   $(".testimonial-two-wrap").slick({
+    //     infinite: true,
+    //     arrows: false,
+    //     dots: true,
+    //     fade: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 5000,
+    //     pauseOnHover: false,
+    //     slidesToScroll: 1,
+    //     slidesToShow: 1,
+    //   });
+    // }
 
-    /* 15. Testimonial Three Slider */
-    if ($(".testimonial-three-wrap").length) {
-      $(".testimonial-three-wrap").slick({
-        infinite: true,
-        arrows: false,
-        dots: true,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        slidesToScroll: 1,
-        slidesToShow: 1,
-      });
-    }
+    // /* 15. Testimonial Three Slider */
+    // if ($(".testimonial-three-wrap").length) {
+    //   $(".testimonial-three-wrap").slick({
+    //     infinite: true,
+    //     arrows: false,
+    //     dots: true,
+    //     fade: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 5000,
+    //     pauseOnHover: false,
+    //     slidesToScroll: 1,
+    //     slidesToShow: 1,
+    //   });
+    // }
 
-    /* 16. Testimonial Four Slider */
-    if ($(".testimonial-four-wrap").length) {
-      $(".testimonial-four-wrap").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
-        centerMode: true,
-        infinite: true,
-        focusOnSelect: true,
-        cssEase: "linear",
-        touchMove: true,
-        variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-          {
-            breakpoint: 776,
-            settings: {
-              slidesToShow: 1,
-              variableWidth: false,
-            },
-          },
-        ],
-      });
-    }
+    // /* 16. Testimonial Four Slider */
+    // if ($(".testimonial-four-wrap").length) {
+    //   $(".testimonial-four-wrap").slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     dots: true,
+    //     centerMode: true,
+    //     infinite: true,
+    //     focusOnSelect: true,
+    //     cssEase: "linear",
+    //     touchMove: true,
+    //     variableWidth: true,
+    //     responsive: [
+    //       {
+    //         breakpoint: 1199,
+    //         settings: {
+    //           slidesToShow: 1,
+    //         },
+    //       },
+    //       {
+    //         breakpoint: 776,
+    //         settings: {
+    //           slidesToShow: 1,
+    //           variableWidth: false,
+    //         },
+    //       },
+    //     ],
+    //   });
+    // }
 
     // 17. Video Popups
     if ($(".video-play").length) {

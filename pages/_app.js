@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Script from "next/script";
 import "../styles/globals.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function MyApp({ Component, pageProps }) {
   function googleTranslateElementInit() {
@@ -12,17 +14,20 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <script src=" /assets/js/jquery-3.6.0.min.js" defer async />
+
         <script
           type="text/javascript"
           src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          async
           defer
+          async
         />
 
         <script
           type="text/javascript"
           src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
           defer
+          async
         />
 
         <script
@@ -30,7 +35,11 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
           crossorigin="anonymous"
           defer
+          async
         />
+
+        <script src=" /assets/js/bootstrap.min.js" defer async />
+       
       </Head>
       <div
         style={{
