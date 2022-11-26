@@ -21,7 +21,8 @@
     "**/*.tsx",
     "pages/api/test.js",
     "pages/api/googlesheetsFormData.js",
-    "pages/api/googlesheets.js"
+    "pages/api/googlesheets.js",
+    "pages/api/mailRelay.js"
   ],
   "exclude": ["node_modules"]
 }

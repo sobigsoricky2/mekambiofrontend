@@ -1,18 +1,11 @@
 import axios from "axios";
-import { NextApiRequest, NextApiResponse } from "next";
 
-type SheetForm = {
-  email: string;
-};
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function handler(req, res) {
   try {
     if (req.method != "POST") {
       res.status(405).send({ message: "Only Post requests are allowed" });
     }
-    const body = req.body;
+    const body = JSON.stringify(req.body);
     const config = {
       headers: {
         "Content-Type": "application/json",
