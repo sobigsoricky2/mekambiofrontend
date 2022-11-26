@@ -34,6 +34,7 @@ const Footer = () => {
       },
       body: JSON.stringify(formData),
     });
+    console.log(res);
     if (res2.status == 200 && res.status == 200) {
       alert("Subscriber Added and Email Sent");
     }
@@ -351,9 +352,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mt-4">
-                  <Link href="download ">
-                    Descarga las Apps de meKambio
-                  </Link>
+                  <Link href="download ">Descarga las Apps de meKambio</Link>
                 </div>
               </div>
             </div>
@@ -365,14 +364,10 @@ const Footer = () => {
                 </Link>
                 <ul>
                   <li>
-                    <Link href="./categories#sec-1">
-                      Progresión de Carrera
-                    </Link>
+                    <Link href="./categories#sec-1">Progresión de Carrera</Link>
                   </li>
                   <li>
-                    <Link href="./categories#sec-2">
-                      Cambio de Carrera
-                    </Link>
+                    <Link href="./categories#sec-2">Cambio de Carrera</Link>
                   </li>
                   <li>
                     <Link href="./categories#sec-3">
@@ -406,9 +401,7 @@ const Footer = () => {
                     <Link href="services#sec-1">Para Profesionales</Link>
                   </li>
                   <li>
-                    <Link href="services#sec-2">
-                      Para Coaches y Mentores
-                    </Link>
+                    <Link href="services#sec-2">Para Coaches y Mentores</Link>
                   </li>
                   <li>
                     <Link href="services#sec-3">
@@ -440,9 +433,7 @@ const Footer = () => {
                     <Link href="support ">Centro de Soporte</Link>
                   </li>
                   <li>
-                    <Link href="refund-policy ">
-                      Política de Privacidad
-                    </Link>
+                    <Link href="refund-policy ">Política de Privacidad</Link>
                   </li>
                   <li>
                     <Link href="terms ">Términos de Uso</Link>
