@@ -106,12 +106,12 @@ const TeamLanding = () => {
                     </div>
                     <div className="team-member">
                       <img
-                        src="/assets/images/teams/JoseBarroso_PERFIL.webp"
+                        src="/assets/images/teams/RoserMontardit.webp"
                         alt="Team Member"
                       />
                       <div className="team-over">
-                        <h4>José Barroso</h4>
-                        <span>Career & Executive Coach</span>
+                        <h4>JRoser Montardit</h4>
+                        <span className="p-4">Career Coach and Communication and Soft skills Trainer</span>
                         {/* <!-- <div className="social-style-two">
                                                 <Link href="contact "><i className="fab fa-twitter"></i></Link>
                                                 <Link href="contact "><i className="fab fa-facebook-f"></i></Link>

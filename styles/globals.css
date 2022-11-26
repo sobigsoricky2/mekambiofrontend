@@ -7,7 +7,7 @@
 @import url('/assets/css/nice-select.min.css');
 @import url('/assets/css/jquery-ui.min.css');
 @import url('/assets/css/animate.min.css');
-/* @import url('/assets/css/slick.min.css'); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 
 
 
@@ -3775,6 +3775,13 @@ h6,
     display: none;
   }
 }
+
+@media only screen and (max-width: 1090px) {
+  .main-header .logo {
+    padding: 15px;
+    max-width: 230px;
+    margin-top: -16px;
+    margin-bottom: -16px; } }
 .main-header .logo {
   z-index: 9;
   -webkit-box-flex: 0;
@@ -3795,7 +3802,7 @@ h6,
 @media only screen and (max-width: 1500px) {
   .main-header .logo {
     padding: 15px;
-    max-width: 100px;
+    /* max-width: 100px; */
     margin-top: -16px;
     margin-bottom: -16px;
   }
@@ -8192,7 +8199,7 @@ h6,
 }
 @media only screen and (max-width: 991px) {
   .testimonials-section-two .testimonial-item-two {
-    display: block;
+    display: block !important;
   }
 }
 .testimonials-section-two
@@ -8266,9 +8273,11 @@ h6,
 }
 @media only screen and (max-width: 991px) {
   .testimonial-author-two {
-    width: auto;
+    width: 50%;
     margin-right: 0;
     margin-bottom: 35px;
+  transform: translate(0px);
+
   }
 }
 
@@ -12327,3 +12336,25 @@ blockquote .blockquote-footer:before {
 .footer-two .scroll-top {
   border-color: #00cc83;
 }
+
+/*whatsapp icon */
+
+.whatsapp-ico{
+  fill: white;
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  background-color: #4dc247;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
+  position: fixed;
+  bottom: 20px;
+  right : 20px;
+  z-index: 10;
+}
+
+.whatsapp-ico:hover{
+  box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
+

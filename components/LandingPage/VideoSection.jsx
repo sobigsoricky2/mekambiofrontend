@@ -62,7 +62,10 @@ const VideoSection = () => {
                 }}
               >
                 {typeof window !== "undefined" ? (
-                  <ReactPlayer url="https://www.youtube.com/watch?v=smbwVTieDJk" />
+                  <ReactPlayer style={{
+                    maxWidth:"90vw",
+                    aspectRatio:"16/9"
+                  }} url="https://www.youtube.com/watch?v=smbwVTieDJk" />
                 ) : (
                   ""
                 )}
