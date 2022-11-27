@@ -32,6 +32,8 @@ const Footer = () => {
 
   const handleFormDataSubmit = async (e) => {
     e.preventDefault();
+
+    console.log(process.cwd());
     const res2 = await fetch("/api/email", {
       method: "POST",
       headers: {

@@ -22,7 +22,7 @@ export default async function handler(req, res) {
       mailRelayData,
       config
     );
-
+    console.log(response);
     return res.status(200).json({
       data: response.data,
     });

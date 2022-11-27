@@ -1,6 +1,9 @@
 import { google } from "googleapis";
 
 export default async function googlesheets(req, res) {
+  console.log(process.env.GOOGLE_PRIVATE_KEY);
+  console.log(process.env.GOOGLE_CLIENT_EMAIL);
+  console.log(process.env.GOOGLE_SHEET_ID);
   try {
     if (req.method != "POST") {
       res.status(405).send({ message: "Only Post requests are allowed" });
@@ -11,7 +14,7 @@ export default async function googlesheets(req, res) {
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace("/\\n/g", "\n"),
+        private_key: process.env.GOOGLE_PRIVATE_KEY.replace("/\\n/g", "\n"),
       },
       scopes: [
         "https://www.googleapis.com/auth/drive",
