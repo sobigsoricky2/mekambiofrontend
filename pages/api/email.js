@@ -1,10 +1,11 @@
 import sendgrid from "@sendgrid/mail";
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+sendgrid.setApiKey(
+  "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"
+);
 //info@mekambio.com
 
 async function sendEmail(req, res) {
-  console.log(process.env.SENDGRID_API_KEY);
   try {
     await sendgrid.send({
       to: "kunal.dazai@gmail.com",
