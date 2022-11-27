@@ -1,6 +1,6 @@
 import { google } from "googleapis";
 
-export default async function handler(req, res) {
+export default async function googlesheets(req, res) {
   try {
     if (req.method != "POST") {
       res.status(405).send({ message: "Only Post requests are allowed" });

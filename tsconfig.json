@@ -19,10 +19,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/api/test.js",
-    "pages/api/googlesheetsFormData.js",
-    "pages/api/googlesheets.js",
-    "pages/api/mailRelay.js"
+    "api/test.js",
+    "api/googlesheetsFormData.js",
+    "api/googlesheets.js",
+    "api/mailRelay.js"
   ],
   "exclude": ["node_modules"]
 }
