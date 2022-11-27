@@ -7,7 +7,7 @@ import Link from "next/link";
 const Categories= () => {
   return (
     <Layout>
-      <Banner />
+      <Banner title={"Áreas"}/>
       <>
         <section className="features-section-three rel z-1 pt-110  pb-50 rpt-85 rpb-70">
           <div className="container">

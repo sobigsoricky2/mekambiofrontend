@@ -1,11 +1,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
+import Router from 'next/router';
 
-const Navbar = () => {
+const Navbar = ({color}) => {
+
   const [showSidebar, setShowSidebar] = useState(false)
   return (
     <div>
+      
       <header className="main-header">
         <div className="header-upper">
           <div className="container-fluid clearfix">
@@ -49,14 +52,14 @@ const Navbar = () => {
                       data-toggle="collapse"
                       data-target=".navbar-collapse"
                     >
-                      <span className="icon-bar"></span>
+                      <span className="icon-bar" style={{background:{color}}}></span>
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
                     </button>
                   </div>
 
                   <div className="navbar-collapse collapse clearfix">
-                    <ul className="navigation clearfix ">
+                    <ul className={`navigation clearfix `} style={{color:{color}}}>
                       
                       <li>
                         <Link
@@ -95,7 +98,7 @@ const Navbar = () => {
 
                     <div className="menu-sidebar">
                       <button onClick={e => setShowSidebar(true)}>
-                        <span className="icon-bar"></span>
+                        <span className="icon-bar" style={{background:`${Router?.router?.state?.route !== '/'? '#222':'#fff'}`}}></span>
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                       </button>
