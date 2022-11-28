@@ -11,7 +11,7 @@ const Hero = () => {
               <div className="hero-content rpt-25 rmb-75">
                 <span
                   style={{ textTransform: "none" }}
-                  className="sub-title style-two mb-20 wow fadeInUp delay-0-2s"
+                  className="sub-title style-two mb-20 wow fadeInUp delay-0-2s notranslate"
                 >
                   meKambio
                 </span>
@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <span className="bg-text">meKambio</span>
+        <span className="bg-text notranslate">meKambio</span>
       </section>
     </div>
   );
