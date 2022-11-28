@@ -18,6 +18,46 @@ const Navbar = ({color}) => {
        setColorchange(false);
      }
   };
+
+  const [formData, setFormData] = useState({
+    name: "",
+    surname: "",
+    formEmail: "",
+    phone: "",
+  });
+  const handleFormdataChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFormDataSubmit = async (e) => {
+    e.preventDefault();
+
+    console.log(process.cwd());
+    const res2 = await fetch("/api/email", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    console.log(res2);
+    const res = await fetch("/api/googlesheetsFormData", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (res2.status == 200 && res.status == 200) {
+      alert("Subscriber Added and Email Sent");
+    }
+  };
+  const { name, formEmail, surname, phone } = formData;
+
+
   if (typeof window !== 'undefined') {
     // You now have access to `window`
     window.addEventListener('scroll', changeNavbarColor);
@@ -142,50 +182,54 @@ const Navbar = ({color}) => {
           </div>
 
           <div className="appointment-form">
-            <form method="post" action="#">
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="text"
-                  value=""
-                  placeholder="Nombre"
-                  required=""
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="text"
-                  value=""
-                  placeholder="Apellidos"
-                  required=""
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  value=""
-                  placeholder="Email"
-                  required=""
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="number"
-                  name="number"
-                  value=""
-                  placeholder="teléfono"
-                  required=""
-                />
-              </div>
+            <form method="post" onSubmit={(e) => handleFormDataSubmit(e)}>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      value={name}
+                      placeholder="Nombre"
+                      required=""
+                      onChange={(e) => handleFormdataChange(e)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="surname"
+                      value={surname}
+                      placeholder="Apellidos"
+                      required=""
+                      onChange={(e) => handleFormdataChange(e)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      name="formEmail"
+                      value={formEmail}
+                      placeholder="Email"
+                      required=""
+                      onChange={(e) => handleFormdataChange(e)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="number"
+                      name="phone"
+                      value={phone}
+                      placeholder="teléfono"
+                      required=""
+                      onChange={(e) => handleFormdataChange(e)}
+                    />
+                  </div>
 
-              <div className="form-group">
-                <button type="submit" className="theme-btn">
-                  Enviar
-                </button>
-              </div>
-            </form>
+                  <div className="form-group">
+                    <button type="submit" className="theme-btn">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
           </div>
 
           <div className="social-style-one">
