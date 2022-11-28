@@ -17,7 +17,13 @@ const VideoSection = () => {
       >
         <div className="container">
           <div className="video-inner overlay">
-            <img width="auto" height="auto"src="/assets/images/video/video-section-bg.jpg" alt="Video" />
+            <img
+              loading="lazy"
+              width="auto"
+              height="auto"
+              src="/assets/images/video/video-section-bg.jpg"
+              alt="Video"
+            />
             <div
               href="https://www.youtube.com/watch?v=smbwVTieDJk"
               className="mfp-iframe video-play"
@@ -30,50 +36,53 @@ const VideoSection = () => {
       </div>
 
       {popUpVideo ? (
-            <div
-              style={{
-                width: "100vw",
-                height: "100vh",
-                position: "fixed",
-                zIndex: "999",
-                display: "flex",
-                justifyContent: "center",
-                top: "0",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  width: "100vw",
-                  height: "100vh",
-                  background: "#222",
-                  opacity: "0.6",
-                }}
-                onClick={(e) => setPopUpVideo(false)}
-              ></div>
+        <div
+          style={{
+            width: "100vw",
+            height: "100vh",
+            position: "fixed",
+            zIndex: "999",
+            display: "flex",
+            justifyContent: "center",
+            top: "0",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              width: "100vw",
+              height: "100vh",
+              background: "#222",
+              opacity: "0.6",
+            }}
+            onClick={(e) => setPopUpVideo(false)}
+          ></div>
 
-              <div
+          <div
+            style={{
+              position: "absolute",
+              zIndex: "99",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            {typeof window !== "undefined" ? (
+              <ReactPlayer
                 style={{
-                  position: "absolute",
-                  zIndex: "99",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
+                  maxWidth: "90vw",
+                  aspectRatio: "16/9",
                 }}
-              >
-                {typeof window !== "undefined" ? (
-                  <ReactPlayer style={{
-                    maxWidth:"90vw",
-                    aspectRatio:"16/9"
-                  }} url="https://www.youtube.com/watch?v=smbwVTieDJk" />
-                ) : (
-                  ""
-                )}
-              </div>
-            </div>
-          ) : (
-            ""
-          )}
+                url="https://www.youtube.com/watch?v=smbwVTieDJk"
+              />
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

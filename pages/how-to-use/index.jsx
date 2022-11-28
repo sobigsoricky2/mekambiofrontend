@@ -97,16 +97,19 @@ const HowToUse = () => {
                 >
                   <div className="image-one">
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team1.jpg"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team2.jpg"
                       alt="Join Our Team"
                     />
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team3.jpg"
                       alt="Join Our Team"
                     />
@@ -138,7 +141,11 @@ const HowToUse = () => {
                     animationName: "fadeInRight",
                   }}
                 >
-                  <img src="./assets/images/about/benefit.jpg" alt="Bebefit" />
+                  <img
+                    loading="lazy"
+                    src="./assets/images/about/benefit.jpg"
+                    alt="Bebefit"
+                  />
                 </div>
               </div>
               <div className="col-lg-6">
@@ -229,6 +236,7 @@ const HowToUse = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         src="./assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />
@@ -237,6 +245,7 @@ const HowToUse = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         src="./assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
@@ -245,6 +254,7 @@ const HowToUse = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         src="./assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
@@ -253,6 +263,7 @@ const HowToUse = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         className="w-100"
                         src="./assets/images/client-logos/Inesdi Digital Business School.jfif"
                         alt="Client Logo"
@@ -262,6 +273,7 @@ const HowToUse = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         className="w-100"
                         src="./assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
@@ -271,6 +283,7 @@ const HowToUse = () => {
                   <div className="logo-item w-25 text-center">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         className="w-50"
                         src="./assets/images/client-logos/UPC.png"
                         alt="Client Logo"

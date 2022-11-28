@@ -24,6 +24,7 @@ const Pricing = () => {
                 <span className="popularity">popular</span>
                 <div className="icon">
                   <img
+                    loading="lazy"
                     style={{ borderRadius: "50%" }}
                     className="w-75"
                     src="./assets/images/pricing/Basic Suscription.png"
@@ -56,6 +57,7 @@ const Pricing = () => {
                 <span className="popularity">popular</span>
                 <div className="icon">
                   <img
+                    loading="lazy"
                     style={{ borderRadius: "50%" }}
                     className="w-75"
                     src="./assets/images/pricing/K_Advanced Subscription.png"
@@ -88,6 +90,7 @@ const Pricing = () => {
                 <span className="popularity">popular</span>
                 <div className="icon">
                   <img
+                    loading="lazy"
                     style={{ borderRadius: "50%" }}
                     className="w-75"
                     src="./assets/images/pricing/K_Premium Suscription.png"

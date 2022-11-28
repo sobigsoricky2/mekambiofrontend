@@ -33,6 +33,7 @@ const Download = () => {
                       className=" w-50 mr-3  style-three border-0 p-0"
                     >
                       <img
+                        loading="lazy"
                         style={{ width: "35%" }}
                         src="./assets/images/playstore.png"
                         alt=""
@@ -43,6 +44,7 @@ const Download = () => {
                       className=" w-50 border-0 style-three p-0"
                     >
                       <img
+                        loading="lazy"
                         style={{ width: "35%" }}
                         src="./assets/images/appstore.png"
                         alt=""
@@ -54,11 +56,13 @@ const Download = () => {
               <div className="col-lg-6">
                 <div className="about-four-right-part mt-10 wow fadeInRight delay-0-2s">
                   <img
+                    loading="lazy"
                     className="image-one"
                     src="./assets/images/gallery/gallery2.jpg"
                     alt="About"
                   />
                   <img
+                    loading="lazy"
                     className="image-two"
                     src="./assets/images/gallery/gallery6.jpg"
                     alt="About"
@@ -82,11 +86,13 @@ const Download = () => {
               <div className="col-lg-6">
                 <div className="about-four-right-part mt-10 wow fadeInRight delay-0-2s">
                   <img
+                    loading="lazy"
                     className="image-one"
                     src="./assets/images/about/about-four1.jpg"
                     alt="About"
                   />
                   <img
+                    loading="lazy"
                     className="image-two"
                     src="./assets/images/about/about-four2.jpg"
                     alt="About"
@@ -121,6 +127,7 @@ const Download = () => {
                       className=" w-50 mr-3  style-three border-0 p-0"
                     >
                       <img
+                        loading="lazy"
                         style={{ width: "35%" }}
                         src="./assets/images/playstore.png"
                         alt=""
@@ -128,6 +135,7 @@ const Download = () => {
                     </Link>
                     <Link href="" className=" w-50 border-0 style-three p-0">
                       <img
+                        loading="lazy"
                         style={{ width: "35%" }}
                         src="./assets/images/appstore.png"
                         alt=""

@@ -103,6 +103,7 @@ const Footer = () => {
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img
+                    loading="lazy"
                     className="w-100"
                     src="/assets/images/testimonials/testimonial-two2.jfif"
                     alt="Author"
@@ -138,6 +139,7 @@ const Footer = () => {
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img
+                    loading="lazy"
                     src="/assets/images/testimonials/Meritxell Boluda.jfif"
                     alt="Author"
                   />
@@ -165,6 +167,7 @@ const Footer = () => {
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img
+                    loading="lazy"
                     src="/assets/images/testimonials/JorgeDolz.Testimonial.png"
                     alt="Author"
                   />
@@ -193,6 +196,7 @@ const Footer = () => {
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img
+                    loading="lazy"
                     src="/assets/images/testimonials/Alejandro Garrido.png"
                     alt="Author"
                   />

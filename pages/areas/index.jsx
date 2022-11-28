@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
-import { ContentfulClient} from '../../helpers/utils'
+import { ContentfulClient } from "../../helpers/utils";
 import AreasSectionEven from "./AreasSectionEven";
 import Link from "next/link";
 const Areas = () => {
@@ -68,6 +68,7 @@ const Areas = () => {
                   >
                     <div className="icon">
                       <img
+                        loading="lazy"
                         className="w-25"
                         src={area?.fields?.logo?.fields?.file?.url}
                         alt="Icon"
@@ -117,17 +118,17 @@ const Areas = () => {
                   }}
                 >
                   <div className="image-one">
-                    <img
+                    <img  loading="lazy"
                       src="./assets/images/instructor/join-team1.jpg"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
-                    <img
+                    <img  loading="lazy"
                       src="./assets/images/instructor/join-team2.jpg"
                       alt="Join Our Team"
                     />
-                    <img
+                    <img  loading="lazy"
                       src="./assets/images/instructor/join-team3.jpg"
                       alt="Join Our Team"
                     />

@@ -6,7 +6,7 @@ import Link from "next/link";
 const AboutUs = () => {
   return (
     <Layout>
-      <Banner title={"Quiénes Somos"}/>
+      <Banner title={"Quiénes Somos"} />
 
       <>
         <section className="about-page-section pt-120 pb-100 rpt-90">
@@ -24,13 +24,13 @@ const AboutUs = () => {
                   <p>
                     En 2020 se sembró la semilla de una idea; un proyecto de
                     apoyo a profesionales con apuros en sus carreras.
-                    
                   </p>
                 </div>
               </div>
               <div className="col-lg-5 text-center">
                 <div className="about-page-middle rpt-55 rpb-30 wow fadeInRight delay-0-2s">
                   <img
+                    loading="lazy"
                     style={{ borderRadius: "50%" }}
                     className="w-75"
                     src="/assets/images/logo-icono-.png"
@@ -70,7 +70,13 @@ const AboutUs = () => {
             <div className="row align-items-center large-gap">
               <div className="col-lg-5">
                 <div className="about-page-middle rpt-55 rpb-30 wow fadeInRight delay-0-2s">
-                  <img width="auto" height="auto"src="/assets/images/about/1.png" alt="About" />
+                  <img
+                    loading="lazy"
+                    width="auto"
+                    height="auto"
+                    src="/assets/images/about/1.png"
+                    alt="About"
+                  />
                 </div>
               </div>
               <div className="col-lg-5">
@@ -135,10 +141,10 @@ const AboutUs = () => {
                 <div className="team-member-two wow fadeInUp delay-0-2s">
                   <div className="image">
                     <img
+                      loading="lazy"
                       src="/assets/images/teams/EdurdMoreno_PERFIL.webp"
                       alt="Team Member"
                     />
-                  
                   </div>
                   <div className="member-description">
                     <h4>Eduard Moreno</h4>
@@ -150,10 +156,10 @@ const AboutUs = () => {
                 <div className="team-member-two wow fadeInUp delay-0-4s">
                   <div className="image">
                     <img
+                      loading="lazy"
                       src="/assets/images/teams/Stephen.png"
                       alt="Team Member"
                     />
-                    
                   </div>
                   <div className="member-description">
                     <h4>Stephen Logan</h4>
@@ -165,11 +171,10 @@ const AboutUs = () => {
                 <div className="team-member-two wow fadeInUp delay-0-6s">
                   <div className="image">
                     <img
+                      loading="lazy"
                       src="/assets/images/teams/AnabelReillo_PROFILE.webp"
                       alt="Team Member"
                     />
-                 
-                  
                   </div>
                   <div className="member-description">
                     <h4>Anabel Reillo</h4>
@@ -181,11 +186,10 @@ const AboutUs = () => {
                 <div className="team-member-two wow fadeInUp delay-0-8s">
                   <div className="image">
                     <img
+                      loading="lazy"
                       src="/assets/images/teams/Ana Gallego.png"
                       alt="Team Member"
                     />
-                  
-                  
                   </div>
                   <div className="member-description">
                     <h4>Ana Gallego</h4>
@@ -197,10 +201,10 @@ const AboutUs = () => {
                 <div className="team-member-two wow fadeInUp delay-0-2s">
                   <div className="image">
                     <img
+                      loading="lazy"
                       src="/assets/images/teams/JorgeDolz_PERIL.webp"
                       alt="Team Member"
                     />
-                  
                   </div>
                   <div className="member-description">
                     <h4>Jorge Dolz</h4>
@@ -212,10 +216,10 @@ const AboutUs = () => {
                 <div className="team-member-two wow fadeInUp delay-0-4s">
                   <div className="image">
                     <img
+                      loading="lazy"
                       src="/assets/images/teams/TiffanyBarnard_PROFILE.png"
                       alt="Team Member"
                     />
-               
                   </div>
                   <div className="member-description">
                     <h4>Tiffany Barnard</h4>
@@ -227,10 +231,10 @@ const AboutUs = () => {
                 <div className="team-member-two wow fadeInUp delay-0-6s">
                   <div className="image">
                     <img
+                      loading="lazy"
                       src="/assets/images/teams/AntonioValdivieso_PERFIL.webp"
                       alt="Team Member"
                     />
-                   
                   </div>
                   <div className="member-description">
                     <h4>Antonio Valdivieso</h4>
@@ -242,10 +246,10 @@ const AboutUs = () => {
                 <div className="team-member-two wow fadeInUp delay-0-8s">
                   <div className="image">
                     <img
+                      loading="lazy"
                       src="/assets/images/teams/JoseBarroso_PERFIL.webp"
                       alt="Team Member"
                     />
-                
                   </div>
                   <div className="member-description">
                     <h4>José Barroso</h4>
@@ -289,6 +293,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
                         alt="Client Logo"
                       />
@@ -297,6 +302,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         src="https://www.wemeanbusinesscoalition.org/wp-content/uploads/2019/09/Salesforce-LOGO.jpg"
                         alt="Client Logo"
                       />
@@ -305,6 +311,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
                         alt="Client Logo"
                       />
@@ -313,6 +320,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         className="w-100"
                         src="https://oroinc.com/orocrm/wp-content/uploads/sites/8/2017/06/Zendesk_logo_wordmark.png"
                         alt="Client Logo"
@@ -322,6 +330,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         className="w-100"
                         src="https://static.borngroup.com/uploads/2020/09/Logo-Mirakl.png"
                         alt="Client Logo"
@@ -331,6 +340,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25 text-center">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
+                        loading="lazy"
                         className="w-50"
                         src="https://th.bing.com/th/id/R.8126361d4fe00f6b67cacd6b751998d4?rik=eWb%2fNt6IvMli4g&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2016%2f05%2frainbow-apple-logo.png&ehk=Dk5yXp4Wc0DC4oScBdA9VamWYAANMF5ozQGYD8uAkuI%3d&risl=&pid=ImgRaw&r=0"
                         alt="Client Logo"
@@ -353,6 +363,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.upc.edu/ca">
                       <img
+                        loading="lazy"
                         src="/assets/images/client-logos/UPC.png"
                         alt="Client Logo"
                       />
@@ -361,6 +372,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://epseb.upc.edu/ca">
                       <img
+                        loading="lazy"
                         src="/assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
@@ -369,6 +381,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.eae.es/">
                       <img
+                        loading="lazy"
                         src="/assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
@@ -377,6 +390,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.threepoints.com/">
                       <img
+                        loading="lazy"
                         className="w-50"
                         src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
@@ -386,6 +400,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.inesdi.com/">
                       <img
+                        loading="lazy"
                         className="w-75"
                         src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
                         alt="Client Logo"
@@ -395,6 +410,7 @@ const AboutUs = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.deustoformacion.com/">
                       <img
+                        loading="lazy"
                         src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />

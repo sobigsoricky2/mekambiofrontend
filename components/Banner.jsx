@@ -4,7 +4,7 @@ import Image from "next/image";
 const Banner = ({ title }) => {
   return (
     <div>
-      <section 
+      <section
         className="page-banner-area rel z-1 text-white text-center"
         style={{ backgroundImage: "url(/assets/images/banner.jpg)" }}
       >
@@ -14,11 +14,13 @@ const Banner = ({ title }) => {
           </div>
         </div>
         <img
+          loading="lazy"
           className="circle-one"
           src="/assets/images/shapes/circle-one.png"
           alt="Circle"
         />
         <img
+          loading="lazy"
           className="circle-two"
           src="/assets/images/shapes/circle-two.png"
           alt="Circle"

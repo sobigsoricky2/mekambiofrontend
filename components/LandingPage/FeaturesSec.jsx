@@ -41,6 +41,7 @@ const FeaturesSec = () => {
                 <div className="content">
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="/assets/images/categories/category icon_Career Progression.png"
                       alt="Icon"
@@ -49,10 +50,7 @@ const FeaturesSec = () => {
                   <h5>Trabaja en lo que te apasiona</h5>
                   <p>¿Siempre la misma rutina, o problemas en el trabajo?</p>
                 </div>
-                <Link
-                  href="categories#pro"
-                  className="read-more color-two"
-                >
+                <Link href="categories#pro" className="read-more color-two">
                   Ver más
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -66,6 +64,7 @@ const FeaturesSec = () => {
                 <div className="content">
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="/assets/images/categories/category icon_Entrepreneurship.png"
                       alt="Icon"
@@ -74,10 +73,7 @@ const FeaturesSec = () => {
                   <h5>Provoca el cambio</h5>
                   <p>¿Sientes que necesitas un cambio de carrera? </p>
                 </div>
-                <Link
-                  href="categories#cam"
-                  className="read-more color-two"
-                >
+                <Link href="categories#cam" className="read-more color-two">
                   Ver más
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -91,6 +87,7 @@ const FeaturesSec = () => {
                 <div className="content">
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="/assets/images/categories/category icon_Get Back to Work.png"
                       alt="Icon"
@@ -99,10 +96,7 @@ const FeaturesSec = () => {
                   <h5>Mejora en lo que haces</h5>
                   <p>¿Tienes ganas de prosperar profesionalmente?</p>
                 </div>
-                <Link
-                  href="categories#pro"
-                  className="read-more color-two"
-                >
+                <Link href="categories#pro" className="read-more color-two">
                   Ver más
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -116,6 +110,7 @@ const FeaturesSec = () => {
                 <div className="content">
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="/assets/images/categories/category icon_International Career Boost.png"
                       alt="Icon"
@@ -124,10 +119,7 @@ const FeaturesSec = () => {
                   <h5>Inicia o vuelve a tu carrera</h5>
                   <p>¿Quieres acceder al mercado laboral?</p>
                 </div>
-                <Link
-                  href="categories#reg"
-                  className="read-more color-two"
-                >
+                <Link href="categories#reg" className="read-more color-two">
                   Ver más
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -136,11 +128,13 @@ const FeaturesSec = () => {
           </div>
         </div>
         <img
+          loading="lazy"
           className="rectangle-dots"
           src="/assets/images/shapes/03.png"
           alt="Shape"
         />
         <img
+          loading="lazy"
           className="circle-dots"
           src="/assets/images/shapes/01.png"
           alt="Shape"

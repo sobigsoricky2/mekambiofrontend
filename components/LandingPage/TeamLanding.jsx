@@ -50,6 +50,7 @@ const TeamLanding = () => {
                   >
                     <div className="team-member">
                       <img
+                        loading="lazy"
                         src="/assets/images/teams/AlejandroGarrido_PROFILE.webp"
                         alt="Team Member"
                       />
@@ -66,6 +67,7 @@ const TeamLanding = () => {
                     </div>
                     <div className="team-member">
                       <img
+                        loading="lazy"
                         src="/assets/images/teams/AntonioValdivieso_PERFIL.webp"
                         alt="Team Member"
                       />
@@ -90,6 +92,7 @@ const TeamLanding = () => {
                   >
                     <div className="team-member">
                       <img
+                        loading="lazy"
                         src="/assets/images/teams/JorgeDolz_PERIL.webp"
                         alt="Team Member"
                       />
@@ -106,12 +109,15 @@ const TeamLanding = () => {
                     </div>
                     <div className="team-member">
                       <img
+                        loading="lazy"
                         src="/assets/images/teams/RoserMontardit.webp"
                         alt="Team Member"
                       />
                       <div className="team-over">
                         <h4>JRoser Montardit</h4>
-                        <span className="p-4">Career Coach and Communication and Soft skills Trainer</span>
+                        <span className="p-4">
+                          Career Coach and Communication and Soft skills Trainer
+                        </span>
                         {/* <!-- <div className="social-style-two">
                                                 <Link href="contact "><i className="fab fa-twitter"></i></Link>
                                                 <Link href="contact "><i className="fab fa-facebook-f"></i></Link>
@@ -122,6 +128,7 @@ const TeamLanding = () => {
                     </div>
                     <div className="team-member">
                       <img
+                        loading="lazy"
                         src="/assets/images/teams/MiguelFarias_PERFIL.webp"
                         alt="Team Member"
                       />

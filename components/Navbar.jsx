@@ -52,6 +52,7 @@ const Navbar = ({ color }) => {
                 <div className="logo">
                   <Link href="/">
                     <img
+                      loading="lazy"
                       className="w-50"
                       src="/assets/images/K%20Full%20logo.svg"
                       alt="Logo"
@@ -73,6 +74,7 @@ const Navbar = ({ color }) => {
                     <div className="mobile-logo br-10 p-15">
                       <Link href="index ">
                         <img
+                          loading="lazy"
                           className="w-100"
                           src="./assets/images/K Full logo.svg"
                           alt="Logo"
