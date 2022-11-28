@@ -67,10 +67,15 @@ const Services = () => {
                   <div className="why-learn-feature pt-30">
                     <div className="row">
                       {service?.map((item, index) => (
-                        <div key={index} className="col-sm-6" id={`sec-${index+1}`}>
+                        <div
+                          key={index}
+                          className="col-sm-6"
+                          id={`sec-${index + 1}`}
+                        >
                           <div className="feature-three-item">
                             <div className="icon">
                               <img
+                                loading="lazy"
                                 className="w-25"
                                 src="./assets/images/categories/category icon_Career Progression.png"
                                 alt="Icon"
@@ -101,6 +106,7 @@ const Services = () => {
                   }}
                 >
                   <img
+                    loading="lazy"
                     src={services?.fields?.servicesImage?.fields?.file?.url}
                     alt="Why Learn"
                   />
@@ -144,6 +150,7 @@ const Services = () => {
                         <div key={index} className="category-item mt-35">
                           <div className="icon">
                             <img
+                              loading="lazy"
                               className="w-50"
                               src={area?.fields?.logo?.fields?.file?.url}
                               alt="Icon"
@@ -189,6 +196,7 @@ const Services = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.upc.edu/ca">
                       <img
+                        loading="lazy"
                         src="./assets/images/client-logos/UPC.png"
                         alt="Client Logo"
                       />
@@ -197,6 +205,7 @@ const Services = () => {
                   <div className="logo-item w-25">
                     <Link href="https://epseb.upc.edu/ca">
                       <img
+                        loading="lazy"
                         src="./assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
@@ -205,6 +214,7 @@ const Services = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.eae.es/">
                       <img
+                        loading="lazy"
                         src="./assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
@@ -213,6 +223,7 @@ const Services = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.threepoints.com/">
                       <img
+                        loading="lazy"
                         className="w-50"
                         src="./assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
@@ -222,6 +233,7 @@ const Services = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.inesdi.com/">
                       <img
+                        loading="lazy"
                         className="w-75"
                         src="./assets/images/client-logos/Inesdi Digital Business School.jfif"
                         alt="Client Logo"
@@ -231,6 +243,7 @@ const Services = () => {
                   <div className="logo-item w-25">
                     <Link href="https://www.deustoformacion.com/">
                       <img
+                        loading="lazy"
                         src="./assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />

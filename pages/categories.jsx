@@ -4,10 +4,10 @@ import Image from "next/image";
 import Banner from "../components/Banner";
 import Layout from "../components/Layout";
 import Link from "next/link";
-const Categories= () => {
+const Categories = () => {
   return (
     <Layout>
-      <Banner title={"Áreas"}/>
+      <Banner title={"Áreas"} />
       <>
         <section className="features-section-three rel z-1 pt-110  pb-50 rpt-85 rpb-70">
           <div className="container">
@@ -32,6 +32,7 @@ const Categories= () => {
                 >
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="./assets/images/categories/category icon_Career Progression.png"
                       alt="Icon"
@@ -57,6 +58,7 @@ const Categories= () => {
                 >
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="./assets/images/categories/category icon_Make a Career Change.png"
                       alt="Icon"
@@ -79,6 +81,7 @@ const Categories= () => {
                 >
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="./assets/images/categories/category icon_Entrepreneurship.png"
                       alt="Icon"
@@ -101,6 +104,7 @@ const Categories= () => {
                 >
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="./assets/images/categories/category icon_International Career Boost.png"
                       alt="Icon"
@@ -123,6 +127,7 @@ const Categories= () => {
                 >
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="./assets/images/categories/category icon_Starting Out in Your Career.png"
                       alt="Icon"
@@ -145,6 +150,7 @@ const Categories= () => {
                 >
                   <div className="icon">
                     <img
+                      loading="lazy"
                       className="w-25"
                       src="./assets/images/categories/category icon_Get Back to Work.png"
                       alt="Icon"
@@ -221,12 +227,14 @@ const Categories= () => {
                   <div className="row align-items-center">
                     <div className="col-7">
                       <img
+                        loading="lazy"
                         src="./assets/images/about/rules-condition1.jpg"
                         alt="Rules"
                       />
                     </div>
                     <div className="col-5">
                       <img
+                        loading="lazy"
                         src="./assets/images/about/rules-condition2.jpg"
                         alt="Rules"
                       />
@@ -234,6 +242,7 @@ const Categories= () => {
                   </div>
                   <div className="logo bg-transparent">
                     <img
+                      loading="lazy"
                       style={{ borderRadius: "50%" }}
                       src="./assets/images/logo-icono-.png"
                       alt="Logo"
@@ -264,16 +273,19 @@ const Categories= () => {
                 >
                   <div className="image-one">
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team1.jpg"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team2.jpg"
                       alt="Join Our Team"
                     />
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team3.jpg"
                       alt="Join Our Team"
                     />
@@ -385,12 +397,14 @@ const Categories= () => {
                   <div className="row align-items-center">
                     <div className="col-7">
                       <img
+                        loading="lazy"
                         src="./assets/images/about/rules-condition1.jpg"
                         alt="Rules"
                       />
                     </div>
                     <div className="col-5">
                       <img
+                        loading="lazy"
                         src="./assets/images/about/rules-condition2.jpg"
                         alt="Rules"
                       />
@@ -398,6 +412,7 @@ const Categories= () => {
                   </div>
                   <div className="logo bg-transparent">
                     <img
+                      loading="lazy"
                       style={{ borderRadius: "50%" }}
                       src="./assets/images/logo-icono-.png"
                       alt="Logo"
@@ -428,16 +443,19 @@ const Categories= () => {
                 >
                   <div className="image-one">
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team1.jpg"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team2.jpg"
                       alt="Join Our Team"
                     />
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team3.jpg"
                       alt="Join Our Team"
                     />
@@ -546,12 +564,14 @@ const Categories= () => {
                   <div className="row align-items-center">
                     <div className="col-7">
                       <img
+                        loading="lazy"
                         src="./assets/images/about/rules-condition1.jpg"
                         alt="Rules"
                       />
                     </div>
                     <div className="col-5">
                       <img
+                        loading="lazy"
                         src="./assets/images/about/rules-condition2.jpg"
                         alt="Rules"
                       />
@@ -559,6 +579,7 @@ const Categories= () => {
                   </div>
                   <div className="logo bg-transparent">
                     <img
+                      loading="lazy"
                       style={{ borderRadius: "50%" }}
                       src="./assets/images/logo-icono-.png"
                       alt="Logo"
@@ -589,16 +610,19 @@ const Categories= () => {
                 >
                   <div className="image-one">
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team1.jpg"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team2.jpg"
                       alt="Join Our Team"
                     />
                     <img
+                      loading="lazy"
                       src="./assets/images/instructor/join-team3.jpg"
                       alt="Join Our Team"
                     />

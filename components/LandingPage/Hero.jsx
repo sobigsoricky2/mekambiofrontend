@@ -40,7 +40,13 @@ const Hero = () => {
             </div>
             <div className="col-lg-5">
               <div className="hero-right-images text-lg-right wow fadeInUp delay-0-2s">
-                <img width="auto" height="auto"src="/assets/images/hero/Component-1.webp" alt="Hero" />
+                <img
+                  loading="lazy"
+                  width="auto"
+                  height="auto"
+                  src="/assets/images/hero/Component-1.webp"
+                  alt="Hero"
+                />
               </div>
             </div>
           </div>

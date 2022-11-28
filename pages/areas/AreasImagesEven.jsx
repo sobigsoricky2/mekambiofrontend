@@ -9,14 +9,33 @@ const AreasImagesEven = ({ imgUrl1, imgUrl2, logo }) => {
     >
       <div className="row align-items-center">
         <div className="col-7">
-          <img width="auto" height="auto"src={imgUrl1} alt="Rules" />
+          <img
+            loading="lazy"
+            width="auto"
+            height="auto"
+            src={imgUrl1}
+            alt="Rules"
+          />
         </div>
         <div className="col-5">
-          <img width="auto" height="auto"src={imgUrl2} alt="Rules" />
+          <img
+            loading="lazy"
+            width="auto"
+            height="auto"
+            src={imgUrl2}
+            alt="Rules"
+          />
         </div>
       </div>
       <div className="logo bg-transparent">
-        <img width="auto" height="auto"style={{ borderRadius: "50%" }} src={logo} alt="Logo" />
+        <img
+          loading="lazy"
+          width="auto"
+          height="auto"
+          style={{ borderRadius: "50%" }}
+          src={logo}
+          alt="Logo"
+        />
       </div>
     </div>
   );

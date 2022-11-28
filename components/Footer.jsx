@@ -51,9 +51,7 @@ const Footer = () => {
       },
       body: JSON.stringify(formData),
     });
-    const res3 = await fetch("/api/test");
-    console.log(res3);
-    console.log(res);
+
     if (res2.status == 200 && res.status == 200) {
       alert("Subscriber Added and Email Sent");
     }
@@ -105,6 +103,7 @@ const Footer = () => {
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img
+                    loading="lazy"
                     className="w-100"
                     src="/assets/images/testimonials/testimonial-two2.jfif"
                     alt="Author"
@@ -140,6 +139,7 @@ const Footer = () => {
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img
+                    loading="lazy"
                     src="/assets/images/testimonials/Meritxell Boluda.jfif"
                     alt="Author"
                   />
@@ -167,6 +167,7 @@ const Footer = () => {
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img
+                    loading="lazy"
                     src="/assets/images/testimonials/JorgeDolz.Testimonial.png"
                     alt="Author"
                   />
@@ -195,6 +196,7 @@ const Footer = () => {
               <div className="testimonial-item-two">
                 <div className="testimonial-author-two">
                   <img
+                    loading="lazy"
                     src="/assets/images/testimonials/Alejandro Garrido.png"
                     alt="Author"
                   />

@@ -41,6 +41,7 @@ const Index = ({ posts }) => {
                   >
                     <div className="image">
                       <img
+                        loading="lazy"
                         src={fields.coverImage.fields.file.url}
                         // src=""
                         alt="Blog"
@@ -52,6 +53,7 @@ const Index = ({ posts }) => {
                     <div className="blog-standard-content">
                       <div className="author">
                         <img
+                          loading="lazy"
                           src={fields.authorImage.fields.file.url}
                           alt="Author"
                         />
@@ -63,9 +65,7 @@ const Index = ({ posts }) => {
                           </li>
                           <li>
                             <i className="far fa-calendar-alt"></i>{" "}
-                            <Link href="blog-details ">
-                              February 20, 2022
-                            </Link>
+                            <Link href="blog-details ">February 20, 2022</Link>
                           </li>
                           <li>
                             <i className="far fa-comments"></i>{" "}
@@ -124,7 +124,7 @@ const Index = ({ posts }) => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="image">
-                    <img width="auto" height="auto"src="" alt="Author" />
+                    <img  loading="lazy" width="auto" height="auto"src="" alt="Author" />
                   </div>
                   <h4>James D. Thomas</h4>
                   <p>

@@ -38,6 +38,7 @@ const Catagories = () => {
                     <div className="category-item mt-35">
                       <div className="icon">
                         <img
+                          loading="lazy"
                           className="w-50"
                           src="/assets/images/categories/category icon_Career Progression.png"
                           alt="Icon"
@@ -48,6 +49,7 @@ const Catagories = () => {
                     <div className="category-item">
                       <div className="icon">
                         <img
+                          loading="lazy"
                           className="w-50"
                           src="/assets/images/categories/category icon_Make a Career Change.png"
                           alt="Icon"
@@ -60,6 +62,7 @@ const Catagories = () => {
                     <div className="category-item">
                       <div className="icon">
                         <img
+                          loading="lazy"
                           className="w-50"
                           src="/assets/images/categories/category icon_Starting Out in Your Career.png"
                           alt="Icon"
@@ -72,6 +75,7 @@ const Catagories = () => {
                     <div className="category-item">
                       <div className="icon">
                         <img
+                          loading="lazy"
                           className="w-50"
                           src="/assets/images/categories/category icon_International Career Boost.png"
                           alt="Icon"
@@ -86,6 +90,7 @@ const Catagories = () => {
                     <div className="category-item mt-40">
                       <div className="icon">
                         <img
+                          loading="lazy"
                           className="w-50"
                           src="/assets/images/categories/category icon_Entrepreneurship.png"
                           alt="Icon"
@@ -96,6 +101,7 @@ const Catagories = () => {
                     <div className="category-item">
                       <div className="icon">
                         <img
+                          loading="lazy"
                           className="w-50"
                           src="/assets/images/categories/category icon_Get Back to Work.png"
                           alt="Icon"
