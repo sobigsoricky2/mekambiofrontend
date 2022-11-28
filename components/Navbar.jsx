@@ -2,15 +2,31 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import Router from 'next/router';
-
+import { useRouter } from 'next/router'
 const Navbar = ({color}) => {
 
+  const router = useRouter()
+  console.log(router.pathname);
   const [showSidebar, setShowSidebar] = useState(false)
+  const [hamburger, setHamburger] = useState(false)
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 100){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  if (typeof window !== 'undefined') {
+    // You now have access to `window`
+    window.addEventListener('scroll', changeNavbarColor);
+  }
   return (
     <div>
       
-      <header className="main-header">
-        <div className="header-upper">
+      <header className={`main-header ${colorChange ? 'position-fixed bg-white fixed-header':''}`} style={{ animation: 'sticky 1s'}}>
+        <div className={`header-upper  ${colorChange ? ' bg-white':''}`}>
           <div className="container-fluid clearfix">
             <div className="header-inner d-flex align-items-center justify-content-between">
               <div className="logo-outer d-lg-flex align-items-center">
@@ -51,15 +67,17 @@ const Navbar = ({color}) => {
                       className="navbar-toggle"
                       data-toggle="collapse"
                       data-target=".navbar-collapse"
+
+                      onClick={e => setHamburger(!hamburger)}
                     >
-                      <span className="icon-bar" ></span>
-                      <span className="icon-bar"></span>
-                      <span className="icon-bar"></span>
+                      <span className={`icon-bar ${colorChange ? 'bg-dark':router.pathname!=='/'?'bg-white':"bg-dark"}` } ></span>
+                        <span className={`icon-bar ${colorChange ? 'bg-dark':router.pathname!=='/'?'bg-white':"bg-dark"}` }></span>
+                        <span className={`icon-bar ${colorChange ? 'bg-dark':router.pathname!=='/'?'bg-white':"bg-dark"}` }></span>
                     </button>
                   </div>
 
-                  <div className="navbar-collapse collapse clearfix">
-                    <ul className={`navigation clearfix `}>
+                  <div className={`navbar-collapse collapse clearfix ${hamburger?'show':''}`}>
+                    <ul className={`navigation clearfix ${colorChange ? 'text-dark':router.pathname!=='/'?'text-white':"text-dark"}`}>
                       
                       <li>
                         <Link
@@ -98,9 +116,9 @@ const Navbar = ({color}) => {
 
                     <div className="menu-sidebar">
                       <button onClick={e => setShowSidebar(true)}>
-                        <span className="icon-bar" style={{background:`${Router?.router?.state?.route !== '/'? '#222':'#fff'}`}}></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
+                        <span className={`icon-bar ${colorChange ? 'bg-dark':router.pathname!=='/'?'bg-white':"bg-dark"}` } ></span>
+                        <span className={`icon-bar ${colorChange ? 'bg-dark':router.pathname!=='/'?'bg-white':"bg-dark"}` }></span>
+                        <span className={`icon-bar ${colorChange ? 'bg-dark':router.pathname!=='/'?'bg-white':"bg-dark"}` }></span>
                       </button>
                     </div>
                   </div>
