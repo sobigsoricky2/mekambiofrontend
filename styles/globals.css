@@ -4183,7 +4183,7 @@ h6,
   background: transparent;
 }
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-  /* background: #262d3d; */
+  background: #262d3d;
   height: 3px;
   width: 30px;
   display: block;

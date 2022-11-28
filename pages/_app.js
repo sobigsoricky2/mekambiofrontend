@@ -6,7 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Router from "next/router";
 import NProgress from "nprogress"; //nprogress module
 import "nprogress/nprogress.css"; //styles of nprogress
-
+import { useEffect } from "react";
+//  wow aos 
+const isServer = typeof window === "undefined";
+const WOW = !isServer ? require("wow.js") : null;
 //Route Events.
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -15,6 +18,10 @@ Router.events.on("routeChangeError", () => NProgress.done());
 NProgress.configure({ showSpinner: false });
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    new WOW().init();
+  }, []);
+
   function googleTranslateElementInit() {
     new google.translate.TranslateElement(
       { pageLanguage: "es" },
@@ -22,6 +29,7 @@ function MyApp({ Component, pageProps }) {
     );
   }
   console.log(Router);
+
   return (
     <>
       <Head>
@@ -35,14 +43,14 @@ function MyApp({ Component, pageProps }) {
         <title>meKambio</title>
         <meta name="theme-color" content="#000" />
         <link rel="manifest" href="/manifest.json" />
-      
+
         <link rel="apple-touch-icon" href="/apple-icon.png"></link>
 
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
           async
         ></script>
-        <script async>new WOW().init();</script>
+        <script async></script>
 
         <script
           type="text/javascript"
