@@ -51,9 +51,7 @@ const Footer = () => {
       },
       body: JSON.stringify(formData),
     });
-    const res3 = await fetch("/api/test");
-    console.log(res3);
-    console.log(res);
+
     if (res2.status == 200 && res.status == 200) {
       alert("Subscriber Added and Email Sent");
     }

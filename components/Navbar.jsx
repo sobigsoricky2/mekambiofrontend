@@ -1,14 +1,49 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import Router from 'next/router';
+import Router from "next/router";
 
-const Navbar = ({color}) => {
+const Navbar = ({ color }) => {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    surname: "",
+    formEmail: "",
+    phone: "",
+  });
+  const handleFormdataChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-  const [showSidebar, setShowSidebar] = useState(false)
+  const handleFormDataSubmit = async (e) => {
+    e.preventDefault();
+
+    console.log(process.cwd());
+    const res2 = await fetch("/api/email", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    console.log(res2);
+    const res = await fetch("/api/googlesheetsFormData", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (res2.status == 200 && res.status == 200) {
+      alert("Subscriber Added and Email Sent");
+    }
+  };
+  const { name, formEmail, surname, phone } = formData;
   return (
     <div>
-      
       <header className="main-header">
         <div className="header-upper">
           <div className="container-fluid clearfix">
@@ -52,15 +87,20 @@ const Navbar = ({color}) => {
                       data-toggle="collapse"
                       data-target=".navbar-collapse"
                     >
-                      <span className="icon-bar" style={{background:{color}}}></span>
+                      <span
+                        className="icon-bar"
+                        style={{ background: { color } }}
+                      ></span>
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
                     </button>
                   </div>
 
                   <div className="navbar-collapse collapse clearfix">
-                    <ul className={`navigation clearfix `} style={{color:{color}}}>
-                      
+                    <ul
+                      className={`navigation clearfix `}
+                      style={{ color: { color } }}
+                    >
                       <li>
                         <Link
                           className="text-decoration-none"
@@ -97,8 +137,17 @@ const Navbar = ({color}) => {
                     </ul>
 
                     <div className="menu-sidebar">
-                      <button onClick={e => setShowSidebar(true)}>
-                        <span className="icon-bar" style={{background:`${Router?.router?.state?.route !== '/'? '#222':'#fff'}`}}></span>
+                      <button onClick={(e) => setShowSidebar(true)}>
+                        <span
+                          className="icon-bar"
+                          style={{
+                            background: `${
+                              Router?.router?.state?.route !== "/"
+                                ? "#222"
+                                : "#fff"
+                            }`,
+                          }}
+                        ></span>
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                       </button>
@@ -111,85 +160,89 @@ const Navbar = ({color}) => {
         </div>
       </header>
 
-{
- 
-    <div className={showSidebar?`side-content-visible`:''}>
-     <section className="hidden-bar">
-        <div className="inner-box text-center">
-          <div onClick={e => setShowSidebar(false)} className="cross-icon">
-            <span className="fa fa-times"></span>
-          </div>
-          <div className="title">
-            <h4>Solicita Información </h4>
-          </div>
-
-          <div className="appointment-form">
-            <form method="post" action="#">
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="text"
-                  value=""
-                  placeholder="Nombre"
-                  required=""
-                />
+      {
+        <div className={showSidebar ? `side-content-visible` : ""}>
+          <section className="hidden-bar">
+            <div className="inner-box text-center">
+              <div
+                onClick={(e) => setShowSidebar(false)}
+                className="cross-icon"
+              >
+                <span className="fa fa-times"></span>
               </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="text"
-                  value=""
-                  placeholder="Apellidos"
-                  required=""
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  value=""
-                  placeholder="Email"
-                  required=""
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="number"
-                  name="number"
-                  value=""
-                  placeholder="teléfono"
-                  required=""
-                />
+              <div className="title">
+                <h4>Solicita Información </h4>
               </div>
 
-              <div className="form-group">
-                <button type="submit" className="theme-btn">
-                  Enviar
-                </button>
-              </div>
-            </form>
-          </div>
+              <div className="appointment-form">
+                <form method="post" onSubmit={(e) => handleFormDataSubmit(e)}>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      value={name}
+                      placeholder="Nombre"
+                      required=""
+                      onChange={(e) => handleFormdataChange(e)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="surname"
+                      value={surname}
+                      placeholder="Apellidos"
+                      required=""
+                      onChange={(e) => handleFormdataChange(e)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      name="formEmail"
+                      value={formEmail}
+                      placeholder="Email"
+                      required=""
+                      onChange={(e) => handleFormdataChange(e)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="number"
+                      name="phone"
+                      value={phone}
+                      placeholder="teléfono"
+                      required=""
+                      onChange={(e) => handleFormdataChange(e)}
+                    />
+                  </div>
 
-          <div className="social-style-one">
-            <Link href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
-              <i className="fab fa-linkedin-in"></i>
-            </Link>
-            <Link href="https://www.instagram.com/meKambio_/">
-              <i className="fab fa-instagram"></i>
-            </Link>
-            <Link href="https://www.facebook.com/meKambio">
-              <i className="fab fa-facebook-f"></i>
-            </Link>
-            <Link href="https://www.youtube.com/channel/UCIBlyqcrLRLlkb0_JpDqNaQ?app=desktop&amp;cbrd=1">
-              <i className="fab fa-youtube"></i>
-            </Link>
-          </div>
+                  <div className="form-group">
+                    <button type="submit" className="theme-btn">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div className="social-style-one">
+                <Link href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
+                  <i className="fab fa-linkedin-in"></i>
+                </Link>
+                <Link href="https://www.instagram.com/meKambio_/">
+                  <i className="fab fa-instagram"></i>
+                </Link>
+                <Link href="https://www.facebook.com/meKambio">
+                  <i className="fab fa-facebook-f"></i>
+                </Link>
+                <Link href="https://www.youtube.com/channel/UCIBlyqcrLRLlkb0_JpDqNaQ?app=desktop&amp;cbrd=1">
+                  <i className="fab fa-youtube"></i>
+                </Link>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
- 
-}
-     
+      }
     </div>
   );
 };
