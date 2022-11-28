@@ -1,16 +1,13 @@
 import sendgrid from "@sendgrid/mail";
 
-sendgrid.setApiKey(
-  "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"
-);
-//info@mekambio.com
+sendgrid.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
-      to: "kunal.dazai@gmail.com",
+      to: "info@mekambio.com",
       from: "ajitesh314mishra@gmail.com",
-      subject: `${req.body?.subject}`,
+      subject: `${req.body.subject}`,
       html: `<h2>name - ${req.body.name || `none`}</h2> <h2>surname - ${
         req.body.surname
       }</h2> <h2>email - ${req.body.formEmail}</h2>   <h2>phone - ${
