@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import Banner from '../components/Banner'
 import Layout from '../components/Layout'
@@ -218,7 +219,7 @@ const Faq = () => {
                     embargo, puede haber situaciones en las que no haya otra
                     alternativa, y distintas situaciones requieren distintas
                     soluciones. Echa un vistazo a nuestros{" "}
-                    <a href="/terms.html">Términos de Uso</a> y accede a qué
+                    <Link href="/terms">Términos de Uso</Link> y accede a qué
                     sucede en cada caso.
                   </p>
                 </div>
