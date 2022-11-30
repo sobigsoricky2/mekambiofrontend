@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
@@ -34,6 +35,7 @@
     "child_process": false
   },
   "devDependencies": {
+    "jest": "^29.3.1",
     "typescript": "^4.9.3"
   }
 }
