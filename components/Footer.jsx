@@ -33,27 +33,31 @@ const Footer = () => {
   const handleFormDataSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(process.cwd());
-    const res2 = await fetch("/api/email", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-    console.log(res2);
-    const res = await fetch("/api/googlesheetsFormData", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const res2 = await fetch("/api/email", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    if (res2.status == 200 && res.status == 200) {
-      alert("Subscriber Added and Email Sent");
+      const res = await fetch("/api/googlesheetsFormData", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res2.status == 200 && res.status == 200) {
+        alert("Subscriber Added and Email Sent");
+      }
+    } catch (error) {
+      alert("Some Error occured");
+      console.log(error);
     }
   };
 
@@ -62,30 +66,28 @@ const Footer = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const res = await fetch("/api/googlesheets", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email: email }),
-    });
-    const res2 = await fetch("/api/mailRelay", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Auth-Token": "ukRNKGy1FZxNajq6NKAVMqsh1URk5xg85LDsfHac",
-      },
-      body: JSON.stringify({ email: email }),
-    });
-    if (res.status == 200) {
-      alert("Subscriber Added");
-    }
-    console.log(res2);
     try {
-      // sendSheetsData({ email: email });
+      const res = await fetch("/api/googlesheets", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email }),
+      });
+      const res2 = await fetch("/api/mailRelay", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Auth-Token": "ukRNKGy1FZxNajq6NKAVMqsh1URk5xg85LDsfHac",
+        },
+        body: JSON.stringify({ email: email }),
+      });
+      if (res.status == 200 && res2.status == 200) {
+        alert("Subscriber Added");
+      }
     } catch (error) {
+      alert("Some Error occured");
       console.log(error);
     }
   };
