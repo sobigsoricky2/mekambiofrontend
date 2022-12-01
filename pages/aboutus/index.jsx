@@ -146,7 +146,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                   </div>
-                  <div className="member-description">
+                  <div className="member-description  notranslate">
                     <h4>Eduard Moreno</h4>
                     <span>Founder, CEO</span>
                   </div>
@@ -161,7 +161,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                   </div>
-                  <div className="member-description">
+                  <div className="member-description  notranslate">
                     <h4>Stephen Logan</h4>
                     <span>Research and Devel. Officer, CRO</span>
                   </div>
@@ -176,7 +176,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                   </div>
-                  <div className="member-description">
+                  <div className="member-description  notranslate">
                     <h4>Anabel Reillo</h4>
                     <span>Community Manager</span>
                   </div>
@@ -191,7 +191,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                   </div>
-                  <div className="member-description">
+                  <div className="member-description  notranslate">
                     <h4>Ana Gallego</h4>
                     <span>Graphic Designer</span>
                   </div>
@@ -206,7 +206,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                   </div>
-                  <div className="member-description">
+                  <div className="member-description  notranslate">
                     <h4>Jorge Dolz</h4>
                     <span>meKambio Expert</span>
                   </div>
@@ -221,7 +221,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                   </div>
-                  <div className="member-description">
+                  <div className="member-description  notranslate">
                     <h4>Tiffany Barnard</h4>
                     <span>meKambio Expert</span>
                   </div>
@@ -236,7 +236,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                   </div>
-                  <div className="member-description">
+                  <div className="member-description  notranslate">
                     <h4>Antonio Valdivieso</h4>
                     <span>meKambio Expert</span>
                   </div>
@@ -251,7 +251,7 @@ const AboutUs = () => {
                       alt="Team Member"
                     />
                   </div>
-                  <div className="member-description">
+                  <div className="member-description  notranslate">
                     <h4>José Barroso</h4>
                     <span>meKambio Expert</span>
                   </div>

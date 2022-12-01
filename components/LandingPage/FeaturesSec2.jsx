@@ -15,7 +15,7 @@ const FeaturesSec2 = () => {
                 className="feature-three-item wow fadeInUp delay-0-2s animated"
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
-                <div className="icon">
+                <div className="icon ">
                   <img
                     loading="lazy"
                     style={{ width: "32%" }}
@@ -23,8 +23,8 @@ const FeaturesSec2 = () => {
                     alt="Icon"
                   />
                 </div>
-                <h4>Transformar tu Carrera</h4>
-                <p>
+                <h4 className="text-uppercase">Transformar tu Carrera</h4>
+                <p className="text-uppercase">
                   Alcanza tus objetivos profesionales, progresa en tu carrera e
                   incrementa tu rendimiento e ingresos.
                 </p>
@@ -43,8 +43,8 @@ const FeaturesSec2 = () => {
                     alt="Icon"
                   />
                 </div>
-                <h4>Networking Internacional</h4>
-                <p>
+                <h4 className="text-uppercase">Networking Internacional</h4>
+                <p className="text-uppercase">
                   Profesionales senior de empresas Top, con reconocido prestigio
                   en variedad de sectores y mercados.
                 </p>
@@ -63,8 +63,8 @@ const FeaturesSec2 = () => {
                     alt="Icon"
                   />
                 </div>
-                <h4>Desarrollar tu Potencial</h4>
-                <p>
+                <h4 className="text-uppercase">Desarrollar tu Potencial</h4>
+                <p className="text-uppercase">
                   Incrementa tu autoconocimiento, tu confianza y tu liderazgo
                   profesional. Elévate e impulsa tu carrera.
                 </p>
