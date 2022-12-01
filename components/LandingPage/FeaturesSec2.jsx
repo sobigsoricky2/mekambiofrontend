@@ -23,8 +23,8 @@ const FeaturesSec2 = () => {
                     alt="Icon"
                   />
                 </div>
-                <h4 className="text-uppercase">Transformar tu Carrera</h4>
-                <p className="text-uppercase">
+                <h4 className="text-capitalize">Transformar tu Carrera</h4>
+                <p className="text-capitalize">
                   Alcanza tus objetivos profesionales, progresa en tu carrera e
                   incrementa tu rendimiento e ingresos.
                 </p>
@@ -43,8 +43,8 @@ const FeaturesSec2 = () => {
                     alt="Icon"
                   />
                 </div>
-                <h4 className="text-uppercase">Networking Internacional</h4>
-                <p className="text-uppercase">
+                <h4 className="text-capitalize">Networking Internacional</h4>
+                <p className="text-capitalize">
                   Profesionales senior de empresas Top, con reconocido prestigio
                   en variedad de sectores y mercados.
                 </p>
@@ -63,8 +63,8 @@ const FeaturesSec2 = () => {
                     alt="Icon"
                   />
                 </div>
-                <h4 className="text-uppercase">Desarrollar tu Potencial</h4>
-                <p className="text-uppercase">
+                <h4 className="text-capitalize">Desarrollar tu Potencial</h4>
+                <p className="text-capitalize">
                   Incrementa tu autoconocimiento, tu confianza y tu liderazgo
                   profesional. Elévate e impulsa tu carrera.
                 </p>
