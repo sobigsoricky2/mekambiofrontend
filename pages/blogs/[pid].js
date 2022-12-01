@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { getImage, ContentfulClient } from "../../helpers/utils";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Layout from "../../components/Layout";
 const SingleBlog = (props) => {
   const router = useRouter();
   const { pid } = router.query;
@@ -24,7 +25,7 @@ const SingleBlog = (props) => {
 
   console.log(blog);
   return (
-    <div>
+    <Layout>
       <Banner title="Blog Details" />
 
       <section className="blog-details-area py-130 rpy-100">
@@ -436,7 +437,7 @@ const SingleBlog = (props) => {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 
