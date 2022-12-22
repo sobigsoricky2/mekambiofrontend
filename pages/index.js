@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Footer from "../components/Footer";
 import Advertise from "../components/LandingPage/Advertise";
+import CatagoriesSec from "../components/LandingPage/CatagoriesSec";
 
 import FeaturesSec from "../components/LandingPage/FeaturesSec";
 import FeaturesSec2 from "../components/LandingPage/FeaturesSec2";
@@ -32,7 +33,7 @@ export default function Home() {
 
       <Layout>
         <Hero />
-
+        <CatagoriesSec/>
         <VideoSection />
         <FeaturesSec />
         <FeaturesSec2 />

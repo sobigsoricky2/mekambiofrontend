@@ -15,7 +15,7 @@ const HowToUse = () => {
         <title>Cómo funciona</title>
       </Head>
       <Layout>
-        <Banner title="Cómo Funciona" />
+        <Banner title="&quot;Cómo Funciona&quot;" />
 
         <section className="join-our-team-area pt-120 rpt-90">
           <div className="container">
@@ -33,12 +33,7 @@ const HowToUse = () => {
                     <h2>Empieza a Moldear tu Futuro</h2>
                   </div>
                   <p>
-                    No hay nada más poderoso que trabajar con los mejores,
-                    aprender de ellos y beneficiarse de su apoyo y guía. Te
-                    ofrecemos hacerlo en un entorno donde profesionales que
-                    buscan prosperar en la carrera que deseen pueden lograr
-                    dicho objetivo con el apoyo de otros que ya destacan en
-                    ello.
+                  No hay nada más poderoso que trabajar con los mejores, aprender de ellos y beneficiarse de su apoyo y guía. Te ofrecemos hacerlo en un entorno con profesionales que destacan en su sector por su trayectoria y compromiso. Te orientarán para conseguir los objetivos que tú te plantees.
                   </p>
                   <ul className="list-style-three pt-25 pb-20">
                     <li>
@@ -63,8 +58,7 @@ const HowToUse = () => {
                       <div className="content">
                         <h5>Consigue lo que te Propongas</h5>
                         <p>
-                          Conseguirás que eso con lo que sueñas se haga
-                          realidad.
+                        Conseguirás que tus sueños profesionales se hagan realidad.
                         </p>
                       </div>
                     </li>
@@ -98,7 +92,7 @@ const HowToUse = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team1.jpg"
+                      src="https://iili.io/HzeVuUu.md.png" 
                       alt="Join Our Team"
                     />
                   </div>
@@ -110,7 +104,7 @@ const HowToUse = () => {
                     />
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team3.jpg"
+                      src="https://iili.io/HzeXkSn.md.png"
                       alt="Join Our Team"
                     />
                   </div>
@@ -161,8 +155,7 @@ const HowToUse = () => {
                     <div className="content">
                       <h4>Selecciona Área y Expert</h4>
                       <p>
-                        Focaliza en tu área, y encuentra al Expert que mejor se
-                        adapte a tus necesidades e intereses.
+                      Focaliza en tu área y encuentra al Expert que mejor se adapte a tus necesidades.
                       </p>
                     </div>
                   </div>
@@ -171,8 +164,7 @@ const HowToUse = () => {
                     <div className="content">
                       <h4>Reserva tu sesión</h4>
                       <p>
-                        Elige fecha y hora, y comprométete contigo y tu futuro
-                        para evolucionar en tu carrera profesional.
+                      Elige fecha y hora. Comprométete contigo y tu futuro profesional.
                       </p>
                     </div>
                   </div>
@@ -191,8 +183,7 @@ const HowToUse = () => {
                     <div className="content">
                       <h4>Impulsa tu carrera</h4>
                       <p>
-                        Inicia y disfruta de tu evolución profesional, mejorando
-                        tu rendimiento y dedicándote a lo que te apasiona.
+                      Inicia tu evolución profesional. En dos meses puedes empezar a ver resultados.
                       </p>
                     </div>
                   </div>

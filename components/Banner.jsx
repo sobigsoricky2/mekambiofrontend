@@ -11,7 +11,7 @@ const Banner = ({ title }) => {
         <div className="container">
           <div className="banner-inner rpt-10">
             <h2 className="page-title wow fadeInUp delay-0-2s">{title}</h2>
-          </div>
+          </div> 
         </div>
         <img
           loading="lazy"

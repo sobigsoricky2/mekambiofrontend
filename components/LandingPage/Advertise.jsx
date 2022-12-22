@@ -15,8 +15,8 @@ const Advertise = () => {
                 <div className="content">
                   <h4>Encuentra a tu Expert</h4>
                   <p>
-                    Accede a la base de profesionales que pueden ayudarte a
-                    impulsar tu carrera
+                    Accede a la base de profesionales que te ayudarán a impulsar
+                    tu carrera.
                   </p>
                   <Link
                     href="https://experts.mekambio.com/s?q="
@@ -33,10 +33,10 @@ const Advertise = () => {
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
                 <div className="content">
-                  <h4>Conviértete en Expert</h4>
+                  <h4>Únete al Equipo</h4>
                   <p>
-                    Regístrate como Expert y ayuda a profesionales a progresar
-                    en sus carreras{" "}
+                    Regístrate como Expert y ayuda a profesionales a evolucionar
+                    en sus carreras.
                   </p>
                   <Link
                     href="https://experts.mekambio.com/es-ES/expert_signup"

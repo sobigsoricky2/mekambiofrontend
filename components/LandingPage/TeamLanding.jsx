@@ -27,14 +27,10 @@ const TeamLanding = () => {
                   profesionales
                 </p>
                 <ul className="list-style-one pt-10 pb-45">
-                  <li>Experts Internacionales</li>
-                  <li>Sesiones Personalizadas</li>
-                  <li>100% Online y gran Flexibilidad</li>
-                  <li>Todo en uno. Sin suscripciones ni aplicaciones extra</li>
-                  <li>
-                    Entorno seguro y de confianza. Sin compartir tus datos
-                    personales
-                  </li>
+                  <li>Profesionales nacionales e internacionales</li>
+                  <li>Adaptado a tus horarios. 100% Online</li>
+                  <li>Personalización de programas y sesiones.</li>
+                  
                 </ul>
                 <Link href="about-us " className="theme-btn">
                   Saber más <i className="fas fa-arrow-right"></i>

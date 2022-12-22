@@ -13,7 +13,7 @@ const Categories = () => {
           <div className="container">
             <div className="section-title text-center mb-55">
               <span className="sub-title-two">
-                Las áreas en las que focalizarte{" "}
+                Pon foco en un área para empezar{" "}
               </span>
               <h2>Elige tu Objetivo Profesional </h2>
               <p>
@@ -25,6 +25,53 @@ const Categories = () => {
               </p>
             </div>
             <div className="row justify-content-center">
+              <div className="col-lg-4 col-sm-6">
+                <div
+                  className="feature-three-item wow fadeInUp delay-0-8s animated"
+                  style={{ visibility: "visible", animationName: "fadeInUp" }}
+                >
+                  <div className="icon">
+                    <img
+                      loading="lazy"
+                      className="w-25"
+                      src="./assets/images/categories/category icon_Get Back to Work.png"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h4>Regreso al Mercado Laboral</h4>
+                  <p>
+                    Te ayudamos a ponerte al día de forma competitiva para
+                    volver a trabajar.
+                  </p>
+                  <Link href="#sec-6" className="details-btn">
+                    <i className="fas fa-long-arrow-alt-right" />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-sm-6">
+                <div
+                  className="feature-three-item wow fadeInUp delay-0-4s animated"
+                  style={{ visibility: "visible", animationName: "fadeInUp" }}
+                >
+                  <div className="icon">
+                    <img
+                      loading="lazy"
+                      className="w-25"
+                      src="./assets/images/categories/category icon_Make a Career Change.png"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h4>Cambio de Trabajo</h4>
+                  <p>
+                    ¿Quieres cambiar el rumbo? Te ayudamos a llegar al puerto
+                    que tú decidas.
+                  </p>
+                  <Link href="#sec-2" className="details-btn">
+                    <i className="fas fa-long-arrow-alt-right" />
+                  </Link>
+                </div>
+              </div>
               <div className="col-lg-4 col-sm-6">
                 <div
                   className="feature-three-item wow fadeInUp delay-0-2s animated"
@@ -53,29 +100,6 @@ const Categories = () => {
               </div>
               <div className="col-lg-4 col-sm-6">
                 <div
-                  className="feature-three-item wow fadeInUp delay-0-4s animated"
-                  style={{ visibility: "visible", animationName: "fadeInUp" }}
-                >
-                  <div className="icon">
-                    <img
-                      loading="lazy"
-                      className="w-25"
-                      src="./assets/images/categories/category icon_Make a Career Change.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <h4>Cambio de Carrera</h4>
-                  <p>
-                    ¿Quieres cambiar el rumbo? Te ayudamos para que llegues al
-                    puerto que tu decidas.
-                  </p>
-                  <Link href="#sec-2" className="details-btn">
-                    <i className="fas fa-long-arrow-alt-right" />
-                  </Link>
-                </div>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <div
                   className="feature-three-item wow fadeInUp delay-0-6s animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
@@ -89,8 +113,8 @@ const Categories = () => {
                   </div>
                   <h4>Emprendimiento</h4>
                   <p>
-                    Si quieres empezar tu propia aventura, podemos acompañarte
-                    en el camino.
+                    Si quieres empezar tu propia aventura, te acompañamos en el
+                    camino.
                   </p>
                   <Link href="#sec-5" className="details-btn">
                     <i className="fas fa-long-arrow-alt-right" />
@@ -112,8 +136,7 @@ const Categories = () => {
                   </div>
                   <h4>Impulso Internacional </h4>
                   <p>
-                    Elévate profesionalmente dando un impulso internacional a tu
-                    carrera.
+                    Eléva tu Carrera internacionalmente. Te allanamos el proceso
                   </p>
                   <Link href="#sec-3" className="details-btn">
                     <i className="fas fa-long-arrow-alt-right" />
@@ -139,29 +162,6 @@ const Categories = () => {
                     mejores profesionales.{" "}
                   </p>
                   <Link href="#sec-4" className="details-btn">
-                    <i className="fas fa-long-arrow-alt-right" />
-                  </Link>
-                </div>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <div
-                  className="feature-three-item wow fadeInUp delay-0-8s animated"
-                  style={{ visibility: "visible", animationName: "fadeInUp" }}
-                >
-                  <div className="icon">
-                    <img
-                      loading="lazy"
-                      className="w-25"
-                      src="./assets/images/categories/category icon_Get Back to Work.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <h4>Regreso al Mercado Laboral</h4>
-                  <p>
-                    Ponte al día para volver al mercado laboral de forma
-                    competitiva.{" "}
-                  </p>
-                  <Link href="#sec-6" className="details-btn">
                     <i className="fas fa-long-arrow-alt-right" />
                   </Link>
                 </div>
@@ -228,26 +228,19 @@ const Categories = () => {
                     <div className="col-7">
                       <img
                         loading="lazy"
-                        src="./assets/images/about/rules-condition1.jpg"
+                        src="https://iili.io/HzemurN.md.png"
                         alt="Rules"
                       />
                     </div>
                     <div className="col-5">
                       <img
                         loading="lazy"
-                        src="./assets/images/about/rules-condition2.jpg"
+                        src="https://iili.io/HzepacB.md.png"
                         alt="Rules"
                       />
                     </div>
                   </div>
-                  <div className="logo bg-transparent">
-                    <img
-                      loading="lazy"
-                      style={{ borderRadius: "50%" }}
-                      src="./assets/images/logo-icono-.png"
-                      alt="Logo"
-                    />
-                  </div>
+             
                 </div>
               </div>
             </div>
@@ -274,19 +267,19 @@ const Categories = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team1.jpg"
+                      src="https://iili.io/HzeyBWJ.md.png"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team2.jpg"
+                      src="https://iili.io/Hzk9Bp9.md.jpg"
                       alt="Join Our Team"
                     />
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team3.jpg"
+                      src="https://iili.io/Hzk9jpt.md.png"
                       alt="Join Our Team"
                     />
                   </div>
@@ -299,17 +292,15 @@ const Categories = () => {
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="section-title mb-20">
-                    <span className="sub-title-two">Cambio de Carrera</span>
+                    <span className="sub-title-two">Cambio de Trabajo</span>
                     <h2>Redirige tu Carrera Profesional</h2>
                   </div>
                   <ul className="list-style-three pt-25 pb-20">
                     <li>
                       <div className="content">
-                        <h5>Dedícate a lo que te Apasiona</h5>
+                        <h5>Dedícate a lo que te apasiona</h5>
                         <p>
-                          No renuncies a tus sueños, y trabaja para
-                          conseguirlos. Nosotros te ayudamos a acercarte a
-                          ellos.
+                        Tú decides empezar. Nosotros te mostraremos la ruta para lograrlo.
                         </p>
                       </div>
                     </li>
@@ -317,9 +308,7 @@ const Categories = () => {
                       <div className="content">
                         <h5>Focaliza en lo que mejor se adapte a ti</h5>
                         <p>
-                          Si todo cambia, tú también puedes hacerlo; trabajar en
-                          remoto, en otras industrias, etc. Tú decides, y
-                          nosotros te ayudamos a conseguirlo.
+                        No renuncies a tus sueños. Centra toda tu energía en lo que te motiva.
                         </p>
                       </div>
                     </li>
@@ -358,8 +347,7 @@ const Categories = () => {
                       <div className="content">
                         <h5>Networking Internacional</h5>
                         <p>
-                          Expande tu red de contactos a nivel internacional.
-                          Apende a desarrollar y cultivar tu red de contactos.
+                        Expande tu proyección profesional a nivel internacional. Aprende a desarrollar y cultivar tu red de contactos
                         </p>
                       </div>
                     </li>
@@ -410,14 +398,7 @@ const Categories = () => {
                       />
                     </div>
                   </div>
-                  <div className="logo bg-transparent">
-                    <img
-                      loading="lazy"
-                      style={{ borderRadius: "50%" }}
-                      src="./assets/images/logo-icono-.png"
-                      alt="Logo"
-                    />
-                  </div>
+              
                 </div>
               </div>
             </div>
@@ -444,19 +425,19 @@ const Categories = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team1.jpg"
+                      src="https://iili.io/HzkFNu2.png"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team2.jpg"
+                      src=" https://iili.io/HzkfRbp.jpg"
                       alt="Join Our Team"
                     />
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team3.jpg"
+                      src="https://iili.io/HzkKTtS.md.png"
                       alt="Join Our Team"
                     />
                   </div>
@@ -493,6 +474,15 @@ const Categories = () => {
                         </p>
                       </div>
                     </li>
+
+                    <li>
+                      <div className="content">
+                        <h5>Trabajar tu perfil</h5>
+                        <p>
+                        Descubre y potencia tus fortalezas poniendo en valor tus conocimientos y habilidades.
+                        </p>
+                      </div>
+                    </li>
                   </ul>
                   <Link
                     href="https://experts.mekambio.com/s?category=acceso-al-mercado-laboral&sort_by=3&view=grid"
@@ -520,7 +510,7 @@ const Categories = () => {
                 >
                   <div className="section-title">
                     <span className="sub-title-two">Emprendimiento</span>
-                    <h2>Inicia tu Aventura acompañado del mejor equipo</h2>
+                    <h2>Inicia tu Aventura junto al Mejor Equipo</h2>
                   </div>
                   <ul className="list-style-three pt-10">
                     <li>
@@ -545,8 +535,7 @@ const Categories = () => {
                       <div className="content">
                         <h5>Rentabilidad</h5>
                         <p>
-                          Optimiza tus recursos, y sácales el máximo de partido
-                          posible desde el primer día de forma eficiente.
+                        Optimiza tus recursos desde el primer día: sácales el máximo partido eficazmente y de forma eficiente.”
                         </p>
                       </div>
                     </li>
@@ -577,14 +566,7 @@ const Categories = () => {
                       />
                     </div>
                   </div>
-                  <div className="logo bg-transparent">
-                    <img
-                      loading="lazy"
-                      style={{ borderRadius: "50%" }}
-                      src="./assets/images/logo-icono-.png"
-                      alt="Logo"
-                    />
-                  </div>
+               
                 </div>
               </div>
             </div>
@@ -611,19 +593,19 @@ const Categories = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team1.jpg"
+                      src="https://iili.io/Hzku2GR.md.png"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team2.jpg"
+                      src="https://iili.io/HzkRT22.md.png"
                       alt="Join Our Team"
                     />
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team3.jpg"
+                      src="https://iili.io/HzkR0Ex.md.png"
                       alt="Join Our Team"
                     />
                   </div>
@@ -639,24 +621,31 @@ const Categories = () => {
                     <span className="sub-title-two">
                       Regreso al Mercado Laboral
                     </span>
-                    <h2>Vuelve estando al día y de forma competitiva </h2>
+                    <h2>Ponte al día e Incorpórate de forma Competitiva</h2>
                   </div>
                   <ul className="list-style-three pt-25 pb-20">
                     <li>
                       <div className="content">
-                        <h5>Búsqueda de Trabajo</h5>
+                        <h5>Tu Perfil Profesional</h5>
                         <p>
-                          Aprende las técnicas que te harán conseguir el trabajo
-                          que tú desees.
+                        Descubre y potencia tus fortalezas para destacar sin que importe la edad
                         </p>
                       </div>
                     </li>
                     <li>
                       <div className="content">
-                        <h5>Actualízate</h5>
+                        <h5>Búsqueda de trabajo</h5>
                         <p>
-                          Aprende a ser competitivo en un mercado laboral que
-                          evoluciona constantemente.
+                        Aprende las técnicas que te harán posicionarte y atraer el trabajo que deseas
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="content">
+                        <h5>Crear futuro</h5>
+                        <p>
+                        Facilita tu inserción laboral mostrando la madurez que te aportó la trayectoria anterior.
                         </p>
                       </div>
                     </li>

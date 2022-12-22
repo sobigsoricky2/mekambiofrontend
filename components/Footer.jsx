@@ -397,7 +397,7 @@ const Footer = () => {
                     <Link href="./categories#sec-1">Progresión de Carrera</Link>
                   </li>
                   <li>
-                    <Link href="./categories#sec-2">Cambio de Carrera</Link>
+                    <Link href="./categories#sec-2">Cambio de Trabajo</Link>
                   </li>
                   <li>
                     <Link href="./categories#sec-3">
@@ -463,7 +463,7 @@ const Footer = () => {
                     <Link href="support ">Centro de Soporte</Link>
                   </li>
                   <li>
-                    <Link href="refund-policy ">Política de Privacidad</Link>
+                    <Link href="/privacy-policy ">Política de Privacidad</Link>
                   </li>
                   <li>
                     <Link href="terms ">Términos de Uso</Link>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-const Catagories = () => {
+const CatagoriesSec = () => {
   return (
     <div>
       <section className="categories-section bg-blue text-white rel z-1 py-50 rpb-85">
@@ -17,7 +17,7 @@ const Catagories = () => {
                   <h2>Encuentra el área en la que quieres focalizarte</h2>
                 </div>
                 <p>
-                  Elige tu área foco y selecciona al Expert que te ayudará a
+                Elige tu área de foco y selecciona al Expert que te ayudará a
                   conseguir tus objetivos.
                 </p>
                 <Link
@@ -35,30 +35,19 @@ const Catagories = () => {
               >
                 <div className="row ">
                   <div className="col-md-4 col-sm-6">
-                    <div className="category-item mt-35">
+                  <div className="category-item">
                       <div className="icon">
                         <img
                           loading="lazy"
                           className="w-50"
-                          src="/assets/images/categories/category icon_Career Progression.png"
+                          src="/assets/images/categories/category icon_Get Back to Work.png"
                           alt="Icon"
                         />
                       </div>
-                      <h4 className="text-black-50">Progresión de Carrera</h4>
+                      <h4 className="text-black-50">
+                        Regreso al Mercado Laboral{" "}
+                      </h4>
                     </div>
-                    <div className="category-item">
-                      <div className="icon">
-                        <img
-                          loading="lazy"
-                          className="w-50"
-                          src="/assets/images/categories/category icon_Make a Career Change.png"
-                          alt="Icon"
-                        />
-                      </div>
-                      <h4 className="text-black-50">Cambio de Carrera</h4>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-6">
                     <div className="category-item">
                       <div className="icon">
                         <img
@@ -71,6 +60,21 @@ const Catagories = () => {
                       <h4 className="text-black-50">
                         Acceso al Mercado Laboral
                       </h4>
+                    </div>
+                    
+                    
+                  </div>
+                  <div className="col-md-4 col-sm-6">
+                  <div className="category-item">
+                      <div className="icon">
+                        <img
+                          loading="lazy"
+                          className="w-50"
+                          src="/assets/images/categories/category icon_Make a Career Change.png"
+                          alt="Icon"
+                        />
+                      </div>
+                      <h4 className="text-black-50">Cambio de Carrera</h4>
                     </div>
                     <div className="category-item">
                       <div className="icon">
@@ -87,6 +91,17 @@ const Catagories = () => {
                     </div>
                   </div>
                   <div className="col-md-4 col-sm-6">
+                  <div className="category-item mt-35">
+                      <div className="icon">
+                        <img
+                          loading="lazy"
+                          className="w-50"
+                          src="/assets/images/categories/category icon_Career Progression.png"
+                          alt="Icon"
+                        />
+                      </div>
+                      <h4 className="text-black-50">Progresión de Carrera</h4>
+                    </div>
                     <div className="category-item mt-40">
                       <div className="icon">
                         <img
@@ -98,19 +113,7 @@ const Catagories = () => {
                       </div>
                       <h4 className="text-black-50">Emprendimiento</h4>
                     </div>
-                    <div className="category-item">
-                      <div className="icon">
-                        <img
-                          loading="lazy"
-                          className="w-50"
-                          src="/assets/images/categories/category icon_Get Back to Work.png"
-                          alt="Icon"
-                        />
-                      </div>
-                      <h4 className="text-black-50">
-                        Regreso al Mercado Laboral{" "}
-                      </h4>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -122,4 +125,4 @@ const Catagories = () => {
   );
 };
 
-export default Catagories;
+export default CatagoriesSec;
