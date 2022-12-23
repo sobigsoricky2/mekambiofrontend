@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
 import { ContentfulClient } from "../../helpers/utils";
-import AreasSectionEven from "./AreasSectionEven";
+import AreasSectionEven from "./areasSectionEven";
 import Link from "next/link";
 const Areas = () => {
   const [areas, setAreas] = useState([]);
@@ -119,17 +119,17 @@ const Areas = () => {
                 >
                   <div className="image-one">
                     <img  loading="lazy"
-                      src="./assets/images/instructor/join-team1.jpg"
+                      src="/assets/images/instructor/join-team1.jpg"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img  loading="lazy"
-                      src="./assets/images/instructor/join-team2.jpg"
+                      src="/assets/images/instructor/join-team2.jpg"
                       alt="Join Our Team"
                     />
                     <img  loading="lazy"
-                      src="./assets/images/instructor/join-team3.jpg"
+                      src="/assets/images/instructor/join-team3.jpg"
                       alt="Join Our Team"
                     />
                   </div>

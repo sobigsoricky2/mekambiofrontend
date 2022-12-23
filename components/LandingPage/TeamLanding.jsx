@@ -23,8 +23,7 @@ const TeamLanding = () => {
                   </h2>
                 </div>
                 <p>
-                  Encuentra al Expert que te ayudará a conseguir tus objetivos
-                  profesionales
+                Un equipo especializado en el desarrollo del talento, la transformación profesional y el liderazgo personal.
                 </p>
                 <ul className="list-style-one pt-10 pb-45">
                   <li>Profesionales nacionales e internacionales</li>

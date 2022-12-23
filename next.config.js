@@ -15,7 +15,12 @@ const nextConfig =withPWA( {
     skipWaiting: true,
   },
   // eslint: { ignoreDuringBuilds: true },
-
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: '/',
+  trailingSlash: true,
 });
 
+ 
 module.exports = nextConfig;

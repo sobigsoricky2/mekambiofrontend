@@ -47,7 +47,7 @@ const CatagoriesSec = () => {
                       <h4 className="text-black-50">
                         Regreso al Mercado Laboral{" "}
                       </h4>
-                    </div>
+                    </div> 
                     <div className="category-item">
                       <div className="icon">
                         <img

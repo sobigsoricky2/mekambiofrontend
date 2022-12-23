@@ -371,7 +371,7 @@ const Footer = () => {
                   <Link href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
                     <i className="fab fa-linkedin-in"></i>
                   </Link>
-                  <Link href="https://www.instagram.com/meKambio_/">
+                  <Link href="https://www.instagram.com/meKambio_">
                     <i className="fab fa-instagram"></i>
                   </Link>
                   <Link href="https://www.facebook.com/meKambio">

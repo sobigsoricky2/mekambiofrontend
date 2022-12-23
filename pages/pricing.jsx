@@ -27,7 +27,7 @@ const Pricing = () => {
                     loading="lazy"
                     style={{ borderRadius: "50%" }}
                     className="w-75"
-                    src="./assets/images/pricing/Basic Suscription.png"
+                    src="/assets/images/pricing/Basic Suscription.png"
                     alt="Icon"
                   />
                 </div>
@@ -60,7 +60,7 @@ const Pricing = () => {
                     loading="lazy"
                     style={{ borderRadius: "50%" }}
                     className="w-75"
-                    src="./assets/images/pricing/K_Advanced Subscription.png"
+                    src="/assets/images/pricing/K_Advanced Subscription.png"
                     alt="Icon"
                   />
                 </div>
@@ -93,7 +93,7 @@ const Pricing = () => {
                     loading="lazy"
                     style={{ borderRadius: "50%" }}
                     className="w-75"
-                    src="./assets/images/pricing/K_Premium Suscription.png"
+                    src="/assets/images/pricing/K_Premium Suscription.png"
                     alt="Icon"
                   />
                 </div>

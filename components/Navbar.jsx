@@ -93,10 +93,10 @@ const Navbar = ({ color }) => {
                 <nav className="main-menu navbar-expand-lg">
                   <div className="navbar-header">
                     <div className="mobile-logo br-10 p-15">
-                      <Link href="/">
+                      <Link href="">
                         <img
                           className="w-100"
-                          src="./assets/images/K Full logo.svg"
+                          src="/assets/images/K Full logo.svg"
                           alt="Logo"
                           title="Logo"
                         />
@@ -297,7 +297,7 @@ const Navbar = ({ color }) => {
                 <Link href="https://www.linkedin.com/company/meKambio/?viewAsMember=true">
                   <i className="fab fa-linkedin-in"></i>
                 </Link>
-                <Link href="https://www.instagram.com/meKambio_/">
+                <Link href="https://www.instagram.com/meKambio_">
                   <i className="fab fa-instagram"></i>
                 </Link>
                 <Link href="https://www.facebook.com/meKambio">

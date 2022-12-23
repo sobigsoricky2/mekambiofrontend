@@ -92,14 +92,14 @@ const HowToUse = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HzeVuUu.md.png" 
+                      src="/assets/images/instructor/join-team1.jpg" 
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team2.jpg"
+                      src="https://iili.io/HzeVuUu.md.png "
                       alt="Join Our Team"
                     />
                     <img
@@ -137,7 +137,7 @@ const HowToUse = () => {
                 >
                   <img
                     loading="lazy"
-                    src="./assets/images/about/benefit.jpg"
+                    src="/assets/images/about/benefit.jpg"
                     alt="Bebefit"
                   />
                 </div>
@@ -228,7 +228,7 @@ const HowToUse = () => {
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/DFO-Logotipo-Pantalla.png"
+                        src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />
                     </Link>
@@ -237,7 +237,7 @@ const HowToUse = () => {
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/EAE Business School.PNG"
+                        src="/assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
                     </Link>
@@ -246,17 +246,7 @@ const HowToUse = () => {
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/EPSEB.jpg"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://experts.mekambio.com/s?q=">
-                      <img
-                        loading="lazy"
-                        className="w-100"
-                        src="./assets/images/client-logos/Inesdi Digital Business School.jfif"
+                        src="/assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
                     </Link>
@@ -266,7 +256,17 @@ const HowToUse = () => {
                       <img
                         loading="lazy"
                         className="w-100"
-                        src="./assets/images/client-logos/Three Points, The school for Digital Business.jfif"
+                        src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-100"
+                        src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
                       />
                     </Link>
@@ -276,7 +276,7 @@ const HowToUse = () => {
                       <img
                         loading="lazy"
                         className="w-50"
-                        src="./assets/images/client-logos/UPC.png"
+                        src="/assets/images/client-logos/UPC.png"
                         alt="Client Logo"
                       />
                     </Link>

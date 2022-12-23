@@ -71,7 +71,7 @@ const Services = () => {
         <div className="icon">
           <img
             className="w-25"
-            src="./assets/images/categories/category icon_Career Progression.png"
+            src="/assets/images/categories/category icon_Career Progression.png"
             alt="Icon"
           />
         </div>
@@ -94,13 +94,13 @@ const Services = () => {
         <div className="icon">
           <img
             className="w-25"
-            src="./assets/images/categories/category icon_Entrepreneurship.png"
+            src="/assets/images/categories/category icon_Entrepreneurship.png"
             alt="Icon"
           />
         </div>
         <h4>Coaches y Mentores</h4>
         <p>
-        Ayuda a otros profesionales a elevarse a la máxima potencia, a la vez que desarrollas tus habilidades de coaching y mentoring
+        Ayuda a otros profesionales a elevarse a la máxima potencia, a la vez que desarrollas tus habilidades de coaching y mentoring.
         </p>
         <Link href="/experts" className="read-more color-two">
           Únete al equipo
@@ -115,7 +115,7 @@ const Services = () => {
         <div className="icon">
           <img
             className="w-25"
-            src="./assets/images/categories/category icon_Get Back to Work.png"
+            src="/assets/images/categories/category icon_Get Back to Work.png"
             alt="Icon"
           />
         </div>
@@ -135,7 +135,7 @@ const Services = () => {
         <div className="icon">
           <img
             className="w-25"
-            src="./assets/images/categories/category icon_Make a Career Change.png"
+            src="/assets/images/categories/category icon_Make a Career Change.png"
             alt="Icon"
           />
         </div>
@@ -188,12 +188,12 @@ const Services = () => {
             Elige tu área foco y selecciona al Expert que te ayudará a conseguir
             tus objetivos.
           </p>
-          <a
-            href="categories.html"
+          <Link
+            href="categories"
             className="read-more color-two mt-5 text-white"
           >
             Ver más <i className="fas fa-arrow-right" />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="col-lg-7">
@@ -207,26 +207,26 @@ const Services = () => {
                 <div className="icon">
                   <img
                     className="w-50"
-                    src="./assets/images/categories/category icon_Career Progression.png"
+                    src="/assets/images/categories/category icon_Career Progression.png"
                     alt="Icon"
                   />
                 </div>
-                <a href="./categories.html#sec-1">
+                <Link href="./categories#sec-1">
                   {" "}
                   <h4 className="text-black-50">Progresión de Carrera</h4>
-                </a>
+                </Link>
               </div>
               <div className="category-item">
                 <div className="icon">
                   <img
                     className="w-50"
-                    src="./assets/images/categories/category icon_Make a Career Change.png"
+                    src="/assets/images/categories/category icon_Make a Career Change.png"
                     alt="Icon"
                   />
                 </div>
-                <a href="./categories.html#sec-2">
+                <Link href="./categories#sec-2">
                   <h4 className="text-black-50">Cambio de Carrera</h4>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-4 col-sm-6">
@@ -234,27 +234,27 @@ const Services = () => {
                 <div className="icon">
                   <img
                     className="w-50"
-                    src="./assets/images/categories/category icon_Starting Out in Your Career.png"
+                    src="/assets/images/categories/category icon_Starting Out in Your Career.png"
                     alt="Icon"
                   />
                 </div>
-                <a href="./categories.html#sec-4">
+                <Link href="./categories#sec-4">
                   <h4 className="text-black-50">Acceso al Mercado Laboral</h4>
-                </a>
+                </Link>
               </div>
               <div className="category-item">
                 <div className="icon">
                   <img
                     className="w-50"
-                    src="./assets/images/categories/category icon_International Career Boost.png"
+                    src="/assets/images/categories/category icon_International Career Boost.png"
                     alt="Icon"
                   />
                 </div>
-                <a href="./categories.html#sec-3">
+                <Link href="./categories#sec-3">
                   <h4 className="text-black-50">
                     Impulso Internacional de tu Carrera
                   </h4>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-4 col-sm-6">
@@ -262,25 +262,25 @@ const Services = () => {
                 <div className="icon">
                   <img
                     className="w-50"
-                    src="./assets/images/categories/category icon_Entrepreneurship.png"
+                    src="/assets/images/categories/category icon_Entrepreneurship.png"
                     alt="Icon"
                   />
                 </div>
-                <a href="./categories.html#sec-5">
+                <Link href="./categories#sec-5">
                   <h4 className="text-black-50">Emprendimiento</h4>
-                </a>
+                </Link>
               </div>
               <div className="category-item">
                 <div className="icon">
                   <img
                     className="w-50"
-                    src="./assets/images/categories/category icon_Get Back to Work.png"
+                    src="/assets/images/categories/category icon_Get Back to Work.png"
                     alt="Icon"
                   />
                 </div>
-                <a href="./categories.html#sec-6">
+                <Link href="./categories#sec-6">
                   <h4 className="text-black-50">Regresa al Mercado Laboral</h4>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -316,7 +316,7 @@ const Services = () => {
                     <Link href="https://www.upc.edu/ca">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/UPC.png"
+                        src="/assets/images/client-logos/UPC.png"
                         alt="Client Logo"
                       />
                     </Link>
@@ -325,45 +325,45 @@ const Services = () => {
                     <Link href="https://epseb.upc.edu/ca">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/EPSEB.jpg"
+                        src="/assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.eae.es/">
+                    <Link href="https://www.eae.es">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/EAE Business School.PNG"
+                        src="/assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.threepoints.com/">
+                    <Link href="https://www.threepoints.com">
                       <img
                         loading="lazy"
                         className="w-50"
-                        src="./assets/images/client-logos/Three Points, The school for Digital Business.jfif"
+                        src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
                       />
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.inesdi.com/">
+                    <Link href="https://www.inesdi.com">
                       <img
                         loading="lazy"
                         className="w-75"
-                        src="./assets/images/client-logos/Inesdi Digital Business School.jfif"
+                        src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
                         alt="Client Logo"
                       />
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.deustoformacion.com/">
+                    <Link href="https://www.deustoformacion.com">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/DFO-Logotipo-Pantalla.png"
+                        src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />
                     </Link>

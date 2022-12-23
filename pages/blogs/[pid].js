@@ -81,7 +81,7 @@ const SingleBlog = (props) => {
                   <div className="social-style-two">
                     <h6>Share :</h6>
                     <Link
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com"
                       onClick={(e) => {
                         navigator.clipboard.writeText("helloAgain");
                       }}
@@ -101,7 +101,7 @@ const SingleBlog = (props) => {
                     <div className="author-thumb">
                       <img
                         loading="lazy"
-                        src="./assets/images/blog/admin-author.jpg"
+                        src="/assets/images/blog/admin-author.jpg"
                         alt="Image"
                       />
                     </div>
@@ -139,7 +139,7 @@ const SingleBlog = (props) => {
                       <Link href="blog-details ">
                         <img
                           loading="lazy"
-                          src="./assets/images/blog/blog-nav-prev.jpg"
+                          src="/assets/images/blog/blog-nav-prev.jpg"
                           alt="Image"
                         />
                       </Link>
@@ -160,7 +160,7 @@ const SingleBlog = (props) => {
                       <Link href="blog-details ">
                         <img
                           loading="lazy"
-                          src="./assets/images/blog/blog-nav-next.jpg"
+                          src="/assets/images/blog/blog-nav-next.jpg"
                           alt="Image"
                         />
                       </Link>
@@ -186,7 +186,7 @@ const SingleBlog = (props) => {
                         <div className="author-thumb">
                           <img
                             loading="lazy"
-                            src="./assets/images/blog/comment-author1.jpg"
+                            src="/assets/images/blog/comment-author1.jpg"
                             alt="Image"
                           />
                         </div>
@@ -212,7 +212,7 @@ const SingleBlog = (props) => {
                             <div className="author-thumb">
                               <img
                                 loading="lazy"
-                                src="./assets/images/blog/comment-author2.jpg"
+                                src="/assets/images/blog/comment-author2.jpg"
                                 alt="Image"
                               />
                             </div>
@@ -242,7 +242,7 @@ const SingleBlog = (props) => {
                         <div className="author-thumb">
                           <img
                             loading="lazy"
-                            src="./assets/images/blog/comment-author3.jpg"
+                            src="/assets/images/blog/comment-author3.jpg"
                             alt="Image"
                           />
                         </div>
@@ -284,7 +284,7 @@ const SingleBlog = (props) => {
                       loading="lazy"
                       width="auto"
                       height="auto"
-                      src="./assets/images/widgets/about.jpg"
+                      src="/assets/images/widgets/about.jpg"
                       alt="Author"
                     />
                   </div>
@@ -345,7 +345,7 @@ const SingleBlog = (props) => {
                       <div className="image">
                         <img
                           loading="lazy"
-                          src="./assets/images/widgets/course1.jpg"
+                          src="/assets/images/widgets/course1.jpg"
                           alt="Course"
                         />
                       </div>
@@ -364,7 +364,7 @@ const SingleBlog = (props) => {
                       <div className="image">
                         <img
                           loading="lazy"
-                          src="./assets/images/widgets/course2.jpg"
+                          src="/assets/images/widgets/course2.jpg"
                           alt="Course"
                         />
                       </div>
@@ -383,7 +383,7 @@ const SingleBlog = (props) => {
                       <div className="image">
                         <img
                           loading="lazy"
-                          src="./assets/images/widgets/course3.jpg"
+                          src="/assets/images/widgets/course3.jpg"
                           alt="Course"
                         />
                       </div>
@@ -402,7 +402,7 @@ const SingleBlog = (props) => {
                       <div className="image">
                         <img
                           loading="lazy"
-                          src="./assets/images/widgets/course4.jpg"
+                          src="/assets/images/widgets/course4.jpg"
                           alt="Course"
                         />
                       </div>

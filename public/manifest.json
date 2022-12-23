@@ -2,8 +2,8 @@
     "theme_color": "#1b658e",
     "background_color": "#f6eb3c",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "",
+    "start_url": "",
     "name": "Mekambio",
     "short_name": "Mekambio",
     "icons": [

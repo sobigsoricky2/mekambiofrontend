@@ -46,7 +46,7 @@ const AboutUs = () => {
                       data-speed={3000}
                       data-stop={200}
                     >
-                      0
+                      200
                     </span>
                     <span>Usuarios </span>
                   </div>
@@ -56,7 +56,7 @@ const AboutUs = () => {
                       data-speed={3000}
                       data-stop={50}
                     >
-                      0
+                      50
                     </span>
                     <span>Sesiones</span>
                   </div>
@@ -107,7 +107,7 @@ const AboutUs = () => {
                       data-speed={3000}
                       data-stop={100}
                     >
-                      0
+                      100
                     </span>
                     <span>Satisfacción </span>
                   </div>
@@ -117,7 +117,7 @@ const AboutUs = () => {
                       data-speed={3000}
                       data-stop={365}
                     >
-                      0
+                      365
                     </span>
                     <span>Días</span>
                   </div>
@@ -379,7 +379,7 @@ const AboutUs = () => {
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.eae.es/">
+                    <Link href="https://www.eae.es">
                       <img
                         loading="lazy"
                         src="/assets/images/client-logos/EAE Business School.PNG"
@@ -388,7 +388,7 @@ const AboutUs = () => {
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.threepoints.com/">
+                    <Link href="https://www.threepoints.com">
                       <img
                         loading="lazy"
                         className="w-50"
@@ -398,7 +398,7 @@ const AboutUs = () => {
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.inesdi.com/">
+                    <Link href="https://www.inesdi.com">
                       <img
                         loading="lazy"
                         className="w-75"
@@ -408,7 +408,7 @@ const AboutUs = () => {
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.deustoformacion.com/">
+                    <Link href="https://www.deustoformacion.com">
                       <img
                         loading="lazy"
                         src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
@@ -466,7 +466,7 @@ const AboutUs = () => {
                   <div className="content">
                     <h4>Únete al Equipo</h4>
                     <p>
-                    Regístrate como Expert y ayuda a profesionales a evolucionar en sus carreras
+                    Regístrate como Expert y ayuda a profesionales a evolucionar en sus carreras.
                     </p>
                     <Link
                       href="https://experts.mekambio.com/es-ES/expert_signup"

@@ -7,7 +7,7 @@ import Link from "next/link";
 const Experts = () => {
   return (
     <Layout>
-      <Banner />
+      <Banner title={"Conviértete en Expert"}/>
 
       <>
         <section className="join-our-team-area pt-120 rpt-90">
@@ -83,19 +83,19 @@ const Experts = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team1.jpg"
+                      src="/assets/images/instructor/join-team1.jpg"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team2.jpg"
+                      src="/assets/images/instructor/join-team2.jpg"
                       alt="Join Our Team"
                     />
                     <img
                       loading="lazy"
-                      src="./assets/images/instructor/join-team3.jpg"
+                      src="/assets/images/instructor/join-team3.jpg"
                       alt="Join Our Team"
                     />
                   </div>
@@ -200,14 +200,14 @@ const Experts = () => {
                     <div className="col-7">
                       <img
                         loading="lazy"
-                        src="./assets/images/about/rules-condition1.jpg"
+                        src="/assets/images/about/rules-condition1.jpg"
                         alt="Rules"
                       />
                     </div>
                     <div className="col-5">
                       <img
                         loading="lazy"
-                        src="./assets/images/about/rules-condition2.jpg"
+                        src="/assets/images/about/rules-condition2.jpg"
                         alt="Rules"
                       />
                     </div>
@@ -216,7 +216,7 @@ const Experts = () => {
                     <img
                       loading="lazy"
                       style={{ borderRadius: "50%" }}
-                      src="./assets/images/logo-icono-.png"
+                      src="/assets/images/logo-icono-.png"
                       alt="Logo"
                     />
                   </div>
@@ -260,7 +260,7 @@ const Experts = () => {
                     <Link href="https://www.upc.edu/ca">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/UPC.png"
+                        src="/assets/images/client-logos/UPC.png"
                         alt="Client Logo"
                       />
                     </Link>
@@ -269,45 +269,45 @@ const Experts = () => {
                     <Link href="https://epseb.upc.edu/ca">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/EPSEB.jpg"
+                        src="/assets/images/client-logos/EPSEB.jpg"
                         alt="Client Logo"
                       />
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.eae.es/">
+                    <Link href="https://www.eae.es">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/EAE Business School.PNG"
+                        src="/assets/images/client-logos/EAE Business School.PNG"
                         alt="Client Logo"
                       />
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.threepoints.com/">
+                    <Link href="https://www.threepoints.com">
                       <img
                         loading="lazy"
                         className="w-50"
-                        src="./assets/images/client-logos/Three Points, The school for Digital Business.jfif"
+                        src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
                         alt="Client Logo"
                       />
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.inesdi.com/">
+                    <Link href="https://www.inesdi.com">
                       <img
                         loading="lazy"
                         className="w-75"
-                        src="./assets/images/client-logos/Inesdi Digital Business School.jfif"
+                        src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
                         alt="Client Logo"
                       />
                     </Link>
                   </div>
                   <div className="logo-item w-25">
-                    <Link href="https://www.deustoformacion.com/">
+                    <Link href="https://www.deustoformacion.com">
                       <img
                         loading="lazy"
-                        src="./assets/images/client-logos/DFO-Logotipo-Pantalla.png"
+                        src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
                         alt="Client Logo"
                       />
                     </Link>
@@ -329,7 +329,7 @@ const Experts = () => {
                   <div className="pricin-item wow fadeInUp delay-0-4s animated animated" style="visibility: visible; animation-name: fadeInUp;">
                       <span className="popularity">popular</span>
                       <div className="icon">
-                          <img  loading="lazy" width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/Basic Suscription.png" alt="Icon">
+                          <img  loading="lazy" width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="/assets/images/pricing/Basic Suscription.png" alt="Icon">
                       </div>
                       <h4>Basic </h4>
                       <ul className="list-style-two">
@@ -348,7 +348,7 @@ const Experts = () => {
                   <div className="pricin-item wow fadeInUp delay-0-6s animated animated" style="visibility: visible; animation-name: fadeInUp;">
                       <span className="popularity">popular</span>
                       <div className="icon">
-                          <img  loading="lazy" width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/K_Advanced Subscription.png" alt="Icon">
+                          <img  loading="lazy" width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="/assets/images/pricing/K_Advanced Subscription.png" alt="Icon">
                       </div>
                       <h4>Advance </h4>
                       <ul className="list-style-two">
@@ -367,7 +367,7 @@ const Experts = () => {
                   <div className="pricin-item wow fadeInUp delay-0-2s animated animated" style="visibility: visible; animation-name: fadeInUp;">
                       <span className="popularity">popular</span>
                       <div className="icon">
-                          <img  loading="lazy" width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="./assets/images/pricing/K_Premium Suscription.png" alt="Icon">
+                          <img  loading="lazy" width="auto" height="auto"style="border-radius:50% ;" className="w-75" src="/assets/images/pricing/K_Premium Suscription.png" alt="Icon">
                       </div>
                       <h4>Premium </h4>
                       <ul className="list-style-two">
