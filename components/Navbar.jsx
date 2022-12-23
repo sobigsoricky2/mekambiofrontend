@@ -182,7 +182,7 @@ const Navbar = ({ color }) => {
                         </Link>
                       </li>
                       <li>
-                        <Link className=" text-decoration-none" href="/aboutus">
+                        <Link className=" text-decoration-none" href="/about-us">
                           Quiénes somos
                         </Link>
                       </li>
