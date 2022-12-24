@@ -30,6 +30,19 @@ const Footer = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const scrollToTop = () =>{
+    if (window !== undefined) {
+      
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  }
+
+  }
+  
   const handleFormDataSubmit = async (e) => {
     e.preventDefault();
 
@@ -382,7 +395,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="mt-4">
-                  <Link href="download ">Descarga las Apps de meKambio</Link>
+                  <Link href="/download ">Descarga las Apps de meKambio</Link>
                 </div>
               </div>
             </div>
@@ -500,6 +513,7 @@ const Footer = () => {
             className="scroll-top scroll-to-target"
             data-target="html"
             style={{ display: "inline-block" }}
+            onClick={(e) => scrollToTop()}
           >
             <span className="fas fa-angle-double-up"></span>
           </button>

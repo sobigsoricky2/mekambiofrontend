@@ -15,7 +15,7 @@ const HowToUse = () => {
         <title>Cómo funciona</title>
       </Head>
       <Layout>
-        <Banner title="&quot;Cómo Funciona&quot;" />
+        <Banner title="Cómo Funciona" />
 
         <section className="join-our-team-area pt-120 rpt-90">
           <div className="container">
