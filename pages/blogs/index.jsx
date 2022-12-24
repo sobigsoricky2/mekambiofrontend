@@ -27,7 +27,7 @@ const Index = ({ posts }) => {
   console.log(blogs);
   return (
     <Layout>
-      <Banner title="Blogs" />
+      <Banner title="Blogs" para="La clave del éxito radica en el conocimiento"/>
       <section className="blog-standard-area py-130 rpt-95 rpb-100">
         <div className="container">
           <div className="row">

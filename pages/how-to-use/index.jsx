@@ -15,7 +15,7 @@ const HowToUse = () => {
         <title>Cómo funciona</title>
       </Head>
       <Layout>
-        <Banner title="Cómo Funciona" />
+        <Banner title="Cómo Funciona" para="Nuestra propuesta para iniciar tu plan de acción" />
 
         <section className="join-our-team-area pt-120 rpt-90">
           <div className="container">
@@ -99,12 +99,12 @@ const HowToUse = () => {
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HzeVuUu.md.png "
+                      src="https://iili.io/HzeXkSn.md.png"
                       alt="Join Our Team"
                     />
                     <img
                       loading="lazy"
-                      src="https://iili.io/HzeXkSn.md.png"
+                      src=" /assets/images/instructor/join-team3.jpg"
                       alt="Join Our Team"
                     />
                   </div>

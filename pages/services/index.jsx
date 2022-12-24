@@ -46,7 +46,7 @@ const Services = () => {
   console.log(areas);
   return (
     <Layout>
-      <Banner title="Servicios" />
+      <Banner title="Servicios" para="Elige entre las opciones para lograr tus objetivos"/>
 
       <>
         <section className="why-learn-area pb-75 pt-110 rpb-100">
@@ -225,7 +225,7 @@ const Services = () => {
                   />
                 </div>
                 <Link href="./categories#sec-2">
-                  <h4 className="text-black-50">Cambio de Carrera</h4>
+                  <h4 className="text-black-50">Cambio de Trabajo</h4>
                 </Link>
               </div>
             </div>

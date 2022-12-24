@@ -8,7 +8,7 @@ const Faq = () => {
   return (
     <>
       <Layout>
-        <Banner title="FAQ's" />
+        <Banner title="FAQ's" para="Resolviendo algunas posibles dudas"/>
         <section
           className="faqs-section pt-120 rpt-90 pb-115 rpb-85 wow fadeInUp delay-0-2s animated"
           style={{ visibility: "visible", animationName: "fadeInUp" }}

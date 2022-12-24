@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 const Terms = () => {
   return (
     <Layout>
-      <Banner title={"Términos de Uso"}/>
+      <Banner title={"Términos de Uso"} para="Claridad y transparencia en nuestro proceder"/>
       <section className="partner-section rel z-1 pt-120 rpt-90 pb-75 rpb-55 container">
       <div >
           <h3>OVERVIEW</h3>

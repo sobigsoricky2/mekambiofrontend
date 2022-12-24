@@ -7,7 +7,7 @@ import Layout from "../../components/Layout";
 const index = () => {
   return (
     <Layout>
-      <Banner  />
+      <Banner  title={"App"} para="Llévanos contigo a cualquier parte"/>
 
       <>
         <section className="about-four-section pt-110 pb-50 rpb-100">
@@ -30,7 +30,7 @@ const index = () => {
                   </ul>
                   <div className="row d-block">
                     <Link
-                      href="https://play.google.com/store/apps/details?id=com.meKambio.customer"
+                      href="https://play.google.com/store/apps/details?id=com.mekambio.customer"
                       className=" w-50 mr-3  style-three border-0 p-0"
                     >
                       <img
@@ -41,7 +41,7 @@ const index = () => {
                       />
                     </Link>
                     <Link
-                      href="https://apps.apple.com/es/app/meKambio/id1602352572"
+                      href=" https://apps.apple.com/in/app/mekambio/id1602352572"
                       className=" w-50 border-0 style-three p-0"
                     >
                       <img
@@ -124,7 +124,7 @@ const index = () => {
                   </ul>
                   <div className="row d-block">
                     <Link
-                      href="https://play.google.com/store/apps/details?id=com.meKambio.expert"
+                      href="https://play.google.com/store/apps/details?id=com.mekambio.expert"
                       className=" w-50 mr-3  style-three border-0 p-0"
                     >
                       <img
@@ -134,7 +134,7 @@ const index = () => {
                         alt=""
                       />
                     </Link>
-                    <Link href="" className=" w-50 border-0 style-three p-0">
+                    <Link href="https://apps.apple.com/in/app/mekambio-expert/id1602350146" className=" w-50 border-0 style-three p-0">
                       <img
                         loading="lazy"
                         style={{ width: "35%" }}

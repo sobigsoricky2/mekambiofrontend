@@ -7,7 +7,7 @@ import Link from "next/link";
 const Categories = () => {
   return (
     <Layout>
-      <Banner title={"Áreas"} />
+      <Banner title={"Áreas"} para="Dónde focalizar para alcanzar tus metas"/>
       <>
         <section className="features-section-three rel z-1 pt-110  pb-50 rpt-85 rpb-70">
           <div className="container">
@@ -730,6 +730,7 @@ const Categories = () => {
                         loading="lazy"
                         src="https://iili.io/HI9nc6G.md.png"
                         alt="Rules"
+                        style={{transform:'scale(0.85)'}}
                       />
                     </div>
                     <div className="col-5">
@@ -886,7 +887,7 @@ const Categories = () => {
                     <div className="col-7">
                       <img
                         loading="lazy"
-                        src="/assets/images/about/rules-condition1.jpg"
+                        src="https://iili.io/HIcARqX.png"
                         alt="Rules"
                       />
                     </div>

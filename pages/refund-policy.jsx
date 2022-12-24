@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 const Refund = () => {
   return (
     <Layout>
-      <Banner title={"Refund And Payment Policy"}/>
+      <Banner title={"Reembolsos y Política de Pago"} para="Nuestro compromiso: cuentas claras y seguridad"/>
 
       <section className="partner-section rel z-1 pt-120 rpt-90 pb-75 rpb-55">
         <div className="container">

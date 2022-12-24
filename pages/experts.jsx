@@ -7,7 +7,10 @@ import Link from "next/link";
 const Experts = () => {
   return (
     <Layout>
-      <Banner title={"Conviértete en Expert"}/>
+      <Banner
+        title={"Conviértete en Expert"}
+        para="Forma parte del equipo y crece profesionalmente con nosotros"
+      />
 
       <>
         <section className="join-our-team-area pt-120 rpt-90">
