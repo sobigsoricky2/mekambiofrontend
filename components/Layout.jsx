@@ -7,6 +7,6 @@ export default function Layout({ children }) {
       <Navbar color={"#fff"}/>
       <main>{children}</main>
       <Footer /> 
-    </>
+    </> 
   );
 }

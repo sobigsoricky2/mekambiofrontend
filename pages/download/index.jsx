@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import Banner from "../components/Banner";
-import Layout from "../components/Layout";
+
 import Link from "next/link";
-const Download = () => {
+import Banner from "../../components/Banner";
+import Layout from "../../components/Layout";
+const index = () => {
   return (
     <Layout>
-      <Banner />
+      <Banner  />
 
       <>
         <section className="about-four-section pt-110 pb-50 rpb-100">
@@ -147,10 +148,10 @@ const Download = () => {
             </div>
           </div>
         </section>
-        {/* About End */}
+      
       </>
     </Layout>
   );
 };
 
-export default Download;
+export default index;
