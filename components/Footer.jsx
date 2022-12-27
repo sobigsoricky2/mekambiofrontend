@@ -66,7 +66,7 @@ const Footer = () => {
       });
 
       if (res2.status == 200 && res.status == 200) {
-        alert("Subscriber Added and Email Sent");
+        alert("Form Submitted");
       }
     } catch (error) {
       alert("Some Error occured");
@@ -328,11 +328,12 @@ const Footer = () => {
             <div className="col-lg-3 col-sm-4">
               <div className="footer-widget about-widget">
                 <h5 className="footer-title">Solicita Información </h5>
-                <form method="post" onSubmit={(e) => handleFormDataSubmit(e)}>
-                  <div className="form-group">
+                <form method="post" onSubmit={(e) => handleFormDataSubmit(e)} >
+                  <div className="form-group ">
                     <input
                       type="text"
                       name="name"
+                      className="text-dark"
                       value={name}
                       placeholder="Nombre"
                       required=""
@@ -342,7 +343,8 @@ const Footer = () => {
                   <div className="form-group">
                     <input
                       type="text"
-                      name="surname"
+                      name="surname" 
+                      className="text-dark"
                       value={surname}
                       placeholder="Apellidos"
                       required=""
@@ -353,6 +355,7 @@ const Footer = () => {
                     <input
                       type="email"
                       name="formEmail"
+                      className="text-dark"
                       value={formEmail}
                       placeholder="Email"
                       required=""
@@ -363,6 +366,7 @@ const Footer = () => {
                     <input
                       type="number"
                       name="phone"
+                      className="text-dark"
                       value={phone}
                       placeholder="teléfono"
                       required=""

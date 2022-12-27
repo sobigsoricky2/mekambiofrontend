@@ -50,7 +50,7 @@ const Navbar = ({ color }) => {
     });
 
     if (res2.status == 200 && res.status == 200) {
-      alert("Subscriber Added and Email Sent");
+      alert("Form Submitted");
     }
   };
   const { name, formEmail, surname, phone } = formData;

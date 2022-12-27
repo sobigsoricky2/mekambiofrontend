@@ -9,7 +9,7 @@ const Refund = () => {
       <Banner title={"Reembolsos y Política de Pago"} para="Nuestro compromiso: cuentas claras y seguridad"/>
 
       <section className="partner-section rel z-1 pt-120 rpt-90 pb-75 rpb-55">
-        <div className="container">
+        <div  className="container">
           <h3>OVERVIEW</h3>
           <p>
             This refund and payment policy regulates any purchase of and payment
