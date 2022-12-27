@@ -97,7 +97,7 @@ const Footer = () => {
         body: JSON.stringify({ email: email }),
       });
       if (res.status == 200 && res2.status == 200) {
-        alert("Subscriber Added");
+        alert("Form Submitted");
       }
     } catch (error) {
       alert("Some Error occured");
