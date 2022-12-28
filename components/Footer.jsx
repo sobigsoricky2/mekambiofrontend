@@ -47,14 +47,17 @@ const Footer = () => {
     e.preventDefault();
 
     try {
-      const res2 = await fetch("/api/email", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const res2 = await fetch(
+        "https://formsubmit.co/ajax/info@mekambio.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const res = await fetch("/api/googlesheetsFormData", {
         method: "POST",
@@ -72,6 +75,9 @@ const Footer = () => {
       alert("Some Error occured");
       console.log(error);
     }
+
+
+   
   };
 
   const handleChange = (e) => {
@@ -103,6 +109,8 @@ const Footer = () => {
       alert("Some Error occured");
       console.log(error);
     }
+
+    
   };
 
   const { name, formEmail, surname, phone } = formData;

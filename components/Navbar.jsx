@@ -31,14 +31,17 @@ const Navbar = ({ color }) => {
     e.preventDefault();
 
     console.log(process.cwd());
-    const res2 = await fetch("/api/email", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    const res2 = await fetch(
+      "https://formsubmit.co/ajax/info@mekambio.com",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
     console.log(res2);
     const res = await fetch("/api/googlesheetsFormData", {
       method: "POST",
