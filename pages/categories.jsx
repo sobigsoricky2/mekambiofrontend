@@ -970,8 +970,7 @@ const Categories = () => {
                       <div className="content">
                         <h5>Acelera la Consecución de tus Objetivos</h5>
                         <p>
-                          Alcanza eficazmente objetivos que te llevarían años
-                          conseguir.
+                        Aprende las técnicas que te harán posicionarte y atraer el trabajo que deseas.
                         </p>
                       </div>
                     </li>

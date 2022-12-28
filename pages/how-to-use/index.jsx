@@ -92,7 +92,7 @@ const HowToUse = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="/assets/images/instructor/join-team1.jpg" 
+                      src="https://iili.io/HTaDFY7.md.png" 
                       alt="Join Our Team"
                     />
                   </div>
@@ -224,11 +224,11 @@ const HowToUse = () => {
                     animationName: "fadeInLeft",
                   }}
                 >
-                  <div className="logo-item w-25">
+                 <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         loading="lazy"
-                        src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
                         alt="Client Logo"
                       />
                     </Link>
@@ -237,7 +237,7 @@ const HowToUse = () => {
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         loading="lazy"
-                        src="/assets/images/client-logos/EAE Business School.PNG"
+                        src="https://www.wemeanbusinesscoalition.org/wp-content/uploads/2019/09/Salesforce-LOGO.jpg"
                         alt="Client Logo"
                       />
                     </Link>
@@ -246,17 +246,7 @@ const HowToUse = () => {
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         loading="lazy"
-                        src="/assets/images/client-logos/EPSEB.jpg"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://experts.mekambio.com/s?q=">
-                      <img
-                        loading="lazy"
-                        className="w-100"
-                        src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
+                        src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
                         alt="Client Logo"
                       />
                     </Link>
@@ -266,7 +256,17 @@ const HowToUse = () => {
                       <img
                         loading="lazy"
                         className="w-100"
-                        src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
+                        src="https://oroinc.com/orocrm/wp-content/uploads/sites/8/2017/06/Zendesk_logo_wordmark.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-100"
+                        src="https://static.borngroup.com/uploads/2020/09/Logo-Mirakl.png"
                         alt="Client Logo"
                       />
                     </Link>
@@ -276,7 +276,7 @@ const HowToUse = () => {
                       <img
                         loading="lazy"
                         className="w-50"
-                        src="/assets/images/client-logos/UPC.png"
+                        src="https://th.bing.com/th/id/R.8126361d4fe00f6b67cacd6b751998d4?rik=eWb%2fNt6IvMli4g&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2016%2f05%2frainbow-apple-logo.png&ehk=Dk5yXp4Wc0DC4oScBdA9VamWYAANMF5ozQGYD8uAkuI%3d&risl=&pid=ImgRaw&r=0"
                         alt="Client Logo"
                       />
                     </Link>
