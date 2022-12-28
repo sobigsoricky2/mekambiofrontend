@@ -48,7 +48,7 @@ const Footer = () => {
 
     try {
       const res2 = await fetch(
-        "https://formsubmit.co/ajax/info@mekambio.com",
+        "https://formsubmit.co/ajax/ajiteshm141@gmail.com",
         {
           method: "POST",
           headers: {
