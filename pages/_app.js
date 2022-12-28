@@ -75,7 +75,7 @@ function MyApp({ Component, pageProps }) {
         id="google_translate_element"
         onClick={googleTranslateElementInit}
       >
-        Change Languge
+        Change Language
       </div>
       <Component {...pageProps} />
     </>
