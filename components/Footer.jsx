@@ -25,6 +25,7 @@ const Footer = () => {
     surname: "",
     formEmail: "",
     phone: "",
+    _cc: "info@mekambio.com"
   });
   const handleFormdataChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
