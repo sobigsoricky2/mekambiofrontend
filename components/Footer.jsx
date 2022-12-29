@@ -25,7 +25,6 @@ const Footer = () => {
     surname: "",
     formEmail: "",
     phone: "",
-    _cc: "info@mekambio.com"
   });
   const handleFormdataChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -49,7 +48,7 @@ const Footer = () => {
 
     try {
       const res2 = await fetch(
-        "https://formsubmit.co/ajax/ajiteshm141@gmail.com",
+        "https://formsubmit.co/ajax/info@mekambio.com",
         {
           method: "POST",
           headers: {
