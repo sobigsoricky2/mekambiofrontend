@@ -18,7 +18,7 @@ const FeaturesSec2 = () => {
                 <div className="icon ">
                   <img
                     loading="lazy"
-                    style={{ width: "32%" }}
+                    style={{ width: " " }}
                     src="/assets/images/categories/category icon_Make a Career Change.png"
                     alt="Icon"
                   />
@@ -38,7 +38,7 @@ const FeaturesSec2 = () => {
                 <div className="icon">
                   <img
                     loading="lazy"
-                    style={{ width: "32%" }}
+                    style={{ width: " " }}
                     src="/assets/images/categories/category icon_International Career Boost.png"
                     alt="Icon"
                   />
@@ -57,7 +57,7 @@ const FeaturesSec2 = () => {
                 <div className="icon">
                   <img
                     loading="lazy"
-                    style={{ width: "32%" }}
+                    style={{ width: " " }}
                     src="/assets/images/categories/category icon_Get Back to Work.png"
                     alt="Icon"
                   />

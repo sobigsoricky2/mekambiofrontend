@@ -39,7 +39,7 @@ const FeaturesSec = () => {
                   <div className="icon">
                     <img
                       loading="lazy"
-                      className="w-25"
+                     
                       src="/assets/images/categories/category icon_Career Progression.png"
                       alt="Icon"
                     />
@@ -62,7 +62,7 @@ const FeaturesSec = () => {
                   <div className="icon">
                     <img
                       loading="lazy"
-                      className="w-25"
+                     
                       src="assets\images\categories\category icon_Starting Out in Your Career.png"
                       alt="Icon"
                     />
@@ -85,7 +85,7 @@ const FeaturesSec = () => {
                   <div className="icon">
                     <img
                       loading="lazy"
-                      className="w-25"
+                     
                       src="assets\images\categories\category icon_International Career Boost.png"
                       alt="Icon"
                     />
@@ -108,7 +108,7 @@ const FeaturesSec = () => {
                   <div className="icon">
                     <img
                       loading="lazy"
-                      className="w-25"
+                     
                       src="assets\images\categories\category icon_Make a Career Change.png"
                       alt="Icon"
                      

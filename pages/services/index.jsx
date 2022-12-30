@@ -70,7 +70,7 @@ const Services = () => {
       <div className="feature-three-item">
         <div className="icon">
           <img
-            className="w-25"
+           
             src="/assets/images/categories/category icon_Career Progression.png"
             alt="Icon"
           />
@@ -93,7 +93,7 @@ const Services = () => {
       <div className="feature-three-item">
         <div className="icon">
           <img
-            className="w-25"
+           
             src="/assets/images/categories/category icon_Entrepreneurship.png"
             alt="Icon"
           />
@@ -114,7 +114,7 @@ const Services = () => {
       <div className="feature-three-item">
         <div className="icon">
           <img
-            className="w-25"
+           
             src="/assets/images/categories/category icon_Get Back to Work.png"
             alt="Icon"
           />
@@ -134,7 +134,7 @@ const Services = () => {
       <div className="feature-three-item">
         <div className="icon">
           <img
-            className="w-25"
+           
             src="/assets/images/categories/category icon_Make a Career Change.png"
             alt="Icon"
           />

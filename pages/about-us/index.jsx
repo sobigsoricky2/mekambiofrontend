@@ -440,7 +440,7 @@ const AboutUs = () => {
             <div className="row">
               <div className="col-lg-6 text-white">
                 <div
-                  className="advertise-item wow fadeInUp delay-0-2s animated mb-0 animated"
+                  className="advertise-item wow fadeInUp delay-0-2s animated  animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="content">
@@ -460,7 +460,7 @@ const AboutUs = () => {
               </div>
               <div className="col-lg-6">
                 <div
-                  className="advertise-item bg-two wow fadeInUp delay-0-4s animated mb-0 animated"
+                  className="advertise-item bg-two wow fadeInUp delay-0-4s animated  animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="content">

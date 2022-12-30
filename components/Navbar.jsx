@@ -5,15 +5,17 @@ import Router from "next/router";
 import { useRouter } from "next/router";
 const Navbar = ({ color }) => {
   const router = useRouter();
-
   const [showSidebar, setShowSidebar] = useState(false);
   const [hamburger, setHamburger] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 100) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
+    if (window) {
+      
+      if (window.scrollY >= 100|| window.screen.width <= 900) {
+        setColorchange(true);
+      } else {
+        setColorchange(false);
+      }
     }
   };
 
@@ -68,7 +70,7 @@ const Navbar = ({ color }) => {
         className={`main-header ${
           colorChange ? "position-fixed bg-white fixed-header" : ""
         }`}
-        style={{ animation: "sticky 1s" }}
+        style={{ animation: "sticky 1s"  }}
       >
         <div className={`header-upper  ${colorChange ? " bg-white" : ""}`}>
           <div className="container-fluid clearfix">
@@ -137,8 +139,10 @@ const Navbar = ({ color }) => {
                             ? "bg-dark"
                             : router.pathname !== "/"
                             ? "bg-white"
-                            : "bg-dark"
+                            :"bg-dark"
                         }`}
+
+                        
                       ></span>
                     </button>
                   </div>
@@ -159,7 +163,7 @@ const Navbar = ({ color }) => {
                     >
                       <li>
                         <Link
-                          className="text-decoration-none"
+                          className="text-decoration-none text-dark"
                           href="https://experts.mekambio.com/s?q="
                         >
                           Acceso a la Plataforma
@@ -167,25 +171,25 @@ const Navbar = ({ color }) => {
                       </li>
                       <li>
                         <Link
-                          className=" text-decoration-none"
+                          className=" text-decoration-none text-dark"
                           href="how-to-use"
                         >
                           Cómo funciona
                         </Link>
                       </li>
                       <li>
-                        <Link className=" text-decoration-none" href="/blogs">
+                        <Link className=" text-decoration-none text-dark" href="/blogs">
                           Blog
                         </Link>
                       </li>
 
                       <li>
-                        <Link className=" text-decoration-none" href="services">
+                        <Link className=" text-decoration-none text-dark" href="services">
                           Servicios
                         </Link>
                       </li>
                       <li>
-                        <Link className=" text-decoration-none" href="/about-us">
+                        <Link className=" text-decoration-none text-dark" href="/about-us">
                           Quiénes somos
                         </Link>
                       </li>
