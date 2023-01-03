@@ -18,7 +18,7 @@ const AboutUs = () => {
                     <span className="sub-title-two">Nuestra Visión</span>
                     <h2 style={{ fontSize: 41 }}>
                       Desarrollar el potencial de toda persona con aspiraciones
-                      profesionales &quot
+                      profesionales
                     </h2>
                   </div>
                   <p>
