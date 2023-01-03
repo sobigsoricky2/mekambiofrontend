@@ -78,7 +78,7 @@ function MyApp({ Component, pageProps }) {
         Change Language
       </div>
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }
 
