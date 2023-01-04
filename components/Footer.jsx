@@ -425,12 +425,12 @@ const Footer = () => {
                     <Link href="./categories#sec-2">Cambio de Trabajo</Link>
                   </li>
                   <li>
-                    <Link href="./categories#sec-3">
+                    <Link href="./categories#sec-4">
                       Acceso al Mercado Laboral
                     </Link>
                   </li>
                   <li>
-                    <Link href="./categories#sec-4">
+                    <Link href="./categories#sec-3">
                       Impulso Internacional de tu Carrera
                     </Link>
                   </li>
@@ -438,7 +438,7 @@ const Footer = () => {
                     <Link href="./categories#sec-5">Emprendimiento</Link>
                   </li>
                   <li>
-                    <Link href="./categories#sec-5">
+                    <Link href="./categories#sec-6">
                       Regresa al Mercado Laboral
                     </Link>
                   </li>
