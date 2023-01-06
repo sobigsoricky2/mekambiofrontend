@@ -30,34 +30,29 @@ const Footer = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const scrollToTop = () =>{
+  const scrollToTop = () => {
     if (window !== undefined) {
-      
-    window.scrollTo({
-      top: 0, 
-      behavior: 'smooth'
-      /* you can also use 'auto' behaviour
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+        /* you can also use 'auto' behaviour
          in place of 'smooth' */
-    });
-  }
+      });
+    }
+  };
 
-  }
-  
   const handleFormDataSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const res2 = await fetch(
-        "https://formsubmit.co/ajax/info@mekambio.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const res2 = await fetch("https://formsubmit.co/ajax/info@mekambio.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       const res = await fetch("/api/googlesheetsFormData", {
         method: "POST",
@@ -75,9 +70,6 @@ const Footer = () => {
       alert("Some Error occured");
       console.log(error);
     }
-
-
-   
   };
 
   const handleChange = (e) => {
@@ -103,7 +95,7 @@ const Footer = () => {
         body: JSON.stringify({ email: email }),
       });
       console.log(res2);
-      if ( res2.status !== 200) {
+      if (res2.status !== 200) {
         alert("Something went wrong");
       }
       if (res.status == 200 && res2.status == 200) {
@@ -113,8 +105,6 @@ const Footer = () => {
       alert("Some Error occured");
       console.log(error);
     }
-
-    
   };
 
   const { name, formEmail, surname, phone } = formData;
@@ -340,7 +330,7 @@ const Footer = () => {
             <div className="col-lg-3 col-sm-4">
               <div className="footer-widget about-widget">
                 <h5 className="footer-title">Solicita Información </h5>
-                <form method="post" onSubmit={(e) => handleFormDataSubmit(e)} >
+                <form method="post" onSubmit={(e) => handleFormDataSubmit(e)}>
                   <div className="form-group ">
                     <input
                       type="text"
@@ -355,7 +345,7 @@ const Footer = () => {
                   <div className="form-group">
                     <input
                       type="text"
-                      name="surname" 
+                      name="surname"
                       className="text-dark"
                       value={surname}
                       placeholder="Apellidos"
