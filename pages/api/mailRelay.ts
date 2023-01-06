@@ -34,6 +34,7 @@ export default async function handler(
       data: response.data,
     });
   } catch (error) {
+    throw(error)
     return res.status(500).send({
       message: error.message ? error.message : "Something Went Wrong",
     });
