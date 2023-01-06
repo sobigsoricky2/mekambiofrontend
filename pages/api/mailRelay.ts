@@ -29,12 +29,12 @@ export default async function handler(
       mailRelayData,
       config
     );
-
-    return res.status(200).json({
-      data: response.data,
-    });
+    if (response.status == 200) {
+      return res.status(200).json({
+        data: response.data,
+      });
+    }
   } catch (error) {
-    throw(error)
     return res.status(500).send({
       message: error.message ? error.message : "Something Went Wrong",
     });

@@ -102,6 +102,10 @@ const Footer = () => {
         },
         body: JSON.stringify({ email: email }),
       });
+      console.log(res2);
+      if ( res2.status !== 200) {
+        alert("Something went wrong");
+      }
       if (res.status == 200 && res2.status == 200) {
         alert("Form Submitted");
       }
