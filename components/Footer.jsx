@@ -501,7 +501,7 @@ const Footer = () => {
           <div className="container">
             <div className="copyright-inner">
               <p>
-                © 2021-2022 <Link href="index ">meKambio</Link> All rights
+                © 2021-2023 <Link href="index ">meKambio</Link> All rights
                 reserved.
               </p>
               <ul className="footer-menu">

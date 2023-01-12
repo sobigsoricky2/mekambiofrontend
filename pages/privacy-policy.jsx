@@ -14,12 +14,12 @@ const privacyPolicy = () => {
         id="privacy_page_content"
         className="partner-section rel z-1 pt-120 rpt-90 pb-75 rpb-55 container"
       >
-        <h2>
-          <strong>
+        <h3>
+          <>
             <br />
             OVERVIEW
-          </strong>
-        </h2>
+          </>
+        </h3>
         <div>
           <br />
         </div>
@@ -51,10 +51,10 @@ const privacyPolicy = () => {
           <br />
         </div>
         <div>
-          <strong>
+          <>
             1. General
             <br />
-          </strong>
+          </>
         </div>
         <div>
           <br />
@@ -103,9 +103,9 @@ const privacyPolicy = () => {
         <div>
           <br />
         </div>
-        <h2>
-          <strong>2. Data meKambio collects</strong>
-        </h2>
+        <h3>
+          <>2. Data meKambio collects</>
+        </h3>
         <div>
           When you visit the Website, we automatically collect certain
           information about your device, including information about your web
@@ -199,9 +199,9 @@ const privacyPolicy = () => {
         <div>
           <br />
         </div>
-        <h2>
-          <strong>3. Use of Data meKambio collects</strong>
-        </h2>
+        <h3>
+          <>3. Use of Data meKambio collects</>
+        </h3>
         <div>
           We use the Order Information that we collect generally to fulfil any
           orders placed through the Website (including processing your payment
@@ -259,9 +259,9 @@ const privacyPolicy = () => {
         <div>
           <br />
         </div>
-        <h2>
-          <strong>4. Data Retention</strong>
-        </h2>
+        <h3>
+          <>4. Data Retention</>
+        </h3>
         <div>
           When you place an order through the Website, we will maintain your
           Order Information for our records unless and until you ask us to
@@ -273,9 +273,9 @@ const privacyPolicy = () => {
         <div>
           <br />
         </div>
-        <h2>
-          <strong>5. Do not track Data</strong>
-        </h2>
+        <h3>
+          <>5. Do not track Data</>
+        </h3>
         <div>
           Please note that we do not alter our Site’s data collection and use
           practices when we see a Do Not Track signal from your browser.
@@ -284,10 +284,10 @@ const privacyPolicy = () => {
           <br />
         </div>
         <div>
-          <h2>
-            <strong>6.&nbsp;Your rights regarding Data</strong>
-            <strong>&nbsp;</strong>
-          </h2>
+          <h3>
+            <>6.&nbsp;Your rights regarding Data</>
+            <>&nbsp;</>
+          </h3>
         </div>
         <p>
           If you are a European resident, you have the right to access the
@@ -306,9 +306,9 @@ const privacyPolicy = () => {
         <p>
           <br />
         </p>
-        <h2>
-          <strong>7.&nbsp;Privacy Policy Changes</strong>
-        </h2>
+        <h3>
+          <>7.&nbsp;Privacy Policy Changes</>
+        </h3>
         <p>
           We may update this Privacy Policy from time to time in order to
           reflect, for example, changes to our practices or for other
@@ -323,9 +323,9 @@ const privacyPolicy = () => {
         <div>
           <br />
         </div>
-        <h2>
-          <strong>8. Contact Us</strong>
-        </h2>
+        <h3>
+          <>8. Contact Us</>
+        </h3>
         <p>
           For more information about our privacy practices, if you have
           questions, or if you would like to make a complaint, please contact us

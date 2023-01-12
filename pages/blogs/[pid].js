@@ -26,7 +26,7 @@ const SingleBlog = (props) => {
   console.log(blog);
   return (
     <Layout>
-      <Banner title="Blog Details" />
+      <Banner title={blog.title ? blog.title : "Blog Details"} />
 
       <section className="blog-details-area py-130 rpy-100">
         <div className="container">
@@ -67,7 +67,15 @@ const SingleBlog = (props) => {
                 </ul>
                 <h3 className="title">{blog?.title}</h3>
                 <article>
-                  {blog.blogContent?.content[0]?.content?.map((c) => c.value)}
+                  {blog.blogContent?.content.map((c) =>
+                    c.nodeType === "embedded-asset-block" ? (
+                      <div className="my-4">
+                        <img src={c.data?.target?.fields?.file?.url} alt="" />
+                      </div>
+                    ) : (
+                      <p>{c.content[0]?.value}</p>
+                    )
+                  )}
                 </article>
                 <div className="tag-share pt-10">
                   <div className="tag-coulds pb-25">
@@ -284,28 +292,56 @@ const SingleBlog = (props) => {
                       loading="lazy"
                       width="auto"
                       height="auto"
-                      src="/assets/images/widgets/about.jpg"
+                      src={blog?.authorImage?.fields?.file?.url}
                       alt="Author"
                     />
                   </div>
-                  <h4>James D. Thomas</h4>
+                  <h4>{blog?.authorName}</h4>
                   <p>
                     Sit amet consectetur adipiscing elits do eiusmod tempor
                     incididunt ut labore etdol magna aliquas uspensis.{" "}
                   </p>
                   <div className="social-style-two">
-                    <Link href="contact ">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link href="contact ">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link href="contact ">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                    <Link href="contact ">
-                      <i className="fab fa-youtube"></i>
-                    </Link>
+                    {blog?.facebookLink ? (
+                      <Link
+                        href={blog?.facebookLink ? blog?.facebookLink : ""}
+                        target="_blank"
+                      >
+                        <i className="fab fa-facebook-f"></i>
+                      </Link>
+                    ) : (
+                      ""
+                    )}
+                    {blog?.facebookLink ? (
+                      <Link
+                        href={blog?.TwitterLink ? blog?.TwitterLink : ""}
+                        target="_blank"
+                      >
+                        <i className="fab fa-twitter"></i>
+                      </Link>
+                    ) : (
+                      ""
+                    )}
+                    {blog?.facebookLink ? (
+                      <Link
+                        href={blog?.LinkedInLink ? blog?.LinkedInLink : ""}
+                        target="_blank"
+                      >
+                        <i className="fab fa-linkedin-in"></i>
+                      </Link>
+                    ) : (
+                      ""
+                    )}
+                    {blog?.youtubeLink ? (
+                      <Link
+                        href={blog?.youtubeLink ? blog?.youtubeLink : ""}
+                        target="_blank"
+                      >
+                        <i className="fab fa-youtube"></i>
+                      </Link>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
                 <div className="widget widget-menu wow fadeInUp delay-0-2s">

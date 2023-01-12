@@ -303,7 +303,7 @@ const Categories = () => {
                       <div className="content">
                         <h5>Búsqueda de trabajo</h5>
                         <p>
-                        Aprende las técnicas que te harán posicionarte y atraer el trabajo que deseas
+                        Aprende las técnicas que te harán posicionarte y atraer el trabajo que deseas.
                         </p>
                       </div>
                     </li>
@@ -754,8 +754,8 @@ const Categories = () => {
             </Link>
           </div>
         </section>
-        <section id="sec-2" className="join-our-team-area pt-100 pb-50 rpt-90">
-          <div className="container pt-50">
+        <section id="sec-6" className="join-our-team-area pt-80 pb-100 rpt-90">
+          <div className="container">
             <div className="row align-items-center large-gap">
               <div className="col-lg-6">
                 <div
@@ -768,19 +768,19 @@ const Categories = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HI9x51s.md.png"
+                      src="https://iili.io/HI9Ah5G.md.png"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src="https://iili.io/Hzk9Bp9.md.jpg"
+                      src="https://iili.io/HzkRT22.md.png"
                       alt="Join Our Team"
                     />
                     <img
                       loading="lazy"
-                      src="https://iili.io/HI9zdv4.md.png"
+                      src="https://iili.io/HI9RETx.md.png"
                       alt="Join Our Team"
                     />
                   </div>
@@ -793,32 +793,44 @@ const Categories = () => {
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="section-title mb-20">
-                    <span className="sub-title-two">Cambio de Trabajo</span>
-                    <h2>Redirige tu Carrera Profesional</h2>
+                    <span className="sub-title-two">
+                      Regreso al Mercado Laboral
+                    </span>
+                    <h2>Ponte al día e Incorpórate de forma Competitiva</h2>
                   </div>
                   <ul className="list-style-three pt-25 pb-20">
                     <li>
                       <div className="content">
-                        <h5>Dedícate a lo que te apasiona</h5>
+                        <h5>Tu Perfil Profesional</h5>
                         <p>
-                        Tú decides empezar. Nosotros te mostraremos la ruta para lograrlo.
+                        Descubre y potencia tus fortalezas para destacar sin que importe la edad.
                         </p>
                       </div>
                     </li>
                     <li>
                       <div className="content">
-                        <h5>Focaliza en lo que mejor se adapte a ti</h5>
+                        <h5>Búsqueda de trabajo</h5>
                         <p>
-                        No renuncies a tus sueños. Centra toda tu energía en lo que te motiva.
+                        Aprende las técnicas que te harán posicionarte y atraer el trabajo que deseas.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="content">
+                        <h5>Crear futuro</h5>
+                        <p>
+                        Facilita tu inserción laboral mostrando la madurez que te aportó la trayectoria anterior.
                         </p>
                       </div>
                     </li>
                   </ul>
                   <Link
-                    href="https://experts.mekambio.com/s?category=cambio-de-carrera&sort_by=3&view=grid"
+                    href="https://experts.mekambio.com/s?category=regreso-al-mercado-laboral&sort_by=3&view=grid"
                     className="theme-btn"
                   >
-                    Encuentra a tu Expert <i className="fas fa-arrow-right" />
+                    Encuentra a tu Expert
+                    <i className="fas fa-arrow-right" />
                   </Link>
                 </div>
               </div>
@@ -912,8 +924,9 @@ const Categories = () => {
             </Link>
           </div>
         </section>
-        <section id="sec-4" className="join-our-team-area pt-100 pb-50 rpt-90">
-          <div className="container">
+
+        <section id="sec-2" className="join-our-team-area pt-100 pb-50 rpt-90">
+          <div className="container pt-50">
             <div className="row align-items-center large-gap">
               <div className="col-lg-6">
                 <div
@@ -926,19 +939,19 @@ const Categories = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HI9IPbp.png"
+                      src="https://iili.io/HI9x51s.md.png"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src=" https://iili.io/HzkfRbp.jpg"
+                      src="https://iili.io/Hzk9Bp9.md.jpg"
                       alt="Join Our Team"
                     />
                     <img
                       loading="lazy"
-                      src="https://iili.io/HI9TdI2.md.png"
+                      src="https://iili.io/HI9zdv4.md.png"
                       alt="Join Our Team"
                     />
                   </div>
@@ -951,51 +964,39 @@ const Categories = () => {
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="section-title mb-20">
-                    <span className="sub-title-two">
-                      Empezando en tu Carrera Profesional
-                    </span>
-                    <h2>Inicia tu Carrera acompañado por tu Propio Equipo</h2>
+                    <span className="sub-title-two">Cambio de Trabajo</span>
+                    <h2>Redirige tu Carrera Profesional</h2>
                   </div>
                   <ul className="list-style-three pt-25 pb-20">
                     <li>
                       <div className="content">
-                        <h5>Diseña tu Estrategia Profesional</h5>
+                        <h5>Dedícate a lo que te apasiona</h5>
                         <p>
-                          Iníciate en tu profesión con un plan de carrea
-                          definido en exclusiva para ti.
+                        Tú decides empezar. Nosotros te mostraremos la ruta para lograrlo.
                         </p>
                       </div>
                     </li>
                     <li>
                       <div className="content">
-                        <h5>Acelera la Consecución de tus Objetivos</h5>
+                        <h5>Focaliza en lo que mejor se adapte a ti</h5>
                         <p>
-                        Aprende las técnicas que te harán posicionarte y atraer el trabajo que deseas.
-                        </p>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="content">
-                        <h5>Trabajar tu perfil</h5>
-                        <p>
-                        Descubre y potencia tus fortalezas poniendo en valor tus conocimientos y habilidades.
+                        No renuncies a tus sueños. Centra toda tu energía en lo que te motiva.
                         </p>
                       </div>
                     </li>
                   </ul>
                   <Link
-                    href="https://experts.mekambio.com/s?category=acceso-al-mercado-laboral&sort_by=3&view=grid"
+                    href="https://experts.mekambio.com/s?category=cambio-de-carrera&sort_by=3&view=grid"
                     className="theme-btn"
                   >
-                    Encuentra a tu Expert
-                    <i className="fas fa-arrow-right" />
+                    Encuentra a tu Expert <i className="fas fa-arrow-right" />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        
         {/* Features Section End */}
         <section
           id="sec-5"
@@ -1079,7 +1080,8 @@ const Categories = () => {
             </Link>
           </div>
         </section>
-        <section id="sec-6" className="join-our-team-area pt-80 pb-100 rpt-90">
+        
+        <section id="sec-4" className="join-our-team-area pt-100 pb-50 rpt-90">
           <div className="container">
             <div className="row align-items-center large-gap">
               <div className="col-lg-6">
@@ -1093,19 +1095,19 @@ const Categories = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HI9Ah5G.md.png"
+                      src="https://iili.io/HI9IPbp.png"
                       alt="Join Our Team"
                     />
                   </div>
                   <div className="image-two">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HzkRT22.md.png"
+                      src=" https://iili.io/HzkfRbp.jpg"
                       alt="Join Our Team"
                     />
                     <img
                       loading="lazy"
-                      src="https://iili.io/HI9RETx.md.png"
+                      src="https://iili.io/HI9TdI2.md.png"
                       alt="Join Our Team"
                     />
                   </div>
@@ -1119,39 +1121,40 @@ const Categories = () => {
                 >
                   <div className="section-title mb-20">
                     <span className="sub-title-two">
-                      Regreso al Mercado Laboral
+                      Empezando en tu Carrera Profesional
                     </span>
-                    <h2>Ponte al día e Incorpórate de forma Competitiva</h2>
+                    <h2>Inicia tu Carrera acompañado por tu Propio Equipo</h2>
                   </div>
                   <ul className="list-style-three pt-25 pb-20">
                     <li>
                       <div className="content">
-                        <h5>Tu Perfil Profesional</h5>
+                        <h5>Diseña tu Estrategia Profesional</h5>
                         <p>
-                        Descubre y potencia tus fortalezas para destacar sin que importe la edad.
+                          Iníciate en tu profesión con un plan de carrea
+                          definido en exclusiva para ti.
                         </p>
                       </div>
                     </li>
                     <li>
                       <div className="content">
-                        <h5>Búsqueda de trabajo</h5>
+                        <h5>Acelera la Consecución de tus Objetivos</h5>
                         <p>
-                        Aprende las técnicas que te harán posicionarte y atraer el trabajo que deseas
+                        Aprende las técnicas que te harán posicionarte y atraer el trabajo que deseas.
                         </p>
                       </div>
                     </li>
 
                     <li>
                       <div className="content">
-                        <h5>Crear futuro</h5>
+                        <h5>Trabajar tu perfil</h5>
                         <p>
-                        Facilita tu inserción laboral mostrando la madurez que te aportó la trayectoria anterior.
+                        Descubre y potencia tus fortalezas poniendo en valor tus conocimientos y habilidades.
                         </p>
                       </div>
                     </li>
                   </ul>
                   <Link
-                    href="https://experts.mekambio.com/s?category=regreso-al-mercado-laboral&sort_by=3&view=grid"
+                    href="https://experts.mekambio.com/s?category=acceso-al-mercado-laboral&sort_by=3&view=grid"
                     className="theme-btn"
                   >
                     Encuentra a tu Expert

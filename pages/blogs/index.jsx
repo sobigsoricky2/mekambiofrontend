@@ -4,6 +4,7 @@ import Banner from "../../components/Banner";
 import Layout from "../../components/Layout";
 import axios from "axios";
 import { getImage, ContentfulClient } from "../../helpers/utils";
+import { RWebShare } from "react-web-share";
 
 var contentful = require("contentful");
 const Index = ({ posts }) => {
@@ -27,7 +28,10 @@ const Index = ({ posts }) => {
   console.log(blogs);
   return (
     <Layout>
-      <Banner title="Blogs" para="La clave del éxito radica en el conocimiento"/>
+      <Banner
+        title="Blogs"
+        para="La clave del éxito radica en el conocimiento"
+      />
       <section className="blog-standard-area py-130 rpt-95 rpb-100">
         <div className="container">
           <div className="row">
@@ -46,9 +50,18 @@ const Index = ({ posts }) => {
                         // src=""
                         alt="Blog"
                       />
-                      <Link href="#">
+                      <RWebShare
+                       data={{
+                        text: fields?.title,
+                        url:`blogs/${fields?.title}` ,
+                        title: "Flamingos",
+                      }}
+                      >
+
+                      <a>
                         <i className="fas fa-share-alt"></i>
-                      </Link>
+                      </a>
+                      </RWebShare>
                     </div>
                     <div className="blog-standard-content">
                       <div className="author">
@@ -56,7 +69,7 @@ const Index = ({ posts }) => {
                           loading="lazy"
                           src={fields.authorImage.fields.file.url}
                           alt="Author"
-                          style={{borderRadius:'50%'}}
+                          style={{ borderRadius: "50%" }}
                         />
                       </div>
                       <div className="content">
@@ -74,7 +87,9 @@ const Index = ({ posts }) => {
                           </li>
                         </ul>
                         <h3>
-                          <Link href={`blogs/${fields?.title}`}>{fields?.title}</Link>
+                          <Link href={`blogs/${fields?.title}`}>
+                            {fields?.title}
+                          </Link>
                         </h3>
                         <p>{fields?.shortDescription}</p>
                         <Link
@@ -223,97 +238,5 @@ const Index = ({ posts }) => {
   );
 };
 
-// export async function getStaticProps() {
-//   // const res = await fetch("http://test.skg-walldorf.de/graphql", {
-//   //   method: "POST",
-//   //   headers: { "Content-Type": "application/json" },
-//   //   body: JSON.stringify({
-//   //     query: `
-//   //     query AllpostQuery {
-//   //       posts {
-//   //         nodes {
-//   //           slug
-//   //           title
-//   //           excerpt
-//   //           date
-//   //           comments {
-//   //             nodes{
-//   //               approved
-//   //             }
-//   //           }
-//   //           featuredImage{
-//   //             node{
-//   //               sourceUrl
-//   //             }
-//   //           }
-//   //           author{
-//   //             node{
-//   //               name
-//   //               avatar {
-//   //                 default
-//   //                 extraAttr
-//   //                 forceDefault
-//   //                 foundAvatar
-//   //                 height
-//   //                 isRestricted
-//   //                 rating
-//   //                 scheme
-//   //                 size
-//   //                 url
-//   //                 width
-//   //               }
 
-//   //             }
-//   //           }
-//   //         }
-//   //       }
-//   //     }
-//   //           `,
-//   //   }),
-//   // });
-//   // const client = contentful.createClient({
-//   //   space: process.env.SPACE_ID,
-
-//   //   accessToken: process.env.ACCESS_TOKEN,
-//   // });
-
-//   var data = [];
-
-//   contentful
-//     .createClient({
-//       space: "rnas9vwjhliq",
-//       accessToken: "tcLuykWlQVqx8w0NWJmIs7MMxVHBuekaS8yTIg8_6jw",
-//     })
-//     .getEntries()
-//     .then((response) => {
-//       response.items.forEach((element) => {
-//         data.push(element);
-//       });
-//       console.log(data);
-//     })
-//     .catch(console.error);
-
-//   console.log(data);
-
-//   // console.log(res.data);
-
-//   // const json = await res.json();
-
-//   //for Image
-
-//   // contentful.js v4.x.x
-
-//   // const client = contentful.createClient({
-//   //   space: "rnas9vwjhliq",
-//   //   accessToken: "tcLuykWlQVqx8w0NWJmIs7MMxVHBuekaS8yTIg8_6jw",
-//   // });
-//   var imageurl = "";
-
-//   //
-//   return {
-//     props: {
-//       posts: data,
-//     },
-//   };
-// }
 export default Index;
