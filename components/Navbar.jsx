@@ -163,7 +163,7 @@ const Navbar = ({ color }) => {
                     >
                       <li>
                         <Link
-                          className="text-decoration-none text-dark"
+                          className="text-decoration-none mobile-text-dark"
                           href="https://experts.mekambio.com/s?q="
                         >
                           Acceso a la Plataforma
@@ -171,25 +171,25 @@ const Navbar = ({ color }) => {
                       </li>
                       <li>
                         <Link
-                          className=" text-decoration-none text-dark"
+                          className=" text-decoration-none mobile-text-dark"
                           href="how-to-use"
                         >
                           Cómo funciona
                         </Link>
                       </li>
                       <li>
-                        <Link className=" text-decoration-none text-dark" href="/blogs">
+                        <Link className=" text-decoration-none mobile-text-dark" href="/blogs">
                           Blog
                         </Link>
                       </li>
 
                       <li>
-                        <Link className=" text-decoration-none text-dark" href="services">
+                        <Link className=" text-decoration-none mobile-text-dark" href="services">
                           Servicios
                         </Link>
                       </li>
                       <li>
-                        <Link className=" text-decoration-none text-dark" href="/about-us">
+                        <Link className=" text-decoration-none mobile-text-dark" href="/about-us">
                           Quiénes somos
                         </Link>
                       </li>

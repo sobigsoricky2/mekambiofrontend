@@ -12373,3 +12373,11 @@ blockquote .blockquote-footer:before {
 .mobile-text-black {
   color: #000 !important;
 }
+
+
+
+@media only screen and (max-width: 990px) {
+  .mobile-text-dark{
+    color:#212121 !important;
+  }
+}

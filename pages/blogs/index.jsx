@@ -56,6 +56,7 @@ const Index = ({ posts }) => {
                           loading="lazy"
                           src={fields.authorImage.fields.file.url}
                           alt="Author"
+                          style={{borderRadius:'50%'}}
                         />
                       </div>
                       <div className="content">
@@ -64,16 +65,16 @@ const Index = ({ posts }) => {
                             <span className="name">{fields.authorName}</span>
                           </li>
                           <li>
-                            <i className="far fa-calendar-alt"></i>{" "}
-                            <Link href="blog-details ">February 20, 2022</Link>
+                            {/* <i className="far fa-calendar-alt"></i>{" "} */}
+                            {/* <Link href="blog-details ">February 20, 2022</Link> */}
                           </li>
                           <li>
-                            <i className="far fa-comments"></i>{" "}
-                            <Link href="blog-details ">Comments (05)</Link>
+                            {/* <i className="far fa-comments"></i>{" "} */}
+                            {/* <Link href="blog-details ">Comments (05)</Link> */}
                           </li>
                         </ul>
                         <h3>
-                          <Link href="blog-details ">{fields?.title}</Link>
+                          <Link href={`blogs/${fields?.title}`}>{fields?.title}</Link>
                         </h3>
                         <p>{fields?.shortDescription}</p>
                         <Link
@@ -146,7 +147,7 @@ const Index = ({ posts }) => {
                     </Link>
                   </div>
                 </div> */}
-                <div
+                {/* <div
                   className="widget widget-menu wow fadeInUp delay-0-2s animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
@@ -196,7 +197,7 @@ const Index = ({ posts }) => {
                       <span>(18)</span>
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 {/* <div
                   className="widget widget-tag-cloud wow fadeInUp delay-0-2s animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}

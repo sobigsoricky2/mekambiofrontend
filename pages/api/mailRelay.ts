@@ -29,7 +29,7 @@ export default async function handler(
       mailRelayData,
       config
     );
-    console.log(response);
+
     
     if (response.status == 201) {
       return res.status(200).json({
