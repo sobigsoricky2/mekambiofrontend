@@ -67,7 +67,7 @@ const FeaturesSec = () => {
                       alt="Icon"
                     />
                   </div>
-                  <h5>Accede al mercado labora</h5>
+                  <h5>Accede al mercado laboral</h5>
                   <p>¿Quieres volver al trabajo de forma competitiva?</p>
                 </div>
                 <Link href="categories#reg" className="read-more color-two">
