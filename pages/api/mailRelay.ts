@@ -22,6 +22,7 @@ export default async function handler(
     const mailRelayData = JSON.stringify({
       status: "active",
       email: body.email,
+      group_ids: [87]
     });
 
     const response = await axios.post(
