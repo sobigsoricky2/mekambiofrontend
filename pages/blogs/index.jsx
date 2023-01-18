@@ -51,16 +51,15 @@ const Index = ({ posts }) => {
                         alt="Blog"
                       />
                       <RWebShare
-                       data={{
-                        text: fields?.title,
-                        url:`blogs/${fields?.title}` ,
-                        title: "Flamingos",
-                      }}
+                        data={{
+                          text: fields?.title,
+                          url: `/blogs/${fields?.title}`,
+                          title: "Flamingos",
+                        }}
                       >
-
-                      <a>
-                        <i className="fas fa-share-alt"></i>
-                      </a>
+                        <a>
+                          <i className="fas fa-share-alt"></i>
+                        </a>
                       </RWebShare>
                     </div>
                     <div className="blog-standard-content">
@@ -87,13 +86,13 @@ const Index = ({ posts }) => {
                           </li>
                         </ul>
                         <h3>
-                          <Link href={`blogs/${fields?.title}`}>
+                          <Link href={`/blogs/${fields?.title}`}>
                             {fields?.title}
                           </Link>
                         </h3>
                         <p>{fields?.shortDescription}</p>
                         <Link
-                          href={`blogs/${fields?.title}`}
+                          href={`/blogs/${fields?.title}`}
                           className="theme-btn style-two"
                         >
                           Leer más <i className="fas fa-arrow-right"></i>
@@ -162,57 +161,70 @@ const Index = ({ posts }) => {
                     </Link>
                   </div>
                 </div> */}
-                {/* <div
+                <div
                   className="widget widget-menu wow fadeInUp delay-0-2s animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <h4 className="widget-title">Category</h4>
                   <ul>
                     <li>
-                      <Link href="blog ">meKambio mONday </Link>{" "}
-                      <span>(25)</span>
+                      <Link href="/blogs/catagories/MeKambio-mONday ">
+                        meKambio mONday{" "}
+                      </Link>{" "}
+                      {/* <span>(25)</span> */}
                     </li>
                     <li>
-                      <Link href="blog ">Coaching </Link> <span>(07)</span>
+                      <Link href="/blogs/catagories/Coaching ">Coaching </Link>
+                      {/* <span>(07)</span> */}
                     </li>
                     <li>
-                      <Link href="blog ">Mentoring</Link> <span>(12)</span>
+                      <Link href="/blogs/catagories/Mentoring ">Mentoring</Link>
+                      {/* <span>(12)</span> */}
                     </li>
                     <li>
-                      <Link href="blog ">Liderazgo </Link> <span>(55)</span>
+                      <Link href="/blogs/catagories/Liderazgo ">Liderazgo </Link>
+                      {/* <span>(55)</span> */}
                     </li>
                     <li>
-                      <Link href="blog ">
+                      <Link href="/blogs/catagories/Habilidades-y-Competencias-Profesionales ">
                         Habilidades y Competencias Profesionales{" "}
                       </Link>
-                      <span>(14)</span>
+                      {/* <span>(14)</span> */}
                     </li>
                     <li>
-                      <Link href="blog ">Impulso Internacional</Link>{" "}
-                      <span>(30)</span>
+                      <Link href="/blogs/catagories/Impulsa-Internacional ">
+                        Impulso Internacional
+                      </Link>{" "}
+                      {/* <span>(30)</span> */}
                     </li>
                     <li>
-                      <Link href="blog ">Progresión de Carrera</Link>{" "}
-                      <span>(18)</span>
+                      <Link href="/blogs/catagories/Progresion-de-Carrera ">
+                        Progresión de Carrera
+                      </Link>{" "}
+                      {/* <span>(18)</span> */}
                     </li>
-                    <li>
-                      <Link href="blog ">Acceso al Mercado Laboral </Link>{" "}
+                    {/* <li>
+                      <Link href="/blogs/catagories/ ">Acceso al Mercado Laboral </Link>{" "}
                       <span>(07)</span>
+                    </li> */}
+                    <li>
+                      <Link href="/blogs/catagories/Cambio-de-Carrera ">
+                        Cambio de Carrera
+                      </Link>{" "}
+                      {/* <span>(12)</span> */}
                     </li>
                     <li>
-                      <Link href="blog ">Cambio de Carrera</Link>{" "}
-                      <span>(12)</span>
+                      <Link href="/blogs/catagories/Emprendimiento ">Emprendimiento </Link>{" "}
+                      {/* <span>(55)</span> */}
                     </li>
                     <li>
-                      <Link href="blog ">Emprendimiento </Link>{" "}
-                      <span>(55)</span>
-                    </li>
-                    <li>
-                      <Link href="blog ">Regreso al Mercado Laboral</Link>{" "}
-                      <span>(18)</span>
+                      <Link href="/blogs/catagories/Regreso-al-Mercado-Laboral ">
+                        Regreso al Mercado Laboral
+                      </Link>{" "}
+                      {/* <span>(18)</span> */}
                     </li>
                   </ul>
-                </div> */}
+                </div>
                 {/* <div
                   className="widget widget-tag-cloud wow fadeInUp delay-0-2s animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
@@ -237,6 +249,5 @@ const Index = ({ posts }) => {
     </Layout>
   );
 };
-
 
 export default Index;
