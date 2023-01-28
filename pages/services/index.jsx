@@ -190,18 +190,17 @@ const Services = () => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="section-title mb-25">
-                    <span className="sub-title-two">Nuestras Áreas</span>
-                    <h2>Encuentra el área en la que quieres focalizarte</h2>
+                    <span className="sub-title-two">Nuestros Servicios</span>
+                    <h2>Descubre la herramienta que mejor se amolde a tu condición</h2>
                   </div>
                   <p>
-                    Elige tu área foco y selecciona al Expert que te ayudará a
-                    conseguir tus objetivos.
+                  Cada situación requiere de su propia estrategia. Encuentra el servicio que mejor cumpla tus expectativas para empezar tu evolución.
                   </p>
                   <Link
-                    href="categories"
+                    href="/categories"
                     className="read-more color-two mt-5 text-white"
                   >
-                    Ver más <i className="fas fa-arrow-right" />
+                    Week Program <i className="fas fa-arrow-right" />
                   </Link>
                 </div>
               </div>
@@ -223,11 +222,11 @@ const Services = () => {
                         <Link href="./categories#sec-1">
                           {" "}
                           <h4 className="text-black-50">
-                            Progresión de Carrera
+                          Programas Intensivos
                           </h4>
                         </Link>
                       </div>
-                      <div className="category-item">
+                      {/* <div className="category-item">
                         <div className="icon">
                           <img
                             className="w-50"
@@ -236,9 +235,9 @@ const Services = () => {
                           />
                         </div>
                         <Link href="./categories#sec-2">
-                          <h4 className="text-black-50">Cambio de Trabajo</h4>
+                          <h4 className="text-black-50">meKambio Hub</h4>
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="col-md-4 col-sm-6">
                       <div className="category-item">
@@ -251,11 +250,11 @@ const Services = () => {
                         </div>
                         <Link href="./categories#sec-4">
                           <h4 className="text-black-50">
-                            Acceso al Mercado Laboral
+                           meKambio Hub
                           </h4>
                         </Link>
                       </div>
-                      <div className="category-item">
+                      {/* <div className="category-item">
                         <div className="icon">
                           <img
                             className="w-50"
@@ -268,7 +267,7 @@ const Services = () => {
                             Impulso Internacional de tu Carrera
                           </h4>
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="col-md-4 col-sm-6">
                       <div className="category-item mt-40">
@@ -280,10 +279,10 @@ const Services = () => {
                           />
                         </div>
                         <Link href="./categories#sec-5">
-                          <h4 className="text-black-50">Emprendimiento</h4>
+                          <h4 className="text-black-50">Experts On demand</h4>
                         </Link>
                       </div>
-                      <div className="category-item">
+                      {/* <div className="category-item">
                         <div className="icon">
                           <img
                             className="w-50"
@@ -296,7 +295,7 @@ const Services = () => {
                             Regresa al Mercado Laboral
                           </h4>
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -305,23 +304,455 @@ const Services = () => {
           </div>
         </section>
 
-        <section className="partner-section rel z-1 pt-50 rpt-90 pb-50 rpb-55">
+        <section id="sec-6" className="join-our-team-area pt-80 pb-100 rpt-90">
+          <div className="container">
+            <div className="row align-items-center large-gap">
+              <div className="col-lg-6">
+                <div
+                  className="join-our-team-image-part pt-5 wow fadeInRight delay-0-2s animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="image-one">
+                    <img
+                      loading="lazy"
+                      src="https://iili.io/HI9Ah5G.md.png"
+                      alt="Join Our Team"
+                    />
+                  </div>
+                  <div className="image-two">
+                    <img
+                      loading="lazy"
+                      src="https://iili.io/HzkRT22.md.png"
+                      alt="Join Our Team"
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://iili.io/HI9RETx.md.png"
+                      alt="Join Our Team"
+                    />
+                  </div>
+                  <span className="bg-text">meKambio</span>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div
+                  className="join-our-team-content rmb-75 wow fadeInLeft delay-0-2s animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                >
+                  <div className="section-title mb-20">
+                    <span className="sub-title-two">
+                    meKambio Hub
+                    </span>
+                    <h2>Desarrolla las Soft Skills más demandadas</h2>
+                  </div>
+                  <ul className="list-style-three pt-25 pb-20">
+                    <li>
+                      <div className="content">
+                        <h5>Fortalezas Interpersonales</h5>
+                        <p>
+                        La adquisición y mejora de las denominadas Soft Skills, además de reforzar el propio
+autoconocimiento, te permite mejorar tu posicionamiento en el mercado laboral.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="content">
+                        <h5>Rendimiento, Eficacia y Eficiencia</h5>
+                        <p>
+                        Influye directamente en el incremento de estos tres valores imprescindibles en el campo
+profesional, con beneficios a nivel individual y a nivel de equipo.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="content">
+                        <h5>Oportunidades Profesionales</h5>
+                        <p>
+                        Se abrirán nuevas ofertas laborales ante ti, calidad de puestos de trabajo, salarios más elevados, oportunidades para desarrollarte en lo que te motiva.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link
+                    href="https://experts.mekambio.com/s?category=regreso-al-mercado-laboral&sort_by=3&view=grid"
+                    className="theme-btn"
+                  >
+                    Saber más
+                    <i className="fas fa-arrow-right" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="sec-1"
+          className="rules-condition-area pt-100 pb-50 bg-blue text-white rpt-90"
+        >
+          <div className="container ">
+            <div className="row align-items-center large-gap">
+              <div className="col-lg-5">
+                <div
+                  className=" rules-condition-content rmb-50 wow fadeInLeft delay-0-2s animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                >
+                  <div className="section-title">
+                    <span className="sub-title-two">Programas Intensivos</span>
+                    <h2>Garantiza tu incorporación al mercado profesional</h2>
+                  </div>
+                  <ul className="list-style-three pt-10">
+                    <li>
+                      <div className="content">
+                        <h5>Empoderamiento Personal</h5>
+                        <p>
+                        Al mejorar tus capacidades y desarrollar tus fortalezas, se incrementa tu propio potencial para mejorar tu situación, sea cual sea la causa.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="content">
+                        <h5>Programa Personalizado 100%</h5>
+                        <p>
+                        Tu programa intensivo tendrá puesto el foco en áreas de trabajo específicas, determinadas a partir de tu propia experiencia profesional y tus metas al respecto.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="content">
+                        <h5>Acceso al Mercado Laboral a Corto Plazo</h5>
+                        <p>
+                        Un asesoramiento focalizado será clave para abrirte a ofertas profesionales de calidad, acordes a tus conocimientos, experiencias y expectativas.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <div
+                  className="rules-condition-image-part wow fadeInRight delay-0-2s animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="row align-items-center">
+                    <div className="col-7">
+                      <img
+                        loading="lazy"
+                        src="https://iili.io/HI9nc6G.md.png"
+                        alt="Rules"
+                        style={{transform:'scale(0.85)'}}
+                      />
+                    </div>
+                    <div className="col-5">
+                      <img
+                        loading="lazy"
+                        src="https://iili.io/HI9o9oX.md.png"
+                        alt="Rules"
+                      />
+                    </div>
+                  </div>
+             
+                </div>
+              </div>
+            </div>
+            <Link
+              href="https://experts.mekambio.com/s?category=progresion-de-carrera&sort_by=3&view=grid"
+              className="theme-btn border"
+            >
+              Saber más
+              <i className="fas fa-arrow-right" />
+            </Link>
+          </div>
+        </section>
+
+        <section id="sec-6" className="join-our-team-area pt-80 pb-100 rpt-90">
+          <div className="container">
+            <div className="row align-items-center large-gap">
+              <div className="col-lg-6">
+                <div
+                  className="join-our-team-image-part pt-5 wow fadeInRight delay-0-2s animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="image-one">
+                    <img
+                      loading="lazy"
+                      src="https://iili.io/HI9Ah5G.md.png"
+                      alt="Join Our Team"
+                    />
+                  </div>
+                  <div className="image-two">
+                    <img
+                      loading="lazy"
+                      src="https://iili.io/HzkRT22.md.png"
+                      alt="Join Our Team"
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://iili.io/HI9RETx.md.png"
+                      alt="Join Our Team"
+                    />
+                  </div>
+                  <span className="bg-text">meKambio</span>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div
+                  className="join-our-team-content rmb-75 wow fadeInLeft delay-0-2s animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                >
+                  <div className="section-title mb-20">
+                    <span className="sub-title-two">
+                    Experts On demand
+                    </span>
+                    <h2>Determina y alcanza nuevas metas profesionales</h2>
+                  </div>
+                  <ul className="list-style-three pt-25 pb-20">
+                    <li>
+                      <div className="content">
+                        <h5>Plan Estratégico Personalizable</h5>
+                        <p>
+                        Estarás más cerca de tus objetivos profesionales, gracias a una amplia oferta de sesiones que elegirás y amoldaremos en función de tu situación personal.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="content">
+                        <h5>Perfil Profesional Competitivo</h5>
+                        <p>
+                        Trabajarás con grandes profesionales que te ayudarán a evolucionar tus capacidades en las distintas áreas en que puedes focalizarte. Podrás ir construyendo tu trayectoria paso a paso.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="content">
+                        <h5>Apertura de Oportunidades</h5>
+                        <p>
+                        Cuando comprendes tus inquietudes, eres capaz de marcar un trayecto con una meta clara. En ese recorrido van surgienndo ventanas de futuro y tú elegirás cuáles abrir.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link
+                    href="https://experts.mekambio.com/s?category=regreso-al-mercado-laboral&sort_by=3&view=grid"
+                    className="theme-btn"
+                  >
+                  Saber más
+                    <i className="fas fa-arrow-right" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="why-learn-area pb-75 pt-110 rpb-100">
+          <div className="container">
+            <div
+              className="row align-items-center large-gap wow fadeInLeft delay-0-2s animated"
+              style={{ visibility: "visible", animationName: "fadeInLeft" }}
+            >
+              <div className="">
+                <div className="why-learn-content rmb-35">
+                  <div className="section-title mb-30">
+                    <span className="sub-title-two">
+                    Soluciones personalizadas
+                    </span>
+                    <h2>¿No has encontrado lo que buscabas?</h2>
+                  </div>
+                  <p>Si no lo tienes claro, pero te gusta lo que proponemos, ponte en contacto con nosotros y valoraremos conjuntamente una propuesta de servicios que se ajuste a tu caso en particular.</p>
+                  <div className="why-learn-feature pt-30 ">
+                    <div className="row justify-content-evenly">
+                      <div className="col-sm-3" id="sec-1">
+                        <div className="feature-three-item">
+                          <div className="icon">
+                            <img
+                              src="/assets/images/categories/category icon_Career Progression.png"
+                              alt="Icon"
+                            />
+                          </div>
+                          <h4>Para profesionales</h4>
+                          <p>
+                            Alcanza tus objetivos profesionales y acelera la
+                            progresión de tu carrera. Desarrolla tu potencial y
+                            evoluciona en el trabajo.
+                          </p>
+                          <Link
+                            href="https://experts.mekambio.com/s?q="
+                            className="read-more color-two"
+                          >
+                            Solicita información
+                            <i className="fas fa-arrow-right" />
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="col-sm-3" id="sec-2">
+                        <div className="feature-three-item">
+                          <div className="icon">
+                            <img
+                              src="/assets/images/categories/category icon_Entrepreneurship.png"
+                              alt="Icon"
+                            />
+                          </div>
+                          <h4>Corporativo, para empresas</h4>
+                          <p>
+                            Ayuda a otros profesionales a elevarse a la máxima
+                            potencia, a la vez que desarrollas tus habilidades
+                            de coaching y mentoring.
+                          </p>
+                          <Link href="/experts" className="read-more color-two">
+                          Solicita información
+                            <i className="fas fa-arrow-right" />
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="col-sm-3" id="sec-3">
+                        <div className="feature-three-item">
+                          <div className="icon">
+                            <img
+                              src="/assets/images/categories/category icon_Get Back to Work.png"
+                              alt="Icon"
+                            />
+                          </div>
+                          <h4>Partnerships</h4>
+                          <p>
+                            Desarrolla el talento de tu equipo, incrementa su
+                            motivación, y maximiza el potencial de tu
+                            organización.
+                          </p>
+                          <Link
+                            href="mailto:info@meKambio.com"
+                            className="read-more color-two"
+                          >
+                           Solicita información
+                            <i className="fas fa-arrow-right" />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                    
+                 
+                  </div>
+                </div>
+              </div>
+              {/* <div className="col-lg-6 text-center">
+                <div
+                  className="why-learn-image wow fadeInRight delay-0-2s animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <img
+                    loading="lazy"
+                    src={services?.fields?.servicesImage?.fields?.file?.url}
+                    alt="Why Learn"
+                  />
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </section>
+
+        <section className="partner-section rel z-1  pt-50 rpt-90  rpb-55">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div
-                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated"
+                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated animated"
                   style={{
                     visibility: "visible",
                     animationName: "fadeInRight",
                   }}
                 >
                   <div className="section-title mb-25">
-                    <span className="sub-title-two">Global Partners</span>
-                    <h2>Empresas que confían en nosotros</h2>
+                    <span className="sub-title-two">
+                      Top Experts and Top Companies
+                    </span>
+                    <h2>Algunas empresas dónde trabajan nuestros Experts </h2>
                   </div>
                 </div>
               </div>
+              <div className="col-lg-6">
+                <div
+                  className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                >
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://www.wemeanbusinesscoalition.org/wp-content/uploads/2019/09/Salesforce-LOGO.jpg"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-100"
+                        src="https://oroinc.com/orocrm/wp-content/uploads/sites/8/2017/06/Zendesk_logo_wordmark.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-100"
+                        src="https://static.borngroup.com/uploads/2020/09/Logo-Mirakl.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25 text-center">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-50"
+                        src="https://th.bing.com/th/id/R.8126361d4fe00f6b67cacd6b751998d4?rik=eWb%2fNt6IvMli4g&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2016%2f05%2frainbow-apple-logo.png&ehk=Dk5yXp4Wc0DC4oScBdA9VamWYAANMF5ozQGYD8uAkuI%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="partner-section rel z-1  pt-50 rpt-90 rpb-55">
+          <div className="container">
+            <div className="row align-items-center">
               <div className="col-lg-6">
                 <div
                   className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated"
@@ -382,6 +813,20 @@ const Services = () => {
                         alt="Client Logo"
                       />
                     </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div
+                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="section-title mb-25">
+                    <span className="sub-title-two">Global Partners</span>
+                    <h2>Empresas que confían en nosotros</h2>
                   </div>
                 </div>
               </div>
