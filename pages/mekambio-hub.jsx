@@ -51,8 +51,8 @@ const MekambioHub = () => {
                           <h4>Relaciones interpersonales</h4>
                           <p>
                             Escucha activa, comunicación, empatía, gestión de la
-                            diversidad, negociación, paciencia, "public
-                            speaking", etc.
+                            diversidad, negociación, paciencia, &quot;public
+                            speaking&quot;, etc.
                           </p>
                           <Link href="#" className="read-more color-two">
                             Saber más
