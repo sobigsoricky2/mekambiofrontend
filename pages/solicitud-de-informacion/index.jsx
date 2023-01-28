@@ -23,10 +23,7 @@ const Index = () => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({
-          name: "solicitud-de-informacion",
-          message: formData,
-        }),
+        body: JSON.stringify( formData),
       });
 
 
