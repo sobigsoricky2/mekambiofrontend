@@ -11,7 +11,7 @@ const MekambioHub = () => {
         para="Accede al programa que te hará impulsar tu carrera profesional"
       />
       <>
-        <section className="why-learn-area pb-75 pt-110 rpb-100">
+        <section id="sec-1" className="why-learn-area pb-75 pt-110 rpb-100">
           <div className="container">
             <div
               className="row align-items-center large-gap wow fadeInLeft delay-0-2s animated"
@@ -54,13 +54,13 @@ const MekambioHub = () => {
                             diversidad, negociación, paciencia, &quot;public
                             speaking&quot;, etc.
                           </p>
-                          <Link href="#" className="read-more color-two">
+                          <Link href="#sec-2" className="read-more color-two">
                             Saber más
                             <i className="fas fa-arrow-right" />
                           </Link>
                         </div>
                       </div>
-                      <div className="col-sm-6" id="sec-2">
+                      <div className="col-sm-6" >
                         <div className="feature-three-item">
                           <div className="icon">
                             {/* <img
@@ -74,7 +74,7 @@ const MekambioHub = () => {
                             organización y planificación, adaptabilidad,
                             perserverancia, etc.
                           </p>
-                          <Link href="/experts" className="read-more color-two">
+                          <Link href="#sec-2" className="read-more color-two">
                             Saber más
                             <i className="fas fa-arrow-right" />
                           </Link>
@@ -82,7 +82,7 @@ const MekambioHub = () => {
                       </div>
                     </div>
                     <div className="row">
-                      <div className="col-sm-6" id="sec-3">
+                      <div className="col-sm-6" >
                         <div className="feature-three-item">
                           <div className="icon">
                             {/* <img
@@ -95,7 +95,7 @@ const MekambioHub = () => {
                             Integridad, autocontrol, gestión emocional y de la
                             energía, motivación, orientación a resultados, etc.
                           </p>
-                          <Link href="#" className="read-more color-two">
+                          <Link href="#sec-2" className="read-more color-two">
                             Saber más
                             <i className="fas fa-arrow-right" />
                           </Link>
@@ -116,7 +116,7 @@ const MekambioHub = () => {
                             conflictos, etc.
                           </p>
                           <Link
-                            href="mailto:info@meKambio.com"
+                            href="#sec-2"
                             className="read-more color-two"
                           >
                             Saber más
@@ -147,7 +147,7 @@ const MekambioHub = () => {
           </div>
         </section>
 
-        <section className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
+        <section id="sec-2" className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
           <div className="container">
             <div className="row large-gap mb-30 text-white">
               <div className="col-lg-6 text-white">
@@ -199,7 +199,7 @@ const MekambioHub = () => {
                       situaciones extraídas de casos reales del mercado laboral.
                     </p>
                   </div>
-                  <Link href="categories#pro" className="read-more color-two">
+                  <Link href="#sec-3" className="read-more color-two">
                     Suscríbete a meKambio HUB
                     <i className="fas fa-arrow-right"></i>
                   </Link>
@@ -227,7 +227,7 @@ const MekambioHub = () => {
                       experiencia y cualificación.
                     </p>
                   </div>
-                  <Link href="categories#reg" className="read-more color-two">
+                  <Link href="#sec-3" className="read-more color-two">
                     Suscríbete a meKambio HUB
                     <i className="fas fa-arrow-right"></i>
                   </Link>
@@ -255,7 +255,7 @@ const MekambioHub = () => {
                       conocimiento.
                     </p>
                   </div>
-                  <Link href="categories#pro" className="read-more color-two">
+                  <Link href="#sec-3" className="read-more color-two">
                     Suscríbete a meKambio HUB
                     <i className="fas fa-arrow-right"></i>
                   </Link>
@@ -302,7 +302,7 @@ const MekambioHub = () => {
         </section>
 
 
-        <section className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
+        <section id="sec-3" className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
           <div className="container">
             <div className="section-title text-center mb-50">
               <h2>Cómo acceder a meKambio HUB</h2>

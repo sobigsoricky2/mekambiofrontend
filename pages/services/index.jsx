@@ -219,7 +219,7 @@ const Services = () => {
                             alt="Icon"
                           />
                         </div>
-                        <Link href="./categories#sec-1">
+                        <Link href="#ProgramasIntensivos">
                           {" "}
                           <h4 className="text-black-50">
                           Programas Intensivos
@@ -248,7 +248,7 @@ const Services = () => {
                             alt="Icon"
                           />
                         </div>
-                        <Link href="./categories#sec-4">
+                        <Link href="#meKambioHub">
                           <h4 className="text-black-50">
                            meKambio Hub
                           </h4>
@@ -278,7 +278,7 @@ const Services = () => {
                             alt="Icon"
                           />
                         </div>
-                        <Link href="./categories#sec-5">
+                        <Link href="#ExpertsOndemand">
                           <h4 className="text-black-50">Experts On demand</h4>
                         </Link>
                       </div>
@@ -304,7 +304,7 @@ const Services = () => {
           </div>
         </section>
 
-        <section id="sec-6" className="join-our-team-area pt-80 pb-100 rpt-90">
+        <section id="meKambioHub" className="join-our-team-area pt-80 pb-100 rpt-90">
           <div className="container">
             <div className="row align-items-center large-gap">
               <div className="col-lg-6">
@@ -378,7 +378,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                     </li>
                   </ul>
                   <Link
-                    href="https://experts.mekambio.com/s?category=regreso-al-mercado-laboral&sort_by=3&view=grid"
+                    href="/mekambio-hub/"
                     className="theme-btn"
                   >
                     Saber más
@@ -391,7 +391,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
         </section>
 
         <section
-          id="sec-1"
+          id="ProgramasIntensivos" 
           className="rules-condition-area pt-100 pb-50 bg-blue text-white rpt-90"
         >
           <div className="container ">
@@ -463,7 +463,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
               </div>
             </div>
             <Link
-              href="https://experts.mekambio.com/s?category=progresion-de-carrera&sort_by=3&view=grid"
+              href="#"
               className="theme-btn border"
             >
               Saber más
@@ -472,7 +472,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
           </div>
         </section>
 
-        <section id="sec-6" className="join-our-team-area pt-80 pb-100 rpt-90">
+        <section id="ExpertsOndemand" className="join-our-team-area pt-80 pb-100 rpt-90">
           <div className="container">
             <div className="row align-items-center large-gap">
               <div className="col-lg-6">
@@ -544,7 +544,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                     </li>
                   </ul>
                   <Link
-                    href="https://experts.mekambio.com/s?category=regreso-al-mercado-laboral&sort_by=3&view=grid"
+                    href="#"
                     className="theme-btn"
                   >
                   Saber más
@@ -588,7 +588,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                             evoluciona en el trabajo.
                           </p>
                           <Link
-                            href="https://experts.mekambio.com/s?q="
+                            href="/solicitud-de-informacion/"
                             className="read-more color-two"
                           >
                             Solicita información
@@ -610,7 +610,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                             potencia, a la vez que desarrollas tus habilidades
                             de coaching y mentoring.
                           </p>
-                          <Link href="/experts" className="read-more color-two">
+                          <Link href="/solicitud-de-informacion/" className="read-more color-two">
                           Solicita información
                             <i className="fas fa-arrow-right" />
                           </Link>
@@ -631,7 +631,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                             organización.
                           </p>
                           <Link
-                            href="mailto:info@meKambio.com"
+                            href="/solicitud-de-informacion/"
                             className="read-more color-two"
                           >
                            Solicita información
