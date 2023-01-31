@@ -46,7 +46,7 @@ const Index = ({ posts }) => {
                     <div className="image">
                       <img
                         loading="lazy"
-                        src={fields.coverImage.fields.file.url}
+                        src={fields?.coverImage?.fields?.file?.url}
                         // src=""
                         alt="Blog"
                       />
@@ -66,7 +66,7 @@ const Index = ({ posts }) => {
                       <div className="author">
                         <img
                           loading="lazy"
-                          src={fields.authorImage.fields.file.url}
+                          src={fields?.coverImage?.fields?.file?.url}
                           alt="Author"
                           style={{ borderRadius: "50%" }}
                         />
@@ -74,7 +74,7 @@ const Index = ({ posts }) => {
                       <div className="content">
                         <ul className="blog-standard-header">
                           <li>
-                            <span className="name">{fields.authorName}</span>
+                            <span className="name">{fields?.authorName}</span>
                           </li>
                           <li>
                             {/* <i className="far fa-calendar-alt"></i>{" "} */}
@@ -182,7 +182,9 @@ const Index = ({ posts }) => {
                       {/* <span>(12)</span> */}
                     </li>
                     <li>
-                      <Link href="/blogs/catagories/Liderazgo ">Liderazgo </Link>
+                      <Link href="/blogs/catagories/Liderazgo ">
+                        Liderazgo{" "}
+                      </Link>
                       {/* <span>(55)</span> */}
                     </li>
                     <li>
@@ -214,7 +216,9 @@ const Index = ({ posts }) => {
                       {/* <span>(12)</span> */}
                     </li>
                     <li>
-                      <Link href="/blogs/catagories/Emprendimiento ">Emprendimiento </Link>{" "}
+                      <Link href="/blogs/catagories/Emprendimiento ">
+                        Emprendimiento{" "}
+                      </Link>{" "}
                       {/* <span>(55)</span> */}
                     </li>
                     <li>
