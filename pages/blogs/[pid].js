@@ -6,6 +6,7 @@ import { getImage, ContentfulClient } from "../../helpers/utils";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 const SingleBlog = (props) => {
   const router = useRouter();
   const { pid } = router.query;
@@ -67,15 +68,16 @@ const SingleBlog = (props) => {
                 </ul>
                 <h3 className="title">{blog?.title}</h3>
                 <article>
-                  {blog.blogContent?.content.map((c) =>
+                  {/* {blog.blogContent?.content.map((c) =>
                     c.nodeType === "embedded-asset-block" ? (
                       <div className="my-4">
                         <img src={c.data?.target?.fields?.file?.url} alt="" />
                       </div>
                     ) : (
-                      <p>{c.content[0]?.value}</p>
+                      <p>{documentToReactComponents(blog.blogContent)}</p>
                     )
-                  )}
+                  )} */}
+                   <p>{documentToReactComponents(blog?.blogContent)}</p>
                 </article>
                 <div className="tag-share pt-10">
                   <div className="tag-coulds pb-25">
