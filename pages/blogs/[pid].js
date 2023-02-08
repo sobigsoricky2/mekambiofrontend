@@ -86,7 +86,7 @@ const SingleBlog = (props) => {
                       </Link>
                     ))}
                   </div>
-                  <div className="social-style-two">
+                  {/* <div className="social-style-two">
                     <h6>Share :</h6>
                     <Link
                       href="https://www.facebook.com"
@@ -102,9 +102,9 @@ const SingleBlog = (props) => {
                     <Link href="contact ">
                       <i className="fab fa-linkedin-in"></i>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
-                <div className="admin-comment text-white bg-light-blue p-40 br-10 mt-50 wow fadeInUp delay-0-2s">
+                {/* <div className="admin-comment text-white bg-light-blue p-40 br-10 mt-50 wow fadeInUp delay-0-2s">
                   <div className="comment-body mb-0">
                     <div className="author-thumb">
                       <img
@@ -140,8 +140,8 @@ const SingleBlog = (props) => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="blog-nav pt-60 pb-25">
+                </div> */}
+                {/* <div className="blog-nav pt-60 pb-25">
                   <div className="prev-blog wow fadeInLeft delay-0-2s">
                     <div className="blog-thumb">
                       <Link href="blog-details ">
@@ -272,7 +272,7 @@ const SingleBlog = (props) => {
                       </div>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-4">
@@ -297,10 +297,10 @@ const SingleBlog = (props) => {
                     />
                   </div>
                   <h4>{blog?.authorName}</h4>
-                  <p>
+                  {/* <p>
                     Sit amet consectetur adipiscing elits do eiusmod tempor
                     incididunt ut labore etdol magna aliquas uspensis.{" "}
-                  </p>
+                  </p> */}
                   <div className="social-style-two">
                     {blog?.facebookLink ? (
                       <Link
@@ -398,7 +398,7 @@ const SingleBlog = (props) => {
                     </li>
                   </ul>
                 </div>
-                <div className="widget widget-recent-courses wow fadeInUp delay-0-2s">
+                {/* <div className="widget widget-recent-courses wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Recent Courses</h4>
                   <ul>
                     <li>
@@ -491,7 +491,7 @@ const SingleBlog = (props) => {
                     <Link href="blog ">Business</Link>
                     <Link href="blog ">Graphics</Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
