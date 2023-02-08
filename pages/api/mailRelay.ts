@@ -30,6 +30,7 @@ export default async function handler(
       mailRelayData,
       config
     );
+    console.log(response)
 
     
     if (response.status == 201) {
@@ -39,7 +40,7 @@ export default async function handler(
     }
   } catch (error) {
     return res.status(500).send({
-      message: error.message ? error.message : "Something Went Wrong",
+      message: error.message ? error.message : "Already signedup",
     });
   }
 }

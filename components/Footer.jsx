@@ -96,7 +96,7 @@ const Footer = () => {
       });
       console.log(res2);
       if (res2.status !== 200) {
-        alert("Something went wrong");
+        alert("Already Signed up");
       }
       if (res.status == 200 && res2.status == 200) {
         alert("Form Submitted");
