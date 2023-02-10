@@ -6,25 +6,46 @@ import { getImage, ContentfulClient } from "../../helpers/utils";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Layout from "../../components/Layout";
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS } from "@contentful/rich-text-types";
 const SingleBlog = (props) => {
   const router = useRouter();
   const { pid } = router.query;
 
   const [blog, setBlog] = useState({});
+  const [categories, setCategories] = useState([]);
+  const [dtrOptions] = useState({
+    renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node) => (
+        <img
+          src={node.data?.target?.fields?.file?.url}
+          alt={node.data?.target?.fields?.title}
+        />
+      ),
+    },
+  });
   useEffect(() => {
     ContentfulClient.getEntries()
       .then((response) => {
+        let data = [];
+
         const currentBlog = response.items.filter(
           (item) => item.fields.title === pid
         );
+        response.items.forEach((element) => {
+          if (element.sys.contentType.sys.id == "categories") {
+            data.unshift(element);
+          }
+        });
         console.log(currentBlog);
         setBlog(currentBlog[0].fields);
+        setCategories(data);
       })
       .catch((err) => console.error(err));
   }, [pid]);
 
   console.log(blog);
+
   return (
     <Layout>
       <Banner title={blog.title ? blog.title : "Blog Details"} />
@@ -77,7 +98,9 @@ const SingleBlog = (props) => {
                       <p>{documentToReactComponents(blog.blogContent)}</p>
                     )
                   )} */}
-                   <p>{documentToReactComponents(blog?.blogContent)}</p>
+                  <p>
+                    {documentToReactComponents(blog?.blogContent, dtrOptions)}
+                  </p>
                 </article>
                 <div className="tag-share pt-10">
                   <div className="tag-coulds pb-25">
@@ -279,7 +302,7 @@ const SingleBlog = (props) => {
             </div>
             <div className="col-lg-4">
               <div className="blog-sidebar rmt-75">
-                <div className="widget widget-search wow fadeInUp delay-0-2s">
+                {/* <div className="widget widget-search wow fadeInUp delay-0-2s">
                   <form action="#">
                     <input type="text" placeholder="Search Here" required />
                     <button
@@ -287,7 +310,7 @@ const SingleBlog = (props) => {
                       className="searchbutton fa fa-search"
                     ></button>
                   </form>
-                </div>
+                </div> */}
                 <div className="widget widget-about wow fadeInUp delay-0-4s">
                   <div className="image">
                     <img
@@ -351,54 +374,18 @@ const SingleBlog = (props) => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <h4 className="widget-title">Category</h4>
-                  <ul>
-                    <li>
-                      <Link href="/blogs/catagories/MeKambio-mONday ">meKambio mONday </Link>{" "}
-                      {/* <span>(25)</span> */}
-                    </li>
-                    <li>
-                      <Link href="/blogs/catagories/Coaching ">Coaching </Link> 
-                      {/* <span>(07)</span> */}
-                    </li>
-                    <li>
-                      <Link href="/blogs/catagories/Mentoring ">Mentoring</Link> 
-                      {/* <span>(12)</span> */}
-                    </li>
-                    <li>
-                      <Link href="/blogs/catagories/Liderazgo ">Liderazgo </Link> 
-                      {/* <span>(55)</span> */}
-                    </li>
-                    <li>
-                      <Link href="/blogs/catagories/Habilidades-y-Competencias-Profesionales ">
-                        Habilidades y Competencias Profesionales{" "}
-                      </Link>
-                      {/* <span>(14)</span> */}
-                    </li>
-                    <li>
-                      <Link href="/blogs/catagories/Impulsa-Internacional ">Impulso Internacional</Link>{" "}
-                      {/* <span>(30)</span> */}
-                    </li>
-                    <li>
-                      <Link href="/blogs/catagories/Progresion-de-Carrera ">Progresión de Carrera</Link>{" "}
-                      {/* <span>(18)</span> */}
-                    </li>
-                    {/* <li>
-                      <Link href="/blogs/catagories/ ">Acceso al Mercado Laboral </Link>{" "}
-                      <span>(07)</span>
-                    </li> */}
-                    <li>
-                      <Link href="/blogs/catagories/Cambio-de-Carrera ">Cambio de Carrera</Link>{" "}
-                      {/* <span>(12)</span> */}
-                    </li>
-                    <li>
-                      <Link href="/blogs/catagories/Emprendimiento ">Emprendimiento </Link>{" "}
-                      {/* <span>(55)</span> */}
-                    </li>
-                    <li>
-                      <Link href="/blogs/catagories/Regreso-al-Mercado-Laboral ">Regreso al Mercado Laboral</Link>{" "}
-                      {/* <span>(18)</span> */}
-                    </li>
-                  </ul>
+                  {categories?.map((category) => (
+                    <ul>
+                      <li>
+                        <Link
+                          href={`/blogs/catagories/${category?.fields?.title}`}
+                        >
+                          {category?.fields?.title}{" "}
+                        </Link>{" "}
+                        {/* <span>(25)</span> */}
+                      </li>
+                    </ul>
+                  ))}
                 </div>
                 {/* <div className="widget widget-recent-courses wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Recent Courses</h4>

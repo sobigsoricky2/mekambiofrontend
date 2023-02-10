@@ -22,7 +22,8 @@
     "api/test.js",
     "api/googlesheetsFormData.js",
     "api/googlesheets.js",
-    "api/mailRelay.js"
+    "api/mailRelay.js",
+    "pages/blogs/catagories/[slug].jsx"
   ],
   "exclude": ["node_modules"]
 }

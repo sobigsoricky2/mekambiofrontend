@@ -7,7 +7,7 @@ import Router from "next/router";
 import NProgress from "nprogress"; //nprogress module
 import "nprogress/nprogress.css"; //styles of nprogress
 import { useEffect } from "react";
-//  wow aos 
+//  wow aos
 const isServer = typeof window === "undefined";
 const WOW = !isServer ? require("wow.js") : null;
 //Route Events.
@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }) {
       "google_translate_element"
     );
   }
-  console.log(Router);
 
   return (
     <div className="overflow-hidden">

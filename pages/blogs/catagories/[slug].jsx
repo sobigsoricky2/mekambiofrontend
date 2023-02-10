@@ -1,43 +1,46 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Banner from "../../components/Banner";
-import Layout from "../../components/Layout";
+import Banner from "../../../components/Banner";
+import Layout from "../../../components/Layout";
 import axios from "axios";
-import { getImage, ContentfulClient } from "../../helpers/utils";
+import { getImage, ContentfulClient } from "../../../helpers/utils";
 import { RWebShare } from "react-web-share";
+import { useRouter } from "next/router";
 
-var contentful = require("contentful");
-const Index = ({ posts }) => {
-  const [blogs, setblogs] = useState([]);
-
+const Category = () => {
+  const [blogs, setBlog] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [title, setTitle] = useState("");
+  const router = useRouter();
+  const { slug } = router.query;
 
   useEffect(() => {
-    var data = [];
-    var data2 = [];
     ContentfulClient.getEntries()
       .then((response) => {
+        const currentCategory = response.items.filter(
+          (item) => item.fields.title === slug
+        );
+        let data = [];
         response.items.forEach((element) => {
-          if (element.sys.contentType.sys.id == "blog") {
-            data.push(element);
-          }
           if (element.sys.contentType.sys.id == "categories") {
-            data2.unshift(element);
+            data.unshift(element);
           }
         });
 
-        setblogs(data);
-        setCategories(data2);
+        console.log(currentCategory);
+        setTitle(currentCategory[0]?.fields?.title);
+        setBlog(currentCategory[0]?.fields?.blog);
+        setCategories(data);
       })
-      .catch(console.error);
-  }, []);
+      .catch((err) => console.error(err));
+  }, [slug]);
 
   console.log(categories);
   return (
     <Layout>
       <Banner
-        title="Blogs"
-        para="La clave del éxito radica en el conocimiento"
+        title={title}
+        //   para="La clave del éxito radica en el conocimiento"
       />
       <section className="blog-standard-area py-130 rpt-95 rpb-100">
         <div className="container">
@@ -73,7 +76,7 @@ const Index = ({ posts }) => {
                       <div className="author">
                         <img
                           loading="lazy"
-                          src={fields?.coverImage?.fields?.file?.url}
+                          src={fields?.authorImage?.fields?.file?.url}
                           alt="Author"
                           style={{ borderRadius: "50%" }}
                         />
@@ -110,21 +113,21 @@ const Index = ({ posts }) => {
                 ))}
 
                 {/* <ul className="pagination flex-wrap">
-                                <li className="page-item disabled">
-                                    <span className="page-link"><i className="fas fa-angle-double-left"></i></span>
-                                </li>
-                                <li className="page-item active">
-                                    <span className="page-link">
-                                        01
-                                        <span className="sr-only">(current)</span>
-                                    </span>
-                                </li>
-                                <li className="page-item"><Link className="page-link" href="#">02</Link></li>
-                                <li className="page-item"><Link className="page-link" href="#">03</Link></li>
-                                <li className="page-item">
-                                    <Link className="page-link" href="#"><i className="fas fa-angle-double-right"></i></Link>
-                                </li>
-                            </ul> */}
+                                  <li className="page-item disabled">
+                                      <span className="page-link"><i className="fas fa-angle-double-left"></i></span>
+                                  </li>
+                                  <li className="page-item active">
+                                      <span className="page-link">
+                                          01
+                                          <span className="sr-only">(current)</span>
+                                      </span>
+                                  </li>
+                                  <li className="page-item"><Link className="page-link" href="#">02</Link></li>
+                                  <li className="page-item"><Link className="page-link" href="#">03</Link></li>
+                                  <li className="page-item">
+                                      <Link className="page-link" href="#"><i className="fas fa-angle-double-right"></i></Link>
+                                  </li>
+                              </ul> */}
               </div>
             </div>
             <div className="col-lg-4">
@@ -142,38 +145,38 @@ const Index = ({ posts }) => {
                   </form>
                 </div> */}
                 {/* <div
-                  className="widget widget-about wow fadeInUp delay-0-4s animated"
-                  style={{ visibility: "visible", animationName: "fadeInUp" }}
-                >
-                  <div className="image">
-                    <img  loading="lazy" width="auto" height="auto"src="" alt="Author" />
-                  </div>
-                  <h4>James D. Thomas</h4>
-                  <p>
-                    Sit amet consectetur adipiscing elits do eiusmod tempor
-                    incididunt ut labore etdol magna aliquas uspensis.{" "}
-                  </p>
-                  <div className="social-style-two">
-                    <Link href="contact ">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link href="contact ">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link href="contact ">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                    <Link href="contact ">
-                      <i className="fab fa-youtube"></i>
-                    </Link>
-                  </div>
-                </div> */}
+                    className="widget widget-about wow fadeInUp delay-0-4s animated"
+                    style={{ visibility: "visible", animationName: "fadeInUp" }}
+                  >
+                    <div className="image">
+                      <img  loading="lazy" width="auto" height="auto"src="" alt="Author" />
+                    </div>
+                    <h4>James D. Thomas</h4>
+                    <p>
+                      Sit amet consectetur adipiscing elits do eiusmod tempor
+                      incididunt ut labore etdol magna aliquas uspensis.{" "}
+                    </p>
+                    <div className="social-style-two">
+                      <Link href="contact ">
+                        <i className="fab fa-facebook-f"></i>
+                      </Link>
+                      <Link href="contact ">
+                        <i className="fab fa-twitter"></i>
+                      </Link>
+                      <Link href="contact ">
+                        <i className="fab fa-linkedin-in"></i>
+                      </Link>
+                      <Link href="contact ">
+                        <i className="fab fa-youtube"></i>
+                      </Link>
+                    </div>
+                  </div> */}
                 <div
                   className="widget widget-menu wow fadeInUp delay-0-2s animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <h4 className="widget-title">Category</h4>
-                  {categories.map((category) => (
+                  {categories?.map((category) => (
                     <ul>
                       <li>
                         <Link
@@ -187,21 +190,21 @@ const Index = ({ posts }) => {
                   ))}
                 </div>
                 {/* <div
-                  className="widget widget-tag-cloud wow fadeInUp delay-0-2s animated"
-                  style={{ visibility: "visible", animationName: "fadeInUp" }}
-                >
-                  <h4 className="widget-title">Popular Tags</h4>
-                  <div className="tag-coulds">
-                    <Link href="blog ">Course</Link>
-                    <Link href="blog ">Design</Link>
-                    <Link href="blog ">Marketing</Link>
-                    <Link href="blog ">Life Course</Link>
-                    <Link href="blog ">Health Course</Link>
-                    <Link href="blog ">SEO</Link>
-                    <Link href="blog ">Business</Link>
-                    <Link href="blog ">Graphics</Link>
-                  </div>
-                </div> */}
+                    className="widget widget-tag-cloud wow fadeInUp delay-0-2s animated"
+                    style={{ visibility: "visible", animationName: "fadeInUp" }}
+                  >
+                    <h4 className="widget-title">Popular Tags</h4>
+                    <div className="tag-coulds">
+                      <Link href="blog ">Course</Link>
+                      <Link href="blog ">Design</Link>
+                      <Link href="blog ">Marketing</Link>
+                      <Link href="blog ">Life Course</Link>
+                      <Link href="blog ">Health Course</Link>
+                      <Link href="blog ">SEO</Link>
+                      <Link href="blog ">Business</Link>
+                      <Link href="blog ">Graphics</Link>
+                    </div>
+                  </div> */}
               </div>
             </div>
           </div>
@@ -211,4 +214,4 @@ const Index = ({ posts }) => {
   );
 };
 
-export default Index;
+export default Category;
