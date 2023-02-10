@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 const Banner = ({ title, para }) => {
-  return (
-    <div> 
-      <section
+  return ( 
+    <div>  
+      <section 
         className="page-banner-area rel z-1 text-white text-center"
         style={{ backgroundImage: "url(/assets/images/banner.jpg)" }}
       >
