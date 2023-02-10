@@ -18,7 +18,7 @@ const Category = () => {
     ContentfulClient.getEntries()
       .then((response) => {
         const currentCategory = response.items.filter(
-          (item) => item.fields.title === slug
+          (item) => item?.fields?.title === slug
         );
         let data = [];
         response.items.forEach((element) => {

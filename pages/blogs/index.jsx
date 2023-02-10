@@ -174,7 +174,7 @@ const Index = ({ posts }) => {
                 >
                   <h4 className="widget-title">Category</h4>
                   {categories.map((category) => (
-                    <ul>
+                    <ul key={category?.sys?.id}>
                       <li>
                         <Link
                           href={`/blogs/catagories/${category?.fields?.title}`}
