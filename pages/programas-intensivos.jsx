@@ -36,7 +36,7 @@ const ProgramasIntensivos = () => {
                 </p>
                 <div className="why-learn-feature pt-30">
                   <div className="row">
-                    <div className="col-sm-6" id="sec-1">
+                    <div className="col-sm-6" >
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -57,7 +57,7 @@ const ProgramasIntensivos = () => {
                         </Link>
                       </div>
                     </div>
-                    <div className="col-sm-6" id="sec-2">
+                    <div className="col-sm-6" >
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -71,7 +71,7 @@ const ProgramasIntensivos = () => {
                           Reduce el tiempo de acceso al mercado laboral, y
                           descubre oportunidades alineadas con tu objetivo.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2" className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
@@ -79,7 +79,7 @@ const ProgramasIntensivos = () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-sm-6" id="sec-3">
+                    <div className="col-sm-6" >
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -93,13 +93,13 @@ const ProgramasIntensivos = () => {
                           permitirán impulsarte profesionalmene y destacarás en
                           tu próxima experiencia profesional.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2" className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
                       </div>
                     </div>
-                    <div className="col-sm-6" id="sec-4">
+                    <div className="col-sm-6" >
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -113,7 +113,7 @@ const ProgramasIntensivos = () => {
                           a tus pasiones y motivaciones personales y consigue
                           así todos tus objetivos profesionales.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2" className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
@@ -142,7 +142,7 @@ const ProgramasIntensivos = () => {
         </div>
       </section>
 
-      <section className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
+      <section id="sec-2" className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
         <div className="container">
           <div className="row large-gap mb-30 text-white">
             <div className="col-lg-6 text-white">
@@ -186,7 +186,7 @@ const ProgramasIntensivos = () => {
                     LinkedIn, el currículo, la negociación y mucho más.
                   </p>
                 </div>
-                <Link href="categories#pro" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                   Solicita información
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -206,7 +206,7 @@ const ProgramasIntensivos = () => {
                     Ganarás seguridad durante todo el proceso.
                   </p>
                 </div>
-                <Link href="categories#reg" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                   Solicita información
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -226,7 +226,7 @@ const ProgramasIntensivos = () => {
                     objetivos y motivaciones profesionales.
                   </p>
                 </div>
-                <Link href="categories#pro" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                   Solicita información
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -248,7 +248,7 @@ const ProgramasIntensivos = () => {
         />
       </section>
 
-      <section className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
+      <section id="sec-3" className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
         <div className="container">
           <div className="section-title text-center mb-50">
             <h2>Cómo acceder al Programa Intensivo</h2>
@@ -318,7 +318,7 @@ const ProgramasIntensivos = () => {
             </div>
           </div>
           <div className="col-md-12 text-center">
-            <Link href="#" className="theme-btn mt-4">
+            <Link href="/solicitud-de-informacion/" className="theme-btn mt-4">
             Solicita Información
             </Link>
           </div>

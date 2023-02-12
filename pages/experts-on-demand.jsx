@@ -40,13 +40,13 @@ const ExpertsOnDemand = () => {
                         <p>
                         ¿Tienes siempre la misma rutina laboral? ¿Tu jornada está llena de problemas? Identifica tus fortalezas y motivaciones para evolucionar en tu carrera.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2" className="read-more color-two">
                         Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
                       </div>
                     </div>
-                    <div className="col-sm-6" id="sec-2">
+                    <div className="col-sm-6" >
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -58,7 +58,7 @@ const ExpertsOnDemand = () => {
                         <p>
                         ¿Quieres volver al trabajo de forma completa? Prepárate para una búsqueda eficaz de empleo mediante las técnicas y herramientas necesarias de hoy día.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2"  className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
@@ -66,7 +66,7 @@ const ExpertsOnDemand = () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-sm-6" id="sec-3">
+                    <div className="col-sm-6" >
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -78,7 +78,7 @@ const ExpertsOnDemand = () => {
                         <p>
                         ¿Tienes ganas de prosperar profesionalmente? Ni te estanques ni te quites valor. Recibe la guía definitiva que te hará avanzar y mejorar tu calidad de vida.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2"  className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
@@ -96,7 +96,7 @@ const ExpertsOnDemand = () => {
                         <p>
                         Para cambiar tu situación profesional tendrás que salir de tu zona de confort. Te enseñamos cómo hacerlo en un entorno de confianza.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2"  className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
@@ -125,7 +125,7 @@ const ExpertsOnDemand = () => {
         </div>
       </section>
 
-      <section className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
+      <section id="sec-2"  className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
         <div className="container">
           <div className="row large-gap mb-30 text-white">
             <div className="col-lg-6 text-white">
@@ -163,7 +163,7 @@ const ExpertsOnDemand = () => {
                   Un equipo especializado en el desarrollo del talento, la transformación profesional y el liderazgo personal. Recibe su apoyo y transforma tu carrera.
                   </p>
                 </div>
-                <Link href="categories#pro" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                 Agenda tu sesión
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -181,7 +181,7 @@ const ExpertsOnDemand = () => {
                   No importa donde estés ni tus horarios. Tendrás 100% acceso a todos los Experts de forma online. Consigue todo lo que te propongas con tu equipo.
                   </p>
                 </div>
-                <Link href="categories#reg" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                 Agenda tu sesión
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -199,7 +199,7 @@ const ExpertsOnDemand = () => {
                   Gran variedad de sesiones y tarifas. Un amplio abanico de posibilidades para que abandones el estancamiento profesional e impulses tu carrera a tu ritmo.
                   </p>
                 </div>
-                <Link href="categories#pro" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                 Agenda tu sesión
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -221,7 +221,7 @@ const ExpertsOnDemand = () => {
         />
       </section>
 
-      <section className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
+      <section id="sec-3"  className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
         <div className="container">
           <div className="section-title text-center mb-50">
             <h2>Cómo acceder a los Experts</h2>
