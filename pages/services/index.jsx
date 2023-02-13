@@ -52,7 +52,7 @@ const Services = () => {
       />
 
       <>
-        <section className="why-learn-area pb-75 pt-110 rpb-100">
+        {/* <section className="why-learn-area pb-75 pt-110 rpb-100">
           <div className="container">
             <div
               className="row align-items-center large-gap wow fadeInLeft delay-0-2s animated"
@@ -180,7 +180,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="categories-section bg-blue text-white rel z-1 py-50 rpb-85">
           <div className="container">
             <div className="row align-items-center">
@@ -191,10 +191,14 @@ const Services = () => {
                 >
                   <div className="section-title mb-25">
                     <span className="sub-title-two">Nuestros Servicios</span>
-                    <h2>Descubre la herramienta que mejor se amolde a tu condición</h2>
+                    <h2>
+                      Descubre la herramienta que mejor se amolde a tu condición
+                    </h2>
                   </div>
                   <p>
-                  Cada situación requiere de su propia estrategia. Encuentra el servicio que mejor cumpla tus expectativas para empezar tu evolución.
+                    Cada situación requiere de su propia estrategia. Encuentra
+                    el servicio que mejor cumpla tus expectativas para empezar
+                    tu evolución.
                   </p>
                   <Link
                     href="/categories"
@@ -222,7 +226,7 @@ const Services = () => {
                         <Link href="#ProgramasIntensivos">
                           {" "}
                           <h4 className="text-black-50">
-                          Programas Intensivos
+                            Programas Intensivos
                           </h4>
                         </Link>
                       </div>
@@ -249,9 +253,7 @@ const Services = () => {
                           />
                         </div>
                         <Link href="#meKambioHub">
-                          <h4 className="text-black-50">
-                           meKambio Hub
-                          </h4>
+                          <h4 className="text-black-50">meKambio Hub</h4>
                         </Link>
                       </div>
                       {/* <div className="category-item">
@@ -304,7 +306,10 @@ const Services = () => {
           </div>
         </section>
 
-        <section id="meKambioHub" className="join-our-team-area pt-80 pb-100 rpt-90">
+        <section
+          id="meKambioHub"
+          className="join-our-team-area pt-80 pb-100 rpt-90"
+        >
           <div className="container">
             <div className="row align-items-center large-gap">
               <div className="col-lg-6">
@@ -343,9 +348,7 @@ const Services = () => {
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="section-title mb-20">
-                    <span className="sub-title-two">
-                    meKambio Hub
-                    </span>
+                    <span className="sub-title-two">meKambio Hub</span>
                     <h2>Desarrolla las Soft Skills más demandadas</h2>
                   </div>
                   <ul className="list-style-three pt-25 pb-20">
@@ -353,8 +356,10 @@ const Services = () => {
                       <div className="content">
                         <h5>Fortalezas Interpersonales</h5>
                         <p>
-                        La adquisición y mejora de las denominadas Soft Skills, además de reforzar el propio
-autoconocimiento, te permite mejorar tu posicionamiento en el mercado laboral.
+                          La adquisición y mejora de las denominadas Soft
+                          Skills, además de reforzar el propio autoconocimiento,
+                          te permite mejorar tu posicionamiento en el mercado
+                          laboral.
                         </p>
                       </div>
                     </li>
@@ -362,8 +367,9 @@ autoconocimiento, te permite mejorar tu posicionamiento en el mercado laboral.
                       <div className="content">
                         <h5>Rendimiento, Eficacia y Eficiencia</h5>
                         <p>
-                        Influye directamente en el incremento de estos tres valores imprescindibles en el campo
-profesional, con beneficios a nivel individual y a nivel de equipo.
+                          Influye directamente en el incremento de estos tres
+                          valores imprescindibles en el campo profesional, con
+                          beneficios a nivel individual y a nivel de equipo.
                         </p>
                       </div>
                     </li>
@@ -372,15 +378,14 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                       <div className="content">
                         <h5>Oportunidades Profesionales</h5>
                         <p>
-                        Se abrirán nuevas ofertas laborales ante ti, calidad de puestos de trabajo, salarios más elevados, oportunidades para desarrollarte en lo que te motiva.
+                          Se abrirán nuevas ofertas laborales ante ti, calidad
+                          de puestos de trabajo, salarios más elevados,
+                          oportunidades para desarrollarte en lo que te motiva.
                         </p>
                       </div>
                     </li>
                   </ul>
-                  <Link
-                    href="/mekambio-hub/"
-                    className="theme-btn"
-                  >
+                  <Link href="/mekambio-hub/" className="theme-btn">
                     Saber más
                     <i className="fas fa-arrow-right" />
                   </Link>
@@ -391,7 +396,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
         </section>
 
         <section
-          id="ProgramasIntensivos" 
+          id="ProgramasIntensivos"
           className="rules-condition-area pt-100 pb-50 bg-blue text-white rpt-90"
         >
           <div className="container ">
@@ -410,7 +415,9 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                       <div className="content">
                         <h5>Empoderamiento Personal</h5>
                         <p>
-                        Al mejorar tus capacidades y desarrollar tus fortalezas, se incrementa tu propio potencial para mejorar tu situación, sea cual sea la causa.
+                          Al mejorar tus capacidades y desarrollar tus
+                          fortalezas, se incrementa tu propio potencial para
+                          mejorar tu situación, sea cual sea la causa.
                         </p>
                       </div>
                     </li>
@@ -418,7 +425,10 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                       <div className="content">
                         <h5>Programa Personalizado 100%</h5>
                         <p>
-                        Tu programa intensivo tendrá puesto el foco en áreas de trabajo específicas, determinadas a partir de tu propia experiencia profesional y tus metas al respecto.
+                          Tu programa intensivo tendrá puesto el foco en áreas
+                          de trabajo específicas, determinadas a partir de tu
+                          propia experiencia profesional y tus metas al
+                          respecto.
                         </p>
                       </div>
                     </li>
@@ -426,10 +436,17 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                       <div className="content">
                         <h5>Acceso al Mercado Laboral a Corto Plazo</h5>
                         <p>
-                        Un asesoramiento focalizado será clave para abrirte a ofertas profesionales de calidad, acordes a tus conocimientos, experiencias y expectativas.
+                          Un asesoramiento focalizado será clave para abrirte a
+                          ofertas profesionales de calidad, acordes a tus
+                          conocimientos, experiencias y expectativas.
                         </p>
                       </div>
+                     
                     </li>
+                    <Link style={{marginLeft:"55px"}} href="/programas-intensivos" className="theme-btn border">
+                        Saber más
+                        <i className="fas fa-arrow-right" />
+                      </Link>
                   </ul>
                 </div>
               </div>
@@ -447,7 +464,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                         loading="lazy"
                         src="https://iili.io/HI9nc6G.md.png"
                         alt="Rules"
-                        style={{transform:'scale(0.85)'}}
+                        style={{ transform: "scale(0.85)" }}
                       />
                     </div>
                     <div className="col-5">
@@ -458,21 +475,16 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                       />
                     </div>
                   </div>
-             
                 </div>
               </div>
             </div>
-            <Link
-              href="#"
-              className="theme-btn border"
-            >
-              Saber más
-              <i className="fas fa-arrow-right" />
-            </Link>
           </div>
         </section>
 
-        <section id="ExpertsOndemand" className="join-our-team-area pt-80 pb-100 rpt-90">
+        <section
+          id="ExpertsOndemand"
+          className="join-our-team-area pt-80 pb-100 rpt-90"
+        >
           <div className="container">
             <div className="row align-items-center large-gap">
               <div className="col-lg-6">
@@ -511,9 +523,7 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
                   <div className="section-title mb-20">
-                    <span className="sub-title-two">
-                    Experts On demand
-                    </span>
+                    <span className="sub-title-two">Experts On demand</span>
                     <h2>Determina y alcanza nuevas metas profesionales</h2>
                   </div>
                   <ul className="list-style-three pt-25 pb-20">
@@ -521,7 +531,9 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                       <div className="content">
                         <h5>Plan Estratégico Personalizable</h5>
                         <p>
-                        Estarás más cerca de tus objetivos profesionales, gracias a una amplia oferta de sesiones que elegirás y amoldaremos en función de tu situación personal.
+                          Estarás más cerca de tus objetivos profesionales,
+                          gracias a una amplia oferta de sesiones que elegirás y
+                          amoldaremos en función de tu situación personal.
                         </p>
                       </div>
                     </li>
@@ -529,7 +541,10 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                       <div className="content">
                         <h5>Perfil Profesional Competitivo</h5>
                         <p>
-                        Trabajarás con grandes profesionales que te ayudarán a evolucionar tus capacidades en las distintas áreas en que puedes focalizarte. Podrás ir construyendo tu trayectoria paso a paso.
+                          Trabajarás con grandes profesionales que te ayudarán a
+                          evolucionar tus capacidades en las distintas áreas en
+                          que puedes focalizarte. Podrás ir construyendo tu
+                          trayectoria paso a paso.
                         </p>
                       </div>
                     </li>
@@ -538,16 +553,16 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                       <div className="content">
                         <h5>Apertura de Oportunidades</h5>
                         <p>
-                        Cuando comprendes tus inquietudes, eres capaz de marcar un trayecto con una meta clara. En ese recorrido van surgienndo ventanas de futuro y tú elegirás cuáles abrir.
+                          Cuando comprendes tus inquietudes, eres capaz de
+                          marcar un trayecto con una meta clara. En ese
+                          recorrido van surgienndo ventanas de futuro y tú
+                          elegirás cuáles abrir.
                         </p>
                       </div>
                     </li>
                   </ul>
-                  <Link
-                    href="#"
-                    className="theme-btn"
-                  >
-                  Saber más
+                  <Link href="/experts-on-demand" className="theme-btn" style={{marginLeft:"55px"}}>
+                    Saber más
                     <i className="fas fa-arrow-right" />
                   </Link>
                 </div>
@@ -566,11 +581,16 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                 <div className="why-learn-content rmb-35">
                   <div className="section-title mb-30">
                     <span className="sub-title-two">
-                    Soluciones personalizadas
+                      Soluciones personalizadas
                     </span>
                     <h2>¿No has encontrado lo que buscabas?</h2>
                   </div>
-                  <p>Si no lo tienes claro, pero te gusta lo que proponemos, ponte en contacto con nosotros y valoraremos conjuntamente una propuesta de servicios que se ajuste a tu caso en particular.</p>
+                  <p>
+                    Si no lo tienes claro, pero te gusta lo que proponemos,
+                    ponte en contacto con nosotros y valoraremos conjuntamente
+                    una propuesta de servicios que se ajuste a tu caso en
+                    particular.
+                  </p>
                   <div className="why-learn-feature pt-30 ">
                     <div className="row justify-content-evenly">
                       <div className="col-sm-3" id="sec-1">
@@ -610,8 +630,11 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                             potencia, a la vez que desarrollas tus habilidades
                             de coaching y mentoring.
                           </p>
-                          <Link href="/solicitud-de-informacion/" className="read-more color-two">
-                          Solicita información
+                          <Link
+                            href="/solicitud-de-informacion/"
+                            className="read-more color-two"
+                          >
+                            Solicita información
                             <i className="fas fa-arrow-right" />
                           </Link>
                         </div>
@@ -634,14 +657,12 @@ profesional, con beneficios a nivel individual y a nivel de equipo.
                             href="/solicitud-de-informacion/"
                             className="read-more color-two"
                           >
-                           Solicita información
+                            Solicita información
                             <i className="fas fa-arrow-right" />
                           </Link>
                         </div>
                       </div>
                     </div>
-                    
-                 
                   </div>
                 </div>
               </div>

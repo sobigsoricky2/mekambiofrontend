@@ -43,10 +43,10 @@ const MekambioHub = () => {
                       <div className="col-sm-6" id="sec-1">
                         <div className="feature-three-item">
                           <div className="icon">
-                            {/* <img
+                            <img
                               src="/assets/images/categories/category icon_Career Progression.png"
                               alt="Icon"
-                            /> */}
+                            />
                           </div>
                           <h4>Relaciones interpersonales</h4>
                           <p>
@@ -60,13 +60,13 @@ const MekambioHub = () => {
                           </Link>
                         </div>
                       </div>
-                      <div className="col-sm-6" >
+                      <div className="col-sm-6">
                         <div className="feature-three-item">
                           <div className="icon">
-                            {/* <img
+                            <img
                               src="/assets/images/categories/category icon_Entrepreneurship.png"
                               alt="Icon"
-                            /> */}
+                            />
                           </div>
                           <h4>Operativa y organización</h4>
                           <p>
@@ -82,13 +82,13 @@ const MekambioHub = () => {
                       </div>
                     </div>
                     <div className="row">
-                      <div className="col-sm-6" >
+                      <div className="col-sm-6">
                         <div className="feature-three-item">
                           <div className="icon">
-                            {/* <img
+                            <img
                               src="/assets/images/categories/category icon_Get Back to Work.png"
                               alt="Icon"
-                            /> */}
+                            />
                           </div>
                           <h4>Autoconciencia</h4>
                           <p>
@@ -104,10 +104,10 @@ const MekambioHub = () => {
                       <div className="col-sm-6" id="sec-4">
                         <div className="feature-three-item">
                           <div className="icon">
-                            {/* <img
+                            <img
                               src="/assets/images/categories/category icon_Make a Career Change.png"
                               alt="Icon"
-                            /> */}
+                            />
                           </div>
                           <h4>Estratégicas</h4>
                           <p>
@@ -115,10 +115,7 @@ const MekambioHub = () => {
                             gestión de la incertidumbre, liderazgo, gestión de
                             conflictos, etc.
                           </p>
-                          <Link
-                            href="#sec-2"
-                            className="read-more color-two"
-                          >
+                          <Link href="#sec-2" className="read-more color-two">
                             Saber más
                             <i className="fas fa-arrow-right" />
                           </Link>
@@ -147,7 +144,10 @@ const MekambioHub = () => {
           </div>
         </section>
 
-        <section id="sec-2" className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
+        <section
+          id="sec-2"
+          className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark"
+        >
           <div className="container">
             <div className="row large-gap mb-30 text-white">
               <div className="col-lg-6 text-white">
@@ -155,8 +155,8 @@ const MekambioHub = () => {
                   className="freature-six-left wow fadeInUp delay-0-2s animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
-                  <div className="section-title mb-30">
-                    <h2>Qué incluye este programa</h2>
+                  <div className="section-title mb-30 ">
+                    <h2 className="text-break h1">Qué incluye este programa</h2>
                   </div>
                 </div>
               </div>
@@ -183,14 +183,14 @@ const MekambioHub = () => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="content">
-                    <div className="icon">
-                      {/* <img
+                    {/* <div className="icon">
+                      <img
                       loading="lazy"
                      
                       src="/assets/images/categories/category icon_Career Progression.png"
                       alt="Icon"
-                    /> */}
-                    </div>
+                    />
+                    </div> */}
                     <h5>Workshops en Grupo</h5>
                     <p>
                       Participa en workshops mensuales focalizados en soft
@@ -211,14 +211,14 @@ const MekambioHub = () => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="content">
-                    <div className="icon">
-                      {/* <img
+                    {/* <div className="icon">
+                      <img
                       loading="lazy"
                      
                       src="assets\images\categories\category icon_Starting Out in Your Career.png"
                       alt="Icon"
-                    /> */}
-                    </div>
+                    />
+                    </div> */}
                     <h5>Dinámicas Prácticas</h5>
                     <p>
                       A través de casos prácticos y en base a experiencias
@@ -239,14 +239,14 @@ const MekambioHub = () => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="content">
-                    <div className="icon">
-                      {/* <img
+                    {/* <div className="icon">
+                      <img
                       loading="lazy"
                      
                       src="assets\images\categories\category icon_International Career Boost.png"
                       alt="Icon"
-                    /> */}
-                    </div>
+                    />
+                    </div> */}
                     <h5>Comunidad especializada</h5>
                     <p>
                       Únete al HUB y participa en la comunidad focalizada en el
@@ -287,7 +287,7 @@ const MekambioHub = () => {
             </div> */}
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="rectangle-dots"
             src="/assets/images/shapes/03.png"
@@ -298,11 +298,13 @@ const MekambioHub = () => {
             className="circle-dots"
             src="/assets/images/shapes/01.png"
             alt="Shape"
-          />
+          /> */}
         </section>
 
-
-        <section id="sec-3" className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
+        <section
+          id="sec-3"
+          className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110"
+        >
           <div className="container">
             <div className="section-title text-center mb-50">
               <h2>Cómo acceder a meKambio HUB</h2>
@@ -336,7 +338,9 @@ const MekambioHub = () => {
                     <div className="content">
                       <h4>Suscríbete a meKambio HUB</h4>
                       <p>
-                      Suscríbete por 19,90€ al mes o 199,90€ anualmente (promoción 2 meses gratuitos). Puedes cancelar tu suscripción en cualquier momento.
+                        Suscríbete por 19,90€ al mes o 199,90€ anualmente
+                        (promoción 2 meses gratuitos). Puedes cancelar tu
+                        suscripción en cualquier momento.
                       </p>
                     </div>
                   </div>
@@ -345,7 +349,9 @@ const MekambioHub = () => {
                     <div className="content">
                       <h4>Accede a la Comunidad</h4>
                       <p>
-                      En cuanto validemos tu suscripción recibirás confirmación por nuestra parte, y en 24 horas te daremos acceso a la comunidad de Telegram.
+                        En cuanto validemos tu suscripción recibirás
+                        confirmación por nuestra parte, y en 24 horas te daremos
+                        acceso a la comunidad de Telegram.
                       </p>
                     </div>
                   </div>
@@ -354,20 +360,29 @@ const MekambioHub = () => {
                     <div className="content">
                       <h4>Regístrate en los Workshops</h4>
                       <p>
-                      Regístrate y participa en los workshops programados mensualmemente de forma online a través de Zoom e interactúa con el Expert y la comunidad.
+                        Regístrate y participa en los workshops programados
+                        mensualmemente de forma online a través de Zoom e
+                        interactúa con el Expert y la comunidad.
                       </p>
                     </div>
                   </div>
-                 
                 </div>
               </div>
             </div>
             <div className="col-md-12 text-center">
-              <Link href="https://buy.stripe.com/00gg33gGv8vHbZu5kn" className="theme-btn mt-4 mr-4">
-              Suscripción mensual por 19,90€ al mes 
+              <Link
+                href="https://buy.stripe.com/00gg33gGv8vHbZu5kn"
+                className="theme-btn mt-4 mr-4"
+                target={"_blank"}
+              >
+                Suscripción mensual por 19,90€ al mes
               </Link>
-              <Link href="https://buy.stripe.com/dR6189fCr8vHfbG28a" className="theme-btn mt-4">
-              Suscripción anual por 199,90€ (2 meses gratuitos) 
+              <Link
+                href="https://buy.stripe.com/dR6189fCr8vHfbG28a"
+                className="theme-btn mt-4"
+                target={"_blank"}
+              >
+                Suscripción anual por 199,90€ (2 meses gratuitos)
               </Link>
             </div>
           </div>

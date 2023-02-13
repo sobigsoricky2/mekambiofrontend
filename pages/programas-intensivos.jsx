@@ -178,7 +178,7 @@ const ProgramasIntensivos = () => {
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
                 <div className="content">
-                  <div className="icon"></div>
+                  {/* <div className="icon"></div> */}
                   <h5>Sesiones Individuales</h5>
                   <p>
                     8 sesiones de 1 hora en las que trabajaremos: tu perfil
@@ -198,7 +198,7 @@ const ProgramasIntensivos = () => {
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
                 <div className="content">
-                  <div className="icon"></div>
+                  {/* <div className="icon"></div> */}
                   <h5>Preparación Específica</h5>
                   <p>
                     Role plays y simulación de situaciones reales que
@@ -218,7 +218,7 @@ const ProgramasIntensivos = () => {
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
                 <div className="content">
-                  <div className="icon"></div>
+                  {/* <div className="icon"></div> */}
                   <h5>Valoración Inicial</h5>
                   <p>
                     1 sesión estratégica individual de 30 minutos para valorar
@@ -234,8 +234,8 @@ const ProgramasIntensivos = () => {
             </div>
           </div>
         </div>
-        <img
-          loading="lazy"
+        {/* <img
+          loading="lazy" 
           className="rectangle-dots"
           src="/assets/images/shapes/03.png"
           alt="Shape"
@@ -245,7 +245,7 @@ const ProgramasIntensivos = () => {
           className="circle-dots"
           src="/assets/images/shapes/01.png"
           alt="Shape"
-        />
+        /> */}
       </section>
 
       <section id="sec-3" className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
@@ -324,6 +324,175 @@ const ProgramasIntensivos = () => {
           </div>
         </div>
       </section>
+      <section className="partner-section rel z-1  pt-50 rpt-90  rpb-55">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div
+                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="section-title mb-25">
+                    <span className="sub-title-two">
+                      Top Experts and Top Companies
+                    </span>
+                    <h2>Algunas empresas dónde trabajan nuestros Experts </h2>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div
+                  className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                >
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://www.wemeanbusinesscoalition.org/wp-content/uploads/2019/09/Salesforce-LOGO.jpg"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-100"
+                        src="https://oroinc.com/orocrm/wp-content/uploads/sites/8/2017/06/Zendesk_logo_wordmark.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-100"
+                        src="https://static.borngroup.com/uploads/2020/09/Logo-Mirakl.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25 text-center">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-50"
+                        src="https://th.bing.com/th/id/R.8126361d4fe00f6b67cacd6b751998d4?rik=eWb%2fNt6IvMli4g&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2016%2f05%2frainbow-apple-logo.png&ehk=Dk5yXp4Wc0DC4oScBdA9VamWYAANMF5ozQGYD8uAkuI%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="partner-section rel z-1  pt-50 rpt-90 rpb-55">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div
+                  className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                >
+                  <div className="logo-item w-25">
+                    <Link href="https://www.upc.edu/ca">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/client-logos/UPC.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://epseb.upc.edu/ca">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/client-logos/EPSEB.jpg"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://www.eae.es">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/client-logos/EAE Business School.PNG"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://www.threepoints.com">
+                      <img
+                        loading="lazy"
+                        className="w-50"
+                        src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://www.inesdi.com">
+                      <img
+                        loading="lazy"
+                        className="w-75"
+                        src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://www.deustoformacion.com">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div
+                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="section-title mb-25">
+                    <span className="sub-title-two">Global Partners</span>
+                    <h2>Empresas que confían en nosotros</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </Layout>
   );
 };
