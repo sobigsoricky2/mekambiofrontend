@@ -320,14 +320,14 @@ const Services = () => {
                     animationName: "fadeInRight",
                   }}
                 >
-                  <div className="image-one">
+                    <div className="bebefit-image rmb-75 wow fadeInRight delay-0-2s  animated animated">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HI9Ah5G.md.png"
+                      src="https://iili.io/HGdHT1j.md.png"
                       alt="Join Our Team"
                     />
                   </div>
-                  <div className="image-two">
+                  {/* <div className="image-two">
                     <img
                       loading="lazy"
                       src="https://iili.io/HzkRT22.md.png"
@@ -338,7 +338,7 @@ const Services = () => {
                       src="https://iili.io/HI9RETx.md.png"
                       alt="Join Our Team"
                     />
-                  </div>
+                  </div> */}
                   <span className="bg-text">meKambio</span>
                 </div>
               </div>
@@ -459,21 +459,20 @@ const Services = () => {
                   }}
                 >
                   <div className="row align-items-center">
-                    <div className="col-7">
-                      <img
-                        loading="lazy"
-                        src="https://iili.io/HI9nc6G.md.png"
-                        alt="Rules"
-                        style={{ transform: "scale(0.85)" }}
-                      />
-                    </div>
-                    <div className="col-5">
+                  <div className="bebefit-image rmb-75 wow fadeInRight delay-0-2s  animated animated">
+                    <img
+                      loading="lazy"
+                      src="https://iili.io/HGdHoXe.md.png"
+                      alt="Join Our Team"
+                    />
+                  </div>
+                    {/* <div className="col-5">
                       <img
                         loading="lazy"
                         src="https://iili.io/HI9o9oX.md.png"
                         alt="Rules"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -495,14 +494,14 @@ const Services = () => {
                     animationName: "fadeInRight",
                   }}
                 >
-                  <div className="image-one">
+                  <div className="bebefit-image rmb-75 wow fadeInRight delay-0-2s  animated animated">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HI9Ah5G.md.png"
+                      src="https://iili.io/HGd9D5N.md.png"
                       alt="Join Our Team"
                     />
                   </div>
-                  <div className="image-two">
+                  {/* <div className="image-two">
                     <img
                       loading="lazy"
                       src="https://iili.io/HzkRT22.md.png"
@@ -513,7 +512,7 @@ const Services = () => {
                       src="https://iili.io/HI9RETx.md.png"
                       alt="Join Our Team"
                     />
-                  </div>
+                  </div> */}
                   <span className="bg-text">meKambio</span>
                 </div>
               </div>
