@@ -40,13 +40,13 @@ const ExpertsOnDemand = () => {
                         <p>
                         ¿Tienes siempre la misma rutina laboral? ¿Tu jornada está llena de problemas? Identifica tus fortalezas y motivaciones para evolucionar en tu carrera.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2" className="read-more color-two">
                         Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
                       </div>
                     </div>
-                    <div className="col-sm-6" id="sec-2">
+                    <div className="col-sm-6" >
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -58,7 +58,7 @@ const ExpertsOnDemand = () => {
                         <p>
                         ¿Quieres volver al trabajo de forma completa? Prepárate para una búsqueda eficaz de empleo mediante las técnicas y herramientas necesarias de hoy día.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2"  className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
@@ -66,7 +66,7 @@ const ExpertsOnDemand = () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-sm-6" id="sec-3">
+                    <div className="col-sm-6" >
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -78,7 +78,7 @@ const ExpertsOnDemand = () => {
                         <p>
                         ¿Tienes ganas de prosperar profesionalmente? Ni te estanques ni te quites valor. Recibe la guía definitiva que te hará avanzar y mejorar tu calidad de vida.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2"  className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
@@ -96,7 +96,7 @@ const ExpertsOnDemand = () => {
                         <p>
                         Para cambiar tu situación profesional tendrás que salir de tu zona de confort. Te enseñamos cómo hacerlo en un entorno de confianza.
                         </p>
-                        <Link href="#" className="read-more color-two">
+                        <Link href="#sec-2"  className="read-more color-two">
                           Saber más
                           <i className="fas fa-arrow-right" />
                         </Link>
@@ -125,7 +125,7 @@ const ExpertsOnDemand = () => {
         </div>
       </section>
 
-      <section className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
+      <section id="sec-2"  className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
         <div className="container">
           <div className="row large-gap mb-30 text-white">
             <div className="col-lg-6 text-white">
@@ -157,13 +157,13 @@ const ExpertsOnDemand = () => {
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
                 <div className="content">
-                  <div className="icon"></div>
+                  {/* <div className="icon"></div> */}
                   <h5>Profesionales Senior</h5>
                   <p>
                   Un equipo especializado en el desarrollo del talento, la transformación profesional y el liderazgo personal. Recibe su apoyo y transforma tu carrera.
                   </p>
                 </div>
-                <Link href="categories#pro" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                 Agenda tu sesión
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -175,13 +175,13 @@ const ExpertsOnDemand = () => {
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
                 <div className="content">
-                  <div className="icon"></div>
+                  {/* <div className="icon"></div> */}
                   <h5>Flexibilidad de horarios</h5>
                   <p>
                   No importa donde estés ni tus horarios. Tendrás 100% acceso a todos los Experts de forma online. Consigue todo lo que te propongas con tu equipo.
                   </p>
                 </div>
-                <Link href="categories#reg" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                 Agenda tu sesión
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -193,13 +193,13 @@ const ExpertsOnDemand = () => {
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
                 <div className="content">
-                  <div className="icon"></div>
+                  {/* <div className="icon"></div> */}
                   <h5>Tú marcas la pauta</h5>
                   <p>
                   Gran variedad de sesiones y tarifas. Un amplio abanico de posibilidades para que abandones el estancamiento profesional e impulses tu carrera a tu ritmo.
                   </p>
                 </div>
-                <Link href="categories#pro" className="read-more color-two">
+                <Link href="#sec-3" className="read-more color-two">
                 Agenda tu sesión
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -221,7 +221,7 @@ const ExpertsOnDemand = () => {
         />
       </section>
 
-      <section className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
+      <section id="sec-3"  className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
         <div className="container">
           <div className="section-title text-center mb-50">
             <h2>Cómo acceder a los Experts</h2>
@@ -297,6 +297,176 @@ const ExpertsOnDemand = () => {
           </div>
         </div>
       </section>
+
+      <section className="partner-section rel z-1  pt-50 rpt-90  rpb-55">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div
+                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="section-title mb-25">
+                    <span className="sub-title-two">
+                      Top Experts and Top Companies
+                    </span>
+                    <h2>Algunas empresas dónde trabajan nuestros Experts </h2>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div
+                  className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                >
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://www.wemeanbusinesscoalition.org/wp-content/uploads/2019/09/Salesforce-LOGO.jpg"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-100"
+                        src="https://oroinc.com/orocrm/wp-content/uploads/sites/8/2017/06/Zendesk_logo_wordmark.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-100"
+                        src="https://static.borngroup.com/uploads/2020/09/Logo-Mirakl.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25 text-center">
+                    <Link href="https://experts.mekambio.com/s?q=">
+                      <img
+                        loading="lazy"
+                        className="w-50"
+                        src="https://th.bing.com/th/id/R.8126361d4fe00f6b67cacd6b751998d4?rik=eWb%2fNt6IvMli4g&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2016%2f05%2frainbow-apple-logo.png&ehk=Dk5yXp4Wc0DC4oScBdA9VamWYAANMF5ozQGYD8uAkuI%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="partner-section rel z-1  pt-50 rpt-90 rpb-55">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div
+                  className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                >
+                  <div className="logo-item w-25">
+                    <Link href="https://www.upc.edu/ca">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/client-logos/UPC.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://epseb.upc.edu/ca">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/client-logos/EPSEB.jpg"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://www.eae.es">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/client-logos/EAE Business School.PNG"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://www.threepoints.com">
+                      <img
+                        loading="lazy"
+                        className="w-50"
+                        src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://www.inesdi.com">
+                      <img
+                        loading="lazy"
+                        className="w-75"
+                        src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                  <div className="logo-item w-25">
+                    <Link href="https://www.deustoformacion.com">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
+                        alt="Client Logo"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div
+                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="section-title mb-25">
+                    <span className="sub-title-two">Global Partners</span>
+                    <h2>Empresas que confían en nosotros</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </Layout>
   );
 };
