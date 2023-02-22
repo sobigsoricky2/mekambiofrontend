@@ -499,59 +499,59 @@ const Services = () => {
 
                 <span className="bg-text">meKambio</span>
               </div>
-            </div>
-            <div className="col-lg-6">
-              <div
-                className="join-our-team-content rmb-75 wow fadeInLeft delay-0-2s animated animated"
-                style={{ visibility: "visible", animationName: "fadeInLeft" }}
-              >
-                <div className="section-title mb-20">
-                  <span className="sub-title-two">Experts On demand</span>
-                  <h2>Determina y alcanza nuevas metas profesionales</h2>
-                </div>
-                <ul className="list-style-three pt-25 pb-20">
-                  <li>
-                    <div className="content">
-                      <h5>Plan Estratégico Personalizable</h5>
-                      <p>
-                        Estarás más cerca de tus objetivos profesionales,
-                        gracias a una amplia oferta de sesiones que elegirás y
-                        amoldaremos en función de tu situación personal.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="content">
-                      <h5>Perfil Profesional Competitivo</h5>
-                      <p>
-                        Trabajarás con grandes profesionales que te ayudarán a
-                        evolucionar tus capacidades en las distintas áreas en
-                        que puedes focalizarte. Podrás ir construyendo tu
-                        trayectoria paso a paso.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="content">
-                      <h5>Apertura de Oportunidades</h5>
-                      <p>
-                        Cuando comprendes tus inquietudes, eres capaz de marcar
-                        un trayecto con una meta clara. En ese recorrido van
-                        surgienndo ventanas de futuro y tú elegirás cuáles
-                        abrir.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <Link
-                  href="/experts-on-demand"
-                  className="theme-btn"
-                  style={{ marginLeft: "55px" }}
+              <div className="col-lg-6">
+                <div
+                  className="join-our-team-content rmb-75 wow fadeInLeft delay-0-2s animated animated"
+                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
                 >
-                  Saber más
-                  <i className="fas fa-arrow-right" />
-                </Link>
+                  <div className="section-title mb-20">
+                    <span className="sub-title-two">Experts On demand</span>
+                    <h2>Determina y alcanza nuevas metas profesionales</h2>
+                  </div>
+                  <ul className="list-style-three pt-25 pb-20">
+                    <li>
+                      <div className="content">
+                        <h5>Plan Estratégico Personalizable</h5>
+                        <p>
+                          Estarás más cerca de tus objetivos profesionales,
+                          gracias a una amplia oferta de sesiones que elegirás y
+                          amoldaremos en función de tu situación personal.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="content">
+                        <h5>Perfil Profesional Competitivo</h5>
+                        <p>
+                          Trabajarás con grandes profesionales que te ayudarán a
+                          evolucionar tus capacidades en las distintas áreas en
+                          que puedes focalizarte. Podrás ir construyendo tu
+                          trayectoria paso a paso.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="content">
+                        <h5>Apertura de Oportunidades</h5>
+                        <p>
+                          Cuando comprendes tus inquietudes, eres capaz de
+                          marcar un trayecto con una meta clara. En ese
+                          recorrido van surgienndo ventanas de futuro y tú
+                          elegirás cuáles abrir.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link
+                    href="/experts-on-demand"
+                    className="theme-btn"
+                    style={{ marginLeft: "55px" }}
+                  >
+                    Saber más
+                    <i className="fas fa-arrow-right" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

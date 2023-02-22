@@ -320,7 +320,7 @@ const MekambioHub = () => {
                 >
                   <img
                     loading="lazy"
-                    src="/assets/images/about/benefit.jpg"
+                    src="https://iili.io/HG8d6mB.md.png"
                     alt="Bebefit"
                   />
                 </div>
