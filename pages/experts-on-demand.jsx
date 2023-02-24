@@ -134,6 +134,7 @@ const ExpertsOnDemand = () => {
                   loading="lazy"
                   src="https://iili.io/HMxQZ1s.md.png"
                   alt="Why Learn"
+                  className="imageSize"
                 />
               </div>
             </div>
@@ -236,7 +237,7 @@ const ExpertsOnDemand = () => {
             </div>
           </div>
         </div>
-        {/* <img
+        <img
           loading="lazy"
           className="rectangle-dots"
           src="/assets/images/shapes/03.png"
@@ -247,7 +248,7 @@ const ExpertsOnDemand = () => {
           className="circle-dots"
           src="/assets/images/shapes/01.png"
           alt="Shape"
-        /> */}
+        />
       </section>
 
       <section
@@ -271,6 +272,7 @@ const ExpertsOnDemand = () => {
                   loading="lazy"
                   src="https://iili.io/HMxQZ1s.md.png"
                   alt="Bebefit"
+                  className="imageSize"
                 />
               </div>
             </div>

@@ -15,7 +15,10 @@ const HowToUse = () => {
         <title>Cómo funciona</title>
       </Head>
       <Layout>
-        <Banner title="Cómo Funciona" para="Nuestra propuesta para iniciar tu plan de acción" />
+        <Banner
+          title="Cómo Funciona"
+          para="Nuestra propuesta para iniciar tu plan de acción"
+        />
 
         <section className="join-our-team-area pt-120 rpt-90">
           <div className="container">
@@ -33,7 +36,11 @@ const HowToUse = () => {
                     <h2>Empieza a Moldear tu Futuro</h2>
                   </div>
                   <p>
-                  No hay nada más poderoso que trabajar con los mejores, aprender de ellos y beneficiarse de su apoyo y guía. Te ofrecemos hacerlo en un entorno con profesionales que destacan en su sector por su trayectoria y compromiso. Te orientarán para conseguir los objetivos que tú te plantees.
+                    No hay nada más poderoso que trabajar con los mejores,
+                    aprender de ellos y beneficiarse de su apoyo y guía. Te
+                    ofrecemos hacerlo en un entorno con profesionales que
+                    destacan en su sector por su trayectoria y compromiso. Te
+                    orientarán para conseguir los objetivos que tú te plantees.
                   </p>
                   <ul className="list-style-three pt-25 pb-20">
                     <li>
@@ -58,7 +65,8 @@ const HowToUse = () => {
                       <div className="content">
                         <h5>Consigue lo que te Propongas</h5>
                         <p>
-                        Conseguirás que tus sueños profesionales se hagan realidad.
+                          Conseguirás que tus sueños profesionales se hagan
+                          realidad.
                         </p>
                       </div>
                     </li>
@@ -92,7 +100,7 @@ const HowToUse = () => {
                   <div className="image-one">
                     <img
                       loading="lazy"
-                      src="https://iili.io/HTaDFY7.md.png" 
+                      src="https://iili.io/HTaDFY7.md.png"
                       alt="Join Our Team"
                     />
                   </div>
@@ -155,7 +163,8 @@ const HowToUse = () => {
                     <div className="content">
                       <h4>Selecciona Área y Expert</h4>
                       <p>
-                      Focaliza en tu área y encuentra al Expert que mejor se adapte a tus necesidades.
+                        Focaliza en tu área y encuentra al Expert que mejor se
+                        adapte a tus necesidades.
                       </p>
                     </div>
                   </div>
@@ -164,7 +173,8 @@ const HowToUse = () => {
                     <div className="content">
                       <h4>Reserva tu sesión</h4>
                       <p>
-                      Elige fecha y hora. Comprométete contigo y tu futuro profesional.
+                        Elige fecha y hora. Comprométete contigo y tu futuro
+                        profesional.
                       </p>
                     </div>
                   </div>
@@ -183,7 +193,8 @@ const HowToUse = () => {
                     <div className="content">
                       <h4>Impulsa tu carrera</h4>
                       <p>
-                      Inicia tu evolución profesional. En dos meses puedes empezar a ver resultados.
+                        Inicia tu evolución profesional. En dos meses puedes
+                        empezar a ver resultados.
                       </p>
                     </div>
                   </div>
@@ -224,7 +235,7 @@ const HowToUse = () => {
                     animationName: "fadeInLeft",
                   }}
                 >
-                 <div className="logo-item w-25">
+                  <div className="logo-item w-25">
                     <Link href="https://experts.mekambio.com/s?q=">
                       <img
                         loading="lazy"

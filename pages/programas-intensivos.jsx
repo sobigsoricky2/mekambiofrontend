@@ -135,6 +135,7 @@ const ProgramasIntensivos = () => {
                   loading="lazy"
                   src="https://iili.io/HMxsFEJ.md.png"
                   alt="Why Learn"
+                  className="imageSize"
                 />
               </div>
             </div>
@@ -272,6 +273,7 @@ const ProgramasIntensivos = () => {
                   loading="lazy"
                   src="https://iili.io/HMxsFEJ.md.png"
                   alt="Bebefit"
+                  className="imageSize"
                 />
               </div>
             </div>

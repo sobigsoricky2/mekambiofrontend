@@ -141,6 +141,7 @@ h6 a {
 .text-white h5 a,
 .text-white h6 a {
   color: white;
+  background-color: white;
 }
 
 h1 {
@@ -5533,7 +5534,7 @@ h6,
 
 .page-title {
   font-size: 60px;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
 }
 @media only screen and (max-width: 767px) {
@@ -12373,11 +12374,25 @@ blockquote .blockquote-footer:before {
 .mobile-text-black {
   color: #000 !important;
 }
-
-
+.imageSize {
+  max-width: 300px;
+  max-height: auto;
+  display: inline;
+  margin-left: 50%;
+  margin-right: 50%;
+}
 
 @media only screen and (max-width: 990px) {
-  .mobile-text-dark{
-    color:#212121 !important;
+  .mobile-text-dark {
+    color: #212121 !important;
   }
+  .imageSize {
+    max-width: 120px;
+    margin: auto;
+  }
+}
+.divWave {
+  width: 100%;
+  height: -50px;
+  background-color: red;
 }

@@ -212,14 +212,23 @@ const Services = () => {
               <div className="col-lg-7">
                 <div
                   className="categories-wrap wow fadeInUp delay-0-4s animated animated animated animated animated"
-                  style={{ visibility: "visible", animationName: "fadeInUp" }}
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInUp",
+                    display: "grid",
+                    placeItems: "center",
+                    width: "100%",
+                  }}
                 >
                   <div className="row">
-                    <div className="col-md-4 col-sm-6">
+                    <div
+                      className="col-md-4 col-sm-6"
+                      style={{ width: "100%" }}
+                    >
                       <div className="category-item mt-35">
                         <div className="icon">
                           <img
-                            className="w-50"
+                            className="w-50 "
                             src="https://iili.io/HMxsFEJ.md.png"
                             alt="Icon"
                           />
@@ -248,7 +257,7 @@ const Services = () => {
                       <div className="category-item">
                         <div className="icon">
                           <img
-                            className="w-50"
+                            className="w-50 "
                             src="https://iili.io/HMxLGAN.md.png"
                             alt="Icon"
                           />
@@ -276,7 +285,7 @@ const Services = () => {
                       <div className="category-item mt-40">
                         <div className="icon">
                           <img
-                            className="w-50"
+                            className="w-50 "
                             src="https://iili.io/HMxQZ1s.md.png"
                             alt="Icon"
                           />
@@ -326,6 +335,7 @@ const Services = () => {
                       loading="lazy"
                       src="https://iili.io/HGdHT1j.md.png"
                       alt="Join Our Team"
+                      className="imageSize"
                     />
                   </div>
 
@@ -469,6 +479,7 @@ const Services = () => {
                         loading="lazy"
                         src="https://iili.io/HGdHoXe.md.png"
                         alt="Join Our Team"
+                        className="imageSize"
                       />
                     </div>
                     {/* <div className="col-5">
@@ -492,13 +503,24 @@ const Services = () => {
           <div className="container">
             <div className="row align-items-center large-gap">
               <div className="col-lg-6">
-                <img
-                  loading="lazy"
-                  src="https://iili.io/HGWmFz7.md.png"
-                  alt="Join Our Team"
-                />
+                <div
+                  className="join-our-team-image-part pt-5 wow fadeInRight delay-0-2s animated animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInRight",
+                  }}
+                >
+                  <div className="bebefit-image rmb-75 wow fadeInRight delay-0-2s  animated animated">
+                    <img
+                      loading="lazy"
+                      src="https://iili.io/HGWmFz7.md.png"
+                      alt="Join Our Team"
+                      className="imageSize"
+                    />
 
-                <span className="bg-text">meKambio</span>
+                    <span className="bg-text">meKambio</span>
+                  </div>
+                </div>
               </div>
               <div className="col-lg-6">
                 <div

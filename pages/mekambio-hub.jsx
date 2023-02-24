@@ -137,6 +137,7 @@ const MekambioHub = () => {
                     loading="lazy"
                     src="https://iili.io/HMxLGAN.md.png"
                     alt="Why Learn"
+                    className="imageSize"
                   />
                 </div>
               </div>
@@ -322,6 +323,7 @@ const MekambioHub = () => {
                     loading="lazy"
                     src="https://iili.io/HG8d6mB.md.png"
                     alt="Bebefit"
+                    className="imageSize"
                   />
                 </div>
               </div>
