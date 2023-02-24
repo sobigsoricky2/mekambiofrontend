@@ -183,6 +183,7 @@ const Index = () => {
                           id="Comentarios"
                           name="Comentarios"
                           onChange={(e) => handleFormdataChange(e)}
+                          placeholder="Añade una breve descripción del motivo de tu solicitud."
                         />
                       </div>
 

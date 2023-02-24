@@ -220,7 +220,7 @@ const Services = () => {
                         <div className="icon">
                           <img
                             className="w-50"
-                            src="/assets/images/categories/category icon_Career Progression.png"
+                            src="https://iili.io/HMxsFEJ.md.png"
                             alt="Icon"
                           />
                         </div>
@@ -249,7 +249,7 @@ const Services = () => {
                         <div className="icon">
                           <img
                             className="w-50"
-                            src="/assets/images/categories/category icon_Starting Out in Your Career.png"
+                            src="https://iili.io/HMxLGAN.md.png"
                             alt="Icon"
                           />
                         </div>
@@ -277,7 +277,7 @@ const Services = () => {
                         <div className="icon">
                           <img
                             className="w-50"
-                            src="/assets/images/categories/category icon_Entrepreneurship.png"
+                            src="https://iili.io/HMxQZ1s.md.png"
                             alt="Icon"
                           />
                         </div>
@@ -328,6 +328,7 @@ const Services = () => {
                       alt="Join Our Team"
                     />
                   </div>
+
                   {/* <div className="image-two">
                     <img
                       loading="lazy"
@@ -402,7 +403,7 @@ const Services = () => {
         >
           <div className="container ">
             <div className="row align-items-center large-gap">
-              <div className="col-lg-5">
+              <div className="col-lg-6">
                 <div
                   className=" rules-condition-content rmb-50 wow fadeInLeft delay-0-2s animated animated"
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
@@ -454,7 +455,7 @@ const Services = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-7">
+              <div className="col-lg-6">
                 <div
                   className="rules-condition-image-part wow fadeInRight delay-0-2s animated animated"
                   style={{

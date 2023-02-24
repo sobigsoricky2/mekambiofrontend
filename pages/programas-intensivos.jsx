@@ -36,7 +36,7 @@ const ProgramasIntensivos = () => {
                 </p>
                 <div className="why-learn-feature pt-30">
                   <div className="row">
-                    <div className="col-sm-6" >
+                    <div className="col-sm-6">
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -57,7 +57,7 @@ const ProgramasIntensivos = () => {
                         </Link>
                       </div>
                     </div>
-                    <div className="col-sm-6" >
+                    <div className="col-sm-6">
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -79,7 +79,7 @@ const ProgramasIntensivos = () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-sm-6" >
+                    <div className="col-sm-6">
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -99,7 +99,7 @@ const ProgramasIntensivos = () => {
                         </Link>
                       </div>
                     </div>
-                    <div className="col-sm-6" >
+                    <div className="col-sm-6">
                       <div className="feature-three-item">
                         <div className="icon">
                           <img
@@ -133,7 +133,7 @@ const ProgramasIntensivos = () => {
               >
                 <img
                   loading="lazy"
-                  src="http://images.ctfassets.net/rnas9vwjhliq/3rl9f6bomCkEZIY3ajKs78/114449779314d5efa35507bfa064147d/mekambio_image_services_2.webp"
+                  src="https://iili.io/HMxsFEJ.md.png"
                   alt="Why Learn"
                 />
               </div>
@@ -142,7 +142,10 @@ const ProgramasIntensivos = () => {
         </div>
       </section>
 
-      <section id="sec-2" className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark">
+      <section
+        id="sec-2"
+        className="features-section rel z-1 pt-80 pb-40 bg-blue text-dark"
+      >
         <div className="container">
           <div className="row large-gap mb-30 text-white">
             <div className="col-lg-6 text-white">
@@ -235,7 +238,7 @@ const ProgramasIntensivos = () => {
           </div>
         </div>
         {/* <img
-          loading="lazy" 
+          loading="lazy"
           className="rectangle-dots"
           src="/assets/images/shapes/03.png"
           alt="Shape"
@@ -248,7 +251,10 @@ const ProgramasIntensivos = () => {
         /> */}
       </section>
 
-      <section id="sec-3" className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110">
+      <section
+        id="sec-3"
+        className="benefit-work-process rel z-2 pt-120 rpt-90 pb-110"
+      >
         <div className="container">
           <div className="section-title text-center mb-50">
             <h2>Cómo acceder al Programa Intensivo</h2>
@@ -264,7 +270,7 @@ const ProgramasIntensivos = () => {
               >
                 <img
                   loading="lazy"
-                  src="/assets/images/about/benefit.jpg"
+                  src="https://iili.io/HMxsFEJ.md.png"
                   alt="Bebefit"
                 />
               </div>
@@ -282,7 +288,9 @@ const ProgramasIntensivos = () => {
                   <div className="content">
                     <h4>Solicita Información</h4>
                     <p>
-                    Completa el formulario de solicitud junto a una breve descripción de tus objetivos profesionales. Solicitar información no tiene ningún compromiso.
+                      Completa el formulario de solicitud junto a una breve
+                      descripción de tus objetivos profesionales. Solicitar
+                      información no tiene ningún compromiso.
                     </p>
                   </div>
                 </div>
@@ -291,7 +299,9 @@ const ProgramasIntensivos = () => {
                   <div className="content">
                     <h4>Evaluación Inicial</h4>
                     <p>
-                    Tan pronto como recibamos tu solicitud nos pondremos en contacto contigo para analizar tu situación. Tu compromiso y el nuestro han de ir de la mano.
+                      Tan pronto como recibamos tu solicitud nos pondremos en
+                      contacto contigo para analizar tu situación. Tu compromiso
+                      y el nuestro han de ir de la mano.
                     </p>
                   </div>
                 </div>
@@ -300,7 +310,9 @@ const ProgramasIntensivos = () => {
                   <div className="content">
                     <h4>Contrata tu Programa</h4>
                     <p>
-                    En el momento que contrates tu programa agendaremos las primeras sesiones y empezaremos a trabajar conjuntamente. Cambiarás tu futuro en 2 meses.
+                      En el momento que contrates tu programa agendaremos las
+                      primeras sesiones y empezaremos a trabajar conjuntamente.
+                      Cambiarás tu futuro en 2 meses.
                     </p>
                   </div>
                 </div>
@@ -319,180 +331,180 @@ const ProgramasIntensivos = () => {
           </div>
           <div className="col-md-12 text-center">
             <Link href="/solicitud-de-informacion/" className="theme-btn mt-4">
-            Solicita Información
+              Solicita Información
             </Link>
           </div>
         </div>
       </section>
       <section className="partner-section rel z-1  pt-50 rpt-90  rpb-55">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div
-                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated animated"
-                  style={{
-                    visibility: "visible",
-                    animationName: "fadeInRight",
-                  }}
-                >
-                  <div className="section-title mb-25">
-                    <span className="sub-title-two">
-                      Top Experts and Top Companies
-                    </span>
-                    <h2>Algunas empresas dónde trabajan nuestros Experts </h2>
-                  </div>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div
+                className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated animated"
+                style={{
+                  visibility: "visible",
+                  animationName: "fadeInRight",
+                }}
+              >
+                <div className="section-title mb-25">
+                  <span className="sub-title-two">
+                    Top Experts and Top Companies
+                  </span>
+                  <h2>Algunas empresas dónde trabajan nuestros Experts </h2>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div
-                  className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated animated"
-                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
-                >
-                  <div className="logo-item w-25">
-                    <Link href="https://experts.mekambio.com/s?q=">
-                      <img
-                        loading="lazy"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://experts.mekambio.com/s?q=">
-                      <img
-                        loading="lazy"
-                        src="https://www.wemeanbusinesscoalition.org/wp-content/uploads/2019/09/Salesforce-LOGO.jpg"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://experts.mekambio.com/s?q=">
-                      <img
-                        loading="lazy"
-                        src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://experts.mekambio.com/s?q=">
-                      <img
-                        loading="lazy"
-                        className="w-100"
-                        src="https://oroinc.com/orocrm/wp-content/uploads/sites/8/2017/06/Zendesk_logo_wordmark.png"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://experts.mekambio.com/s?q=">
-                      <img
-                        loading="lazy"
-                        className="w-100"
-                        src="https://static.borngroup.com/uploads/2020/09/Logo-Mirakl.png"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25 text-center">
-                    <Link href="https://experts.mekambio.com/s?q=">
-                      <img
-                        loading="lazy"
-                        className="w-50"
-                        src="https://th.bing.com/th/id/R.8126361d4fe00f6b67cacd6b751998d4?rik=eWb%2fNt6IvMli4g&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2016%2f05%2frainbow-apple-logo.png&ehk=Dk5yXp4Wc0DC4oScBdA9VamWYAANMF5ozQGYD8uAkuI%3d&risl=&pid=ImgRaw&r=0"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
+            </div>
+            <div className="col-lg-6">
+              <div
+                className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated animated"
+                style={{ visibility: "visible", animationName: "fadeInLeft" }}
+              >
+                <div className="logo-item w-25">
+                  <Link href="https://experts.mekambio.com/s?q=">
+                    <img
+                      loading="lazy"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://experts.mekambio.com/s?q=">
+                    <img
+                      loading="lazy"
+                      src="https://www.wemeanbusinesscoalition.org/wp-content/uploads/2019/09/Salesforce-LOGO.jpg"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://experts.mekambio.com/s?q=">
+                    <img
+                      loading="lazy"
+                      src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://experts.mekambio.com/s?q=">
+                    <img
+                      loading="lazy"
+                      className="w-100"
+                      src="https://oroinc.com/orocrm/wp-content/uploads/sites/8/2017/06/Zendesk_logo_wordmark.png"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://experts.mekambio.com/s?q=">
+                    <img
+                      loading="lazy"
+                      className="w-100"
+                      src="https://static.borngroup.com/uploads/2020/09/Logo-Mirakl.png"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25 text-center">
+                  <Link href="https://experts.mekambio.com/s?q=">
+                    <img
+                      loading="lazy"
+                      className="w-50"
+                      src="https://th.bing.com/th/id/R.8126361d4fe00f6b67cacd6b751998d4?rik=eWb%2fNt6IvMli4g&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2016%2f05%2frainbow-apple-logo.png&ehk=Dk5yXp4Wc0DC4oScBdA9VamWYAANMF5ozQGYD8uAkuI%3d&risl=&pid=ImgRaw&r=0"
+                      alt="Client Logo"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section className="partner-section rel z-1  pt-50 rpt-90 rpb-55">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div
-                  className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated"
-                  style={{ visibility: "visible", animationName: "fadeInLeft" }}
-                >
-                  <div className="logo-item w-25">
-                    <Link href="https://www.upc.edu/ca">
-                      <img
-                        loading="lazy"
-                        src="/assets/images/client-logos/UPC.png"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://epseb.upc.edu/ca">
-                      <img
-                        loading="lazy"
-                        src="/assets/images/client-logos/EPSEB.jpg"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://www.eae.es">
-                      <img
-                        loading="lazy"
-                        src="/assets/images/client-logos/EAE Business School.PNG"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://www.threepoints.com">
-                      <img
-                        loading="lazy"
-                        className="w-50"
-                        src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://www.inesdi.com">
-                      <img
-                        loading="lazy"
-                        className="w-75"
-                        src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="logo-item w-25">
-                    <Link href="https://www.deustoformacion.com">
-                      <img
-                        loading="lazy"
-                        src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
-                        alt="Client Logo"
-                      />
-                    </Link>
-                  </div>
+        </div>
+      </section>
+      <section className="partner-section rel z-1  pt-50 rpt-90 rpb-55">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div
+                className="logo-inner style-two wow fadeInLeft delay-0-2s animated animated"
+                style={{ visibility: "visible", animationName: "fadeInLeft" }}
+              >
+                <div className="logo-item w-25">
+                  <Link href="https://www.upc.edu/ca">
+                    <img
+                      loading="lazy"
+                      src="/assets/images/client-logos/UPC.png"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://epseb.upc.edu/ca">
+                    <img
+                      loading="lazy"
+                      src="/assets/images/client-logos/EPSEB.jpg"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://www.eae.es">
+                    <img
+                      loading="lazy"
+                      src="/assets/images/client-logos/EAE Business School.PNG"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://www.threepoints.com">
+                    <img
+                      loading="lazy"
+                      className="w-50"
+                      src="/assets/images/client-logos/Three Points, The school for Digital Business.jfif"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://www.inesdi.com">
+                    <img
+                      loading="lazy"
+                      className="w-75"
+                      src="/assets/images/client-logos/Inesdi Digital Business School.jfif"
+                      alt="Client Logo"
+                    />
+                  </Link>
+                </div>
+                <div className="logo-item w-25">
+                  <Link href="https://www.deustoformacion.com">
+                    <img
+                      loading="lazy"
+                      src="/assets/images/client-logos/DFO-Logotipo-Pantalla.png"
+                      alt="Client Logo"
+                    />
+                  </Link>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div
-                  className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated"
-                  style={{
-                    visibility: "visible",
-                    animationName: "fadeInRight",
-                  }}
-                >
-                  <div className="section-title mb-25">
-                    <span className="sub-title-two">Global Partners</span>
-                    <h2>Empresas que confían en nosotros</h2>
-                  </div>
+            </div>
+            <div className="col-lg-6">
+              <div
+                className="categories-content mb-50 wow fadeInRight delay-0-2s animated animated"
+                style={{
+                  visibility: "visible",
+                  animationName: "fadeInRight",
+                }}
+              >
+                <div className="section-title mb-25">
+                  <span className="sub-title-two">Global Partners</span>
+                  <h2>Empresas que confían en nosotros</h2>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     </Layout>
   );
 };

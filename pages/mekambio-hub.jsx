@@ -135,7 +135,7 @@ const MekambioHub = () => {
                 >
                   <img
                     loading="lazy"
-                    src="http://images.ctfassets.net/rnas9vwjhliq/3rl9f6bomCkEZIY3ajKs78/114449779314d5efa35507bfa064147d/mekambio_image_services_2.webp"
+                    src="https://iili.io/HMxLGAN.md.png"
                     alt="Why Learn"
                   />
                 </div>
