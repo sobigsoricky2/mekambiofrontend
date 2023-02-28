@@ -373,19 +373,19 @@ const MekambioHub = () => {
             </div>
             <div className="col-md-12 text-center">
               <Link
-                href="https://buy.stripe.com/00gg33gGv8vHbZu5kn"
+                href="https://mekambio.ipzmarketing.com/f/60iCLoy6shs"
                 className="theme-btn mt-4 mr-4"
                 target={"_blank"}
               >
-                Suscripción mensual por 19,90€ al mes
+                Suscribirme a meKambio HUB
               </Link>
-              <Link
+              {/* <Link
                 href="https://buy.stripe.com/dR6189fCr8vHfbG28a"
                 className="theme-btn mt-4"
                 target={"_blank"}
               >
                 Suscripción anual por 199,90€ (2 meses gratuitos)
-              </Link>
+              </Link> */}
             </div>
           </div>
         </section>
