@@ -181,7 +181,7 @@ const Services = () => {
             </div>
           </div>
         </section> */}
-        <section className="categories-section bg-blue text-white rel z-1 py-50 rpb-85">
+        <section className="categories-section bg-blue  rel z-1 py-50 rpb-85">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-5">
@@ -190,12 +190,14 @@ const Services = () => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="section-title mb-25">
-                    <span className="sub-title-two">Nuestros Servicios</span>
-                    <h2>
+                    <span className="sub-title-two text-white">
+                      Nuestros Servicios
+                    </span>
+                    <h2 className="text-white">
                       Descubre la herramienta que mejor se amolde a tu condición
                     </h2>
                   </div>
-                  <p>
+                  <p className="text-white">
                     Cada situación requiere de su propia estrategia. Encuentra
                     el servicio que mejor cumpla tus expectativas para empezar
                     tu evolución.
