@@ -157,7 +157,7 @@ const MekambioHub = () => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="section-title mb-30 ">
-                    <h2 className="text-break h1"><b>Qué incluye este programa<b></h2>
+                    <h2 className="text-break h1"><b>Qué incluye este programa</b></h2>
                   </div>
                 </div>
               </div>
