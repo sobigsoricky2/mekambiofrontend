@@ -318,16 +318,6 @@ const ProgramasIntensivos = () => {
                     </p>
                   </div>
                 </div>
-                <div className="work-step-item">
-                  <span className="number">04</span>
-                  <div className="content">
-                    <h4>Accede al cambio que estás buscando</h4>
-                    <p>
-                      Inicia tu evolución profesional. En dos meses puedes
-                      empezar a ver resultados.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
