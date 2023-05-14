@@ -201,7 +201,7 @@ const MekambioHub = () => {
                     </p>
                   </div>
                   <Link href="#sec-3" className="read-more color-two">
-                    Suscríbete a meKambio HUB
+                    Suscríbete a meKambio Hub
                     <i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -229,7 +229,7 @@ const MekambioHub = () => {
                     </p>
                   </div>
                   <Link href="#sec-3" className="read-more color-two">
-                    Suscríbete a meKambio Hub
+                    Suscríbete a meKambio HUB
                     <i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -308,7 +308,7 @@ const MekambioHub = () => {
         >
           <div className="container">
             <div className="section-title text-center mb-50">
-              <h2>Cómo acceder a meKambio HUB</h2>
+              <h2>Cómo acceder a meKambio Hub</h2>
             </div>
             <div className="row align-items-center">
               <div className="col-lg-6">
