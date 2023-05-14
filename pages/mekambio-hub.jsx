@@ -7,7 +7,7 @@ const MekambioHub = () => {
   return (
     <Layout>
       <Banner
-        title={"meKambio HUB"}
+        title={"meKambio Hub"}
         para="Accede al programa que te hará impulsar tu carrera profesional"
       />
       <>
