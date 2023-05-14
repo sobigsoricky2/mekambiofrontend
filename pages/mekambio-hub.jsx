@@ -157,7 +157,7 @@ const MekambioHub = () => {
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 >
                   <div className="section-title mb-30 ">
-                    <h2 className="text-break h1">Qué incluye este programa</h2>
+                    <h2 className="text-break h1"><b>Qué incluye este programa<b></h2>
                   </div>
                 </div>
               </div>
@@ -229,7 +229,7 @@ const MekambioHub = () => {
                     </p>
                   </div>
                   <Link href="#sec-3" className="read-more color-two">
-                    Suscríbete a meKambio HUB
+                    Suscríbete a meKambio Hub
                     <i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -338,7 +338,7 @@ const MekambioHub = () => {
                   <div className="work-step-item">
                     <span className="number">01</span>
                     <div className="content">
-                      <h4>Suscríbete a meKambio HUB</h4>
+                      <h4>Suscríbete a meKambio Hub</h4>
                       <p>
                         Suscríbete por 19,90€ al mes o 199,90€ anualmente
                         (promoción 2 meses gratuitos). Puedes cancelar tu
@@ -372,20 +372,20 @@ const MekambioHub = () => {
               </div>
             </div>
             <div className="col-md-12 text-center">
-              <Link
-                href="https://mekambio.ipzmarketing.com/f/60iCLoy6shs"
-                className="theme-btn mt-4 mr-4"
+               <Link
+                href='https://buy.stripe.com/dR6189fCr8vHfbG28a'
+                className='theme-btn mt-4 mr-4'
                 target={"_blank"}
               >
-                Suscribirme a meKambio HUB
+                Suscripción Anual 199,90
               </Link>
-              {/* <Link
-                href="https://buy.stripe.com/dR6189fCr8vHfbG28a"
-                className="theme-btn mt-4"
+              <Link
+                href='https://buy.stripe.com/00gg33gGv8vHbZu5kn'
+                className='theme-btn mt-4'
                 target={"_blank"}
               >
-                Suscripción anual por 199,90€ (2 meses gratuitos)
-              </Link> */}
+                Suscripción Mensual 19,90
+              </Link>
             </div>
           </div>
         </section>
