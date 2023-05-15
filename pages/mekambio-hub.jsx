@@ -377,14 +377,14 @@ const MekambioHub = () => {
                 className='theme-btn mt-4 mr-4'
                 target={"_blank"}
               >
-                Suscripción Anual 199,90
+                Suscripción Anual 199,90€
               </Link>
               <Link
                 href='https://buy.stripe.com/00gg33gGv8vHbZu5kn'
                 className='theme-btn mt-4'
                 target={"_blank"}
               >
-                Suscripción Mensual 19,90
+                Suscripción Mensual 19,90€
               </Link>
             </div>
           </div>
